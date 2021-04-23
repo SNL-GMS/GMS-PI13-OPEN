@@ -1,0 +1,13 @@
+plugins {
+    id 'java-library'
+}
+
+//group 'gms.shared.frameworks.messaging'
+
+dependencies {
+    api 'org.apache.kafka:kafka-clients'
+    implementation 'net.jodah:failsafe'
+
+    // Gradle sub-project dependencies.
+    api project(':frameworks-service-generator')
+}

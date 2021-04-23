@@ -1,0 +1,9 @@
+{
+  "id": "b6e00a04-5cbe-4df9-a482-e950b665ac72",
+  "channelName": "PLCA.PLCA1.SHZ",
+  "type": "DEAD_SENSOR_CHANNEL",
+  "startTime": "2020-01-23T23:45:19.597Z",
+  "endTime": "2020-01-23T23:45:29.572Z",
+  "status": false,
+  "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+}

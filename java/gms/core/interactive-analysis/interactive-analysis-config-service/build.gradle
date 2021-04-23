@@ -1,0 +1,19 @@
+plugins {
+    id 'io.swagger.core.v3.swagger-gradle-plugin'
+    id 'application'
+    id 'com.palantir.docker'
+}
+
+mainClassName = "gms.core.interactiveanalysis.config.service.Application"
+
+dependencies {
+    implementation project(":frameworks-control")
+    implementation project(":frameworks-configuration-commonobjects")
+    implementation project(':frameworks-configuration-api')
+    implementation project(':frameworks-configuration-repository')
+    implementation project(":frameworks-service-interface-base")
+    implementation project(":frameworks-service-generator")
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+}

@@ -1,0 +1,6 @@
+strict-ssl=#NPM_REGISTRY_STRICT_SSL#
+#proxy=
+#https-proxy=
+tarball=/usr/share/node/node-#NODE_VERSION#-headers.tar.gz
+registry=#NPM_REGISTRY#
+

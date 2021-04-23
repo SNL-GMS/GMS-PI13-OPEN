@@ -1,0 +1,260 @@
+version: "3.7"
+
+#KEEP THIS IN ALPHABETICAL ORDER
+services:
+
+  acei-merge-processor:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/acei-merge-processor:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    depends_on:
+      - etcd
+      - postgresql-gms
+      - frameworks-osd-service
+      - frameworks-configuration-service
+      - kafka1
+    healthcheck:
+      test: ["CMD", "ping", "-c", "1", "kafka1"]
+      interval: 5s
+      timeout: 10s
+      retries: 10
+
+  bastion:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/bastion:${DOCKER_IMAGE_TAG}"
+    deploy:
+      labels:
+        com.docker.ucp.access.label: ${COLLECTION}
+        gms.startup.stage: 1
+      restart_policy:
+        condition: on-failure
+
+  config-loader:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/config-loader:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    environment:
+      GMS_CONFIG_AUTOLOAD_DEFAULTS: 1
+
+  da-connman:
+    # environment and ports for live data are setup by gmsctl
+    image: "${CI_DOCKER_REGISTRY}/gms-common/cd11-connman:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    environment:
+      GMS_CONFIG_CONNMAN__DATA_MANAGER_IP_ADDRESS: 127.0.0.1
+      GMS_CONFIG_CONNMAN__EXPERIMENTAL_ENABLED: "true"
+      GMS_CONFIG_CD11_DATACONSUMER_BASEPORT: 8100
+
+  da-dataman:
+    # environment and ports for live data are setup by gmsctl
+    image: "${CI_DOCKER_REGISTRY}/gms-common/cd11-dataman:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    environment:
+      GMS_CONFIG_CONNMAN__DATA_MANAGER_IP_ADDRESS: 127.0.0.1
+      GMS_CONFIG_DATAMAN__EXPERIMENTAL_ENABLED: "true"
+      GMS_CONFIG_CD11_DATACONSUMER_BASEPORT: 8100
+    volumes:
+      - cd11:/data-receiver/shared-volume:rw
+
+  etcd:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/etcd:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+
+  frameworks-configuration-service:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/frameworks-configuration-service:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    depends_on:
+      - etcd
+      - postgresql-gms
+
+  frameworks-osd-rsdf-kafka-consumer:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/frameworks-osd-rsdf-kafka-consumer:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    depends_on:
+      - etcd
+      - postgresql-gms
+      - frameworks-osd-service
+    healthcheck:
+      test: ["CMD", "ping", "-c", "1", "kafka1"]
+      interval: 5s
+      timeout: 10s
+      retries: 10
+
+  frameworks-osd-service:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/frameworks-osd-service:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    depends_on:
+      - etcd
+      - postgresql-gms
+
+  frameworks-osd-station-soh-kafka-consumer:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/frameworks-osd-station-soh-kafka-consumer:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    depends_on:
+      - etcd
+      - postgresql-gms
+      - frameworks-osd-service
+    healthcheck:
+      test: ["CMD", "ping", "-c", "1", "kafka1"]
+      interval: 5s
+      timeout: 10s
+      retries: 10
+
+  frameworks-osd-ttl-worker:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/frameworks-osd-ttl-worker:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    depends_on:
+      - etcd
+      - postgresql-gms
+      - frameworks-osd-service
+
+  interactive-analysis-api-gateway:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/interactive-analysis-api-gateway:${DOCKER_IMAGE_TAG}"
+    ports:
+      - 8081
+    environment:
+      GRAPHQL_PROXY_URI: http://interactive-analysis-api-gateway:4000
+      NODE_ENV: production
+      NODE_CONFIG_ENV: deployed
+      http_proxy: ""
+      https_proxy: ""
+      no_proxy: ""
+      HTTP_PROXY: ""
+      HTTPS_PROXY: ""
+      NO_PROXY: ""
+
+  interactive-analysis-config-service:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/interactive-analysis-config-service:${DOCKER_IMAGE_TAG}"
+    ports:
+      - 8082
+
+  interactive-analysis-ui:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/interactive-analysis-ui:${DOCKER_IMAGE_TAG}"
+    ports:
+      - 8080
+    environment:
+      NODE_ENV: production
+      GRAPHQL_PROXY_URI: http://interactive-analysis-api-gateway:3000
+      WAVEFORMS_PROXY_URI: http://interactive-analysis-api-gateway:3000
+      SUBSCRIPTIONS_PROXY_URI: http://interactive-analysis-api-gateway:4000
+
+  kafka1:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/kafka:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    depends_on:
+      - zoo
+    networks:
+      - default
+    environment:
+      SITE_DOMAIN: ${SITE_DOMAIN}
+      HOSTNAME_COMMAND: "docker info | grep ^Name: | cut -d' ' -f 2"
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zoo:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT
+      KAFKA_LISTENERS: INTERNAL://:9092
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+      KAFKA_CREATE_TOPICS: "soh.rsdf:1:1,soh.acei:1:1,soh.extract:1:1,soh.waveform:1:1,soh.station-soh:1:1,soh.ack-station-soh:1:1"
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_LOGS_DIR: /kafka/kafka_logs
+      ENABLE_METRICS: "on"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - kafka1-volume:/kafka
+
+  postgresql-exporter:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/postgres-exporter:${DOCKER_IMAGE_TAG}"
+    environment:
+      DATA_SOURCE_URI: postgresql-gms:5432/gms?sslmode=disable
+      DATA_SOURCE_USER: gms_super_user
+      DATA_SOURCE_PASS: gmsdb:postgres:gms_super_user:responded-outcrops-eighteen
+
+  postgresql-gms:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/postgres:${DOCKER_IMAGE_TAG}"
+    restart: on-failure
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: scram-sha-256 
+      POSTGRES_INITDB_ARGS: "--data-checksums -A --auth=scram-sha-256 --auth-host=scram-sha-256 --auth-local=scram-sha-256"
+      POSTGRES_DB: gms
+      POSTGRES_USER: gms_super_user
+      POSTGRES_PASSWORD: "gmsdb:postgres:gms_super_user:responded-outcrops-eighteen"
+    volumes:
+      - postgresql-gms:/var/lib/postgresql/data:rw
+      - type: tmpfs
+        target: /dev/shm
+    command: ["postgres", "-c", "config_file=/etc/postgresql/postgresql.conf"]
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready --username gms_super_user --dbname gms']
+      interval: 5s
+      timeout: 10s
+      retries: 10
+
+  cd11-rsdf-processor:
+    image: ${CI_DOCKER_REGISTRY}/gms-common/cd11-rsdf-processor:${DOCKER_IMAGE_TAG}
+    depends_on:
+      - frameworks-configuration-service
+      - frameworks-osd-service
+    restart: on-failure
+
+  soh-control:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/soh-application:${DOCKER_IMAGE_TAG}"
+    depends_on:
+      - frameworks-osd-service
+      - frameworks-configuration-service
+      - frameworks-osd-station-soh-kafka-consumer
+      - frameworks-osd-rsdf-kafka-consumer
+    restart: on-failure
+
+  zoo:
+    image: "${CI_DOCKER_REGISTRY}/gms-common/zookeeper:${DOCKER_IMAGE_TAG}"
+    networks:
+      - default
+    volumes:
+      - kafka_zoo_data:/data:rw
+      - kafka_zoo_datalog:/datalog:rw
+      - kafka_zoo_logs:/logs:rw
+    restart: on-failure
+    
+  # The names of these containers must match the hostnames from config
+
+volumes:
+  cd11:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  interactive-analysis-api-gateway-volume:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  kafka_zoo_data:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  kafka_zoo_datalog:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  kafka_zoo_logs:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  kafka1-volume:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  kafka2-volume:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  kafka3-volume:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  postgresql-gms:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+  postgresql-stationreceiver-volume:
+    labels:
+      com.docker.ucp.access.label: ${COLLECTION}
+
+networks:
+  #  network-name:
+  #    #makes this network visible across all nodes in the swarm
+  #    driver: overlay
+  #    #allows standalone containers/services to attach to this network
+  #    attachable: true
+  #    #specifies this network was created outside this compose file
+  #    external: true
+  #    #specifies necessary labels for this network
+  #    labels:
+  #      com.docker.ucp.access.label: ${COLLECTION}
+  default:
+    attachable: true

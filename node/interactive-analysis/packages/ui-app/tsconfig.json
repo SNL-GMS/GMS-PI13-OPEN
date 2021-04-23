@@ -1,0 +1,42 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./lib",
+    "typeRoots": ["@types", "./@types", "./node_modules/@types", "../../node_modules/@types"],
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": false,
+    "baseUrl": ".",
+    "paths": {
+      "~css": ["src/css"],
+      "~css/": ["src/css"],
+      "~css/*": ["src/css/*"],
+      "~app": ["src/ts/app"],
+      "~app/": ["src/ts/app"],
+      "~app/*": ["src/ts/app/*"],
+      "~components": ["src/ts/components"],
+      "~components/": ["src/ts/components"],
+      "~components/*": ["src/ts/components/*"],
+      "~analyst-ui": ["src/ts/components/analyst-ui"],
+      "~analyst-ui/": ["src/ts/components/analyst-ui"],
+      "~analyst-ui/*": ["src/ts/components/analyst-ui/*"],
+      "~data-acquisition-ui": ["src/ts/components/data-acquisition-ui"],
+      "~data-acquisition-ui/": ["src/ts/components/data-acquisition-ui"],
+      "~data-acquisition-ui/*": ["src/ts/components/data-acquisition-ui/*"],
+      "~common-ui": ["src/ts/components/common-ui"],
+      "~common-ui/": ["src/ts/components/common-ui"],
+      "~common-ui/*": ["src/ts/components/common-ui/*"],
+      "~config": ["src/ts/config"],
+      "~config/": ["src/ts/config"],
+      "~config/*": ["src/ts/config/*"],
+      "~resources": ["src/ts/resources"],
+      "~resources/": ["src/ts/resources"],
+      "~resources/*": ["src/ts/resources/*"],
+      "~scss-config": ["src/ts/scss-config"],
+      "~scss-config/": ["src/ts/scss-config"],
+      "~scss-config/*": ["src/ts/scss-config/*"]
+    }
+  },
+  "include": ["src/ts/**/*"]
+}

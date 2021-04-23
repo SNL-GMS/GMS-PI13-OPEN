@@ -1,0 +1,32 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':frameworks-soh-daos')
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // JPA dependencies
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.hibernate:hibernate-ehcache'
+
+    implementation 'net.jodah:failsafe'
+    implementation 'com.google.guava:guava'
+
+    implementation project(':metrics')
+    implementation project(':frameworks-utilities-jpa')
+
+    // Testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+    testImplementation project(':frameworks-osd-testfixtures')
+    testImplementation 'com.kohlschutter.junixsocket:junixsocket-common'
+    testImplementation 'com.kohlschutter.junixsocket:junixsocket-native-common'
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.postgresql:postgresql'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.testcontainers:postgresql'
+    testImplementation 'org.testcontainers:kafka'
+}

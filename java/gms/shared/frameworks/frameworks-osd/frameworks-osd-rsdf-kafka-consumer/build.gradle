@@ -1,0 +1,11 @@
+apply plugin: 'application'
+apply plugin: 'com.palantir.docker'
+
+mainClassName = 'gms.shared.frameworks.osd.rsdf.consumer.RsdfStorageConsumer'
+
+dependencies {
+    implementation project(':kafka-consumer-frameworks')
+    implementation project(':frameworks-service-generator')
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':frameworks-soh-repository')
+}

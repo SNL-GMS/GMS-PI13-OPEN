@@ -1,0 +1,274 @@
+# imageRegistry is the Docker image registry URL where all images will be retrieved.
+#imageRegistry: docker-registry.example.com
+
+# baseDomain specifies the domain name suffix applied to all Ingress hostnames.
+#baseDomain: cluster.example.com
+
+# imageTag is the Docker image tag used when retrieving all CI-built images.
+imageTag: develop
+
+# imagePullPolicy is the policy used for all images ('Always', 'IfNotPresent', 'Never').
+imagePullPolicy: Always
+
+# If reconfigInProgress is true, apps that need to be restarted as part of a reconfig will be stopped.
+reconfigInProgress: false
+
+# If injector is true, the cd11-injector app will be added.  If not, it will be removed.
+injector: false
+
+# If liveData is true, the da-connman and da-dataman apps will use hostPorts to listen for external live data.
+liveData: false
+
+# user specifices the username of the user installing or upgrading the instance.
+#user: UNKNOWN
+
+# env specifies environment variables that will be added to all applications.
+env: {}
+
+# global constraint flags
+globalConstrainCpu: false
+globalConstrainMemory: false
+
+# default resource limits
+cpu_default: 2
+cpu_min: "100m"
+cpu_max: 4
+cpu_requests: "100m"
+memory_default: "1Gi"
+memory_requests: "256Mi"
+
+# Default PersistentVolumeClaim storage class.
+storageClassName: "local-path"
+
+#
+# App definitions
+#
+
+acei-merge-processor:
+  imageName: "gms-common/acei-merge-processor"
+  replicas: 1
+  restartDuringReconfig: true
+  cpu_requests: 1
+  cpu_limit: 2
+  memory_requests: "2Gi"
+  memory_limit: "2Gi"
+
+bastion:
+  imageName: "gms-common/bastion"
+  replicas: 1
+
+capability-soh-rollup-kafka-consumer:
+  imageName: "gms-common/capability-soh-rollup-kafka-consumer"
+  replicas: 1
+
+# The cd11-injector will only run if the top-level 'injector' value is true.
+cd11-injector:
+  imageName: "gms-common/cd11-data-provider"
+  replicas: 1
+  env:
+    GMS_CONFIG_CD11_DATA_PROVIDER__CONSUMER_ID: "{{ .Release.Name }}"
+    GMS_CONFIG_CD11_DATA_PROVIDER__REPEATER_SERVERS: "{{ .Values.baseDomain }}:9094,{{ .Values.baseDomain }}:9095,{{ .Values.baseDomain }}:9096"
+    GMS_CONFIG_CONNMAN_ADDRESS: "da-connman"
+    GMS_CONFIG_CONNMAN_PORT: 8041
+    CD11_INJECTOR_CONFIG_NAME: "81for10min"
+
+cd11-rsdf-processor:
+  imageName: "gms-common/cd11-rsdf-processor"
+  replicas: 1
+  restartDuringReconfig: true
+
+config-loader:
+  imageName: "gms-common/config-loader"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "100Mi"
+
+da-connman:
+  imageName: "gms-common/cd11-connman"
+  replicas: 1
+  deploymentStrategy: Recreate
+  restartDuringReconfig: true
+  connPort: 8041
+  env:
+    GMS_CONFIG_CD11_DATACONSUMER_BASEPORT: '{{ get (get .Values "da-dataman") "dataPortStart" }}'
+    GMS_CONFIG_CONNMAN__DATA_MANAGER_IP_ADDRESS: "da-dataman"
+    GMS_CONFIG_CONNMAN__CONNECTION_MANAGER_WELL_KNOWN_PORT: '{{ get (get .Values "da-connman") "connPort" }}'
+
+da-dataman:
+  imageName: "gms-common/cd11-dataman"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"
+  restartDuringReconfig: true
+  dataPortStart: 8100
+  dataPortEnd: 8449
+  env:
+    GMS_CONFIG_CD11_DATACONSUMER_BASEPORT: '{{ get (get .Values "da-dataman") "dataPortStart" }}'
+
+etcd:
+  imageName: "gms-common/etcd"
+  replicas: 1
+
+frameworks-configuration-service:
+  imageName: "gms-common/frameworks-configuration-service"
+  replicas: 1
+
+frameworks-osd-rsdf-kafka-consumer:
+  imageName: "gms-common/frameworks-osd-rsdf-kafka-consumer"
+  replicas: 1
+
+frameworks-osd-service:
+  imageName: "gms-common/frameworks-osd-service"
+  replicas: 1
+
+frameworks-osd-station-soh-kafka-consumer:
+  imageName: "gms-common/frameworks-osd-station-soh-kafka-consumer"
+  replicas: 1
+
+frameworks-osd-systemmessage-kafka-consumer:
+  imageName: "gms-common/frameworks-osd-systemmessage-kafka-consumer"
+  replicas: 1
+
+# frameworks-osd-ttl-worker is a CronJob that runs periodically.  It is not a persistent Pod.
+frameworks-osd-ttl-worker:
+  imageName: "gms-common/frameworks-osd-ttl-worker"
+  replicas: 1
+  # Run the job every hour on the hour.
+  cronSchedule: "0 * * * *"
+  env:
+    # Note that TTL can only be defined in hours, default to 720 hours (30 days)
+    ACEI_TTL_IN_HOURS: "720"
+    DATA_SOURCE_HOST: "postgresql-gms"
+    RSDF_TTL_IN_HOURS: "720"
+    SSOH_TTL_IN_HOURS: "720"
+
+interactive-analysis-api-gateway:
+  imageName: "gms-common/interactive-analysis-api-gateway"
+  replicas: 1
+  restartDuringReconfig: true
+  env:
+    GMS_UI_MODE: "soh"
+    GRAPHQL_PROXY_URI: "http://{{ .appName }}:4000"
+    NODE_CONFIG_ENV: "deployed"
+    NODE_ENV: "production"
+
+interactive-analysis-config-service:
+  imageName: "gms-common/interactive-analysis-config-service"
+  replicas: 1
+  restartDuringReconfig: true
+
+interactive-analysis-ui:
+  imageName: "gms-common/interactive-analysis-ui"
+  replicas: 1
+  restartDuringReconfig: true
+  env:
+    GRAPHQL_PROXY_URI: "http://interactive-analysis-api-gateway:3000"
+    NODE_ENV: "production"
+    SUBSCRIPTIONS_PROXY_URI: "http://interactive-analysis-api-gateway:4000"
+    WAVEFORMS_PROXY_URI: "http://interactive-analysis-api-gateway:3000"
+
+kafka1:
+  imageName: "gms-common/kafka"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"
+  env:
+    ENABLE_METRICS: "on"
+    KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://{{ .appName }}:9092"
+    KAFKA_BROKER_ID: "1"
+    KAFKA_CREATE_TOPICS: >-
+      soh.rsdf:1:3,soh.acei:1:3,soh.extract:1:3,soh.waveform:1:3,
+      soh.station-soh:1:3,soh.ack-station-soh:1:3,soh.capability-rollup:1:3,
+      soh.quieted-list:1:3,soh.status-change-event:1:3,system.system-messages:1:3
+    KAFKA_LISTENERS: "PLAINTEXT://:9092"
+    KAFKA_LOGS_DIR: "/kafka/kafka_logs"
+    KAFKA_LOG_RETENTION_HOURS: "6"
+    KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "3"
+    KAFKA_ZOOKEEPER_CONNECT: "zoo:2181"
+
+kafka2:
+  imageName: "gms-common/kafka"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"
+  env:
+    ENABLE_METRICS: "on"
+    KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://{{ .appName }}:9092"
+    KAFKA_BROKER_ID: "2"
+    KAFKA_CREATE_TOPICS: >-
+      soh.rsdf:1:3,soh.acei:1:3,soh.extract:1:3,soh.waveform:1:3,
+      soh.station-soh:1:3,soh.ack-station-soh:1:3,soh.capability-rollup:1:3,
+      soh.quieted-list:1:3,soh.status-change-event:1:3,system.system-messages:1:3
+    KAFKA_LISTENERS: "PLAINTEXT://:9092"
+    KAFKA_LOGS_DIR: "/kafka/kafka_logs"
+    KAFKA_LOG_RETENTION_HOURS: "6"
+    KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "3"
+    KAFKA_ZOOKEEPER_CONNECT: "zoo:2181"
+
+kafka3:
+  imageName: "gms-common/kafka"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"
+  env:
+    ENABLE_METRICS: "on"
+    KAFKA_ADVERTISED_LISTENERS: "PLAINTEXT://{{ .appName }}:9092"
+    KAFKA_BROKER_ID: "3"
+    KAFKA_CREATE_TOPICS: >-
+      soh.rsdf:1:3,soh.acei:1:3,soh.extract:1:3,soh.waveform:1:3,
+      soh.station-soh:1:3,soh.ack-station-soh:1:3,soh.capability-rollup:1:3,
+      soh.quieted-list:1:3,soh.status-change-event:1:3,system.system-messages:1:3
+    KAFKA_LISTENERS: "PLAINTEXT://:9092"
+    KAFKA_LOGS_DIR: "/kafka/kafka_logs"
+    KAFKA_LOG_RETENTION_HOURS: "6"
+    KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: "3"
+    KAFKA_ZOOKEEPER_CONNECT: "zoo:2181"
+
+postgresql-exporter:
+  imageName: "gms-common/postgres-exporter"
+  replicas: 1
+
+postgresql-gms:
+  imageName: "gms-common/postgres"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"
+  env:
+    POSTGRES_DB: "gms"
+    POSTGRES_HOST_AUTH_METHOD: "scram-sha-256"
+    POSTGRES_INITDB_ARGS: "--data-checksums -A --auth=scram-sha-256 --auth-host=scram-sha-256 --auth-local=scram-sha-256"
+
+smds-service:
+  imageName: "gms-common/smds-application"
+  replicas: 1
+  restartDuringReconfig: true
+
+soh-control:
+  imageName: "gms-common/soh-application"
+  replicas: 1
+  restartDuringReconfig: true
+  cpu_requests: 1
+  cpu_limit: 2
+  env:
+    GMS_CONFIG_LOG_LEVEL: "INFO"
+
+soh-quieted-list-kafka-consumer:
+  imageName: "gms-common/soh-quieted-list-kafka-consumer"
+  replicas: 1
+
+soh-status-change-kafka-consumer:
+  imageName: "gms-common/soh-status-change-kafka-consumer"
+  replicas: 1
+
+ssam-control:
+  imageName: "gms-common/ssam-application"
+  replicas: 1
+  restartDuringReconfig: true
+  env:
+    GMS_CONFIG_LOG_LEVEL: "INFO"
+
+zoo:
+  imageName: "gms-common/zookeeper"
+  replicas: 1
+  deploymentStrategy: Recreate
+  storageSize: "10Gi"

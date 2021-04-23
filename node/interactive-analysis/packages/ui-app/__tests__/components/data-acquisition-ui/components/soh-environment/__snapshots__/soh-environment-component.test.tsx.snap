@@ -1,0 +1,1694 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SohEnvironmentComponent class should match not ready snapshot 1`] = `
+<Component
+  glContainer={
+    Object {
+      "close": [MockFunction],
+      "emit": [MockFunction],
+      "extendState": [MockFunction],
+      "getElement": [MockFunction],
+      "getState": [MockFunction],
+      "height": 500,
+      "hide": [MockFunction],
+      "isHidden": true,
+      "layoutManager": undefined,
+      "off": [MockFunction],
+      "on": [MockFunction] {
+        "calls": Array [
+          Array [
+            "show",
+            [Function],
+          ],
+          Array [
+            "resize",
+            [Function],
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      },
+      "parent": undefined,
+      "setSize": [MockFunction],
+      "setState": [MockFunction],
+      "setTitle": [MockFunction],
+      "show": [MockFunction],
+      "tab": undefined,
+      "title": "container-title",
+      "trigger": [MockFunction],
+      "unbind": [MockFunction],
+      "width": 1000,
+    }
+  }
+  selectedStationIds={
+    Array [
+      "A",
+      "B",
+      "C",
+    ]
+  }
+  setSelectedStationIds={[MockFunction]}
+>
+  <Blueprint3.NonIdealState
+    action={
+      <Blueprint3.Spinner
+        intent="primary"
+      />
+    }
+    description="Station SOH"
+    title="No SOH Data"
+  >
+    <div
+      className="bp3-non-ideal-state"
+    >
+      <Component>
+        <h4
+          className="bp3-heading"
+        >
+          No SOH Data
+        </h4>
+      </Component>
+      <div>
+        Station SOH
+      </div>
+      <Blueprint3.Spinner
+        intent="primary"
+      >
+        <div
+          className="bp3-spinner bp3-intent-primary"
+        >
+          <div
+            className="bp3-spinner-animation"
+          >
+            <svg
+              height={50}
+              strokeWidth="8.00"
+              viewBox="1.00 1.00 98.00 98.00"
+              width={50}
+            >
+              <path
+                className="bp3-spinner-track"
+                d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+              />
+              <path
+                className="bp3-spinner-head"
+                d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+                pathLength={280}
+                strokeDasharray="280 280"
+                strokeDashoffset={210}
+              />
+            </svg>
+          </div>
+        </div>
+      </Blueprint3.Spinner>
+    </div>
+  </Blueprint3.NonIdealState>
+</Component>
+`;
+
+exports[`SohEnvironmentComponent class should match snapshot 1`] = `
+<ApolloProvider
+  client={
+    DefaultClient {
+      "cache": InMemoryCache {
+        "addTypename": true,
+        "cacheKeyRoot": KeyTrie {
+          "weakness": true,
+        },
+        "config": Object {
+          "addTypename": true,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+          "freezeResults": false,
+          "resultCaching": true,
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimisticData": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "executeSubSelectedArray": [Function],
+          "freezeResults": false,
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "clearStoreCallbacks": Array [],
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "localState": LocalState {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "client": [Circular],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "queryManager": QueryManager {
+        "assumeImmutableResults": false,
+        "clientAwareness": Object {
+          "name": undefined,
+          "version": undefined,
+        },
+        "dataStore": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "fetchQueryRejectFns": Map {},
+        "idCounter": 1,
+        "inFlightLinkObservables": Map {},
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutationStore": MutationStore {
+          "store": Object {},
+        },
+        "onBroadcast": [Function],
+        "pollingInfoByQueryId": Map {},
+        "queries": Map {},
+        "queryDeduplication": true,
+        "queryStore": QueryStore {
+          "store": Object {},
+        },
+        "ssrMode": false,
+        "transformCache": WeakMap {},
+      },
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "typeDefs": undefined,
+      "version": "2.6.4",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <EnvironmentComponent
+    channelSohForStationQuery={
+      Object {
+        "channelSohForStation": Object {
+          "channelSohs": Array [
+            Object {
+              "allSohMonitorValueAndStatuses": Array [
+                Object {
+                  "contributing": false,
+                  "hasUnacknowledgedChanges": false,
+                  "monitorType": "ENV_ZEROED_DATA",
+                  "quietUntilMs": 1,
+                  "status": "GOOD",
+                  "thresholdBad": 10,
+                  "thresholdMarginal": 1,
+                  "value": 1,
+                  "valuePresent": true,
+                },
+              ],
+              "channelName": "AAA111",
+              "channelSohStatus": "GOOD",
+            },
+          ],
+          "stationName": "A",
+        },
+      }
+    }
+    glContainer={
+      Object {
+        "close": [MockFunction],
+        "emit": [MockFunction],
+        "extendState": [MockFunction],
+        "getElement": [MockFunction],
+        "getState": [MockFunction],
+        "height": 500,
+        "hide": [MockFunction],
+        "isHidden": false,
+        "layoutManager": undefined,
+        "off": [MockFunction],
+        "on": [MockFunction],
+        "parent": undefined,
+        "setSize": [MockFunction],
+        "setState": [MockFunction],
+        "setTitle": [MockFunction],
+        "show": [MockFunction],
+        "tab": undefined,
+        "title": "container-title",
+        "trigger": [MockFunction],
+        "unbind": [MockFunction],
+        "width": 1000,
+      }
+    }
+    quietChannelMonitorStatuses={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            Object {
+              "variables": Object {
+                "channelMonitorsToQuiet": Object {
+                  "channelMonitorPairs": Array [
+                    Object {
+                      "channelName": "AAA111",
+                      "monitorType": "ENV_CLIPPED",
+                    },
+                  ],
+                  "comment": undefined,
+                  "quietDurationMs": undefined,
+                  "stationName": "AAA",
+                },
+              },
+            },
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": Promise {},
+          },
+        ],
+      }
+    }
+    saveStationGroupSohStatus={[MockFunction]}
+    selectedStationIds={
+      Array [
+        "A",
+      ]
+    }
+    setSelectedStationIds={[MockFunction]}
+    sohStationAndGroupStatusQuery={
+      Object {
+        "loading": false,
+        "stationAndStationGroupSoh": Object {
+          "stationSoh": Array [
+            Object {
+              "stationName": "A",
+            },
+          ],
+        },
+      }
+    }
+    sohStatus={
+      Object {
+        "loading": false,
+        "stationAndStationGroupSoh": Object {
+          "stationSoh": Array [
+            Object {
+              "channelSohs": Array [
+                Object {
+                  "allSohMonitorValueAndStatuses": Array [
+                    Object {
+                      "contributing": false,
+                      "hasUnacknowledgedChanges": false,
+                      "monitorType": "ENV_ZEROED_DATA",
+                      "quietUntilMs": 1,
+                      "status": "GOOD",
+                      "thresholdBad": 10,
+                      "thresholdMarginal": 1,
+                      "value": 1,
+                      "valuePresent": true,
+                    },
+                  ],
+                  "channelName": "AAA111",
+                  "channelSohStatus": "GOOD",
+                },
+              ],
+              "stationName": "A",
+            },
+          ],
+        },
+      }
+    }
+    uiConfigurationQuery={
+      Object {
+        "fetchMore": undefined,
+        "loading": true,
+        "networkStatus": undefined,
+        "refetch": undefined,
+        "startPolling": undefined,
+        "stopPolling": undefined,
+        "subscribeToMore": undefined,
+        "uiAnalystConfiguration": Object {
+          "acknowledgementQuietDuration": 0,
+          "availableQuietDurations": Array [],
+          "defaultFilters": Array [],
+          "defaultNetwork": undefined,
+          "logLevel": "info",
+          "redisplayPeriod": 5,
+          "reprocessingPeriod": 20,
+          "sohHistoricalDurations": Array [
+            300000,
+            900000,
+          ],
+          "sohStationGroupNames": Array [],
+          "sohStationStaleTimeMS": 30000,
+          "systemMessageLimit": 1000,
+        },
+        "updateQuery": undefined,
+        "variables": undefined,
+      }
+    }
+  >
+    <Component
+      className="environment-display top-level-container  scroll-box scroll-box--y full-width-height soh-env-component"
+      glContainer={
+        Object {
+          "close": [MockFunction],
+          "emit": [MockFunction],
+          "extendState": [MockFunction],
+          "getElement": [MockFunction],
+          "getState": [MockFunction],
+          "height": 500,
+          "hide": [MockFunction],
+          "isHidden": false,
+          "layoutManager": undefined,
+          "off": [MockFunction],
+          "on": [MockFunction],
+          "parent": undefined,
+          "setSize": [MockFunction],
+          "setState": [MockFunction],
+          "setTitle": [MockFunction],
+          "show": [MockFunction],
+          "tab": undefined,
+          "title": "container-title",
+          "trigger": [MockFunction],
+          "unbind": [MockFunction],
+          "width": 1000,
+        }
+      }
+      onContextMenu={[Function]}
+    >
+      <div
+        className="base-display environment-display top-level-container  scroll-box scroll-box--y full-width-height soh-env-component"
+        onContextMenu={[Function]}
+      >
+        <Component>
+          <div>
+            <Component>
+              <Component
+                filterDropdown={
+                  Array [
+                    Object {
+                      "colors": Map {
+                        "GOOD" => "#fff",
+                        "MARGINAL" => "#fff",
+                        "BAD" => "#fff",
+                        "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                      },
+                      "cyData": "filter-soh-channels",
+                      "enumKeysToDisplayStrings": Map {
+                        "GOOD" => "Good",
+                        "MARGINAL" => "Marginal",
+                        "BAD" => "Bad",
+                        "NONE" => "None",
+                      },
+                      "enumOfKeys": Object {
+                        "BAD": "BAD",
+                        "GOOD": "GOOD",
+                        "MARGINAL": "MARGINAL",
+                        "NONE": "NONE",
+                      },
+                      "label": "Filter Channels by Status",
+                      "menuLabel": "Filter Channels by Status",
+                      "onChange": [Function],
+                      "rank": 2,
+                      "tooltip": "Filter Channels by Status",
+                      "type": "CheckboxList",
+                      "values": Map {
+                        "GOOD" => true,
+                        "BAD" => true,
+                        "MARGINAL" => true,
+                        "NONE" => true,
+                      },
+                      "widthPx": 240,
+                    },
+                  ]
+                }
+                monitorStatusesToDisplay={
+                  Map {
+                    "GOOD" => true,
+                    "BAD" => true,
+                    "MARGINAL" => true,
+                    "NONE" => true,
+                  }
+                }
+                setMonitorStatusesToDisplay={[Function]}
+                updateInfo={
+                  Object {
+                    "reprocessingPeriod": 20,
+                    "sohStationStaleTimeMS": 30000,
+                    "updateTime": undefined,
+                  }
+                }
+              >
+                <Component
+                  displayTimeWarning={false}
+                  leftItems={
+                    Array [
+                      Object {
+                        "colors": Map {
+                          "GOOD" => "#fff",
+                          "MARGINAL" => "#fff",
+                          "BAD" => "#fff",
+                          "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                        },
+                        "cyData": "filter-soh-channels",
+                        "enumKeysToDisplayStrings": Map {
+                          "GOOD" => "Good",
+                          "MARGINAL" => "Marginal",
+                          "BAD" => "Bad",
+                          "NONE" => "None",
+                        },
+                        "enumOfKeys": Object {
+                          "BAD": "BAD",
+                          "GOOD": "GOOD",
+                          "MARGINAL": "MARGINAL",
+                          "NONE": "NONE",
+                        },
+                        "label": "Filter Channels by Status",
+                        "menuLabel": "Filter Channels by Status",
+                        "onChange": [Function],
+                        "rank": 2,
+                        "tooltip": "Filter Channels by Status",
+                        "type": "CheckboxList",
+                        "values": Map {
+                          "GOOD" => true,
+                          "BAD" => true,
+                          "MARGINAL" => true,
+                          "NONE" => true,
+                        },
+                        "widthPx": 240,
+                      },
+                    ]
+                  }
+                  rightItems={Array []}
+                  setStatusesToDisplay={[Function]}
+                  sohStationStaleTimeMS={30000}
+                  statusFilterText="Filter Monitors By Status"
+                  statusesToDisplay={
+                    Map {
+                      "GOOD" => true,
+                      "BAD" => true,
+                      "MARGINAL" => true,
+                      "NONE" => true,
+                    }
+                  }
+                  toggleHighlight={[Function]}
+                  updateIntervalSecs={20}
+                  widthPx={NaN}
+                >
+                  <Component
+                    items={
+                      Array [
+                        Object {
+                          "hasIssue": false,
+                          "label": "Last Updated",
+                          "rank": 1,
+                          "style": Object {
+                            "marginLeft": "1em",
+                          },
+                          "tooltip": "Most recent SOH data received",
+                          "tooltipForIssue": "SOH data has not updated in over 30 seconds",
+                          "type": "LabelValue",
+                          "value": "-",
+                          "widthPx": 400,
+                        },
+                        Object {
+                          "label": "Update Interval",
+                          "rank": 2,
+                          "tooltip": "Interval at which SOH data is processed",
+                          "type": "LabelValue",
+                          "value": "20 seconds",
+                          "widthPx": 400,
+                        },
+                      ]
+                    }
+                    itemsLeft={
+                      Array [
+                        Object {
+                          "colors": Map {
+                            "GOOD" => "#fff",
+                            "MARGINAL" => "#fff",
+                            "BAD" => "#fff",
+                            "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                          },
+                          "cyData": "filter-soh",
+                          "enumKeysToDisplayStrings": Map {
+                            "GOOD" => "Good",
+                            "MARGINAL" => "Marginal",
+                            "BAD" => "Bad",
+                            "NONE" => "None",
+                          },
+                          "enumOfKeys": Object {
+                            "BAD": "BAD",
+                            "GOOD": "GOOD",
+                            "MARGINAL": "MARGINAL",
+                            "NONE": "NONE",
+                          },
+                          "label": "Filter Monitors By Status",
+                          "menuLabel": "Filter Monitors By Status",
+                          "onChange": [Function],
+                          "onPopUp": [Function],
+                          "onPopoverDismissed": [Function],
+                          "rank": 1,
+                          "tooltip": "Filter Monitors By Status",
+                          "type": "CheckboxList",
+                          "values": Map {
+                            "GOOD" => true,
+                            "BAD" => true,
+                            "MARGINAL" => true,
+                            "NONE" => true,
+                          },
+                          "widthPx": 200,
+                        },
+                        Object {
+                          "colors": Map {
+                            "GOOD" => "#fff",
+                            "MARGINAL" => "#fff",
+                            "BAD" => "#fff",
+                            "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                          },
+                          "cyData": "filter-soh-channels",
+                          "enumKeysToDisplayStrings": Map {
+                            "GOOD" => "Good",
+                            "MARGINAL" => "Marginal",
+                            "BAD" => "Bad",
+                            "NONE" => "None",
+                          },
+                          "enumOfKeys": Object {
+                            "BAD": "BAD",
+                            "GOOD": "GOOD",
+                            "MARGINAL": "MARGINAL",
+                            "NONE": "NONE",
+                          },
+                          "label": "Filter Channels by Status",
+                          "menuLabel": "Filter Channels by Status",
+                          "onChange": [Function],
+                          "rank": 2,
+                          "tooltip": "Filter Channels by Status",
+                          "type": "CheckboxList",
+                          "values": Map {
+                            "GOOD" => true,
+                            "BAD" => true,
+                            "MARGINAL" => true,
+                            "NONE" => true,
+                          },
+                          "widthPx": 240,
+                        },
+                      ]
+                    }
+                    widthPx={NaN}
+                  >
+                    <ToolbarComponent
+                      items={
+                        Array [
+                          Object {
+                            "hasIssue": false,
+                            "label": "Last Updated",
+                            "rank": 1,
+                            "style": Object {
+                              "marginLeft": "1em",
+                            },
+                            "tooltip": "Most recent SOH data received",
+                            "tooltipForIssue": "SOH data has not updated in over 30 seconds",
+                            "type": "LabelValue",
+                            "value": "-",
+                            "widthPx": 400,
+                          },
+                          Object {
+                            "label": "Update Interval",
+                            "rank": 2,
+                            "tooltip": "Interval at which SOH data is processed",
+                            "type": "LabelValue",
+                            "value": "20 seconds",
+                            "widthPx": 400,
+                          },
+                        ]
+                      }
+                      itemsLeft={
+                        Array [
+                          Object {
+                            "colors": Map {
+                              "GOOD" => "#fff",
+                              "MARGINAL" => "#fff",
+                              "BAD" => "#fff",
+                              "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                            },
+                            "cyData": "filter-soh",
+                            "enumKeysToDisplayStrings": Map {
+                              "GOOD" => "Good",
+                              "MARGINAL" => "Marginal",
+                              "BAD" => "Bad",
+                              "NONE" => "None",
+                            },
+                            "enumOfKeys": Object {
+                              "BAD": "BAD",
+                              "GOOD": "GOOD",
+                              "MARGINAL": "MARGINAL",
+                              "NONE": "NONE",
+                            },
+                            "label": "Filter Monitors By Status",
+                            "menuLabel": "Filter Monitors By Status",
+                            "onChange": [Function],
+                            "onPopUp": [Function],
+                            "onPopoverDismissed": [Function],
+                            "rank": 1,
+                            "tooltip": "Filter Monitors By Status",
+                            "type": "CheckboxList",
+                            "values": Map {
+                              "GOOD" => true,
+                              "BAD" => true,
+                              "MARGINAL" => true,
+                              "NONE" => true,
+                            },
+                            "widthPx": 200,
+                          },
+                          Object {
+                            "colors": Map {
+                              "GOOD" => "#fff",
+                              "MARGINAL" => "#fff",
+                              "BAD" => "#fff",
+                              "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                            },
+                            "cyData": "filter-soh-channels",
+                            "enumKeysToDisplayStrings": Map {
+                              "GOOD" => "Good",
+                              "MARGINAL" => "Marginal",
+                              "BAD" => "Bad",
+                              "NONE" => "None",
+                            },
+                            "enumOfKeys": Object {
+                              "BAD": "BAD",
+                              "GOOD": "GOOD",
+                              "MARGINAL": "MARGINAL",
+                              "NONE": "NONE",
+                            },
+                            "label": "Filter Channels by Status",
+                            "menuLabel": "Filter Channels by Status",
+                            "onChange": [Function],
+                            "rank": 2,
+                            "tooltip": "Filter Channels by Status",
+                            "type": "CheckboxList",
+                            "values": Map {
+                              "GOOD" => true,
+                              "BAD" => true,
+                              "MARGINAL" => true,
+                              "NONE" => true,
+                            },
+                            "widthPx": 240,
+                          },
+                        ]
+                      }
+                      minWhiteSpacePx={1}
+                      toolbarWidthPx={0}
+                      widthPx={NaN}
+                    >
+                      <div
+                        className="toolbar"
+                        style={
+                          Object {
+                            "width": "0px",
+                          }
+                        }
+                      >
+                        <div
+                          className="toolbar__left-group"
+                        >
+                          <div
+                            className="toolbar-item toolbar-item__left"
+                            key="1"
+                          >
+                            <Component
+                              addToPopoverMap={[Function]}
+                              hasIssue={false}
+                              item={
+                                Object {
+                                  "colors": Map {
+                                    "GOOD" => "#fff",
+                                    "MARGINAL" => "#fff",
+                                    "BAD" => "#fff",
+                                    "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                                  },
+                                  "cyData": "filter-soh",
+                                  "enumKeysToDisplayStrings": Map {
+                                    "GOOD" => "Good",
+                                    "MARGINAL" => "Marginal",
+                                    "BAD" => "Bad",
+                                    "NONE" => "None",
+                                  },
+                                  "enumOfKeys": Object {
+                                    "BAD": "BAD",
+                                    "GOOD": "GOOD",
+                                    "MARGINAL": "MARGINAL",
+                                    "NONE": "NONE",
+                                  },
+                                  "label": "Filter Monitors By Status",
+                                  "menuLabel": "Filter Monitors By Status",
+                                  "onChange": [Function],
+                                  "onPopUp": [Function],
+                                  "onPopoverDismissed": [Function],
+                                  "rank": 1,
+                                  "tooltip": "Filter Monitors By Status",
+                                  "type": "CheckboxList",
+                                  "values": Map {
+                                    "GOOD" => true,
+                                    "BAD" => true,
+                                    "MARGINAL" => true,
+                                    "NONE" => true,
+                                  },
+                                  "widthPx": 200,
+                                }
+                              }
+                              key="1"
+                            >
+                              <div
+                                style={Object {}}
+                              >
+                                <PopoverButtonComponent
+                                  cyData="filter-soh"
+                                  key="1"
+                                  label="Filter Monitors By Status"
+                                  onClick={[Function]}
+                                  onPopoverDismissed={[Function]}
+                                  popupContent={
+                                    <CheckboxList
+                                      checkboxEnum={
+                                        Object {
+                                          "BAD": "BAD",
+                                          "GOOD": "GOOD",
+                                          "MARGINAL": "MARGINAL",
+                                          "NONE": "NONE",
+                                        }
+                                      }
+                                      enumKeysToDisplayStrings={
+                                        Map {
+                                          "GOOD" => "Good",
+                                          "MARGINAL" => "Marginal",
+                                          "BAD" => "Bad",
+                                          "NONE" => "None",
+                                        }
+                                      }
+                                      enumToCheckedMap={
+                                        Map {
+                                          "GOOD" => true,
+                                          "BAD" => true,
+                                          "MARGINAL" => true,
+                                          "NONE" => true,
+                                        }
+                                      }
+                                      enumToColorMap={
+                                        Map {
+                                          "GOOD" => "#fff",
+                                          "MARGINAL" => "#fff",
+                                          "BAD" => "#fff",
+                                          "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                                        }
+                                      }
+                                      onChange={[Function]}
+                                    />
+                                  }
+                                  tooltip="Filter Monitors By Status"
+                                  widthPx={200}
+                                >
+                                  <div
+                                    data-cy="filter-soh"
+                                  >
+                                    <Blueprint3.Button
+                                      active={false}
+                                      alignText="left"
+                                      className="toolbar-button"
+                                      onClick={[Function]}
+                                      style={
+                                        Object {
+                                          "width": "200px",
+                                        }
+                                      }
+                                      title="Filter Monitors By Status"
+                                    >
+                                      <button
+                                        className="bp3-button bp3-align-left toolbar-button"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        onKeyUp={[Function]}
+                                        style={
+                                          Object {
+                                            "width": "200px",
+                                          }
+                                        }
+                                        title="Filter Monitors By Status"
+                                        type="button"
+                                      >
+                                        <Blueprint3.Icon
+                                          key="leftIcon"
+                                        />
+                                        <span
+                                          className="bp3-button-text"
+                                          key="text"
+                                        >
+                                          <span>
+                                            Filter Monitors By Status
+                                          </span>
+                                          <Blueprint3.Icon
+                                            icon="chevron-down"
+                                            title={false}
+                                          >
+                                            <span
+                                              className="bp3-icon bp3-icon-chevron-down"
+                                              icon="chevron-down"
+                                            >
+                                              <svg
+                                                data-icon="chevron-down"
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                width={16}
+                                              >
+                                                <path
+                                                  d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                                  fillRule="evenodd"
+                                                  key="0"
+                                                />
+                                              </svg>
+                                            </span>
+                                          </Blueprint3.Icon>
+                                        </span>
+                                        <Blueprint3.Icon
+                                          key="rightIcon"
+                                        />
+                                      </button>
+                                    </Blueprint3.Button>
+                                  </div>
+                                </PopoverButtonComponent>
+                              </div>
+                            </Component>
+                          </div>
+                          <div
+                            className="toolbar-item toolbar-item__left"
+                            key="2"
+                          >
+                            <Component
+                              addToPopoverMap={[Function]}
+                              hasIssue={false}
+                              item={
+                                Object {
+                                  "colors": Map {
+                                    "GOOD" => "#fff",
+                                    "MARGINAL" => "#fff",
+                                    "BAD" => "#fff",
+                                    "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                                  },
+                                  "cyData": "filter-soh-channels",
+                                  "enumKeysToDisplayStrings": Map {
+                                    "GOOD" => "Good",
+                                    "MARGINAL" => "Marginal",
+                                    "BAD" => "Bad",
+                                    "NONE" => "None",
+                                  },
+                                  "enumOfKeys": Object {
+                                    "BAD": "BAD",
+                                    "GOOD": "GOOD",
+                                    "MARGINAL": "MARGINAL",
+                                    "NONE": "NONE",
+                                  },
+                                  "label": "Filter Channels by Status",
+                                  "menuLabel": "Filter Channels by Status",
+                                  "onChange": [Function],
+                                  "rank": 2,
+                                  "tooltip": "Filter Channels by Status",
+                                  "type": "CheckboxList",
+                                  "values": Map {
+                                    "GOOD" => true,
+                                    "BAD" => true,
+                                    "MARGINAL" => true,
+                                    "NONE" => true,
+                                  },
+                                  "widthPx": 240,
+                                }
+                              }
+                              key="2"
+                            >
+                              <div
+                                style={Object {}}
+                              >
+                                <PopoverButtonComponent
+                                  cyData="filter-soh-channels"
+                                  key="2"
+                                  label="Filter Channels by Status"
+                                  onClick={[Function]}
+                                  onPopoverDismissed={[Function]}
+                                  popupContent={
+                                    <CheckboxList
+                                      checkboxEnum={
+                                        Object {
+                                          "BAD": "BAD",
+                                          "GOOD": "GOOD",
+                                          "MARGINAL": "MARGINAL",
+                                          "NONE": "NONE",
+                                        }
+                                      }
+                                      enumKeysToDisplayStrings={
+                                        Map {
+                                          "GOOD" => "Good",
+                                          "MARGINAL" => "Marginal",
+                                          "BAD" => "Bad",
+                                          "NONE" => "None",
+                                        }
+                                      }
+                                      enumToCheckedMap={
+                                        Map {
+                                          "GOOD" => true,
+                                          "BAD" => true,
+                                          "MARGINAL" => true,
+                                          "NONE" => true,
+                                        }
+                                      }
+                                      enumToColorMap={
+                                        Map {
+                                          "GOOD" => "#fff",
+                                          "MARGINAL" => "#fff",
+                                          "BAD" => "#fff",
+                                          "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                                        }
+                                      }
+                                      onChange={[Function]}
+                                    />
+                                  }
+                                  tooltip="Filter Channels by Status"
+                                  widthPx={240}
+                                >
+                                  <div
+                                    data-cy="filter-soh-channels"
+                                  >
+                                    <Blueprint3.Button
+                                      active={false}
+                                      alignText="left"
+                                      className="toolbar-button"
+                                      onClick={[Function]}
+                                      style={
+                                        Object {
+                                          "width": "240px",
+                                        }
+                                      }
+                                      title="Filter Channels by Status"
+                                    >
+                                      <button
+                                        className="bp3-button bp3-align-left toolbar-button"
+                                        onClick={[Function]}
+                                        onKeyDown={[Function]}
+                                        onKeyUp={[Function]}
+                                        style={
+                                          Object {
+                                            "width": "240px",
+                                          }
+                                        }
+                                        title="Filter Channels by Status"
+                                        type="button"
+                                      >
+                                        <Blueprint3.Icon
+                                          key="leftIcon"
+                                        />
+                                        <span
+                                          className="bp3-button-text"
+                                          key="text"
+                                        >
+                                          <span>
+                                            Filter Channels by Status
+                                          </span>
+                                          <Blueprint3.Icon
+                                            icon="chevron-down"
+                                            title={false}
+                                          >
+                                            <span
+                                              className="bp3-icon bp3-icon-chevron-down"
+                                              icon="chevron-down"
+                                            >
+                                              <svg
+                                                data-icon="chevron-down"
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                width={16}
+                                              >
+                                                <path
+                                                  d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                                  fillRule="evenodd"
+                                                  key="0"
+                                                />
+                                              </svg>
+                                            </span>
+                                          </Blueprint3.Icon>
+                                        </span>
+                                        <Blueprint3.Icon
+                                          key="rightIcon"
+                                        />
+                                      </button>
+                                    </Blueprint3.Button>
+                                  </div>
+                                </PopoverButtonComponent>
+                              </div>
+                            </Component>
+                          </div>
+                        </div>
+                        <div
+                          className="toolbar__center-group"
+                        >
+                          <div
+                            className="toolbar__whitespace"
+                            style={
+                              Object {
+                                "width": "1px",
+                              }
+                            }
+                          />
+                        </div>
+                        <div
+                          className="toolbar__right-group"
+                        >
+                          <div>
+                            <Blueprint3.Button
+                              className="toolbar-overflow-menu-button "
+                              icon="double-chevron-right"
+                              onClick={[Function]}
+                              style={
+                                Object {
+                                  "width": "30px",
+                                }
+                              }
+                            >
+                              <button
+                                className="bp3-button toolbar-overflow-menu-button "
+                                onClick={[Function]}
+                                onKeyDown={[Function]}
+                                onKeyUp={[Function]}
+                                style={
+                                  Object {
+                                    "width": "30px",
+                                  }
+                                }
+                                type="button"
+                              >
+                                <Blueprint3.Icon
+                                  icon="double-chevron-right"
+                                  key="leftIcon"
+                                >
+                                  <span
+                                    className="bp3-icon bp3-icon-double-chevron-right"
+                                    icon="double-chevron-right"
+                                  >
+                                    <svg
+                                      data-icon="double-chevron-right"
+                                      height={16}
+                                      viewBox="0 0 16 16"
+                                      width={16}
+                                    >
+                                      <desc>
+                                        double-chevron-right
+                                      </desc>
+                                      <path
+                                        d="M9 8c0-.28-.11-.53-.29-.71l-4-4a1.003 1.003 0 00-1.42 1.42L6.59 8 3.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4C8.89 8.53 9 8.28 9 8zm4.71-.71l-4-4a1.003 1.003 0 00-1.42 1.42L11.59 8 8.3 11.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l4-4c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                        fillRule="evenodd"
+                                        key="0"
+                                      />
+                                    </svg>
+                                  </span>
+                                </Blueprint3.Icon>
+                                <Blueprint3.Icon
+                                  key="rightIcon"
+                                />
+                              </button>
+                            </Blueprint3.Button>
+                          </div>
+                        </div>
+                      </div>
+                    </ToolbarComponent>
+                  </Component>
+                </Component>
+              </Component>
+            </Component>
+            <Component
+              stationName="A"
+            >
+              <Component
+                subtitle="Current percent environmental issues per channel"
+                title="A"
+              >
+                <div
+                  className="soh-drill-down-station-label display-title"
+                >
+                  A
+                  <div
+                    className="display-title__subtitle"
+                  >
+                    Current percent environmental issues per channel
+                  </div>
+                </div>
+              </Component>
+            </Component>
+          </div>
+        </Component>
+        <EnvironmentPanel
+          channelSohs={
+            Array [
+              Object {
+                "allSohMonitorValueAndStatuses": Array [
+                  Object {
+                    "contributing": false,
+                    "hasUnacknowledgedChanges": false,
+                    "monitorType": "ENV_ZEROED_DATA",
+                    "quietUntilMs": 1,
+                    "status": "GOOD",
+                    "thresholdBad": 10,
+                    "thresholdMarginal": 1,
+                    "value": 1,
+                    "valuePresent": true,
+                  },
+                ],
+                "channelName": "AAA111",
+                "channelSohStatus": "GOOD",
+              },
+            ]
+          }
+          channelStatusesToDisplay={
+            Map {
+              "GOOD" => true,
+              "BAD" => true,
+              "MARGINAL" => true,
+              "NONE" => true,
+            }
+          }
+          defaultQuietDurationMs={0}
+          isStale={false}
+          monitorStatusesToDisplay={
+            Map {
+              "GOOD" => true,
+              "BAD" => true,
+              "MARGINAL" => true,
+              "NONE" => true,
+            }
+          }
+          quietingDurationSelections={Array []}
+          stationName="A"
+        >
+          <Component>
+            <div
+              className="soh-environment-table 
+  with-separated-rows
+  ag-theme-dark
+  ag-theme-dark--soh
+   table--cell-selection-only"
+              style={
+                Object {
+                  "minHeight": NaN,
+                }
+              }
+            >
+              <ClientSideTable
+                columnDefs={
+                  Array [
+                    Object {
+                      "cellRendererFramework": [Function],
+                      "colId": "Monitor Type",
+                      "comparator": [Function],
+                      "headerClass": "soh-header-cell soh-header-cell--neutral",
+                      "headerName": "Monitor Type",
+                      "pinned": "left",
+                      "sort": "asc",
+                      "suppressMovable": true,
+                      "valueGetter": [Function],
+                      "width": 200,
+                    },
+                    Object {
+                      "cellRendererFramework": Object {
+                        "$$typeof": Symbol(react.memo),
+                        "compare": null,
+                        "type": [Function],
+                      },
+                      "colId": "AAA111",
+                      "comparator": [Function],
+                      "field": "AAA111",
+                      "headerClass": [Function],
+                      "headerName": "AAA111",
+                      "valueGetter": [Function],
+                      "width": 160,
+                    },
+                  ]
+                }
+                context={
+                  Object {
+                    "dataReceivedByChannelName": Map {
+                      "AAA111" => "received",
+                    },
+                    "rollupStatusByChannelName": Map {
+                      "AAA111" => "NONE",
+                    },
+                    "selectedChannelMonitorPairs": Array [],
+                    "uuid": "1e872474-b19f-4325-9350-e217a6feddc0",
+                  }
+                }
+                debug={false}
+                defaultColDef={
+                  Object {
+                    "disableStaticMarkupForCellRendererFramework": true,
+                    "disableStaticMarkupForHeaderComponentFramework": true,
+                    "filter": true,
+                    "sortable": true,
+                  }
+                }
+                headerHeight={44}
+                id="soh-environment-table"
+                key="soh-environment-table"
+                onCellClicked={[Function]}
+                onCellContextMenu={[Function]}
+                overlayNoRowsTemplate="No SOH to display"
+                rowData={
+                  Array [
+                    Object {
+                      "id": "ENV_AUTHENTICATION_SEAL_BROKEN",
+                    },
+                    Object {
+                      "id": "ENV_BACKUP_POWER_UNSTABLE",
+                    },
+                    Object {
+                      "id": "ENV_CALIBRATION_UNDERWAY",
+                    },
+                    Object {
+                      "id": "ENV_CLIPPED",
+                    },
+                    Object {
+                      "id": "ENV_CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+                    },
+                    Object {
+                      "id": "ENV_CLOCK_DIFFERENTIAL_TOO_LARGE",
+                    },
+                    Object {
+                      "id": "ENV_LAST_GPS_SYNC_TIME",
+                    },
+                    Object {
+                      "id": "ENV_DEAD_SENSOR_CHANNEL",
+                    },
+                    Object {
+                      "id": "ENV_DIGITIZER_ANALOG_INPUT_SHORTED",
+                    },
+                    Object {
+                      "id": "ENV_DIGITIZER_CALIBRATION_LOOP_BACK",
+                    },
+                    Object {
+                      "id": "ENV_DIGITIZING_EQUIPMENT_OPEN",
+                    },
+                    Object {
+                      "id": "ENV_EQUIPMENT_HOUSING_OPEN",
+                    },
+                    Object {
+                      "id": "ENV_EQUIPMENT_MOVED",
+                    },
+                    Object {
+                      "id": "ENV_GPS_RECEIVER_OFF",
+                    },
+                    Object {
+                      "id": "ENV_GPS_RECEIVER_UNLOCKED",
+                    },
+                    Object {
+                      "id": "ENV_MAIN_POWER_FAILURE",
+                    },
+                    Object {
+                      "id": "ENV_STATION_POWER_VOLTAGE",
+                    },
+                    Object {
+                      "id": "ENV_VAULT_DOOR_OPENED",
+                    },
+                    Object {
+                      "id": "ENV_ZEROED_DATA",
+                    },
+                  ]
+                }
+                rowHeight={40}
+                suppressCellSelection={true}
+                suppressRowClickSelection={true}
+              >
+                <CoreTable
+                  columnDefs={
+                    Array [
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Monitor Type",
+                        "comparator": [Function],
+                        "headerClass": "soh-header-cell soh-header-cell--neutral",
+                        "headerName": "Monitor Type",
+                        "pinned": "left",
+                        "sort": "asc",
+                        "suppressMovable": true,
+                        "valueGetter": [Function],
+                        "width": 200,
+                      },
+                      Object {
+                        "cellRendererFramework": Object {
+                          "$$typeof": Symbol(react.memo),
+                          "compare": null,
+                          "type": [Function],
+                        },
+                        "colId": "AAA111",
+                        "comparator": [Function],
+                        "field": "AAA111",
+                        "headerClass": [Function],
+                        "headerName": "AAA111",
+                        "valueGetter": [Function],
+                        "width": 160,
+                      },
+                    ]
+                  }
+                  context={
+                    Object {
+                      "dataReceivedByChannelName": Map {
+                        "AAA111" => "received",
+                      },
+                      "rollupStatusByChannelName": Map {
+                        "AAA111" => "NONE",
+                      },
+                      "selectedChannelMonitorPairs": Array [],
+                      "uuid": "1e872474-b19f-4325-9350-e217a6feddc0",
+                    }
+                  }
+                  debug={false}
+                  defaultColDef={
+                    Object {
+                      "disableStaticMarkupForCellRendererFramework": true,
+                      "disableStaticMarkupForHeaderComponentFramework": true,
+                      "filter": true,
+                      "sortable": true,
+                    }
+                  }
+                  headerHeight={44}
+                  id="soh-environment-table"
+                  onCellClicked={[Function]}
+                  onCellContextMenu={[Function]}
+                  onGridReady={[Function]}
+                  overlayNoRowsTemplate="No SOH to display"
+                  rowBuffer={10}
+                  rowData={
+                    Array [
+                      Object {
+                        "id": "ENV_AUTHENTICATION_SEAL_BROKEN",
+                      },
+                      Object {
+                        "id": "ENV_BACKUP_POWER_UNSTABLE",
+                      },
+                      Object {
+                        "id": "ENV_CALIBRATION_UNDERWAY",
+                      },
+                      Object {
+                        "id": "ENV_CLIPPED",
+                      },
+                      Object {
+                        "id": "ENV_CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+                      },
+                      Object {
+                        "id": "ENV_CLOCK_DIFFERENTIAL_TOO_LARGE",
+                      },
+                      Object {
+                        "id": "ENV_LAST_GPS_SYNC_TIME",
+                      },
+                      Object {
+                        "id": "ENV_DEAD_SENSOR_CHANNEL",
+                      },
+                      Object {
+                        "id": "ENV_DIGITIZER_ANALOG_INPUT_SHORTED",
+                      },
+                      Object {
+                        "id": "ENV_DIGITIZER_CALIBRATION_LOOP_BACK",
+                      },
+                      Object {
+                        "id": "ENV_DIGITIZING_EQUIPMENT_OPEN",
+                      },
+                      Object {
+                        "id": "ENV_EQUIPMENT_HOUSING_OPEN",
+                      },
+                      Object {
+                        "id": "ENV_EQUIPMENT_MOVED",
+                      },
+                      Object {
+                        "id": "ENV_GPS_RECEIVER_OFF",
+                      },
+                      Object {
+                        "id": "ENV_GPS_RECEIVER_UNLOCKED",
+                      },
+                      Object {
+                        "id": "ENV_MAIN_POWER_FAILURE",
+                      },
+                      Object {
+                        "id": "ENV_STATION_POWER_VOLTAGE",
+                      },
+                      Object {
+                        "id": "ENV_VAULT_DOOR_OPENED",
+                      },
+                      Object {
+                        "id": "ENV_ZEROED_DATA",
+                      },
+                    ]
+                  }
+                  rowHeight={40}
+                  suppressCellSelection={true}
+                  suppressRowClickSelection={true}
+                >
+                  <AgGridReact
+                    animateRows={false}
+                    columnDefs={
+                      Array [
+                        Object {
+                          "cellRenderer": undefined,
+                          "cellRendererFramework": [Function],
+                          "colId": "Monitor Type",
+                          "comparator": [Function],
+                          "headerClass": "soh-header-cell soh-header-cell--neutral",
+                          "headerComponent": undefined,
+                          "headerComponentFramework": undefined,
+                          "headerName": "Monitor Type",
+                          "pinned": "left",
+                          "sort": "asc",
+                          "suppressMovable": true,
+                          "valueGetter": [Function],
+                          "width": 200,
+                        },
+                        Object {
+                          "cellRenderer": undefined,
+                          "cellRendererFramework": Object {
+                            "$$typeof": Symbol(react.memo),
+                            "compare": null,
+                            "type": [Function],
+                          },
+                          "colId": "AAA111",
+                          "comparator": [Function],
+                          "field": "AAA111",
+                          "headerClass": [Function],
+                          "headerComponent": undefined,
+                          "headerComponentFramework": undefined,
+                          "headerName": "AAA111",
+                          "valueGetter": [Function],
+                          "width": 160,
+                        },
+                      ]
+                    }
+                    context={
+                      Object {
+                        "dataReceivedByChannelName": Map {
+                          "AAA111" => "received",
+                        },
+                        "rollupStatusByChannelName": Map {
+                          "AAA111" => "NONE",
+                        },
+                        "selectedChannelMonitorPairs": Array [],
+                        "uuid": "1e872474-b19f-4325-9350-e217a6feddc0",
+                      }
+                    }
+                    debug={false}
+                    defaultColDef={
+                      Object {
+                        "filter": true,
+                        "lockVisible": true,
+                        "resizable": true,
+                        "sortable": true,
+                        "sortingOrder": Array [
+                          "asc",
+                          "desc",
+                        ],
+                        "suppressCellFlash": true,
+                      }
+                    }
+                    deltaRowDataMode={true}
+                    getRowNodeId={[Function]}
+                    headerHeight={44}
+                    id="soh-environment-table"
+                    onCellClicked={[Function]}
+                    onCellContextMenu={[Function]}
+                    onColumnMoved={[Function]}
+                    onGridReady={[Function]}
+                    overlayNoRowsTemplate="No SOH to display"
+                    preventDefaultOnContextMenu={true}
+                    rowBuffer={10}
+                    rowData={null}
+                    rowDataChangeDetectionStrategy="IdentityCheck"
+                    rowHeight={40}
+                    suppressCellSelection={true}
+                    suppressContextMenu={true}
+                    suppressLoadingOverlay={true}
+                    suppressRowClickSelection={true}
+                    suppressScrollOnNewData={true}
+                  >
+                    <div
+                      style={
+                        Object {
+                          "height": "100%",
+                        }
+                      }
+                    />
+                  </AgGridReact>
+                </CoreTable>
+              </ClientSideTable>
+            </div>
+          </Component>
+        </EnvironmentPanel>
+      </div>
+    </Component>
+  </EnvironmentComponent>
+</ApolloProvider>
+`;

@@ -1,0 +1,9 @@
+{
+  "id": "21ebf9ea-ee8a-46b0-974d-98e55087b29f",
+  "channelName": "PLCA.PLCAB.BHE",
+  "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+  "startTime": "2020-01-23T23:45:19.597Z",
+  "endTime": "2020-01-23T23:45:29.572Z",
+  "status": 0.0,
+  "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+}

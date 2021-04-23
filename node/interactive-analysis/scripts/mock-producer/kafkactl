@@ -1,0 +1,92 @@
+#!/bin/bash
+
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "WARNING - kafkactl is depricated. Please use the new mock-producer instead."
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+function gms_help {
+  echo "kafkactl help"
+  echo ""
+  echo "Options:"
+  echo "  --boot                        Does it all: remove the docker images, build the docker images, create the topic, start the producer"
+  echo "  --clean                       Cleans the docker images, containers, volumes"
+  echo "  --init                        Compose the docker image, then create the Kafka topic"
+  echo "  --rm|--remove|--kill|--stop   Stop and remove the relevant docker images (kafka and zookeeper)"
+  echo "  --start|--run                 Run the producer. Optionally, you can add a production interval: --start=<your interval in ms>"
+}
+
+function gms_clean {
+  echo "Clean: Freeing up Docker data"
+  docker system prune && docker volume prune
+}
+
+function gms_init {
+  echo "Composing Docker image and creating topic"
+  pushd ../../../../java/gms/core/performance-monitoring/soh/soh-test-producer
+    docker-compose up -d && sleep 10s && ./create-topic.sh
+  popd
+}
+
+function gms_start {
+  period=${1:-7000}
+  echo "Starting producer every  milliseconds" 
+  pushd ../../../../java/gms/core/performance-monitoring/soh/soh-test-producer
+    ./produce-stationsoh.sh $period
+  popd
+}
+
+function gms_stop {
+  echo "Stopping Kafka and Zookeeper images"
+  pushd ../../java/gms/core/performance-monitoring/soh/soh-test-producer
+    docker compose down
+    docker stop kafka
+    docker stop zookeeper
+  popd
+}
+
+if [[ $# -eq 0 ]] ; then
+  gms_help
+  exit 1
+fi
+
+while [[ $# -gt 0 ]]
+do
+key="$1"
+
+case $key in
+    --boot)
+      gms_stop
+      gms_init && gms_start
+      shift;;
+    --boot=*)
+      gms_stop
+      gms_init && gms_start "${key#*=}"
+      shift;;
+    --clean)
+      gms_stop && gms_clean
+      shift;;
+    --init)
+      gms_init
+      shift
+      ;;
+    --start|--run)
+      gms_start
+      shift # past argument
+      ;;
+    --start=*|--run=*)
+      gms_start "${key#*=}"
+      shift # past argument
+      ;;
+    --rm|--remove|--kill|--start|--stop)
+      gms_stop
+      shift # past argument
+      ;;
+    --help)
+      gms_help
+      shift;;
+    *)    # unknown option
+      echo "Unknown option $1"
+      shift # past argument
+      ;;
+esac
+done

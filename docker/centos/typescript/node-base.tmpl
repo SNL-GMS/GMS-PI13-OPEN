@@ -1,0 +1,24 @@
+# Location, proxy, and major version for node yum repository
+ARG NODE_YUM_URL=https://rpm.nodesource.com
+ARG A_NODE_PROXY=_none_
+ARG NODE_MAJOR_VERSION=10
+
+# Specific version of nodejs we are using
+ARG NODEJS_VERSION=10.19.0
+
+# Put node version into environment, add our ca cert bundle to the node certs
+ENV NODEJS_VERSION=$NODEJS_VERSION \
+    NODE_EXTRA_CA_CERTS=/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+
+# Copy the Node yum repo GPG key to our list of keys
+COPY common-src/NODESOURCE-GPG-SIGNING-KEY-EL /etc/pki/rpm-gpg/NODESOURCE-GPG-SIGNING-KEY-EL
+# Add the node repo template file
+COPY common-src/nodesource-el7.repo /etc/yum.repos.d/nodesource-el7.repo
+
+# Fill out the node yum template file and install nodejs
+RUN set -ex && \
+    sed -i -e "s~#NODE_YUM_URL#~$NODE_YUM_URL~g" /etc/yum.repos.d/nodesource-el7.repo && \
+    sed -i -e "s~#NODE_MAJOR_VERSION#~$NODE_MAJOR_VERSION~g" /etc/yum.repos.d/nodesource-el7.repo && \
+    sed -i -e "s~#NODE_PROXY#~$A_NODE_PROXY~g" /etc/yum.repos.d/nodesource-el7.repo && \
+    yum -y install nodejs-$NODEJS_VERSION && \
+    yum clean all

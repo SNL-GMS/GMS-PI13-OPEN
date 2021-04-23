@@ -1,0 +1,3518 @@
+[
+  {
+    "acquisitionMetadata": [
+      {
+        "payloadStartTime": "2020-01-31T18:31:40Z",
+        "payloadEndTime": "2020-01-31T18:31:50Z",
+        "receptionTime": "2020-01-31T18:36:37.755045Z",
+        "payloadFormat": "CD11",
+        "authenticationStatus": "NOT_YET_AUTHENTICATED",
+        "waveformSummaries": {
+          "ASAR.AS18.SHZ": {
+            "channelName": "ASAR.AS18.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS13.SHZ": {
+            "channelName": "ASAR.AS13.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS07.SHZ": {
+            "channelName": "ASAR.AS07.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS31.BHZ": {
+            "channelName": "ASAR.AS31.BHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.975Z"
+          },
+          "ASAR.AS05.SHZ": {
+            "channelName": "ASAR.AS05.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS16.SHZ": {
+            "channelName": "ASAR.AS16.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS02.SHZ": {
+            "channelName": "ASAR.AS02.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS03.SHZ": {
+            "channelName": "ASAR.AS03.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS15.SHZ": {
+            "channelName": "ASAR.AS15.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS09.SHZ": {
+            "channelName": "ASAR.AS09.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS11.SHZ": {
+            "channelName": "ASAR.AS11.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS31.BHE": {
+            "channelName": "ASAR.AS31.BHE",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.975Z"
+          },
+          "ASAR.AS06.SHZ": {
+            "channelName": "ASAR.AS06.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS12.SHZ": {
+            "channelName": "ASAR.AS12.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS04.SHZ": {
+            "channelName": "ASAR.AS04.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS14.SHZ": {
+            "channelName": "ASAR.AS14.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS19.SHZ": {
+            "channelName": "ASAR.AS19.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS01.SHZ": {
+            "channelName": "ASAR.AS01.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS17.SHZ": {
+            "channelName": "ASAR.AS17.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS31.BHN": {
+            "channelName": "ASAR.AS31.BHN",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.975Z"
+          },
+          "ASAR.AS10.SHZ": {
+            "channelName": "ASAR.AS10.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          },
+          "ASAR.AS08.SHZ": {
+            "channelName": "ASAR.AS08.SHZ",
+            "startTime": "2020-01-31T18:31:40Z",
+            "endTime": "2020-01-31T18:31:49.950Z"
+          }
+        },
+        "channelNames": [
+          "ASAR.AS01.SHZ",
+          "ASAR.AS02.SHZ",
+          "ASAR.AS03.SHZ",
+          "ASAR.AS04.SHZ",
+          "ASAR.AS05.SHZ",
+          "ASAR.AS06.SHZ",
+          "ASAR.AS07.SHZ",
+          "ASAR.AS08.SHZ",
+          "ASAR.AS09.SHZ",
+          "ASAR.AS10.SHZ",
+          "ASAR.AS11.SHZ",
+          "ASAR.AS12.SHZ",
+          "ASAR.AS13.SHZ",
+          "ASAR.AS14.SHZ",
+          "ASAR.AS15.SHZ",
+          "ASAR.AS16.SHZ",
+          "ASAR.AS17.SHZ",
+          "ASAR.AS18.SHZ",
+          "ASAR.AS19.SHZ",
+          "ASAR.AS31.BHZ",
+          "ASAR.AS31.BHN",
+          "ASAR.AS31.BHE"
+        ],
+        "stationName": "ASAR"
+      }
+    ],
+    "acquiredChannelEnvironmentIssues": [
+      {
+        "id": "89a9826a-1edf-47fa-98a5-b300e903264b",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b0165e18-0492-481a-9fc2-d9d8d3b8a096",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "55fb4701-523a-4e33-9d7f-f4032dcd200a",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0c116a98-30b5-419e-9e95-c219aa236d87",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ffdf0eff-a0eb-44bd-8c11-f12d9ac47702",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3ab64a42-c1b0-41f9-a6c5-660669339157",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0b1b2a3d-be24-44a3-ab1e-aa3afd5bb2ea",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9e6b6265-cd59-4faf-a96b-6db130e80ff5",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b482fbeb-1211-472d-bd1d-075478e4188e",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e0e768c9-21a5-4df7-812d-472e49810190",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "2d3f02c5-2aee-4726-aaad-8b4af8d91ee7",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f3fab9a1-1043-4c9c-9927-3211548b78d5",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "7263aefa-7988-43b3-9bae-6eb355d7669c",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a6009c98-8d69-4514-bda8-100926665af8",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d0898397-2df1-4734-bb72-af045320bb18",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8e2545b6-a979-4e27-8dd4-a8bb0b661a31",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "df34cba9-5820-43f3-ae5b-d7c8902b2370",
+        "channelName": "ASAR.AS01.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "30f5ff6d-f4cf-40ce-8d76-866c7f42e4fa",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "df766402-3224-48cd-824c-1f4fed6d5080",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "7c13f8c5-2ce7-4dbe-b39b-6e488d79db77",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6187121c-4f0a-4bf3-a62e-19b5f28a938c",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3ac73e23-a6ee-4ad9-bf2d-7da615a61e37",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "344d79ad-8344-4f4c-afda-44ad907c4794",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "608b80eb-2530-4310-987e-5db93f1fbd00",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "bc2e76fb-60a0-4e59-acf0-b92943dad030",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "74b377fc-3702-4983-88b1-23f74de5b585",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c0449703-8979-4eab-949d-93a373844f16",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a417c41d-c9e3-431b-81b6-8ef0d83a1919",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d1e0d320-0cb7-4a2f-9aa4-4a15c4394c49",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "5e55c0a1-b304-44bd-84f1-ccf8956f0a63",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "901cc76e-ea01-4b6d-be98-ecc298d5d159",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "99dc951e-d79f-4a8c-80b7-c76636e81542",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "73648998-5d80-4f55-8ecb-b79fe7146338",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "879742f4-26e8-4e39-a5b3-6de528a662ae",
+        "channelName": "ASAR.AS02.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "4c742a71-da93-4d2a-889e-065309de34ee",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "69dbf644-ef6d-4800-aa18-cde2b17bec87",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "585a6b66-3b7c-4a57-b927-6014c596053b",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d07ddad3-ddc2-4f2d-947f-405b137c4779",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "439acad6-62c7-4d63-a04a-a58eb876877f",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "05566524-90a9-4455-a2c6-b7a45500c85a",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "453768b2-dc20-4b48-8e5e-275528dd97b8",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8c089604-d8c5-4c57-8921-86dc2dac14f0",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "06c884b5-e8ba-44e7-9306-81db8243b76d",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f91d8480-d405-4085-be30-517fefc3cf2d",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e934921b-f9fd-4865-9b5f-fb7a6498f6e9",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "faa728d4-1962-4c35-b8c9-8a1353252349",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9678f00b-82e1-4f12-b61f-7bb531e254b4",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "5c900012-c4a8-4228-b5d3-95a9bebbddcc",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "dbb66bbe-5e1a-4030-8b13-27e9392af9c6",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3b611cb4-2f96-4ce9-8569-307d2ec0c008",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6d0ff29f-9e54-46f3-9af0-e758528bddb4",
+        "channelName": "ASAR.AS03.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "68e5b991-3dbf-4fb1-b0b5-760632e701a0",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "38addbda-e03d-4fc1-9a1f-530904d98d9f",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "54e89f7b-e073-4a6e-877f-de6c93901d7a",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f2f25789-bc04-4f87-9e68-36ab02d025a5",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "774c27e5-e0ef-4fdf-aa51-b0e5b89efa8c",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a9a9f1b8-6058-4d14-ae3a-7358b8b52fb4",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d6493cf4-0bd1-446b-95d4-aeb7dd7e2b91",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4ee2b9d9-9a7d-4b70-9702-e537bcc7c16c",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ecc0f9c2-ad91-4ef2-9179-7b6b98ac0be2",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ca839467-425f-4b33-b389-6ba008f00737",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ce04b465-42b4-4c02-9999-d828c7555839",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "34926d37-b0b6-4d7e-a99e-5f2f4b55f04c",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a3eb8b4b-cf5c-4979-ad97-83b62dc8e579",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b16407a0-9d7c-4f4e-bb44-c8602fd995b7",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b78f56cc-644e-44b1-b15b-c10315619e47",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "599cbb61-8cac-416b-8b0e-85e705014921",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "dbfea908-2a52-403b-9ab0-337c8ea675cc",
+        "channelName": "ASAR.AS04.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "3d4fd558-4824-4967-9f3f-7f3821177f1d",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3ab21e44-be84-4325-9867-8164553cc84e",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0f30f371-f91d-4c2c-995c-65eaa98586d0",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0c3c85f6-8c73-416e-b8c2-b7566c845512",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9b4711a2-0556-40a8-aa56-1bead6502e7f",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "fba03349-9430-40d6-9513-79166eae821c",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "bcab8daa-a281-49a0-abee-58ac30a9a199",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4fe752bd-5d34-4399-81bd-a837d917e3ba",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "69e06555-9b6a-42c1-b1a7-930e9ba9527b",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "2afa6e13-ff4f-4277-8805-25d559f828e9",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c892d806-9f7a-4fa9-8e2d-56dcfb594324",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4da2f087-83cf-4c1e-8836-c5c3380fe64d",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "22e8a528-fc24-4f09-8553-58db558ff682",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "313c0395-59b1-472e-b9b3-3b64d46dece8",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "2dbfb7bb-8e41-4860-9c91-c986ae8bd407",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "fa5c14cd-04cc-4f17-8ef8-3091e618bba6",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a2cf4305-da64-4213-adcf-cee71f848065",
+        "channelName": "ASAR.AS05.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "0abd46fe-eaf9-47a2-9472-1bf89afe8df0",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "04a51bfd-faa5-4bde-9ff7-179a5a2588c4",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "332e3f66-77e7-459b-bf24-333d462b91fe",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9dfce608-b194-4f3d-801e-2078bf633838",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "bbac3bd1-6fbb-4f29-828c-49c8bda8abd8",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "7967ab76-a88a-4b8b-9daf-5654c830f183",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6f992078-ad1f-4d2a-ae6a-937176257806",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "97dc8907-a8cd-489b-8f3d-fe2da508b200",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "91ae53ef-ace5-475a-b6fd-1e81d87e6793",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f3a255c5-f1ad-4da2-9e36-d9f783d14247",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "7adf3ac1-21dd-4b12-8233-9af7f5503612",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "71e83989-8cf9-4d24-b502-5fdec5d5d929",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f7da113a-a196-4fc6-acbc-983b492946a4",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "55db1432-5c92-45be-8af3-31d00a47a968",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "47bc9f0e-3243-405c-a854-ab5d758b5aa5",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d0998390-7f18-4b02-b1e6-c2bbc13e1b1a",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "83785e52-2ebc-4bf8-8e70-568bd6a44f01",
+        "channelName": "ASAR.AS06.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "acea74cf-f59e-4d9e-b66a-f67a8dc9fa8d",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1721e011-a93a-45c7-aa7c-477bb308ee00",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3728f149-158b-4aad-8ce8-385f8365cdaf",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "73b787c0-b601-40f6-bb43-8a19beac0b68",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "07c915ef-dc49-48fc-a7b0-d9ba41ccbab4",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "04a631a2-5396-4ca0-a0b8-b73a5b440984",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f4f86e2d-1fdd-4f89-b4a7-2000936c7a63",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c9b21f39-3f05-4da2-bb77-0e1e2ac38a89",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9e01aebc-acb4-4710-9a75-2274de3123bf",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c04e365e-9ea9-4e0d-87e6-030c0c9d53aa",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "58c5ce23-4af6-4335-b395-89e97a682917",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "931575cb-fde6-4c84-83a8-f07b04d6069d",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "2bf695b5-764e-4a4e-8b30-6d64f8c9c78b",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "874a683d-1abd-47b3-a962-59806707f5bf",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8209092d-a119-49c8-8aed-5ef3904bff15",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f9a2eafa-8e73-4356-897b-8d90e5ee0493",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "287e7460-9c1f-46e5-9bb2-70fd6efe37d9",
+        "channelName": "ASAR.AS07.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "8d8447c1-a13b-40b3-a70e-68fc98c04356",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4e7aa930-ed43-45ee-a2d8-20201e8f6aa3",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cea80c2d-c0f8-419d-aec5-7e1a67a600bb",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4246a40b-cccf-4054-bd2f-aba775ad743b",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f906b39b-da62-4319-98e8-576645126d65",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1360e863-be5c-4e5c-ab87-842974706e21",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "151a1fed-5b65-41ad-b096-711347afb978",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "5b5a2018-1ed1-4c28-b627-f02e9c31c28c",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "adcc8740-ee0c-4ed8-88df-4a444e6c4dcc",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9a498085-e41f-471a-8f05-b30c1453f256",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1300b18f-ea2e-4dff-bc1c-f950afd42402",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "72fda9b4-4948-4649-aae9-ac32dd700e39",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "99a7165a-d2d4-4416-afce-1d0f03065426",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "5e25c83c-d1ed-4a3b-8c80-a55ea909e766",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "26549ec8-ed40-4357-8f64-171af7289fd4",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "bce61ac5-e3b7-4751-9b0e-078cb1f932a3",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "018772a0-de6a-4e23-b733-29e692f7a395",
+        "channelName": "ASAR.AS08.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "47809dc9-9aa2-446a-88bc-3d05eba41d71",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "44ff91ec-ed35-4e8a-ac90-4d243ed7483a",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "38abba04-0e92-4f3c-859b-58ff22ff17a1",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c0500798-15d3-4636-9d3d-37dc0d7cc67b",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "fbec3ea9-621c-4e60-929a-ac0a02e1ff7f",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "692c7e9f-1ffb-4aee-8cc4-88ca00fec162",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "146c29ea-da0b-451e-9f89-b3fd8d4b2d2b",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "23b2d644-c176-473b-8e3f-381aa305ad05",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "2d4a898f-d0ac-48c7-819b-d32e10cf3c31",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "5ec40919-32b0-494b-971d-4b7864240643",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c84d8091-6778-4b88-9d9d-efe267bee8f3",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "bea56adf-e60a-4501-8090-5bfa7239f220",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "2dbedcac-6d97-4ec0-aa21-3629c2b0056c",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "7e090a97-552e-47f7-9b88-d8d64d883188",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "482a50e4-5e87-4058-916c-93722a39e9dc",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a5e539bf-bbcc-4a5d-a704-b42098f3d74e",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8e17a074-cec2-43e9-bf20-727671cc1a68",
+        "channelName": "ASAR.AS09.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "a388b7fb-fbea-43d7-b70d-3c55300a5a69",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4f4f229f-a61d-4913-94eb-0006dcafd3c9",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c1f1d26d-1709-42de-8097-dadc27935fd0",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b23ae521-a2bd-42b2-8145-f7156a3e7093",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "422d1b18-ec85-453a-a020-7744cf77d366",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4aa917e7-fd92-41bf-b7dd-9fd7f4383ee5",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "eb533381-a53d-4845-9d3e-26a67fd59366",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b51f769f-3fe9-419d-899d-f77d628e1b60",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9fcdb9b2-f816-48f7-92ba-d700e486b7f2",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6c56c007-4200-480a-a4a6-14ed51dce6bc",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "17523d2a-a8c5-4259-b1d8-dac14358b24f",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "891f1246-f253-4ce1-9a80-4f983160bea6",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6a318bd7-53ea-4a84-9283-b68dbb4f2513",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "2b635491-ad52-4367-93d3-fba5c6ec5383",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "812fe078-903c-4cb4-935c-7a55b7cb6131",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4720551a-d935-4f9c-a475-9a2f0e651559",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4d3d6e16-f60b-434b-9e35-a598801b076f",
+        "channelName": "ASAR.AS10.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "80511786-a5ee-47e2-a5c1-f243f2f2684b",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "428724c3-02d5-4876-847c-046b3a68b0f6",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "23f654f8-86e6-4288-a4d2-ee3061c02a11",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "15884da2-8b36-4914-ad5e-2ed5e91b30f5",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ab65cd4c-da41-4819-a478-777651f9cefb",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cd9c8a9b-2970-40cd-a953-327df1f79c99",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "182c06c3-3d24-4d1d-8504-94cdf68ab816",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "dc42b9d2-e805-4b69-b3e4-9f5f2ae4ed63",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "eb0ecca4-54f7-4f23-a827-1c5730b21753",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "df4e8b37-4705-4c69-8d50-556e3d33b1bc",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "233c4619-5fc4-45f0-a22f-b520a1754418",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b75b748c-943c-475d-b5ce-4e907e447a77",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "5982f45b-03e3-41da-8c23-21252b195fb4",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e9714178-61b6-4f80-b623-402f2fe22628",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0d64c8c2-8d05-498f-9b5d-e82fbc764122",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ff25586a-3c79-4419-a001-45289e772e35",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "610a648a-307d-4265-a85d-bd85c08127a2",
+        "channelName": "ASAR.AS11.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "931ac533-9b48-4d45-98c9-e21828d6b2a6",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "06333cf3-f64f-480a-8e18-d36848cd5f52",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cb80bd71-5a09-490a-8a5a-81ece5fafd32",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e1dccbbf-9eca-45e1-9e56-6947b266471a",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8aaf34dd-36de-4d61-a481-3c916a18e1ee",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f7808370-2084-4bea-bbae-4a862a67c2b0",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "7f56c585-8e45-4e23-a24d-1895ff8126fb",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e97b0c2d-5dbb-4d9f-84f7-6f8afbb28b93",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c3ab406f-16f8-4087-9583-f064c936bfcc",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "aa2efac4-05b2-4cbf-8e48-e0f4b562ec70",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ead147d1-1f0d-4f15-877f-1fffb5138ea9",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c4ef5d5a-efb4-43fb-99d3-73cd305e8629",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "198c1c90-6e90-49f2-a357-0a66d3db42a5",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "556447f0-9d6e-40ca-8a86-e205ce622dc2",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "43bafb1f-3769-472d-a85e-d7077bfc7c54",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6c35fca5-2d4b-43c8-b5be-be6c322b7285",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "076c1dce-11e4-49f5-86c7-b3d5d00655a6",
+        "channelName": "ASAR.AS12.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "5d4a8b7e-8149-48f0-b3fa-f854b8bc4df2",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1e492e69-f7e7-4d54-8573-cdba5773e320",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9f6203dc-48e7-44d4-9665-be6f4ed3a4c5",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "2c129013-54a3-45b2-9e8b-80a57fede69a",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a94334ba-4c33-4bd0-87ea-a668ee3c3679",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "fd348745-bb52-4356-8807-6eb027fcd941",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f15c16c9-610b-479d-b288-d1e14ad3d837",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d537e76a-f7bb-4467-8a85-0c5a582d003e",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e11af497-d312-4444-8e9c-9b1e3a98d1c0",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "852bc829-6716-41e6-b546-a80ba7660e79",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "81a6b4fd-16c5-4570-88f0-f80bd2bb42ca",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0e088a6c-a2c3-4c33-b7f9-bb201fc4c9f2",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c533ce05-3602-46cf-a27c-af1af61cf6e9",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ee2e4e89-dccf-47c4-8131-33b83f72d1d9",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "68ea09e2-3949-431e-828d-722c048367b7",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "644a9ec2-e1b7-43ea-beda-2031fbb54d95",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cbc40653-f155-400f-930d-a693b171d342",
+        "channelName": "ASAR.AS13.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "ac2d486a-d342-4259-a435-9b93d81106a8",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3bde6cc5-bf4a-47a2-9807-ef57186f9f7b",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c3f8dae1-c005-4a6f-8911-ee4b7e7eee8c",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "21a151fe-296f-4e9b-99b2-cccaba028de5",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "257fc7c6-8a68-4df1-9973-eda15fa6d0d8",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "eb24e596-8c07-48cf-a859-5ab45449b7e8",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0ab7f8d2-99ce-461e-82c5-6ab1f443704e",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b97fea51-69ee-4e39-9c5a-fb68ff4d2ba8",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "bf5060af-3b63-49ce-9f02-e5a3fda9b090",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9c5def92-2b9f-4aa7-b3ea-6e3239e9f30a",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "072cf07d-266f-4314-9d10-5049e52c032d",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "134bda1f-55f1-4c92-be56-4e020b0b26a0",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "839ae549-10b1-41a0-9764-2f0c67afe227",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "17bff865-1a17-4b2d-b073-04b9debb307e",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4e05c980-414f-47a7-8f1f-e55dc8cd4328",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f03bbe56-8f69-4f40-bca6-731914d39f3e",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "928664bc-9ef5-45e1-8657-ad636cc87301",
+        "channelName": "ASAR.AS14.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "e7c4ecff-3a05-4048-8aa9-0d549283b07e",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9ecf525c-3f90-4059-9c09-968a386687bd",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1f664d5c-871d-40a8-a059-0ab9be20dd78",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "048ce958-8667-4d2c-af75-a0dc4d14f008",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a86f547b-1756-4a70-b08a-6ea420c7db88",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "830c494a-3761-4dc9-aead-ecd2a937383f",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d0289a99-09c7-4086-871f-4abf2f3e4f50",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ffe840a1-0651-465d-8136-92ccbb2fba09",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4df4eff9-322f-419a-bdce-1830abe3850e",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cefa2c44-1696-4726-ae2a-1c27e1130f31",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "27733ab9-7c0f-4b9b-a362-bd001747dc1a",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e844b14a-44e5-4491-8040-f75c8b9f68f1",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "43c2293d-5719-439a-a480-e7187707a288",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "255ce34e-0c0d-4465-b3ac-0f863f6e8388",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "60279f71-ee36-4e92-a813-3350fd4b5fd7",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "fc650178-4a35-4af8-bb37-d9ff488e409b",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8c2b9779-80f0-4592-b5cb-66de9726f452",
+        "channelName": "ASAR.AS15.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "26b3c0a1-6e27-4253-8f0b-7d1a0b36ef2a",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "af4e5939-2f3e-45fb-9148-43104f139c40",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4e89e236-15fe-4d8f-b78e-60fd936b88a9",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "5e993a5a-2058-49a0-b638-4c9f7aa37747",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d2bdd63b-6c72-4f85-9c07-723b288090ce",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "7852f7f7-a0ac-432d-b785-c60b706b4d62",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "720ff20e-56e2-4182-a668-6650f8e3a16e",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1ce88499-0ce0-47f5-8f38-4b6fe41ce0b8",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f64f7a0f-e25f-4183-8a17-9aba115f1ee8",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "fd158ab1-7bb6-4abb-b877-075724ce5b95",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3f26d670-7576-4a71-9488-01b446e4b8cb",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e117b96c-ed90-4f60-a4ae-4d116e4eb9b2",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9761c9eb-f53a-4f0a-b410-b6711b5e1f6a",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "827989a8-004f-4a4f-84d5-c4a455079ffb",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1ce921d4-9fa1-495f-a61c-016958128748",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d8a0a70a-d6b0-4ef3-818b-8b366c75ef0a",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "694e776c-5184-4cd1-a1d0-f8f7e733f960",
+        "channelName": "ASAR.AS16.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "dcfc0798-a222-4b01-b72b-9815124ee075",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8796007c-0fcc-4a7f-8685-c4543802170b",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "94126b29-40dc-4713-a26d-804b492a3baf",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "78e301c5-9037-4351-ba45-17207359ae73",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0744ba30-3f88-49cf-b17a-165565fa0c24",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b194dfbd-d622-41af-bc6d-16eb98f0bb0c",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ce9cc066-c07a-4e12-a1f1-bc2918c4a1a2",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f5ea5190-c31c-491f-b8a7-44c7e522a19d",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1f0a9791-5164-4bdf-a053-657cdb194058",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1de81077-65e0-4726-9061-014b4f9e702e",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "232c94d1-17e9-4d06-9ed9-07b025c8318b",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "339faed2-f9f7-423a-af69-be62dd7b96a7",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "57f06041-dc88-4d33-ad70-679765de2dfe",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6fe17a52-ad0b-43c2-9693-e988940ab2c9",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c4f9a29e-1a8c-46e2-8649-cfbe5af69b2f",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "264755e0-3289-4af7-a409-71796532c6aa",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c3801710-8ea6-41ce-b99c-326ef8b10561",
+        "channelName": "ASAR.AS17.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "7b74b691-33c1-4b3c-80be-c3b3fd16d376",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ec8f31b2-75a0-48eb-acbf-117f31a4f98f",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0cfa03ce-45d4-4765-9f87-145519ed4ac3",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "09ec7ddf-77ee-4113-a9b0-bc57e5fd5463",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b5533463-e89c-4a99-87b9-7f59094c5b92",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cac32e4f-ca84-498a-aa35-d70ced08f6df",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "bd551ea4-0d6e-4b84-89c2-94788d14e7cc",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "713baedb-678b-4c1a-8c76-045b42dd14f9",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "ee02cd07-0720-431a-8c2b-a229bd702902",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9accabc1-431c-4057-b394-46271133482b",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "02a8d1c3-f6db-42cf-a441-815566da4cb3",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8cd20c12-da2a-4445-8adb-bbd446fd14b2",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c5b69ff1-572c-4ba5-b063-33ba8337f765",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "50458e40-27ee-4f9f-bf02-f6ed891fcb4c",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "8ca9d94e-f135-4542-8e81-22dec49ecc6a",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f89c01be-ffc4-4fef-a184-6c79dda502f3",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "16fc99ff-09da-48b7-afe5-c09336c961ef",
+        "channelName": "ASAR.AS18.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "db68923d-da0e-4a7f-ace9-05ea7532a325",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4f62678d-b8dc-4e13-8172-b30428ccc211",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d7329ba1-aeb6-499f-b1a6-de77c2ff728c",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d427c8fd-5fe8-4c05-b57f-a14e4eb2ba2c",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d7c7c346-b975-457f-9376-70dac53e5636",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a31b77c7-fc93-49b3-9ac9-404c09118418",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "35d795e9-dc23-43fa-9fed-96aa8b75c0c1",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b4d97b67-95a3-450c-9582-5c2645df6c6c",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cb64f773-a4ce-45ad-adc1-f94ccd1ef1b0",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c18a59ef-e4aa-4350-bd58-0cd63bf5daca",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d6a3b2fe-1ecd-434c-ad48-cfee525dff72",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c9596562-11de-45ea-8228-ab9a328bbc10",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "31e23b2a-903e-4ef8-846c-1730e494daf8",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0889e6a1-81cf-4513-81fc-88dc1b7cd6f6",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "afe0eb16-e3b1-415f-b7d1-8893d07362b3",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "17278925-c09d-4804-a49b-c0d55462cb44",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "03cb7b4f-34e5-4753-8ebb-b5b9250a3e8f",
+        "channelName": "ASAR.AS19.SHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.950Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "7f3b6fd0-d7a5-4e4d-94cd-5f25c6624612",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "45add192-9fb9-4874-9827-6dfa2e195a21",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f3d7c8b4-e7f8-4624-966c-a892e7f7fe99",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "c061292b-6b59-4f04-a2c9-84bb636f575f",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "70beeb16-2808-4e24-87cc-8147227dd697",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "0e97b34f-7fd8-48af-8616-8b59aaf07ab0",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "63047e02-dbe1-45b9-9b3f-6a3ac4909da8",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "13179ec9-3879-44ff-ab67-61c1782c0136",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a8463e4b-6c67-4773-9bd2-a30b9451696e",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "bbfc9b9f-6acc-4f92-9329-1f131920ecf9",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9a8fffc3-1557-4ff0-a705-f9ac705c50b7",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "829d7cdf-7080-4c2f-b22e-303967a93e7d",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "180bf600-4a8b-4176-a2b4-c361fa5d29f6",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f1c081a1-74e9-46db-b8c8-281c962703b3",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "83d71583-7df8-49fa-bd94-8b5e1b621b80",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "dce9b3cb-b0ac-4a81-84c7-a2c6db2aee1c",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3a4c130c-405a-4ed5-9e05-b70275e4c2d5",
+        "channelName": "ASAR.AS31.BHZ",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "4fa7b230-8917-45cf-ba28-ea7486e537c0",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6b7e7713-d136-43f2-a0d5-fc16b3b23dfd",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "683751ec-cfe8-44d5-a0a9-f074f906b9c1",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9a22cac0-4883-4ca4-914b-27899a545eea",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4b40e012-68aa-4374-81b2-1313f1c67bb3",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "d22957dc-e667-4c88-988c-65ae9bbec164",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "297cfb43-0f8e-496a-9acf-2a138dc29c28",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "331001c8-a0e1-4826-ba8b-efb8bf8aeaaf",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "f67e94b9-f2a5-4d99-a353-c86410236dc2",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "596f899e-3441-4824-9ea1-e83a909d72d4",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "b4adf7e7-e916-49af-99b3-f4b9d723f016",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "feda2358-e0ab-40fd-b645-9e1557a6045b",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "dea35c0a-237c-4dba-9bec-4f221542f446",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1c00ad15-55d4-4630-8213-65cb8dfd49d6",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9c1d7d92-bad8-4f0e-b72d-c150d2660d58",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a7106d1c-8edc-4643-9cb1-252f73ce2494",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cc160294-6d2e-4a9d-888d-ddbf59fe3999",
+        "channelName": "ASAR.AS31.BHN",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      },
+      {
+        "id": "619c3b8d-7642-45df-93db-d1467aecf858",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "DEAD_SENSOR_CHANNEL",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "e8bcb612-c768-463a-b7f2-244019a939b4",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "ZEROED_DATA",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cfb10bd2-716d-4aa1-b85b-d9bd6c6cc3ad",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "CLIPPED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "6e30d839-7479-471f-a1c8-4022f137ef06",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "CALIBRATION_UNDERWAY",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "3bb0cbb1-7e71-4857-9016-ed2e62ffaa0b",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "EQUIPMENT_HOUSING_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9c08c88b-b0ea-4383-800e-ea9d8b8816d0",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "DIGITIZING_EQUIPMENT_OPEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "48246689-e6c6-4e0b-9e20-526f3751dc8e",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "VAULT_DOOR_OPENED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "fa4d75a8-a240-40ff-9289-841278a2b69c",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "AUTHENTICATION_SEAL_BROKEN",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "4dbf68db-36bc-4b7e-a992-9bca4e59c468",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "EQUIPMENT_MOVED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "506584d2-8912-450b-b52b-498d60e8f73a",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "108c23ed-34bf-437a-8c83-1e847bc2e271",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "GPS_RECEIVER_OFF",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "a6b05569-3df1-48b8-8520-0d7773009d90",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "GPS_RECEIVER_UNLOCKED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "92d3e7e4-5ce1-4f8e-a823-38f0c4e9400e",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "cfa17ada-8083-4739-86bb-2e3d474645db",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "1b87bc1f-36c1-4bd4-9161-c448afd62d0c",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "MAIN_POWER_FAILURE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "9732e0f5-3603-45e9-ac3d-ff120c5e63ce",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "BACKUP_POWER_UNSTABLE",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": false,
+        "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+      },
+      {
+        "id": "140f99fb-244e-4776-b193-e8efb944a86f",
+        "channelName": "ASAR.AS31.BHE",
+        "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+        "startTime": "2020-01-31T18:31:40Z",
+        "endTime": "2020-01-31T18:31:49.975Z",
+        "status": 0.0,
+        "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+      }
+    ]
+  }
+]

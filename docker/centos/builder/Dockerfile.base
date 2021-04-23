@@ -1,0 +1,142 @@
+# Docker Build Arguments
+ARG FROM_IMAGE
+# Multistage docker file. the builder stage downloads and unzips things
+# the actual runtime image needs
+FROM ${FROM_IMAGE} AS base
+
+ENV GRADLE_VERSION 4.10.3
+
+# Pull in CentOS Base configuration
+# CentOS Base Template Begin
+# CentOS Base Template End
+
+FROM base AS builder
+
+RUN set -ex && \
+    yum -y install unzip
+
+ARG GRADLE_BASE_URL=https://downloads.gradle.org/
+ENV GRADLE_URL ${GRADLE_BASE_URL}/distributions/gradle-${GRADLE_VERSION}-all.zip
+
+ADD ${GRADLE_URL} /opt/gradle-${GRADLE_VERSION}-all.zip
+
+RUN set -ex && \
+    unzip -d /opt /opt/gradle-${GRADLE_VERSION}-all.zip
+
+# Pull in Python builder configuration
+# Python Builder Template Begin
+# Python Builder Template End
+
+# Download and unzip sonarscanner software
+ARG SONAR_URL=https://binaries.sonarsource.com
+ARG SONAR_SCANNER_VER=4.4.0.2170
+ADD ${SONAR_URL}/Distribution/sonar-scanner-cli/sonar-scanner-cli-$SONAR_SCANNER_VER-linux.zip /tmp/sonar-scanner-cli-$SONAR_SCANNER_VER-linux.zip
+RUN unzip -d /tmp /tmp/sonar-scanner-cli-$SONAR_SCANNER_VER-linux.zip
+
+# Create runtime image for building gms software
+FROM base
+
+# Pull in Python base configuration
+# Python Base Template Begin
+# Python Base Template End
+
+# Pull in Node base configuration
+# Node Base Template Begin
+# Node Base Template End
+
+# Mirror telling us and where to get the nodejs headers
+ARG NODEJS_FILES_URL=https://nodejs.org
+# Download headers so we can build local libraries if necessary
+ADD ${NODEJS_FILES_URL}/download/release/v${NODEJS_VERSION}/node-v${NODEJS_VERSION}-headers.tar.gz /usr/share/node/node-v${NODEJS_VERSION}-headers.tar.gz
+
+# Location and proxy for yarn yum repository
+ARG YARN_YUM_URL=https://dl.yarnpkg.com/rpm
+ARG A_YARN_PROXY=_none_
+
+# Location of Yarn and npm repositories
+ARG YARN_REGISTRY=https://registry.yarnpkg.com
+ARG NPM_REGISTRY=https://registry.npmjs.org
+
+# Do we have valid CERTS on our npm registry
+ARG NPM_REGISTRY_STRICT_SSL=True
+
+# copy in template yarn yum repo file
+COPY src/yarn.repo /etc/yum.repos.d/yarn.repo
+
+# Copy in template npmrc file
+COPY src/npmrc /usr/etc/npmrc
+    
+# Set Java Home (required by gradle palantir plugin)
+ENV JAVA_HOME /usr/lib/jvm/java-11-openjdk
+
+# Copy gradle from builder image in previous stage.
+COPY --from=builder /opt/gradle-${GRADLE_VERSION} /opt/gradle-${GRADLE_VERSION}
+
+# Configure docker repo
+ARG DOCKER_YUM_URL=https://download.docker.com
+ARG DOCKER_PROXY=_none_
+COPY src/docker-ce.repo /etc/yum.repos.d/docker-ce.repo
+
+# Set up gradle to be in path, fill out template yarn.repo and npmrc file,
+# install yarn, openjdk11, perl, postgres, which, and the development tools
+# set the yarn registry
+RUN set -ex && \
+    ln -s /opt/gradle-${GRADLE_VERSION}/bin/gradle /usr/bin/gradle && \
+    sed -i -e "s~#YARN_YUM_URL#~$YARN_YUM_URL~g" /etc/yum.repos.d/yarn.repo && \
+    sed -i -e "s~#YARN_PROXY#~$A_YARN_PROXY~g" /etc/yum.repos.d/yarn.repo && \
+    sed -i -e "s~#NODE_VERSION#~v$NODEJS_VERSION~g" /usr/etc/npmrc && \
+    sed -i -e "s~#NPM_REGISTRY#~$NPM_REGISTRY~g" /usr/etc/npmrc && \
+    sed -i -e "s~#NPM_REGISTRY_STRICT_SSL#~$NPM_REGISTRY_STRICT_SSL~g" /usr/etc/npmrc && \
+    sed -i -e "s~#DOCKER_YUM_URL#~$DOCKER_YUM_URL~g" /etc/yum.repos.d/docker-ce.repo && \
+    sed -i -e "s~#DOCKER_PROXY#~$DOCKER_PROXY~g" /etc/yum.repos.d/docker-ce.repo && \
+    yum -y install yarn java-11-openjdk-devel.x86_64 perl postgresql-devel which device-mapper-persistent-data lvm2 docker-ce && \
+    yum -y groupinstall "Development Tools" && \
+    yarn config set disable-self-update-check true && \
+    yarn config set registry $YARN_REGISTRY && \
+    yarn global add multiple-cucumber-html-reporter@1.10.1 && \
+    yum clean all
+
+# Setting the registry isn't enough to get native library dependencies for
+# certain node packages
+# --Set the cypress binary download mirror
+ARG CYPRESS_DOWNLOAD_MIRROR=https://download.cypress.io
+# -- Set the version of electron-chromedriver we are using
+ARG CHROMEDRIVER_VERSION=7.0.0
+# -- Set the version of electron we are using
+ARG ELECTRON_VERSION=5.0.1
+# -- Mirror where we find the electron binaries for download
+ARG ELECTRON_MIRROR=https://github.com/
+# -- The subdir on the mirror where we can find the electron/chromedriver bins
+ARG ELECTRON_DIR_START="electron/electron/releases/download/v"
+
+# Set the cypress information as environment variables
+ENV CYPRESS_DOWNLOAD_MIRROR=$CYPRESS_DOWNLOAD_MIRROR \
+    CYPRESS_CRASH_REPORTS=0
+
+# Download the electron native binaries from the specified mirror
+RUN ELECTRON_MIRROR=$ELECTRON_MIRROR ELECTRON_CUSTOM_DIR="${ELECTRON_DIR_START}$ELECTRON_VERSION" yarn add electron@$ELECTRON_VERSION
+# Download the electron-chromedriver native binaries from the specified mirror
+RUN ELECTRON_MIRROR=$ELECTRON_MIRROR ELECTRON_CUSTOM_DIR="${ELECTRON_DIR_START}$CHROMEDRIVER_VERSION" yarn add electron-chromedriver@$CHROMEDRIVER_VERSION
+# Install Jinja2
+RUN pip install Jinja2 && \
+    pip install twine && \
+    pip install pytest && \
+    pip install coverage && \
+    pip install pipenv && \
+    pip install pylint && \
+    pip install coverage && \
+    pip install behave && \
+    pip install pyyaml
+
+# Install sonar scanner
+ARG SONAR_SCANNER_VER=4.4.0.2170
+COPY --from=builder /tmp/sonar-scanner-$SONAR_SCANNER_VER-linux /usr/local/sonar-scanner-$SONAR_SCANNER_VER-linux
+RUN ln -s /usr/local/sonar-scanner-$SONAR_SCANNER_VER-linux/bin/sonar-scanner /usr/local/bin/sonar-scanner
+
+# Add docker-compose
+ARG GITHUB_URL=https://github.com
+ARG DOCKER_COMPOSE_VER=1.25.4
+ADD $GITHUB_URL//docker/compose/releases/download/$DOCKER_COMPOSE_VER/docker-compose-Linux-x86_64 /usr/local/bin/docker-compose
+RUN chmod +x /usr/local/bin/docker-compose
+
+CMD ["/bin/bash"]

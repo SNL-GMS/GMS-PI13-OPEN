@@ -1,0 +1,8 @@
+@import '../../gms-colors.scss';
+
+.ag-row.signal-detections-disabled-row {
+  background-color: $gms-background;
+  color: $gms-soft;
+  cursor: not-allowed;
+  pointer-events: none;
+}

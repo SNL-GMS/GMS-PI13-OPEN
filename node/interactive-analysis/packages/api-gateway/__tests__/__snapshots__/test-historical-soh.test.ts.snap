@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Fetch SOH Historical data loads station soh historical NO soh data 1`] = `
+Object {
+  "historicalSohByStation": Object {
+    "monitorValues": Array [
+      Object {
+        "channelName": "AAK.AAK.BHN",
+        "valuesByType": Object {
+          "LAG": null,
+          "MISSING": null,
+        },
+      },
+      Object {
+        "channelName": "AAK.AAK.BHZ",
+        "valuesByType": Object {
+          "LAG": null,
+          "MISSING": null,
+        },
+      },
+      Object {
+        "channelName": "AAK.AAK.BHE",
+        "valuesByType": Object {
+          "LAG": null,
+          "MISSING": null,
+        },
+      },
+    ],
+    "stationName": "AAK",
+  },
+}
+`;
+
+exports[`Fetch SOH Historical data loads station soh historical soh LAG and MISSING data 1`] = `
+Object {
+  "historicalSohByStation": Object {
+    "monitorValues": Array [
+      Object {
+        "channelName": "AAK.AAK.BHN",
+        "valuesByType": Object {
+          "LAG": Object {
+            "type": "DURATION",
+          },
+          "MISSING": Object {
+            "type": "PERCENT",
+          },
+        },
+      },
+      Object {
+        "channelName": "AAK.AAK.BHZ",
+        "valuesByType": Object {
+          "LAG": Object {
+            "type": "DURATION",
+          },
+          "MISSING": Object {
+            "type": "PERCENT",
+          },
+        },
+      },
+      Object {
+        "channelName": "AAK.AAK.BHE",
+        "valuesByType": Object {
+          "LAG": Object {
+            "type": "DURATION",
+          },
+          "MISSING": Object {
+            "type": "PERCENT",
+          },
+        },
+      },
+    ],
+    "stationName": "AAK",
+  },
+}
+`;
+
+exports[`Fetch SOH Historical data loads station soh historical soh only LAG data 1`] = `
+Object {
+  "historicalSohByStation": Object {
+    "monitorValues": Array [
+      Object {
+        "channelName": "AAK.AAK.BHN",
+        "valuesByType": Object {
+          "LAG": Object {
+            "type": "DURATION",
+          },
+          "MISSING": null,
+        },
+      },
+      Object {
+        "channelName": "AAK.AAK.BHZ",
+        "valuesByType": Object {
+          "LAG": Object {
+            "type": "DURATION",
+          },
+          "MISSING": null,
+        },
+      },
+      Object {
+        "channelName": "AAK.AAK.BHE",
+        "valuesByType": Object {
+          "LAG": Object {
+            "type": "DURATION",
+          },
+          "MISSING": null,
+        },
+      },
+    ],
+    "stationName": "AAK",
+  },
+}
+`;
+
+exports[`Fetch SOH Historical data loads station soh historical soh only MISSING data 1`] = `
+Object {
+  "historicalSohByStation": Object {
+    "monitorValues": Array [
+      Object {
+        "channelName": "AAK.AAK.BHN",
+        "valuesByType": Object {
+          "LAG": null,
+          "MISSING": Object {
+            "type": "PERCENT",
+          },
+        },
+      },
+      Object {
+        "channelName": "AAK.AAK.BHZ",
+        "valuesByType": Object {
+          "LAG": null,
+          "MISSING": Object {
+            "type": "PERCENT",
+          },
+        },
+      },
+      Object {
+        "channelName": "AAK.AAK.BHE",
+        "valuesByType": Object {
+          "LAG": null,
+          "MISSING": Object {
+            "type": "PERCENT",
+          },
+        },
+      },
+    ],
+    "stationName": "AAK",
+  },
+}
+`;

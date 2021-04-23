@@ -1,0 +1,15 @@
+apply plugin: 'java-library'
+
+dependencies {
+    // Project dependencies.
+    api project(':frameworks-osd-commonobjects')
+    api project(':frameworks-osd-api')
+    api project(':data-acquisition-receiver-api')
+
+    implementation project(':cd11-common')
+    implementation project(':waveman')
+
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+} 

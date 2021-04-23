@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`environment cell renderer's exports should match snapshot 1`] = `
+<Component
+  hasUnacknowledgedChanges={false}
+  value={999}
+>
+  <div
+    className="table-cell__value table-cell__value--numeric"
+    data-cy="environment-cell"
+  >
+    <span>
+      999.0
+    </span>
+  </div>
+</Component>
+`;
+
+exports[`environment cell renderer's exports should match snapshot with needs attention 1`] = `
+<Component
+  hasUnacknowledgedChanges={true}
+  value={999}
+>
+  <div
+    className="table-cell__value table-cell__value--numeric"
+    data-cy="environment-cell"
+  >
+    <Blueprint3.Icon
+      className="env-dirty-dot"
+      icon="symbol-circle"
+    >
+      <span
+        className="bp3-icon bp3-icon-symbol-circle env-dirty-dot"
+        icon="symbol-circle"
+      >
+        <svg
+          data-icon="symbol-circle"
+          height={16}
+          viewBox="0 0 16 16"
+          width={16}
+        >
+          <desc>
+            symbol-circle
+          </desc>
+          <path
+            d="M8 3.01a5 5 0 100 10 5 5 0 100-10z"
+            fillRule="evenodd"
+            key="0"
+          />
+        </svg>
+      </span>
+    </Blueprint3.Icon>
+    <span>
+      999.0
+    </span>
+  </div>
+</Component>
+`;

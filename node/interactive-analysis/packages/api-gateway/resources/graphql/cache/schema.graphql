@@ -1,0 +1,119 @@
+# Defines the hypothesis type for a hypothesis change.
+enum HypothesisType {
+  EventHypothesis
+  SignalDetectionHypothesis
+}
+
+# Represents hypothesis information for a change.
+# Defines a mapping from a hypothesis id to the main
+# object id.
+type HypothesisChangeInformation {
+  id: String!
+  hypothesisId: String!
+  type: HypothesisType!
+  parentId: String!
+  userAction: String!
+}
+
+# a history change summary
+type HistoryChange {
+    # the unique id of the change
+    id: String!
+    
+    # true if the change is active (applied); false otherwise
+    active: Boolean!
+
+    # the event id associated with the change
+    eventId: String
+
+    # true if the change created a conflict
+    conflictCreated: Boolean!
+
+    # the hypothesis change information affected by the change
+    hypothesisChangeInformation: HypothesisChangeInformation!
+}
+
+# the history of changes
+type History {
+    # unique if of the history
+    id: String!
+
+    # the description of the user action preformed to cause the change
+    description: String!
+
+    # the changes caused by the user action
+    changes: [HistoryChange]
+
+    # the redo priority order for the history (undifined if the history has not be undone)
+    redoPriorityOrder: Float
+}
+
+type InvalidData {
+    # the event ids marked as deleted
+    eventIds: [String]!
+
+    # the signal detection ids marked as deleted
+    signalDetectionIds: [String]!
+}
+
+# Datapayload 
+type DataPayload {
+    # the events that changed
+    events: [Event]
+    
+    # the signal detections that changed
+    sds: [SignalDetection]
+    
+    # the qc masks that changed
+    qcMasks: [QcMask]
+    
+    # invalid data - i.e. removed data; typicaly caused by undo/redo
+    invalid: InvalidData
+
+    # the current workspace state
+    workspaceState: WorkspaceState
+
+    # the current history
+    history: [History]
+}
+
+# The following signal detection-related queries are supported.
+extend type Query {
+    # returns the global history summary
+    history: [History]
+
+    # returns the event history summary for a given event id
+    eventHistory (id: String!): [History]
+}
+
+# The following cache related mutations are supported.
+extend type Mutation {
+
+    # Undo history for the number of items
+    undoHistory (numberOfItems: Float!): DataPayload
+
+    # Undo history for the number of items
+    redoHistory (numberOfItems: Float!): DataPayload
+
+    # Undo history for the given id
+    undoHistoryById (id: String!): DataPayload
+
+    # Undo history for the given id
+    redoHistoryById (id: String!): DataPayload
+
+    # Undo event history for the number of items
+    undoEventHistory (numberOfItems: Float!): DataPayload
+
+    # Undo event history for the number of items
+    redoEventHistory (numberOfItems: Float!): DataPayload
+
+    # Undo event history for the given id
+    undoEventHistoryById (id: String!): DataPayload
+
+    # Undo event history for the given id
+    redoEventHistoryById (id: String!): DataPayload
+}
+
+extend type Subscription {
+    dataPayload: DataPayload
+}

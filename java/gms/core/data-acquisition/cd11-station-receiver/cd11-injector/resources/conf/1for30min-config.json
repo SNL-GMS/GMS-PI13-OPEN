@@ -1,0 +1,19 @@
+{
+  "injectorOperationMode":"injector",
+  "connManAddress" : "da-connman",
+  "connManPort": 8041,
+  "useConnman": true,
+
+  "rsdfDiscoveryBasePath": "/rsdf/cd11/1for30min",
+  "useBasePathDiscovery": true,
+
+  "loopDataStream": true,
+
+  "preStartDelaySeconds": 2,
+  "maxConcurrentOpenFiles": 40,
+
+  "referenceTime": "2020-03-11T21:56:10.00Z",
+
+  "frameDestination": "GMS",
+  "frameCreator": "TEST"
+}

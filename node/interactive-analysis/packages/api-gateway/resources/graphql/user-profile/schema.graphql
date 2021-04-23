@@ -1,0 +1,69 @@
+enum AudibleNotificationType {
+  STATION_NEEDS_ATTENTION
+  STATION_SOH_STATUS_CHANGED
+  STATION_CAPABILITY_STATUS_CHANGED
+  STATION_GROUP_CAPABILITY_STATUS_CHANGED
+  CHANNEL_MONITOR_TYPE_STATUS_CHANGED
+  CHANNEL_MONITOR_TYPE_STATUS_CHANGE_ACKNOWLEDGED
+  CHANNEL_MONITOR_TYPE_QUIETED
+  CHANNEL_MONITOR_TYPE_QUIET_PERIOD_CANCELED
+  CHANNEL_MONITOR_TYPE_QUIET_PERIOD_EXPIRED
+}
+
+# Represents a user preferences object
+type UserProfile {
+    # GraphQL wants something called id so it can update the cache
+    id: String!
+    # The unique ID of the user
+    userId: String!
+    # Default layout name
+    defaultLayoutName(defaultLayoutName: String!): String!
+    # List of layouts   
+    workspaceLayouts: [UserLayout]!
+    # List of audible notifications
+    audibleNotifications: [AudibleNotification]!
+}
+
+# Name and definition of a golden layout
+type UserLayout {
+  # Name of layout
+  name: String!
+  # Supported user modes
+  supportedUserInterfaceModes: [String]!
+  # Configuration of layout
+  layoutConfiguration: String!
+}
+
+# Name and definition of a golden layout
+input UserLayoutInput {
+  # Name of layout
+  name: String!
+  # Supported user modes
+  supportedUserInterfaceModes: [String]!
+  # Configuration of layout
+  layoutConfiguration: String!
+}
+
+# An enum and file name in the /sounds directory to play when that notification event happens
+type AudibleNotification {
+  notificationType: AudibleNotificationType!
+  fileName: String!
+}
+
+# An enum and file name in the /sounds directory to play when that notification event happens
+input AudibleNotificationsInput {
+  notificationType: AudibleNotificationType!
+  fileName: String
+}
+
+extend type Query {
+  userProfile: UserProfile
+}
+
+extend type Mutation {
+  # Update the workspace layout for this user
+  setLayout(workspaceLayoutInput: UserLayoutInput!, saveAsDefaultLayout: String): UserProfile
+
+  # Update the map of audible notification types to sounds
+  setAudibleNotifications(audibleNotificationsInput: [AudibleNotificationsInput]!): UserProfile
+}

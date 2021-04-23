@@ -1,0 +1,45 @@
+# ------------------------------------------------------------------------------
+# gms-common bash environment
+#
+# Add the following line (with an updated path) to your .bashrc:
+#   source /replace/with/path/to/gms-common/.bash.env
+# ------------------------------------------------------------------------------
+
+# Determine the fullpath to the directory containing this file
+GMS_COMMON_HOME="$(cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd)"
+
+# Add 'bin' and 'ci' to our PATH
+export PATH=${GMS_COMMON_HOME}/bin:${GMS_COMMON_HOME}/ci:${PATH}
+
+# Define bash completion for switching between kubernetes clusters
+_kubeconfig_completions()
+{
+  if [ "${#COMP_WORDS[@]}" != "2" ]; then
+    return
+  fi
+  if [ -d $HOME/.kube ]; then
+    for i in $(ls $HOME/.kube/$2*.config 2> /dev/null); do
+      COMPREPLY+=("$(basename $i .config)")
+    done
+  fi
+}
+complete -F _kubeconfig_completions kubeconfig
+
+kubeconfig()
+{
+    if [ -z "$1" ]; then
+        for config in $(cd ${HOME}/.kube && ls *.config | sed 's/\.config//'); do
+            if [[ "${HOME}/.kube/${config}.config" == "${KUBECONFIG}" ]]; then
+                echo "* ${config}"
+            else
+                echo "  ${config}"
+            fi
+        done
+    else
+        if [ -f "${HOME}/.kube/$1.config" ]; then
+            export KUBECONFIG=${HOME}/.kube/$1.config
+        else
+            echo kubeconfig: ${HOME}/.kube/$1.config: No such file
+        fi
+    fi
+}

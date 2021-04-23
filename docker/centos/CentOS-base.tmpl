@@ -1,0 +1,22 @@
+ARG CENTOS_YUM_URL=http://mirror.centos.org/centos/
+ARG EPEL_YUM_URL=https://mirrors.fedoraproject.org/pub/epel
+
+COPY common-src/CentOS-Base.repo /etc/yum.repos.d/CentOS-Base.repo
+COPY common-src/RPM-GPG-KEY-EPEL-7 /etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+COPY common-src/epel.repo /etc/yum.repos.d/epel.repo
+
+# Reset shell to source environment files and always use bash.
+SHELL [ "/bin/bash", "-lc" ]
+
+RUN set -ex && \
+    sed -i -e "s~#CENTOS_YUM_URL#~$CENTOS_YUM_URL~" /etc/yum.repos.d/CentOS-Base.repo && \
+    sed -i -e "s~#EPEL_YUM_URL#~$EPEL_YUM_URL~g" /etc/yum.repos.d/epel.repo && \
+    echo "ip_resolv=4" >> /etc/yum.conf && \
+    echo "sslverify=false" >> /etc/yum.conf && \
+    echo "skip_missing_names_on_install=0" >> /etc/yum.conf && \
+    yum -y update && \
+    yum install -y yum-plugin-versionlock ca-certificates less gettext jq && \
+    update-ca-trust extract && \
+    grep -v "sslverify=false" /etc/yum.conf > /etc/yum.conf.new && \
+    mv /etc/yum.conf.new /etc/yum.conf && \
+    yum clean all

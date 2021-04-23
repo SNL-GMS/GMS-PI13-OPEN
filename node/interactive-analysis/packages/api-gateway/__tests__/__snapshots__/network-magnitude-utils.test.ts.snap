@@ -1,0 +1,617 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Compute Magnitude query generation can get event hyp to compute magnitude 1`] = `
+Object {
+  "associations": Array [],
+  "eventId": "e1",
+  "id": "eh1",
+  "locationSolutionSets": Array [
+    Object {
+      "count": 1,
+      "id": "lss1",
+      "locationSolutions": Array [
+        Object {
+          "featurePredictions": Array [],
+          "id": "ls1",
+          "location": Object {
+            "depthKm": 1,
+            "latitudeDegrees": 1,
+            "longitudeDegrees": 1,
+            "time": 1,
+          },
+          "locationBehaviors": Array [],
+          "locationRestraint": undefined,
+          "locationUncertainty": undefined,
+          "networkMagnitudeSolutions": Array [
+            Object {
+              "magnitude": 2,
+              "magnitudeType": "MS",
+              "networkMagnitudeBehaviors": Array [],
+              "uncertainty": 0,
+            },
+          ],
+          "snapshots": Array [],
+        },
+      ],
+    },
+  ],
+  "modified": false,
+  "parentEventHypotheses": Array [],
+  "preferredLocationSolution": undefined,
+  "rejected": false,
+}
+`;
+
+exports[`Compute Magnitude query generation gets expected network magnitude client arguments 1`] = `
+Map {
+  "MB" => Object {
+    "definingDefs": Array [
+      Object {
+        "defining": false,
+        "magnitudeType": "MB",
+        "stationName": "station1",
+      },
+      Object {
+        "defining": true,
+        "magnitudeType": "MB",
+        "stationName": "station2",
+      },
+    ],
+    "eventHyp": Object {
+      "associations": Array [],
+      "eventId": "e1",
+      "id": "eh1",
+      "locationSolutionSets": Array [
+        Object {
+          "count": 1,
+          "id": "lss1",
+          "locationSolutions": Array [
+            Object {
+              "featurePredictions": Array [],
+              "id": "ls1",
+              "location": Object {
+                "depthKm": 1,
+                "latitudeDegrees": 1,
+                "longitudeDegrees": 1,
+                "time": 1,
+              },
+              "locationBehaviors": Array [],
+              "locationRestraint": undefined,
+              "locationUncertainty": undefined,
+              "networkMagnitudeSolutions": Array [
+                Object {
+                  "magnitude": 2,
+                  "magnitudeType": "MS",
+                  "networkMagnitudeBehaviors": Array [],
+                  "uncertainty": 0,
+                },
+              ],
+              "snapshots": Array [],
+            },
+          ],
+        },
+      ],
+      "modified": false,
+      "parentEventHypotheses": Array [],
+      "preferredLocationSolution": undefined,
+      "rejected": false,
+    },
+    "hypothesisIdToLocationMap": Object {
+      "1": Object {
+        "depthKm": 1,
+        "elevationKm": 2,
+        "latitudeDegrees": 3,
+        "longitudeDegrees": 4,
+      },
+      "3": Object {
+        "depthKm": 10,
+        "elevationKm": 2,
+        "latitudeDegrees": 3,
+        "longitudeDegrees": 4,
+      },
+    },
+    "sdHyps": Array [
+      Object {
+        "featureMeasurements": Array [
+          Object {
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": Object {
+              "standardDeviation": 0,
+              "value": 3,
+            },
+          },
+          Object {
+            "featureMeasurementType": "PHASE",
+            "measurementValue": Object {
+              "confidence": 0,
+              "phase": "P",
+            },
+          },
+          Object {
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": Object {
+              "amplitude": Object {
+                "standardDeviation": 1,
+                "units": "UNITLESS",
+                "value": 1,
+              },
+              "period": 1,
+              "startTime": 1,
+            },
+          },
+        ],
+        "id": "1",
+      },
+      Object {
+        "featureMeasurements": Array [
+          Object {
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": Object {
+              "standardDeviation": 0,
+              "value": 1,
+            },
+          },
+          Object {
+            "featureMeasurementType": "PHASE",
+            "measurementValue": Object {
+              "confidence": 0,
+              "phase": "P",
+            },
+          },
+          Object {
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": Object {
+              "amplitude": Object {
+                "standardDeviation": 1,
+                "units": "UNITLESS",
+                "value": 1,
+              },
+              "period": 1,
+              "startTime": 1,
+            },
+          },
+        ],
+        "id": "3",
+      },
+    ],
+    "stationIdsForDetectionHypothesisIds": Object {
+      "1": "station1",
+      "3": "station2",
+    },
+  },
+  "MS" => Object {
+    "definingDefs": Array [],
+    "eventHyp": Object {
+      "associations": Array [],
+      "eventId": "e1",
+      "id": "eh1",
+      "locationSolutionSets": Array [
+        Object {
+          "count": 1,
+          "id": "lss1",
+          "locationSolutions": Array [
+            Object {
+              "featurePredictions": Array [],
+              "id": "ls1",
+              "location": Object {
+                "depthKm": 1,
+                "latitudeDegrees": 1,
+                "longitudeDegrees": 1,
+                "time": 1,
+              },
+              "locationBehaviors": Array [],
+              "locationRestraint": undefined,
+              "locationUncertainty": undefined,
+              "networkMagnitudeSolutions": Array [
+                Object {
+                  "magnitude": 1,
+                  "magnitudeType": "MB",
+                  "networkMagnitudeBehaviors": Array [
+                    Object {
+                      "defining": true,
+                      "residual": 1,
+                      "stationMagnitudeSolution": Object {
+                        "magnitude": 1,
+                        "magnitudeUncertainty": 1,
+                        "measurement": undefined,
+                        "model": undefined,
+                        "modelCorrection": undefined,
+                        "phase": undefined,
+                        "stationCorrection": undefined,
+                        "stationName": "station1",
+                        "type": undefined,
+                      },
+                      "weight": 1,
+                    },
+                  ],
+                  "uncertainty": 0,
+                },
+              ],
+              "snapshots": Array [],
+            },
+          ],
+        },
+      ],
+      "modified": false,
+      "parentEventHypotheses": Array [],
+      "preferredLocationSolution": undefined,
+      "rejected": false,
+    },
+    "hypothesisIdToLocationMap": Object {},
+    "sdHyps": Array [],
+    "stationIdsForDetectionHypothesisIds": Object {},
+  },
+  "MBMLE" => Object {
+    "definingDefs": Array [
+      Object {
+        "defining": true,
+        "magnitudeType": "MBMLE",
+        "stationName": "station1",
+      },
+      Object {
+        "defining": true,
+        "magnitudeType": "MBMLE",
+        "stationName": "station2",
+      },
+    ],
+    "eventHyp": Object {
+      "associations": Array [],
+      "eventId": "e1",
+      "id": "eh1",
+      "locationSolutionSets": Array [
+        Object {
+          "count": 1,
+          "id": "lss1",
+          "locationSolutions": Array [
+            Object {
+              "featurePredictions": Array [],
+              "id": "ls1",
+              "location": Object {
+                "depthKm": 1,
+                "latitudeDegrees": 1,
+                "longitudeDegrees": 1,
+                "time": 1,
+              },
+              "locationBehaviors": Array [],
+              "locationRestraint": undefined,
+              "locationUncertainty": undefined,
+              "networkMagnitudeSolutions": Array [
+                Object {
+                  "magnitude": 1,
+                  "magnitudeType": "MB",
+                  "networkMagnitudeBehaviors": Array [
+                    Object {
+                      "defining": true,
+                      "residual": 1,
+                      "stationMagnitudeSolution": Object {
+                        "magnitude": 1,
+                        "magnitudeUncertainty": 1,
+                        "measurement": undefined,
+                        "model": undefined,
+                        "modelCorrection": undefined,
+                        "phase": undefined,
+                        "stationCorrection": undefined,
+                        "stationName": "station1",
+                        "type": undefined,
+                      },
+                      "weight": 1,
+                    },
+                  ],
+                  "uncertainty": 0,
+                },
+                Object {
+                  "magnitude": 2,
+                  "magnitudeType": "MS",
+                  "networkMagnitudeBehaviors": Array [],
+                  "uncertainty": 0,
+                },
+              ],
+              "snapshots": Array [],
+            },
+          ],
+        },
+      ],
+      "modified": false,
+      "parentEventHypotheses": Array [],
+      "preferredLocationSolution": undefined,
+      "rejected": false,
+    },
+    "hypothesisIdToLocationMap": Object {
+      "1": Object {
+        "depthKm": 1,
+        "elevationKm": 2,
+        "latitudeDegrees": 3,
+        "longitudeDegrees": 4,
+      },
+      "3": Object {
+        "depthKm": 10,
+        "elevationKm": 2,
+        "latitudeDegrees": 3,
+        "longitudeDegrees": 4,
+      },
+    },
+    "sdHyps": Array [
+      Object {
+        "featureMeasurements": Array [
+          Object {
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": Object {
+              "standardDeviation": 0,
+              "value": 3,
+            },
+          },
+          Object {
+            "featureMeasurementType": "PHASE",
+            "measurementValue": Object {
+              "confidence": 0,
+              "phase": "P",
+            },
+          },
+          Object {
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": Object {
+              "amplitude": Object {
+                "standardDeviation": 1,
+                "units": "UNITLESS",
+                "value": 1,
+              },
+              "period": 1,
+              "startTime": 1,
+            },
+          },
+        ],
+        "id": "1",
+      },
+      Object {
+        "featureMeasurements": Array [
+          Object {
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "measurementValue": Object {
+              "standardDeviation": 0,
+              "value": 1,
+            },
+          },
+          Object {
+            "featureMeasurementType": "PHASE",
+            "measurementValue": Object {
+              "confidence": 0,
+              "phase": "P",
+            },
+          },
+          Object {
+            "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+            "measurementValue": Object {
+              "amplitude": Object {
+                "standardDeviation": 1,
+                "units": "UNITLESS",
+                "value": 1,
+              },
+              "period": 1,
+              "startTime": 1,
+            },
+          },
+        ],
+        "id": "3",
+      },
+    ],
+    "stationIdsForDetectionHypothesisIds": Object {
+      "1": "station1",
+      "3": "station2",
+    },
+  },
+  "MSMLE" => Object {
+    "definingDefs": Array [],
+    "eventHyp": Object {
+      "associations": Array [],
+      "eventId": "e1",
+      "id": "eh1",
+      "locationSolutionSets": Array [
+        Object {
+          "count": 1,
+          "id": "lss1",
+          "locationSolutions": Array [
+            Object {
+              "featurePredictions": Array [],
+              "id": "ls1",
+              "location": Object {
+                "depthKm": 1,
+                "latitudeDegrees": 1,
+                "longitudeDegrees": 1,
+                "time": 1,
+              },
+              "locationBehaviors": Array [],
+              "locationRestraint": undefined,
+              "locationUncertainty": undefined,
+              "networkMagnitudeSolutions": Array [
+                Object {
+                  "magnitude": 1,
+                  "magnitudeType": "MB",
+                  "networkMagnitudeBehaviors": Array [
+                    Object {
+                      "defining": true,
+                      "residual": 1,
+                      "stationMagnitudeSolution": Object {
+                        "magnitude": 1,
+                        "magnitudeUncertainty": 1,
+                        "measurement": undefined,
+                        "model": undefined,
+                        "modelCorrection": undefined,
+                        "phase": undefined,
+                        "stationCorrection": undefined,
+                        "stationName": "station1",
+                        "type": undefined,
+                      },
+                      "weight": 1,
+                    },
+                  ],
+                  "uncertainty": 0,
+                },
+                Object {
+                  "magnitude": 2,
+                  "magnitudeType": "MS",
+                  "networkMagnitudeBehaviors": Array [],
+                  "uncertainty": 0,
+                },
+              ],
+              "snapshots": Array [],
+            },
+          ],
+        },
+      ],
+      "modified": false,
+      "parentEventHypotheses": Array [],
+      "preferredLocationSolution": undefined,
+      "rejected": false,
+    },
+    "hypothesisIdToLocationMap": Object {},
+    "sdHyps": Array [],
+    "stationIdsForDetectionHypothesisIds": Object {},
+  },
+}
+`;
+
+exports[`Compute Magnitude query generation gets hypothesis id to location map 1`] = `
+Object {
+  "1": Object {
+    "depthKm": 1,
+    "elevationKm": 2,
+    "latitudeDegrees": 3,
+    "longitudeDegrees": 4,
+  },
+  "2": Object {
+    "depthKm": 10,
+    "elevationKm": 2,
+    "latitudeDegrees": 3,
+    "longitudeDegrees": 4,
+  },
+  "3": Object {
+    "depthKm": 10,
+    "elevationKm": 2,
+    "latitudeDegrees": 3,
+    "longitudeDegrees": 4,
+  },
+  "4": Object {
+    "depthKm": 100,
+    "elevationKm": 2,
+    "latitudeDegrees": 3,
+    "longitudeDegrees": 4,
+  },
+}
+`;
+
+exports[`Compute Magnitude query generation sorts signal detection hyps by arrival time 1`] = `
+Array [
+  Object {
+    "featureMeasurements": Array [
+      Object {
+        "featureMeasurementType": "ARRIVAL_TIME",
+        "measurementValue": Object {
+          "standardDeviation": 0,
+          "value": 1,
+        },
+      },
+      Object {
+        "featureMeasurementType": "PHASE",
+        "measurementValue": Object {
+          "confidence": 0,
+          "phase": "P",
+        },
+      },
+      Object {
+        "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+        "measurementValue": Object {
+          "amplitude": Object {
+            "standardDeviation": 1,
+            "units": "UNITLESS",
+            "value": 1,
+          },
+          "period": 1,
+          "startTime": 1,
+        },
+      },
+    ],
+    "id": "3",
+  },
+  Object {
+    "featureMeasurements": Array [
+      Object {
+        "featureMeasurementType": "ARRIVAL_TIME",
+        "measurementValue": Object {
+          "standardDeviation": 0,
+          "value": 2,
+        },
+      },
+      Object {
+        "featureMeasurementType": "PHASE",
+        "measurementValue": Object {
+          "confidence": 0,
+          "phase": "P",
+        },
+      },
+      Object {
+        "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+        "measurementValue": Object {
+          "amplitude": Object {
+            "standardDeviation": 1,
+            "units": "UNITLESS",
+            "value": 1,
+          },
+          "period": 1,
+          "startTime": 1,
+        },
+      },
+    ],
+    "id": "2",
+  },
+  Object {
+    "featureMeasurements": Array [
+      Object {
+        "featureMeasurementType": "ARRIVAL_TIME",
+        "measurementValue": Object {
+          "standardDeviation": 0,
+          "value": 3,
+        },
+      },
+      Object {
+        "featureMeasurementType": "PHASE",
+        "measurementValue": Object {
+          "confidence": 0,
+          "phase": "P",
+        },
+      },
+      Object {
+        "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+        "measurementValue": Object {
+          "amplitude": Object {
+            "standardDeviation": 1,
+            "units": "UNITLESS",
+            "value": 1,
+          },
+          "period": 1,
+          "startTime": 1,
+        },
+      },
+    ],
+    "id": "1",
+  },
+  Object {
+    "featureMeasurements": Array [
+      Object {
+        "featureMeasurementType": "ARRIVAL_TIME",
+        "measurementValue": Object {
+          "standardDeviation": 0,
+          "value": 4,
+        },
+      },
+      Object {
+        "featureMeasurementType": "PHASE",
+        "measurementValue": Object {
+          "confidence": 0,
+          "phase": "P3KPbc",
+        },
+      },
+    ],
+    "id": "4",
+  },
+]
+`;

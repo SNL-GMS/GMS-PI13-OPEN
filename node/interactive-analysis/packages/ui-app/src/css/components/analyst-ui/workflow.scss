@@ -1,0 +1,225 @@
+@import '../../gms-colors.scss';
+@import '../../gms-fonts.scss';
+
+$BLOCK_HEIGHT_PX: 24px;
+$ROW_COMPUTED_HEIGHT_PX: 26px;
+$BLOCK_WIDTH_PX: 104px;
+$TABLE_MARGIN: 34px;
+$DIVIDER_MARGIN: 31px;
+//The table margin plus some manaul fiddling
+$WIDTH_OF_LEFT_CURTAIN: 43px;
+//Width of a block + gap between right edge of row labels and the workflow
+$WIDTH_OF_RIGHT_CURTAIN: 131px;
+
+.gms-workflow-loading-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gms-workflow-time-axis {
+  path,
+  line {
+    fill: none;
+    stroke: $gms-prominent;
+    shape-rendering: crispEdges;
+  }
+  text {
+    font-family: $gms-sans;
+    font-size: 12px;
+    fill: $gms-main;
+    &.day-label {
+      stroke: $workflow-day-divider;
+      font-size: 13px;
+    }
+  }
+}
+
+.workflow-wrapper {
+  cursor: default;
+  max-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: static;
+}
+.workflow-scroll-wrapper {
+  max-height: calc(100% - 30px);
+  overflow-y: scroll;
+}
+.interval-table-wrapper {
+  flex: 1 0 auto;
+  display: flex;
+  margin-left: $TABLE_MARGIN;
+  margin-right: $BLOCK_WIDTH_PX;
+  // overflow-x: scroll;
+  // overflow-y: hidden;
+  flex-direction: column;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: static;
+}
+.interval-table-wrapper-wrapper {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+// Left is set to account for the workflow-table-wrapper's left margin, minus the size of the button
+.stage-row__expand-button {
+  height: $BLOCK_HEIGHT_PX;
+  border: 1px solid $gms-recessed;
+  width: $BLOCK_HEIGHT_PX;
+  transition: margin-bottom 0.15s;
+  min-height: $ROW_COMPUTED_HEIGHT_PX;
+  min-width: $ROW_COMPUTED_HEIGHT_PX;
+  padding: 0;
+  position: absolute;
+  left: 7px;
+  margin-top: -1px;
+  z-index: 5;
+}
+.stage-row {
+  display: flex;
+}
+// The absolute position lets it float to the left over the workflow display
+// The margin right and top are for alignment
+.workflow-table-label {
+  height: $ROW_COMPUTED_HEIGHT_PX;
+  width: $BLOCK_WIDTH_PX;
+  border: 1px solid;
+  display: flex;
+  border-color: $gms-background;
+  justify-content: center;
+  align-items: center;
+  background: $gms-soft;
+  flex: 0 0 auto;
+  position: absolute;
+  right: 0px;
+  margin-right: 4px;
+  margin-top: -1px;
+  z-index: 5;
+}
+.workflow-table-label--activity {
+  filter: $interval-activity-darken-cell-by;
+}
+.workflow-row {
+  position: relative;
+  display: flex;
+  margin-bottom: 2px;
+}
+.interval-cell {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: $BLOCK_WIDTH_PX;
+  height: $BLOCK_HEIGHT_PX;
+  border: 1px solid $gms-background;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.interval-cell:hover {
+  filter: brightness(1.2);
+}
+
+.interval-cell--not-started {
+  background-color: $interval-unstarted-fill;
+  border: 1px solid $interval-unstarted-border;
+}
+.interval-cell--in-progress {
+  background-color: $interval-in-progress-fill;
+  border: 1px solid $interval-in-progress-border;
+}
+.interval-cell--complete {
+  background-color: $interval-complete-fill;
+  border: 1px solid $interval-complete-border;
+}
+.interval-cell--not-complete {
+  background-color: $interval-not-complete-fill;
+  border: 1px solid $interval-not-complete-border;
+}
+.interval-cell--selected {
+  border: 2px solid $analyst-requires-review;
+}
+.stage-row__sub-row {
+  display: flex;
+}
+.interval-cell--activity-cell {
+  filter: $interval-activity-darken-cell-by;
+}
+.interval-cell--activity-cell:hover {
+  filter: brightness(1);
+}
+.workflow__menu-bar {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  margin-left: 8px;
+  position: static;
+  padding-right: 25px;
+  z-index: 10;
+}
+.workflow-day-divider {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 4px;
+  background-color: $workflow-day-divider;
+  z-index: 1;
+  margin-left: $DIVIDER_MARGIN;
+}
+// To account for the offset of the workflow-table, the time axis needs to be moved to left by 1
+.time-axis-wrapper {
+  margin-left: -1px;
+  width: calc(100%);
+  height: 25px;
+  flex: 0 0 auto;
+  position: static;
+  z-index: 1;
+}
+.time-axis {
+  width: 100%;
+  height: 25px;
+  overflow: hidden;
+}
+.interval-table__curtain-left {
+  width: $WIDTH_OF_LEFT_CURTAIN;
+  position: absolute;
+  background-color: $gms-background;
+  height: 100vh;
+  z-index: 2;
+  left: -6px;
+}
+.interval-table__curtain-right {
+  width: $WIDTH_OF_RIGHT_CURTAIN;
+  position: absolute;
+  right: 0px;
+  background-color: $gms-background;
+  height: 100vh;
+  z-index: 2;
+  top: 0px;
+}
+.workflow__interval-picker {
+  margin-left: 0.5em;
+}
+.history-item__date-string {
+  font-family: $gms-mono;
+}
+.history-item__text {
+  color: $gms-prominent;
+}
+.workflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 82px;
+  text-align: center;
+}

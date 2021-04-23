@@ -1,0 +1,21 @@
+plugins {
+
+    id "application"
+    id "com.palantir.docker"
+}
+
+mainClassName = "gms.core.performancemonitoring.soh.application.StationSohApplication"
+
+dependencies {
+
+    implementation project(':frameworks-control')
+
+    // Google AutoValue
+    implementation "com.google.auto.value:auto-value-annotations"
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    implementation project(":frameworks-osd-commonobjects")
+    implementation project(":soh-control-api")
+    implementation project(":soh-control")
+
+}

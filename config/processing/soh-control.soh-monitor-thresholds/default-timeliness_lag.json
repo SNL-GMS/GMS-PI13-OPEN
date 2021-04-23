@@ -1,0 +1,24 @@
+{
+  "name": "default-lag",
+  "constraints": [
+    {
+      "constraintType": "STRING",
+      "criterion": "MonitorType",
+      "operator": {
+        "type": "IN",
+        "negated": false
+      },
+      "value": [
+        "LAG", 
+	"TIMELINESS"
+      ]
+    },
+    {
+      "constraintType": "DEFAULT"
+    }
+  ],
+  "parameters": {
+    "goodThreshold": "PT5M",
+    "marginalThreshold": "PT15M"
+  }
+}

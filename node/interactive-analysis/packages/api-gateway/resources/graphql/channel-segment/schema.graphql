@@ -1,0 +1,56 @@
+enum TimeSeriesType {
+    WAVEFORM
+    FK_SPECTRA
+    DETECTION_FEATURE_MAP
+}
+
+# Represents a channel time segment comprised of one or more waveforms for a (derived or raw).
+type ChannelSegment {
+
+    # Unique identifier for the channel segment
+    id: String!
+
+    # Name of ChannelSegment
+    name: String!
+
+    # Type of timeseries
+    timeseriesType: TimeSeriesType!
+
+    # The type enumeration of the channel segment
+    type: ChannelSegmentType
+
+    # Unique identifier for the channel id
+    channelId: String!
+
+    # The start date/time (seconds since epoch) of the channel segment
+    startTime: Float!
+
+    # The end date/time ((seconds since epoch) of the channel segment
+    endTime: Float!
+
+    # The collection of Waveforms associated with the channel segment
+    timeseries: [Timeseries]
+}
+
+# Input version of the time window parameters provided as input to the FK mutation API
+input WindowParametersInput {
+
+    # The type of window (e.g. Hanning)
+    windowType: String!
+
+    # The lead period in seconds (prior to the detection onset time)
+    leadSeconds: Float!
+
+    # The length of the window in seconds (including the lead and lag around the detection onset time)
+    lengthSeconds: Float!
+
+    #  The number of FK Spectra per second to fetch
+    stepSize: Float!
+}
+
+input ContributingChannelsConfigurationInput {
+    id: String!
+    enabled: Boolean!
+    name: String
+}
+

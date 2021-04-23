@@ -1,0 +1,12 @@
+apply plugin: "java-library"
+apply plugin: "io.swagger.core.v3.swagger-gradle-plugin"
+
+dependencies {
+    implementation project(":frameworks-service-interface-base")
+    implementation project(":frameworks-osd-commonobjects")
+
+    implementation 'io.projectreactor:reactor-core:3.3.5.RELEASE'
+
+    annotationProcessor "com.google.auto.value:auto-value"
+    api "com.google.auto.value:auto-value-annotations"
+}

@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QC Content query should match snapshot 1`] = `
+Object {
+  "qcMasksByChannelName": Array [
+    Object {
+      "currentVersion": Object {
+        "category": "WAVEFORM_QUALITY",
+        "endTime": 1274395500,
+        "startTime": 1274394600,
+        "type": "LONG_GAP",
+      },
+    },
+    Object {
+      "currentVersion": Object {
+        "category": "WAVEFORM_QUALITY",
+        "endTime": 1274397000,
+        "startTime": 1274396400,
+        "type": "LONG_GAP",
+      },
+    },
+    Object {
+      "currentVersion": Object {
+        "category": "WAVEFORM_QUALITY",
+        "endTime": 1274398200,
+        "startTime": 1274397600,
+        "type": "LONG_GAP",
+      },
+    },
+    Object {
+      "currentVersion": Object {
+        "category": "WAVEFORM_QUALITY",
+        "endTime": 1274400000,
+        "startTime": 1274399100,
+        "type": "LONG_GAP",
+      },
+    },
+  ],
+}
+`;
+
+exports[`QC Create mutation should match snapshot 1`] = `
+Object {
+  "category": "ANALYST_DEFINED",
+  "endTime": 1274393926,
+  "rationale": "testing",
+  "startTime": 1274393921,
+  "type": "SPIKE",
+  "version": 0,
+}
+`;
+
+exports[`QC Create mutation should match snapshot 2`] = `
+Array [
+  Object {
+    "category": "ANALYST_DEFINED",
+    "endTime": 1274393926,
+    "rationale": "testing",
+    "startTime": 1274393921,
+    "type": "SPIKE",
+    "version": 0,
+  },
+]
+`;
+
+exports[`QC Create reject should match snapshot 1`] = `
+Object {
+  "category": "REJECTED",
+  "endTime": 1274393936,
+  "rationale": "This was a test mask anyway",
+  "startTime": 1274393921,
+  "type": "SPIKE",
+  "version": 2,
+}
+`;
+
+exports[`QC Create reject should match snapshot 2`] = `
+Array [
+  Object {
+    "category": "ANALYST_DEFINED",
+    "endTime": 1274393926,
+    "rationale": "testing",
+    "startTime": 1274393921,
+    "type": "SPIKE",
+    "version": 0,
+  },
+  Object {
+    "category": "ANALYST_DEFINED",
+    "endTime": 1274393936,
+    "rationale": "Updating Test",
+    "startTime": 1274393921,
+    "type": "SPIKE",
+    "version": 1,
+  },
+  Object {
+    "category": "REJECTED",
+    "endTime": 1274393936,
+    "rationale": "This was a test mask anyway",
+    "startTime": 1274393921,
+    "type": "SPIKE",
+    "version": 2,
+  },
+]
+`;
+
+exports[`QC Update mutation should match snapshot 1`] = `
+Object {
+  "category": "ANALYST_DEFINED",
+  "endTime": 1274393936,
+  "rationale": "Updating Test",
+  "startTime": 1274393921,
+  "type": "SPIKE",
+  "version": 1,
+}
+`;
+
+exports[`QC Update mutation should match snapshot 2`] = `
+Array [
+  Object {
+    "category": "ANALYST_DEFINED",
+    "endTime": 1274393926,
+    "rationale": "testing",
+    "startTime": 1274393921,
+    "type": "SPIKE",
+    "version": 0,
+  },
+  Object {
+    "category": "ANALYST_DEFINED",
+    "endTime": 1274393936,
+    "rationale": "Updating Test",
+    "startTime": 1274393921,
+    "type": "SPIKE",
+    "version": 1,
+  },
+]
+`;

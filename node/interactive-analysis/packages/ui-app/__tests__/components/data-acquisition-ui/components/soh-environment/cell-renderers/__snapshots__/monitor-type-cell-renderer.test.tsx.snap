@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Monitor Type Cell Renderer should match snapshot for MonitorTypeCellRendererBase 1`] = `
+<Component
+  id="1234"
+  monitorIsSelected={true}
+  monitorStatus="GOOD"
+  monitorType="MISSING"
+  valueAndStatusByChannelName={Map {}}
+>
+  <div
+    data-cy="monitor-type-cell"
+  >
+    <Component
+      cellStatus="good"
+      className="soh-cell__title
+        soh-cell--solid
+        soh-cell__title--good
+        soh-cell--good"
+      dataReceivedStatus="not-received"
+      id="1234"
+      monitorIsSelected={true}
+      monitorStatus="GOOD"
+      monitorType="MISSING"
+      value=""
+      valueAndStatusByChannelName={Map {}}
+    >
+      <Component
+        cellStatus="good"
+        className="soh-cell soh-cell__title
+        soh-cell--solid
+        soh-cell__title--good
+        soh-cell--good"
+        data-cell-status="good"
+        data-received-status="not-received"
+        dataReceivedStatus="not-received"
+        id="1234"
+        monitorIsSelected={true}
+        monitorStatus="GOOD"
+        monitorType="MISSING"
+        value=""
+        valueAndStatusByChannelName={Map {}}
+      >
+        <div
+          className="table-cell soh-cell soh-cell__title
+        soh-cell--solid
+        soh-cell__title--good
+        soh-cell--good"
+          data-cell-status="good"
+          data-cy="table-cell"
+          data-received-status="not-received"
+          style={
+            Object {
+              "height": "36px",
+              "overflow": "hidden",
+            }
+          }
+          title=""
+        />
+      </Component>
+    </Component>
+  </div>
+</Component>
+`;
+
+exports[`Monitor Type Cell Renderer should match snapshot when calling monitorTypeCellRenderer 1`] = `
+<Component
+  content=" - Status: Good"
+>
+  <Blueprint3.Tooltip
+    className="core-tooltip"
+    content=" - Status: Good"
+    hoverCloseDelay={0}
+    hoverOpenDelay={100}
+    position="bottom"
+    targetClassName="core-tooltip__target"
+    targetTagName="div"
+    transitionDuration={100}
+    wrapperTagName="div"
+  >
+    <Blueprint3.Popover
+      autoFocus={false}
+      boundary="scrollParent"
+      canEscapeKeyClose={false}
+      captureDismiss={false}
+      className="core-tooltip"
+      content=" - Status: Good"
+      defaultIsOpen={false}
+      disabled={false}
+      enforceFocus={false}
+      fill={false}
+      hasBackdrop={false}
+      hoverCloseDelay={0}
+      hoverOpenDelay={100}
+      inheritDarkTheme={true}
+      interactionKind="hover-target"
+      lazy={true}
+      minimal={false}
+      modifiers={Object {}}
+      openOnTargetFocus={true}
+      popoverClassName="bp3-tooltip"
+      position="bottom"
+      targetClassName="core-tooltip__target"
+      targetTagName="div"
+      transitionDuration={100}
+      usePortal={true}
+      wrapperTagName="div"
+    >
+      <Manager>
+        <div
+          className="bp3-popover-wrapper core-tooltip"
+        >
+          <Reference
+            innerRef={[Function]}
+          >
+            <InnerReference
+              innerRef={[Function]}
+              setReferenceNode={[Function]}
+            >
+              <Blueprint3.ResizeSensor
+                onResize={[Function]}
+              >
+                <div
+                  className="bp3-popover-target core-tooltip__target"
+                  onBlur={[Function]}
+                  onFocus={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <Memo()
+                    className=""
+                    isSelected={true}
+                    key=".0"
+                    tabIndex={0}
+                  >
+                    <div
+                      className="is-selected"
+                    >
+                      <Component
+                        colDef={
+                          Object {
+                            "headerName": "monitorType",
+                          }
+                        }
+                        data={
+                          Object {
+                            "id": "1234",
+                            "monitorIsSelected": true,
+                            "monitorStatus": "GOOD",
+                            "monitorType": "MISSING",
+                            "valueAndStatusByChannelName": Map {},
+                          }
+                        }
+                        id="1234"
+                        monitorIsSelected={true}
+                        monitorStatus="GOOD"
+                        monitorType="MISSING"
+                        valueAndStatusByChannelName={Map {}}
+                      >
+                        <div
+                          data-cy="monitor-type-cell"
+                        >
+                          <Component
+                            cellStatus="good"
+                            className="soh-cell__title
+        soh-cell--solid
+        soh-cell__title--good
+        soh-cell--good"
+                            colDef={
+                              Object {
+                                "headerName": "monitorType",
+                              }
+                            }
+                            data={
+                              Object {
+                                "id": "1234",
+                                "monitorIsSelected": true,
+                                "monitorStatus": "GOOD",
+                                "monitorType": "MISSING",
+                                "valueAndStatusByChannelName": Map {},
+                              }
+                            }
+                            dataReceivedStatus="not-received"
+                            id="1234"
+                            monitorIsSelected={true}
+                            monitorStatus="GOOD"
+                            monitorType="MISSING"
+                            value=""
+                            valueAndStatusByChannelName={Map {}}
+                          >
+                            <Component
+                              cellStatus="good"
+                              className="soh-cell soh-cell__title
+        soh-cell--solid
+        soh-cell__title--good
+        soh-cell--good"
+                              colDef={
+                                Object {
+                                  "headerName": "monitorType",
+                                }
+                              }
+                              data={
+                                Object {
+                                  "id": "1234",
+                                  "monitorIsSelected": true,
+                                  "monitorStatus": "GOOD",
+                                  "monitorType": "MISSING",
+                                  "valueAndStatusByChannelName": Map {},
+                                }
+                              }
+                              data-cell-status="good"
+                              data-received-status="not-received"
+                              dataReceivedStatus="not-received"
+                              id="1234"
+                              monitorIsSelected={true}
+                              monitorStatus="GOOD"
+                              monitorType="MISSING"
+                              value=""
+                              valueAndStatusByChannelName={Map {}}
+                            >
+                              <div
+                                className="table-cell soh-cell soh-cell__title
+        soh-cell--solid
+        soh-cell__title--good
+        soh-cell--good"
+                                data-cell-status="good"
+                                data-cy="table-cell"
+                                data-received-status="not-received"
+                                style={
+                                  Object {
+                                    "height": "36px",
+                                    "overflow": "hidden",
+                                  }
+                                }
+                                title=""
+                              />
+                            </Component>
+                          </Component>
+                        </div>
+                      </Component>
+                    </div>
+                  </Memo()>
+                </div>
+              </Blueprint3.ResizeSensor>
+            </InnerReference>
+          </Reference>
+          <Blueprint3.Overlay
+            autoFocus={false}
+            backdropClassName="bp3-popover-backdrop"
+            backdropProps={Object {}}
+            canEscapeKeyClose={false}
+            canOutsideClickClose={false}
+            enforceFocus={false}
+            hasBackdrop={false}
+            isOpen={false}
+            lazy={true}
+            onClose={[Function]}
+            transitionDuration={100}
+            transitionName="bp3-popover"
+            usePortal={true}
+          />
+        </div>
+      </Manager>
+    </Blueprint3.Popover>
+  </Blueprint3.Tooltip>
+</Component>
+`;

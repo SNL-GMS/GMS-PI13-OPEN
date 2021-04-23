@@ -1,0 +1,114 @@
+/**
+  * Begin of non-variable manual overrides 
+ */
+
+// Background to the
+.ag-theme-dark {
+  background-color: $gms-background;
+  color: $gms-prominent;
+}
+.ag-theme-dark .ag-body-viewport {
+  background-color: $gms-background;
+}
+
+.ag-theme-dark .ag-root {
+  border: 1px solid $gms-background;
+}
+.ag-theme-dark .ag-cell {
+  padding-left: 2px;
+  color: $gms-prominent;
+  border: none;
+}
+.ag-theme-dark .ag-row-even {
+  background-color: $gms-background;
+}
+.ag-theme-dark .ag-row-odd {
+  background-color: $gms-prominent-background;
+}
+
+.ag-theme-dark .ag-row-odd.ag-row-selected {
+  background-color: $gms-table-selection;
+}
+
+.ag-theme-dark .ag-row-even.ag-row-selected {
+  background-color: $gms-table-selection;
+}
+
+.ag-theme-dark .ag-header {
+  border-bottom: 1px solid $gms-background;
+  border-radius: 3px 3px 0 0;
+  color: $gms-main;
+  background-color: $gms-table-header-background;
+}
+.ag-theme-dark .ag-header-cell,
+.ag-theme-dark .ag-header-group-cell {
+  border-bottom: 1px solid $gms-background;
+}
+.ag-theme-dark .ag-header-cell,
+.ag-theme-dark .ag-header-group-cell {
+  border-bottom: 0 solid $gms-background;
+  border-right: 0 solid $gms-background;
+  border-color: $gms-background;
+  border-style: solid;
+  border-width: 0 1px 0px 0;
+  padding-left: 4px;
+}
+.ag-theme-dark .ag-header-cell {
+  padding: 2px;
+}
+
+.ag-theme-dark .ag-cell-not-inline-editing {
+  padding: 2px;
+  // compensate for the transparent borders;
+  padding-left: 1px;
+}
+
+.ag-theme-dark .ag-horizontal-left-spacer {
+  border-right: 1px solid $gms-prominent;
+}
+
+.ag-theme-dark .ag-ltr .ag-cell:not(.ag-cell-focus).ag-cell-last-left-pinned,
+.ag-theme-dark .ag-ltr .ag-row.ag-cell-last-left-pinned {
+  border-right: 1px solid $gms-prominent;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: $gms-prominent;
+  padding-right: 4px;
+}
+
+.ag-react-container select {
+  background-color: $gms-transparent;
+  color: $gms-main;
+  border: none;
+  font-size: 12px;
+  position: relative;
+  top: -1.5px;
+}
+
+.ag-theme-dark .ag-header-cell-label {
+  padding-left: 2px;
+  line-height: 28px;
+}
+.ag-theme-dark .ag-row .ag-cell-data-changed {
+  background-color: $gms-table-highlight-odd-row !important;
+}
+.ag-theme-dark .ag-header-group-cell-label span {
+  line-height: 32px;
+}
+.ag-react-container > .bp3-checkbox {
+  position: relative;
+  top: 2px;
+}
+
+.ag-theme-dark .ag-icon {
+  color: $gms-main;
+  -webkit-filter: none;
+  filter: none;
+}
+.ag-header-group-cell.ag-header-group-cell-with-group > .ag-react-container {
+  width: 100%;
+}
+.ag-theme-dark .ag-paging-panel {
+  border-color: $gms-popover-background;
+  border-radius: $rounded-rectangle-radius;
+}

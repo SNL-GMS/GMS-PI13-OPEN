@@ -1,0 +1,72 @@
+{{- $appName := "cd11-injector" }}
+{{- $appValues := get .Values $appName }}
+{{/* Only include the Deployment if the injector value is true */}}
+{{- if .Values.injector }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "soh.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-soh-elevated
+      initContainers:
+        - name: check-data-load
+          image: {{ include "soh.deployment.image" (dict "Values" .Values "appValues" (dict "imageName" "gms-common/centos")) }}
+          imagePullPolicy: Always
+          command: ["/bin/bash", "-c"]
+          args: ["http_code=$(curl -s -o /dev/null -I -w \"%{http_code}\" --insecure http://config-loader:8080/initialized); echo \"http_code: $http_code\"; while [[ $http_code != \"200\" ]]; do echo \"http_code: $http_code - data is NOT loaded\"; echo \"Curling config-loader to check initialized status\"; http_code=$(curl -s -o /dev/null -I -w \"%{http_code}\" --insecure http://config-loader:8080/initialized); done; echo \"http_code: $http_code - Data is loaded\""]
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "soh.deployment.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          env:
+            - name: ETCD_GMS_USER
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key:  username
+            - name: ETCD_GMS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key: password
+            - name: GMS_CONFIG_SQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: username
+            - name: GMS_CONFIG_SQL_PASSWORD 
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: password
+            {{- include "soh.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+{{- if or (and $appValues.cpu_requests $appValues.cpu_limit) (and $appValues.memory_requests $appValues.memory_limit)}}
+          resources:
+            requests:
+{{- if ($appValues.cpu_requests)}}
+              cpu: {{ $appValues.cpu_requests }}
+{{- end }}
+{{- if ($appValues.memory_requests)}}
+              memory: {{ $appValues.memory_requests }}
+{{- end }}
+            limits:
+{{- if ($appValues.cpu_limit)}}
+              cpu: {{ $appValues.cpu_limit }}
+{{- end }}
+{{- if ($appValues.memory_limit)}}
+              memory: {{ $appValues.memory_limit }}
+{{- end }}
+{{- end }}
+{{- end }}

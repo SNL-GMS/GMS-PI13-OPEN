@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`quieting menu should call the contextmenu.show function with menu 1`] = `
+Array [
+  <Blueprint3.Menu>
+    <QuiteMenuItem
+      channelMonitorPairs={
+        Array [
+          Object {
+            "channelName": "name",
+            "monitorType": "MISSING",
+          },
+        ]
+      }
+      position={
+        Object {
+          "left": 10,
+          "top": 10,
+        }
+      }
+      quietChannelMonitorStatuses={[MockFunction]}
+      quietingDurationSelections={
+        Array [
+          300000,
+          900000,
+          3600000,
+          86400000,
+          604800000,
+        ]
+      }
+      stationName=""
+    />
+    <QuiteWithCommentMenuItem
+      channelMonitorPairs={
+        Array [
+          Object {
+            "channelName": "name",
+            "monitorType": "MISSING",
+          },
+        ]
+      }
+      position={
+        Object {
+          "left": 10,
+          "top": 10,
+        }
+      }
+      quietChannelMonitorStatuses={[MockFunction]}
+      quietingDurationSelections={
+        Array [
+          300000,
+          900000,
+          3600000,
+          86400000,
+          604800000,
+        ]
+      }
+      stationName=""
+    />
+    <CancelMenuItem
+      channelMonitorPairs={
+        Array [
+          Object {
+            "channelName": "name",
+            "monitorType": "MISSING",
+          },
+        ]
+      }
+      position={
+        Object {
+          "left": 10,
+          "top": 10,
+        }
+      }
+      quietChannelMonitorStatuses={[MockFunction]}
+      quietingDurationSelections={
+        Array [
+          300000,
+          900000,
+          3600000,
+          86400000,
+          604800000,
+        ]
+      }
+      stationName=""
+    />
+  </Blueprint3.Menu>,
+  Object {
+    "left": 10,
+    "top": 10,
+  },
+]
+`;

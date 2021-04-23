@@ -1,0 +1,16 @@
+apply plugin: 'application'
+mainClassName = 'gms.shared.utilities.standardtestdataset.filterdefinitionvalidator.Application'
+
+run {
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+}
+
+dependencies {
+    //GMS Dependencies
+    implementation project(':frameworks-osd-commonobjects')
+
+    //Third Party Dependencies
+    implementation 'args4j:args4j'
+}

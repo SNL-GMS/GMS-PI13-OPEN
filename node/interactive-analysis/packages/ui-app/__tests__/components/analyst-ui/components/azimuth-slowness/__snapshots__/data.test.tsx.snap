@@ -1,0 +1,611 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Data should be verified FK Data should have valid event data 1`] = `
+Object {
+  "conflictingSdIds": Array [],
+  "currentEventHypothesis": Object {
+    "eventHypothesis": Object {
+      "associationsMaxArrivalTime": 1274399905.01,
+      "event": Object {
+        "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+        "status": "ReadyForRefinement",
+      },
+      "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+      "locationSolutionSets": Array [
+        Object {
+          "count": 1,
+          "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+          "locationSolutions": Array [
+            Object {
+              "featurePredictions": Array [],
+              "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+              "location": Object {
+                "depthKm": 0,
+                "latitudeDegrees": 67.57425,
+                "longitudeDegrees": 33.59468,
+                "time": 1274399850.081,
+              },
+              "locationBehaviors": Array [
+                Object {
+                  "defining": false,
+                  "featureMeasurementType": "AMPLITUDE",
+                  "residual": 1.28,
+                  "signalDetectionId": "00000000-0000-0000-0000-000000000000",
+                  "weight": 0.734,
+                },
+              ],
+              "locationRestraint": Object {
+                "depthRestraintKm": null,
+                "depthRestraintType": "FIXED_AT_SURFACE",
+                "latitudeRestraintDegrees": null,
+                "latitudeRestraintType": "UNRESTRAINED",
+                "longitudeRestraintDegrees": null,
+                "longitudeRestraintType": "UNRESTRAINED",
+                "timeRestraint": null,
+                "timeRestraintType": "UNRESTRAINED",
+              },
+              "locationToStationDistances": Array [],
+              "locationType": "standard",
+              "locationUncertainty": Object {
+                "ellipses": Array [
+                  Object {
+                    "confidenceLevel": 0.9,
+                    "depthUncertainty": -1,
+                    "kWeight": 0,
+                    "majorAxisLength": "49.1513",
+                    "majorAxisTrend": 37.23,
+                    "minorAxisLength": "29.2083",
+                    "minorAxisTrend": -1,
+                    "scalingFactorType": "CONFIDENCE",
+                    "timeUncertainty": "PT4.235S",
+                  },
+                ],
+                "ellipsoids": Array [],
+                "stDevOneObservation": 1.0484,
+                "tt": 6.6189,
+                "xt": -26.6202,
+                "xy": 163.665,
+                "xz": -1,
+                "yt": 20.2312,
+                "yy": 400.817,
+                "yz": -1,
+                "zt": -1,
+                "zz": -1,
+              },
+              "networkMagnitudeSolutions": Array [
+                Object {
+                  "magnitude": 3.6532,
+                  "magnitudeType": "MB",
+                  "networkMagnitudeBehaviors": Array [
+                    Object {
+                      "defining": true,
+                      "residual": -0.6995,
+                      "stationMagnitudeSolution": Object {
+                        "featureMeasurement": Object {
+                          "featureMeasurementType": "PHASE",
+                          "id": "00000000-0000-0000-0000-000000000000",
+                          "measurementValue": Object {
+                            "confidence": 0.5,
+                            "value": "Pn",
+                          },
+                        },
+                        "magnitude": 2.9357,
+                        "magnitudeUncertainty": 0.4228,
+                        "model": "QFVC1",
+                        "modelCorrection": 1,
+                        "phase": "Pn",
+                        "stationCorrection": 1,
+                        "stationName": "e03b9548-fda0-393e-9606-af73bf25f420",
+                        "type": "MB",
+                      },
+                      "weight": 1,
+                    },
+                    Object {
+                      "defining": true,
+                      "residual": 0.0657,
+                      "stationMagnitudeSolution": Object {
+                        "featureMeasurement": Object {
+                          "featureMeasurementType": "PHASE",
+                          "id": "00000000-0000-0000-0000-000000000000",
+                          "measurementValue": Object {
+                            "confidence": 0.5,
+                            "value": "P",
+                          },
+                        },
+                        "magnitude": 3.7008,
+                        "magnitudeUncertainty": 0.281,
+                        "model": "QFVC1",
+                        "modelCorrection": 1,
+                        "phase": "P",
+                        "stationCorrection": 1,
+                        "stationName": "f7567432-5db0-3a03-a4cd-20db18ded4e7",
+                        "type": "MB",
+                      },
+                      "weight": 1,
+                    },
+                    Object {
+                      "defining": true,
+                      "residual": -0.3711,
+                      "stationMagnitudeSolution": Object {
+                        "featureMeasurement": Object {
+                          "featureMeasurementType": "PHASE",
+                          "id": "00000000-0000-0000-0000-000000000000",
+                          "measurementValue": Object {
+                            "confidence": 0.5,
+                            "value": "Pn",
+                          },
+                        },
+                        "magnitude": 3.264,
+                        "magnitudeUncertainty": 0.403,
+                        "model": "QFVC1",
+                        "modelCorrection": 1,
+                        "phase": "Pn",
+                        "stationCorrection": 1,
+                        "stationName": "4dd5d739-f4d6-37d6-82c0-099bfaf54b73",
+                        "type": "MB",
+                      },
+                      "weight": 1,
+                    },
+                    Object {
+                      "defining": true,
+                      "residual": -0.0507,
+                      "stationMagnitudeSolution": Object {
+                        "featureMeasurement": Object {
+                          "featureMeasurementType": "PHASE",
+                          "id": "00000000-0000-0000-0000-000000000000",
+                          "measurementValue": Object {
+                            "confidence": 0.5,
+                            "value": "P",
+                          },
+                        },
+                        "magnitude": 3.5844,
+                        "magnitudeUncertainty": 0.3449,
+                        "model": "QFVC1",
+                        "modelCorrection": 1,
+                        "phase": "P",
+                        "stationCorrection": 1,
+                        "stationName": "3695d63e-7071-3f74-b6a5-a92681fd2567",
+                        "type": "MB",
+                      },
+                      "weight": 1,
+                    },
+                    Object {
+                      "defining": true,
+                      "residual": -0.0777,
+                      "stationMagnitudeSolution": Object {
+                        "featureMeasurement": Object {
+                          "featureMeasurementType": "PHASE",
+                          "id": "dd4bfd63-3250-4da1-bd72-e1244fd5b236",
+                          "measurementValue": Object {
+                            "confidence": 0.5,
+                            "value": "P",
+                          },
+                        },
+                        "magnitude": 3.5574,
+                        "magnitudeUncertainty": 0.3449,
+                        "model": "QFVC1",
+                        "modelCorrection": 1,
+                        "phase": "P",
+                        "stationCorrection": 1,
+                        "stationName": "6856c4c5-54cf-377d-87dc-ed322f36c0bb",
+                        "type": "MB",
+                      },
+                      "weight": 1,
+                    },
+                    Object {
+                      "defining": true,
+                      "residual": 0.5089,
+                      "stationMagnitudeSolution": Object {
+                        "featureMeasurement": Object {
+                          "featureMeasurementType": "PHASE",
+                          "id": "00000000-0000-0000-0000-000000000000",
+                          "measurementValue": Object {
+                            "confidence": 0.5,
+                            "value": "P",
+                          },
+                        },
+                        "magnitude": 4.1441,
+                        "magnitudeUncertainty": 0.281,
+                        "model": "QFVC1",
+                        "modelCorrection": 1,
+                        "phase": "P",
+                        "stationCorrection": 1,
+                        "stationName": "e7437e38-94ba-34d4-a95c-0a9e3983c689",
+                        "type": "MB",
+                      },
+                      "weight": 1,
+                    },
+                  ],
+                  "uncertainty": 0.1611,
+                },
+              ],
+              "snapshots": Array [],
+            },
+          ],
+        },
+      ],
+      "preferredLocationSolution": Object {
+        "locationSolution": Object {
+          "featurePredictions": Array [],
+          "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+          "location": Object {
+            "depthKm": 0,
+            "latitudeDegrees": 67.57425,
+            "longitudeDegrees": 33.59468,
+            "time": 1274399850.081,
+          },
+          "locationBehaviors": Array [
+            Object {
+              "defining": false,
+              "featureMeasurementType": "AMPLITUDE",
+              "residual": 1.28,
+              "signalDetectionId": "00000000-0000-0000-0000-000000000000",
+              "weight": 0.734,
+            },
+          ],
+          "locationRestraint": Object {
+            "depthRestraintKm": null,
+            "depthRestraintType": "FIXED_AT_SURFACE",
+            "latitudeRestraintDegrees": null,
+            "latitudeRestraintType": "UNRESTRAINED",
+            "longitudeRestraintDegrees": null,
+            "longitudeRestraintType": "UNRESTRAINED",
+            "timeRestraint": null,
+            "timeRestraintType": "UNRESTRAINED",
+          },
+          "locationToStationDistances": Array [],
+          "locationType": "standard",
+          "locationUncertainty": Object {
+            "ellipses": Array [
+              Object {
+                "confidenceLevel": 0.9,
+                "depthUncertainty": -1,
+                "kWeight": 0,
+                "majorAxisLength": "49.1513",
+                "majorAxisTrend": 37.23,
+                "minorAxisLength": "29.2083",
+                "minorAxisTrend": -1,
+                "scalingFactorType": "CONFIDENCE",
+                "timeUncertainty": "PT4.235S",
+              },
+            ],
+            "ellipsoids": Array [],
+            "stDevOneObservation": 1.0484,
+            "tt": 6.6189,
+            "xt": -26.6202,
+            "xy": 163.665,
+            "xz": -1,
+            "yt": 20.2312,
+            "yy": 400.817,
+            "yz": -1,
+            "zt": -1,
+            "zz": -1,
+          },
+          "networkMagnitudeSolutions": Array [
+            Object {
+              "magnitude": 3.6532,
+              "magnitudeType": "MB",
+              "networkMagnitudeBehaviors": Array [
+                Object {
+                  "defining": true,
+                  "residual": -0.6995,
+                  "stationMagnitudeSolution": Object {
+                    "featureMeasurement": Object {
+                      "featureMeasurementType": "PHASE",
+                      "id": "00000000-0000-0000-0000-000000000000",
+                      "measurementValue": Object {
+                        "confidence": 0.5,
+                        "value": "Pn",
+                      },
+                    },
+                    "magnitude": 2.9357,
+                    "magnitudeUncertainty": 0.4228,
+                    "model": "QFVC1",
+                    "modelCorrection": 1,
+                    "phase": "Pn",
+                    "stationCorrection": 1,
+                    "stationName": "e03b9548-fda0-393e-9606-af73bf25f420",
+                    "type": "MB",
+                  },
+                  "weight": 1,
+                },
+                Object {
+                  "defining": true,
+                  "residual": 0.0657,
+                  "stationMagnitudeSolution": Object {
+                    "featureMeasurement": Object {
+                      "featureMeasurementType": "PHASE",
+                      "id": "00000000-0000-0000-0000-000000000000",
+                      "measurementValue": Object {
+                        "confidence": 0.5,
+                        "value": "P",
+                      },
+                    },
+                    "magnitude": 3.7008,
+                    "magnitudeUncertainty": 0.281,
+                    "model": "QFVC1",
+                    "modelCorrection": 1,
+                    "phase": "P",
+                    "stationCorrection": 1,
+                    "stationName": "f7567432-5db0-3a03-a4cd-20db18ded4e7",
+                    "type": "MB",
+                  },
+                  "weight": 1,
+                },
+                Object {
+                  "defining": true,
+                  "residual": -0.3711,
+                  "stationMagnitudeSolution": Object {
+                    "featureMeasurement": Object {
+                      "featureMeasurementType": "PHASE",
+                      "id": "00000000-0000-0000-0000-000000000000",
+                      "measurementValue": Object {
+                        "confidence": 0.5,
+                        "value": "Pn",
+                      },
+                    },
+                    "magnitude": 3.264,
+                    "magnitudeUncertainty": 0.403,
+                    "model": "QFVC1",
+                    "modelCorrection": 1,
+                    "phase": "Pn",
+                    "stationCorrection": 1,
+                    "stationName": "4dd5d739-f4d6-37d6-82c0-099bfaf54b73",
+                    "type": "MB",
+                  },
+                  "weight": 1,
+                },
+                Object {
+                  "defining": true,
+                  "residual": -0.0507,
+                  "stationMagnitudeSolution": Object {
+                    "featureMeasurement": Object {
+                      "featureMeasurementType": "PHASE",
+                      "id": "00000000-0000-0000-0000-000000000000",
+                      "measurementValue": Object {
+                        "confidence": 0.5,
+                        "value": "P",
+                      },
+                    },
+                    "magnitude": 3.5844,
+                    "magnitudeUncertainty": 0.3449,
+                    "model": "QFVC1",
+                    "modelCorrection": 1,
+                    "phase": "P",
+                    "stationCorrection": 1,
+                    "stationName": "3695d63e-7071-3f74-b6a5-a92681fd2567",
+                    "type": "MB",
+                  },
+                  "weight": 1,
+                },
+                Object {
+                  "defining": true,
+                  "residual": -0.0777,
+                  "stationMagnitudeSolution": Object {
+                    "featureMeasurement": Object {
+                      "featureMeasurementType": "PHASE",
+                      "id": "dd4bfd63-3250-4da1-bd72-e1244fd5b236",
+                      "measurementValue": Object {
+                        "confidence": 0.5,
+                        "value": "P",
+                      },
+                    },
+                    "magnitude": 3.5574,
+                    "magnitudeUncertainty": 0.3449,
+                    "model": "QFVC1",
+                    "modelCorrection": 1,
+                    "phase": "P",
+                    "stationCorrection": 1,
+                    "stationName": "6856c4c5-54cf-377d-87dc-ed322f36c0bb",
+                    "type": "MB",
+                  },
+                  "weight": 1,
+                },
+                Object {
+                  "defining": true,
+                  "residual": 0.5089,
+                  "stationMagnitudeSolution": Object {
+                    "featureMeasurement": Object {
+                      "featureMeasurementType": "PHASE",
+                      "id": "00000000-0000-0000-0000-000000000000",
+                      "measurementValue": Object {
+                        "confidence": 0.5,
+                        "value": "P",
+                      },
+                    },
+                    "magnitude": 4.1441,
+                    "magnitudeUncertainty": 0.281,
+                    "model": "QFVC1",
+                    "modelCorrection": 1,
+                    "phase": "P",
+                    "stationCorrection": 1,
+                    "stationName": "e7437e38-94ba-34d4-a95c-0a9e3983c689",
+                    "type": "MB",
+                  },
+                  "weight": 1,
+                },
+              ],
+              "uncertainty": 0.1611,
+            },
+          ],
+          "snapshots": Array [],
+        },
+      },
+      "rejected": false,
+      "signalDetectionAssociations": Array [
+        Object {
+          "eventHypothesisId": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+          "id": "527562d9-027e-4b88-941e-91543763b7a4",
+          "rejected": false,
+          "signalDetectionHypothesis": Object {
+            "id": "1c8f8122-0056-3ed9-9304-ddea79de2393",
+            "parentSignalDetectionId": "1c8f8122-0056-3ed9-9304-ddea79de2393",
+            "rejected": false,
+          },
+        },
+      ],
+    },
+    "processingStage": Object {
+      "id": "1",
+    },
+  },
+  "hasConflict": false,
+  "id": "f43f58f9-6a87-40e3-95ac-44168325fc49",
+  "modified": false,
+  "status": "ReadyForRefinement",
+}
+`;
+
+exports[`Data should be verified FK Data should have valid eventIds 1`] = `
+Array [
+  "f43f58f9-6a87-40e3-95ac-44168325fc49",
+]
+`;
+
+exports[`Data should be verified FK Data should have valid signal detection data 1`] = `
+Array [
+  Object {
+    "conflictingHypotheses": Array [],
+    "currentHypothesis": Object {
+      "featureMeasurements": Array [
+        Object {
+          "featureMeasurementType": "ARRIVAL_TIME",
+          "id": "dbdd8420-a448-44a0-9fea-d39fe55b0136",
+          "measurementValue": Object {
+            "standardDeviation": 0.685,
+            "value": 1274393237.85,
+          },
+        },
+        Object {
+          "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+          "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+          "measurementValue": Object {
+            "measurementValue": 0,
+            "referenceTime": 0,
+          },
+        },
+        Object {
+          "featureMeasurementType": "SLOWNESS",
+          "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+          "measurementValue": Object {
+            "measurementValue": 0,
+            "referenceTime": 0,
+          },
+        },
+        Object {
+          "featureMeasurementType": "PHASE",
+          "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+          "measurementValue": Object {
+            "confidence": 0,
+            "phase": "P",
+          },
+        },
+      ],
+      "id": "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+      "rejected": false,
+    },
+    "hasConflict": false,
+    "id": "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+    "modified": false,
+    "monitoringOrganization": "TEST",
+    "requiresReview": Object {
+      "amplitudeMeasurement": false,
+    },
+    "reviewed": Object {
+      "amplitudeMeasurement": false,
+    },
+    "signalDetectionHypothesisHistory": Array [
+      Object {
+        "arrivalTimeSecs": 1274393334.1,
+        "arrivalTimeUncertainty": 0.685,
+        "id": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+        "phase": "tx",
+        "rejected": false,
+      },
+      Object {
+        "arrivalTimeSecs": 1274393334.1,
+        "arrivalTimeUncertainty": 0.685,
+        "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+        "phase": "P",
+        "rejected": false,
+      },
+    ],
+    "stationName": "USRK",
+  },
+  Object {
+    "conflictingHypotheses": Array [],
+    "currentHypothesis": Object {
+      "featureMeasurements": Array [
+        Object {
+          "featureMeasurementType": "ARRIVAL_TIME",
+          "id": "e8d95a93-382d-4d84-85ce-983e87bdcb0c",
+          "measurementValue": Object {
+            "standardDeviation": 0.685,
+            "value": 1274393334.1,
+          },
+        },
+        Object {
+          "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+          "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+          "measurementValue": Object {
+            "measurementValue": 0,
+            "referenceTime": 0,
+          },
+        },
+        Object {
+          "featureMeasurementType": "SLOWNESS",
+          "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+          "measurementValue": Object {
+            "measurementValue": 0,
+            "referenceTime": 0,
+          },
+        },
+        Object {
+          "featureMeasurementType": "PHASE",
+          "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+          "measurementValue": Object {
+            "confidence": 0,
+            "phase": "P",
+          },
+        },
+      ],
+      "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+      "rejected": false,
+    },
+    "hasConflict": false,
+    "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+    "modified": false,
+    "monitoringOrganization": "TEST",
+    "requiresReview": Object {
+      "amplitudeMeasurement": false,
+    },
+    "reviewed": Object {
+      "amplitudeMeasurement": false,
+    },
+    "signalDetectionHypothesisHistory": Array [
+      Object {
+        "arrivalTimeSecs": 1274393334.1,
+        "arrivalTimeUncertainty": 0.685,
+        "id": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+        "phase": "tx",
+        "rejected": false,
+      },
+      Object {
+        "arrivalTimeSecs": 1274393334.1,
+        "arrivalTimeUncertainty": 0.685,
+        "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+        "phase": "P",
+        "rejected": false,
+      },
+    ],
+    "stationName": "SONM",
+  },
+]
+`;
+
+exports[`Data should be verified FK Data should have valid signalDetectionIds 1`] = `
+Array [
+  "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+  "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+]
+`;

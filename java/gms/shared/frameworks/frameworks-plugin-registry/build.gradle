@@ -1,0 +1,11 @@
+plugins {
+    id "java-library"
+}
+
+dependencies {
+    implementation project(':frameworks-utilities')
+
+    implementation 'org.apache.commons:commons-lang3'
+    testAnnotationProcessor 'com.google.auto.service:auto-service'
+    testImplementation 'com.google.auto.service:auto-service'
+}

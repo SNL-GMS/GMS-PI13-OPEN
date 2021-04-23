@@ -1,0 +1,115 @@
+{
+  "name": "interactive-analysis",
+  "version": "10.1.0-SNAPSHOT",
+  "description": "GMS Interactive Analysis",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/api-gateway/**/config",
+      "**/api-gateway/**/config/**",
+      "**/api-gateway/**/express",
+      "**/api-gateway/**/express/**",
+      "**/api-gateway/**/ts-node",
+      "**/api-gateway/**/ts-node/**",
+      "**/api-gateway/**/winston",
+      "**/api-gateway/**/winston/**",
+      "**/api-gateway/**/winston-daily-rotate-file",
+      "**/api-gateway/**/winston-daily-rotate-file/**",
+      "**/*webpack*",
+      "**/*webpack*/**"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "./**/*.{css,scss,js,jsx,json,yaml}": [
+      "prettier --config .prettierrc --write",
+      "git add"
+    ],
+    "./**/*.{ts,tsx}": [
+      "prettier --config .prettierrc --write",
+      "tslint --project ./tsconfig.json --config ./tslint.json --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "clean": "lerna run clean && rm -rf ./coverage && rm -rf ./docs && rm -rf ./log && rm -rf ./node_modules",
+    "build:tslint": "lerna run build:tslint --parallel",
+    "build:tslint:test": "lerna run build:tslint:test --parallel",
+    "build:dev": "lerna run build:dev --stream",
+    "build:prod": "lerna run build:prod --stream",
+    "build:test": "lerna run build:tsc:test --stream",
+    "build": "yarn build:dev",
+    "bundle:dev": "lerna run bundle:dev --stream",
+    "bundle:prod": "lerna run bundle:prod --stream",
+    "bundle:prod:soh": "lerna run bundle:prod:soh --stream",
+    "bundle": "yarn bundle:dev",
+    "dev": "cd packages/ui-app && yarn dev",
+    "start": "cd packages/ui-app && yarn start",
+    "watch": "lerna run watch --parallel",
+    "docs:init": "rm -rf ./docs && yarn docs-interactive-analysis && mkdir ./docs/packages",
+    "docs": "npm-run-all -s docs:init -p docs-ui-app docs-ui-electron docs-common-graphql docs-common-util docs-ui-apollo docs-ui-core-components docs-ui-state docs-ui-util docs-weavess",
+    "docs-interactive-analysis": "typedoc --out docs --name interactive-analysis --mode file --readme README.md --target ES6 --includeDeclarations --excludeExternals --excludeNotExported --hideGenerator",
+    "docs-ui-app": "cd ./packages/ui-app && yarn docs && cp -r ./docs ../../docs/packages/ui-app",
+    "docs-ui-electron": "cd ./packages/ui-electron && yarn docs && cp -r ./docs ../../docs/packages/ui-electron",
+    "docs-common-graphql": "cd ./packages/common-graphql && yarn docs && cp -r ./docs ../../docs/packages/common-graphql",
+    "docs-common-util": "cd ./packages/common-util && yarn docs && cp -r ./docs ../../docs/packages/common-util",
+    "docs-ui-apollo": "cd ./packages/ui-apollo && yarn docs && cp -r ./docs ../../docs/packages/ui-apollo",
+    "docs-ui-core-components": "cd ./packages/ui-core-components && yarn docs && cp -r ./docs ../../docs/packages/ui-core-components",
+    "docs-ui-state": "cd ./packages/ui-state && yarn docs && cp -r ./docs ../../docs/packages/ui-state",
+    "docs-ui-util": "cd ./packages/ui-util && yarn docs && cp -r ./docs ../../docs/packages/ui-util",
+    "docs-weavess": "cd ./packages/weavess && yarn docs && cp -r ./docs ../../docs/packages/weavess",
+    "producer": "cd ./scripts/mock-producer && ./mock-producer.sh",
+    "sonar": "node_modules/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.projectKey=${CI_PROJECT_NAME}-typescript -Dsonar.projectName=${CI_PROJECT_NAME}-typescript -Dsonar.projectVersion=${CI_COMMIT_REF_SLUG} -Dsonar.branch.name=${CI_COMMIT_REF_SLUG} -Dsonar.sources=packages/api-gateway/src/ts,packages/common-graphql/src/ts,packages/common-util/src/ts,packages/ui-apollo/src/ts,packages/ui-app/src/ts,packages/ui-core-components/src/ts,packages/ui-electron/src/ts,packages/ui-state/src/ts,packages/ui-util/src/ts,packages/weavess/src/ts -Dsonar.typescript.lcov.reportPaths=packages/api-gateway/coverage/lcov.info,packages/common-graphql/coverage/lcov.info,packages/common-util/coverage/lcov.info,packages/ui-apollo/coverage/lcov.info,packages/ui-app/coverage/lcov.info,packages/ui-core-components/coverage/lcov.info,packages/ui-electron/coverage/lcov.info,packages/ui-state/coverage/lcov.info,packages/ui-util/coverage/lcov.info,packages/weavess/coverage/lcov.info",
+    "sonar-releases": "node_modules/sonar-scanner/bin/sonar-scanner -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.projectKey=${CI_PROJECT_NAME}-typescript -Dsonar.projectName=${CI_PROJECT_NAME}-typescript -Dsonar.projectVersion=${CI_COMMIT_REF_SLUG} -Dsonar.branch.name=releases -Dsonar.sources=packages/api-gateway/src/ts,packages/common-graphql/src/ts,packages/common-util/src/ts,packages/ui-apollo/src/ts,packages/ui-app/src/ts,packages/ui-core-components/src/ts,packages/ui-electron/src/ts,packages/ui-state/src/ts,packages/ui-util/src/ts,packages/weavess/src/ts -Dsonar.typescript.lcov.reportPaths=packages/api-gateway/coverage/lcov.info,packages/common-graphql/coverage/lcov.info,packages/common-util/coverage/lcov.info,packages/ui-apollo/coverage/lcov.info,packages/ui-app/coverage/lcov.info,packages/ui-core-components/coverage/lcov.info,packages/ui-electron/coverage/lcov.info,packages/ui-state/coverage/lcov.info,packages/ui-util/coverage/lcov.info,packages/weavess/coverage/lcov.info",
+    "test": "jest --config jest.config.js",
+    "test-all": "lerna run test",
+    "test-soh": "jest --config jest.config.js && cd ./packages/cypress-tests && yarn cypress-tags run -e \"TAGS=not @skip\"",
+    "test-all:prod": "lerna run test:prod",
+    "test-cypress": "cd ./packages/cypress-tests && yarn test-cypress",
+    "test-cypress-firefox": "cd ./packages/cypress-tests && yarn test-cypress-firefox",
+    "version": "echo $npm_package_version"
+  },
+  "dependencies": {
+    "pg-native": "3.0.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "3.10.3",
+    "@types/jest": "24.0.23",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.15.1",
+    "enzyme-to-json": "3.4.3",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "jest-canvas-mock": "2.2.0",
+    "jest-cli": "24.9.0",
+    "jest-environment-jsdom-fourteen": "0.1.0",
+    "jest-fetch-mock": "2.1.2",
+    "jsdom": "15.2.1",
+    "jsdom-global": "3.0.2",
+    "lerna": "3.19.0",
+    "npm-run-all": "4.1.5",
+    "lint-staged": "9.5.0",
+    "sonar-scanner": "3.1.0",
+    "ts-jest": "24.2.0",
+    "typedoc": "0.15.3",
+    "typescript": "3.7.2"
+  },
+  "resolutions": {
+    "braces": "3.0.2",
+    "dot-prop": "5.2.0",
+    "handlebars": "4.5.3",
+    "js-yaml": "3.14.0",
+    "kind-of": "6.0.3",
+    "lodash": "4.17.15",
+    "mixin-deep": "2.0.1",
+    "moment": "2.26.0"
+  }
+}

@@ -1,0 +1,59 @@
+apply plugin: 'java'
+dependencies {
+
+
+    testImplementation project(':cd11-common')
+    testImplementation project(':cd11-dataman')
+    testImplementation project(':cd11-connman')
+    testImplementation project(':frameworks-osd-commonobjects')
+    testImplementation project(':frameworks-soh-repository')
+    testImplementation project(':frameworks-configuration-commonobjects')
+    testImplementation project(':frameworks-test-utilities')
+
+    testImplementation 'javax.json:javax.json-api'
+    testImplementation 'io.cucumber:cucumber-java'
+    testImplementation 'io.cucumber:cucumber-picocontainer'
+    testImplementation 'net.jodah:failsafe'
+    testImplementation 'org.apache.httpcomponents:httpclient'
+    testImplementation 'org.apache.kafka:kafka-clients'
+    testImplementation 'com.kohlschutter.junixsocket:junixsocket-common'
+    testImplementation 'com.kohlschutter.junixsocket:junixsocket-native-common'
+    testImplementation 'org.testcontainers:testcontainers'
+    testImplementation 'org.postgresql:postgresql'
+    testImplementation 'org.testcontainers:junit-jupiter'
+    testImplementation 'org.testcontainers:postgresql'
+    testImplementation 'org.testcontainers:kafka'
+    testImplementation 'org.hibernate:hibernate-core'
+    testImplementation 'org.hibernate:hibernate-c3p0'
+    testImplementation 'org.hibernate:hibernate-entitymanager'
+
+    // Serialization (dependencies are api as we expose our ObjectMapper as a singleton).
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind'
+    testImplementation 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
+    testImplementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+    testImplementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    testImplementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
+
+    // reactor and reactor netty dependencies
+    testImplementation 'io.projectreactor:reactor-core'
+    testImplementation 'io.projectreactor.netty:reactor-netty'
+}
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testImplementation
+    }
+}
+
+task cucumber(type: JavaExec) {
+    dependsOn assemble, compileTestJava
+
+    main = "io.cucumber.core.cli.Main"
+    classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+
+    def defaultOptions = ['--plugin', 'pretty', '--plugin', 'html:cucumber_reports/cucumber-all-html-report', '--plugin', 'json:cucumber_reports/cucumber-all.json', '--plugin', 'junit:cucumber_reports/cucumber-all.xml', '--glue', 'gms.integration']
+    def tags = project.hasProperty('cucumber.tags') ? ['--tags', "${project.property('cucumber.tags')}"] : []
+    def features = 'src/test/resources'
+
+    args = defaultOptions + tags + features
+}

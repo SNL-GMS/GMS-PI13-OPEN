@@ -1,0 +1,87 @@
+/// Base styles for layout and generic components.
+/// These should be agnostic of which component they are used in,
+/// and should be easily reusable as the base for more specific components.
+
+.table-display {
+  background-color: $gms-prominent-background;
+  border-radius: $rounded-rectangle-radius;
+}
+
+.legend-and-charts {
+  .soh-legend {
+    float: left;
+  }
+}
+
+.button--full-width {
+  width: 100%;
+}
+
+// Generic top bar for the top of a component
+.top-bar {
+  display: flex;
+  padding: 1em 1em 0 1em;
+  @include hasSpaceBetweenChildren(0, 0, 0, 1em);
+  &__title {
+    display: block;
+    width: auto;
+    align-self: flex-end;
+    margin: 0;
+  }
+
+  // The --right modifier should shift everything right
+  &--right:first-of-type {
+    margin-left: auto;
+  }
+}
+
+// Generic list
+.list {
+  &__row {
+    margin-left: 0;
+    list-style: none;
+  }
+}
+* {
+  user-select: none;
+  -moz-user-select: none;
+}
+.ag-cell-value {
+  -moz-user-select: text;
+}
+.ag-cell-value > * {
+  -moz-user-select: text;
+}
+
+.top-level-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.center-within-parent {
+  @include centerWithinParent;
+}
+
+.center-children {
+  @include centerChildren;
+}
+
+.orientation-column {
+  @include flexColumn;
+}
+
+.fill-all-space {
+  @include fillAllSpaceAbsolutely;
+}
+
+.space-between-children {
+  @include hasSpaceBetweenChildren(1em, 1em, 1em, 1em);
+}
+
+// Scrollbar styles
+* {
+  scrollbar-color: $gms-scrollbar $gms-scrollbar-background;
+  scrollbar-width: auto;
+}

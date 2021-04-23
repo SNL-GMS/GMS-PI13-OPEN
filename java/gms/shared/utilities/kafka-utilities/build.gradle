@@ -1,0 +1,18 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+    api project(':frameworks-system-config')
+
+    // Kafka reactor
+    implementation 'io.projectreactor.kafka:reactor-kafka'
+
+    // Google AutoValue
+    implementation "com.google.guava:guava"
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.0'
+    implementation 'org.apache.commons:commons-lang3:3.6'
+}

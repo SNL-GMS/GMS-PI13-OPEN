@@ -1,0 +1,30 @@
+# Directories
+docs/
+node_modules/
+build/
+dist/
+coverage/
+.scannerwork/
+.cache/
+
+# File types
+*.map
+*.log
+*.swp
+*.out
+**/.DS_STORE
+
+# Specific files
+settings.json
+
+# Whitelist files from .vscode
+!.vscode/all.code-workspace
+!.vscode/cSpell.json
+!.vscode/gateway.code-workspace
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/ui.code-workspace
+
+# Allow the .vscode directory but ban all non-whitelisted files
+!.vscode/
+.vscode/*

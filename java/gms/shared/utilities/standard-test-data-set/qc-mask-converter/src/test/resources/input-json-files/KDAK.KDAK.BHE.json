@@ -1,0 +1,150 @@
+[
+	{
+		"sta": "KDAK",
+		"chan": "BHE",
+		"chanid": -1,
+		"samprate": 20,
+		"wfid": 1500,
+		"id": "",
+		"channelName": "KDAK.KDAK.BHE",
+		"qcMaskVersions": [
+			{
+				"version": 0,
+				"channelSegmentIds": [],
+				"rationale": "Rationale",
+				"parentQcMasks": [],
+				"rejected": "false",
+				"category": "WAVEFORM_QUALITY",
+				"endTime": "2010-05-20T22:45:00Z",
+				"startTime": "2010-05-20T22:30:00Z",
+				"type": "LONG_GAP"
+			}
+		],
+		"currentQCMaskVersion": {
+			"version": 0,
+			"channelSegmentIds": [],
+			"rationale": "Rationale",
+			"parentQcMasks": [],
+			"rejected": "false",
+			"category": "WAVEFORM_QUALITY",
+			"endTime": "2010-05-20T22:45:00Z",
+			"startTime": "2010-05-20T22:30:00Z",
+			"type": "LONG_GAP"
+		},
+		"currentVersionAsReference": {
+			"qcMaskId": "",
+			"qcMaskVersionId": 0
+		}
+	},
+	{
+		"sta": "KDAK",
+		"chan": "BHE",
+		"chanid": -1,
+		"samprate": 20,
+		"wfid": 1503,
+		"id": "",
+		"channelName": "KDAK.KDAK.BHE",
+		"qcMaskVersions": [
+			{
+				"version": 0,
+				"channelSegmentIds": [],
+				"rationale": "Rationale",
+				"parentQcMasks": [],
+				"rejected": "false",
+				"category": "WAVEFORM_QUALITY",
+				"endTime": "2010-05-20T23:10:00Z",
+				"startTime": "2010-05-20T23:00:00Z",
+				"type": "SPIKE"
+			}
+		],
+		"currentQCMaskVersion": {
+			"version": 0,
+			"channelSegmentIds": [],
+			"rationale": "Rationale",
+			"parentQcMasks": [],
+			"rejected": "false",
+			"category": "WAVEFORM_QUALITY",
+			"endTime": "2010-05-20T23:10:00Z",
+			"startTime": "2010-05-20T23:00:00Z",
+			"type": "REPEATED_ADJACENT_AMPLITUDE_VALUE"
+		},
+		"currentVersionAsReference": {
+			"qcMaskId": "",
+			"qcMaskVersionId": 0
+		}
+	},
+	{
+		"sta": "KDAK",
+		"chan": "BHE",
+		"chanid": -1,
+		"samprate": 20,
+		"wfid": 1506,
+		"id": "",
+		"channelName": "KDAK.KDAK.BHE",
+		"qcMaskVersions": [
+			{
+				"version": 0,
+				"channelSegmentIds": [],
+				"rationale": "Rationale",
+				"parentQcMasks": [],
+				"rejected": "false",
+				"category": "WAVEFORM_QUALITY",
+				"endTime": "2010-05-20T23:30:00Z",
+				"startTime": "2010-05-20T23:20:00Z",
+				"type": "LONG_GAP"
+			}
+		],
+		"currentQCMaskVersion": {
+			"version": 0,
+			"channelSegmentIds": [],
+			"rationale": "Rationale",
+			"parentQcMasks": [],
+			"rejected": "false",
+			"category": "WAVEFORM_QUALITY",
+			"endTime": "2010-05-20T23:30:00Z",
+			"startTime": "2010-05-20T23:20:00Z",
+			"type": "LONG_GAP"
+		},
+		"currentVersionAsReference": {
+			"qcMaskId": "",
+			"qcMaskVersionId": 0
+		}
+	},
+	{
+		"sta": "KDAK",
+		"chan": "BHE",
+		"chanid": -1,
+		"samprate": 20,
+		"wfid": 1509,
+		"id": "",
+		"channelName": "KDAK.KDAK.BHE",
+		"qcMaskVersions": [
+			{
+				"version": 0,
+				"channelSegmentIds": [],
+				"rationale": "Rationale",
+				"parentQcMasks": [],
+				"rejected": "false",
+				"category": "WAVEFORM_QUALITY",
+				"endTime": "2010-05-21T00:00:00Z",
+				"startTime": "2010-05-20T23:45:00Z",
+				"type": "LONG_GAP"
+			}
+		],
+		"currentQCMaskVersion": {
+			"version": 0,
+			"channelSegmentIds": [],
+			"rationale": "Rationale",
+			"parentQcMasks": [],
+			"rejected": "false",
+			"category": "WAVEFORM_QUALITY",
+			"endTime": "2010-05-21T00:00:00Z",
+			"startTime": "2010-05-20T23:45:00Z",
+			"type": "LONG_GAP"
+		},
+		"currentVersionAsReference": {
+			"qcMaskId": "",
+			"qcMaskVersionId": 0
+		}
+	}
+]

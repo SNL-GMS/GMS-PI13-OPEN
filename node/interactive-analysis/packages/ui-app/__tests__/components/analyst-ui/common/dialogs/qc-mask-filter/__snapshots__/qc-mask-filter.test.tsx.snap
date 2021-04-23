@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`qc-mask-filter has the props we passed in 1`] = `
+Object {
+  "maskDisplayFilters": Object {
+    "ANALYST_DEFINED": Object {
+      "color": "string",
+      "name": "string",
+      "visible": true,
+    },
+    "CHANNEL_PROCESSING": Object {
+      "color": "string",
+      "name": "string",
+      "visible": true,
+    },
+    "DATA_AUTHENTICATION": Object {
+      "color": "string",
+      "name": "string",
+      "visible": true,
+    },
+    "REJECTED": Object {
+      "color": "string",
+      "name": "string",
+      "visible": true,
+    },
+    "STATION_SOH": Object {
+      "color": "string",
+      "name": "string",
+      "visible": true,
+    },
+    "WAVEFORM_QUALITY": Object {
+      "color": "string",
+      "name": "string",
+      "visible": true,
+    },
+  },
+  "setMaskDisplayFilters": [MockFunction],
+}
+`;
+
+exports[`qc-mask-filter renders when given correct props 1`] = `
+<QcMaskFilter
+  maskDisplayFilters={
+    Object {
+      "ANALYST_DEFINED": Object {
+        "color": "string",
+        "name": "string",
+        "visible": true,
+      },
+      "CHANNEL_PROCESSING": Object {
+        "color": "string",
+        "name": "string",
+        "visible": true,
+      },
+      "DATA_AUTHENTICATION": Object {
+        "color": "string",
+        "name": "string",
+        "visible": true,
+      },
+      "REJECTED": Object {
+        "color": "string",
+        "name": "string",
+        "visible": true,
+      },
+      "STATION_SOH": Object {
+        "color": "string",
+        "name": "string",
+        "visible": true,
+      },
+      "WAVEFORM_QUALITY": Object {
+        "color": "string",
+        "name": "string",
+        "visible": true,
+      },
+    }
+  }
+  setMaskDisplayFilters={[MockFunction]}
+>
+  <div>
+    <HTMLTable
+      className="qc-mask-legend__body"
+    >
+      <table
+        className="bp3-html-table qc-mask-legend__body"
+      >
+        <tbody>
+          <tr
+            key="ANALYST_DEFINED"
+          >
+            <td>
+              <Blueprint3.Checkbox
+                className="qc-mask-legend-table__checkbox"
+                defaultChecked={true}
+                onChange={[Function]}
+              >
+                <Control
+                  className="qc-mask-legend-table__checkbox"
+                  defaultChecked={true}
+                  inputRef={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  typeClassName="bp3-checkbox"
+                >
+                  <label
+                    className="bp3-control bp3-checkbox qc-mask-legend-table__checkbox"
+                  >
+                    <input
+                      defaultChecked={true}
+                      onChange={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="bp3-control-indicator"
+                    />
+                  </label>
+                </Control>
+              </Blueprint3.Checkbox>
+            </td>
+            <td>
+              string
+            </td>
+            <td>
+              <div
+                className="qc-mask-legend-table__legend-box"
+                style={
+                  Object {
+                    "backgroundColor": "string",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            key="CHANNEL_PROCESSING"
+          >
+            <td>
+              <Blueprint3.Checkbox
+                className="qc-mask-legend-table__checkbox"
+                defaultChecked={true}
+                onChange={[Function]}
+              >
+                <Control
+                  className="qc-mask-legend-table__checkbox"
+                  defaultChecked={true}
+                  inputRef={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  typeClassName="bp3-checkbox"
+                >
+                  <label
+                    className="bp3-control bp3-checkbox qc-mask-legend-table__checkbox"
+                  >
+                    <input
+                      defaultChecked={true}
+                      onChange={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="bp3-control-indicator"
+                    />
+                  </label>
+                </Control>
+              </Blueprint3.Checkbox>
+            </td>
+            <td>
+              string
+            </td>
+            <td>
+              <div
+                className="qc-mask-legend-table__legend-box"
+                style={
+                  Object {
+                    "backgroundColor": "string",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            key="DATA_AUTHENTICATION"
+          >
+            <td>
+              <Blueprint3.Checkbox
+                className="qc-mask-legend-table__checkbox"
+                defaultChecked={true}
+                onChange={[Function]}
+              >
+                <Control
+                  className="qc-mask-legend-table__checkbox"
+                  defaultChecked={true}
+                  inputRef={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  typeClassName="bp3-checkbox"
+                >
+                  <label
+                    className="bp3-control bp3-checkbox qc-mask-legend-table__checkbox"
+                  >
+                    <input
+                      defaultChecked={true}
+                      onChange={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="bp3-control-indicator"
+                    />
+                  </label>
+                </Control>
+              </Blueprint3.Checkbox>
+            </td>
+            <td>
+              string
+            </td>
+            <td>
+              <div
+                className="qc-mask-legend-table__legend-box"
+                style={
+                  Object {
+                    "backgroundColor": "string",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            key="REJECTED"
+          >
+            <td>
+              <Blueprint3.Checkbox
+                className="qc-mask-legend-table__checkbox"
+                defaultChecked={true}
+                onChange={[Function]}
+              >
+                <Control
+                  className="qc-mask-legend-table__checkbox"
+                  defaultChecked={true}
+                  inputRef={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  typeClassName="bp3-checkbox"
+                >
+                  <label
+                    className="bp3-control bp3-checkbox qc-mask-legend-table__checkbox"
+                  >
+                    <input
+                      defaultChecked={true}
+                      onChange={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="bp3-control-indicator"
+                    />
+                  </label>
+                </Control>
+              </Blueprint3.Checkbox>
+            </td>
+            <td>
+              string
+            </td>
+            <td>
+              <div
+                className="qc-mask-legend-table__legend-box"
+                style={
+                  Object {
+                    "backgroundColor": "string",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            key="STATION_SOH"
+          >
+            <td>
+              <Blueprint3.Checkbox
+                className="qc-mask-legend-table__checkbox"
+                defaultChecked={true}
+                onChange={[Function]}
+              >
+                <Control
+                  className="qc-mask-legend-table__checkbox"
+                  defaultChecked={true}
+                  inputRef={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  typeClassName="bp3-checkbox"
+                >
+                  <label
+                    className="bp3-control bp3-checkbox qc-mask-legend-table__checkbox"
+                  >
+                    <input
+                      defaultChecked={true}
+                      onChange={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="bp3-control-indicator"
+                    />
+                  </label>
+                </Control>
+              </Blueprint3.Checkbox>
+            </td>
+            <td>
+              string
+            </td>
+            <td>
+              <div
+                className="qc-mask-legend-table__legend-box"
+                style={
+                  Object {
+                    "backgroundColor": "string",
+                  }
+                }
+              />
+            </td>
+          </tr>
+          <tr
+            key="WAVEFORM_QUALITY"
+          >
+            <td>
+              <Blueprint3.Checkbox
+                className="qc-mask-legend-table__checkbox"
+                defaultChecked={true}
+                onChange={[Function]}
+              >
+                <Control
+                  className="qc-mask-legend-table__checkbox"
+                  defaultChecked={true}
+                  inputRef={[Function]}
+                  onChange={[Function]}
+                  type="checkbox"
+                  typeClassName="bp3-checkbox"
+                >
+                  <label
+                    className="bp3-control bp3-checkbox qc-mask-legend-table__checkbox"
+                  >
+                    <input
+                      defaultChecked={true}
+                      onChange={[Function]}
+                      type="checkbox"
+                    />
+                    <span
+                      className="bp3-control-indicator"
+                    />
+                  </label>
+                </Control>
+              </Blueprint3.Checkbox>
+            </td>
+            <td>
+              string
+            </td>
+            <td>
+              <div
+                className="qc-mask-legend-table__legend-box"
+                style={
+                  Object {
+                    "backgroundColor": "string",
+                  }
+                }
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </HTMLTable>
+  </div>
+</QcMaskFilter>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`history stack row renders correctly 1`] = `
+<li
+  className="list__row entry-row
+      
+      action-indicator-top "
+>
+  <div
+    className="list__column list__column--meta-container
+        bottom
+        
+        mixed"
+  >
+    <span
+      className="action-indicator__text"
+    />
+    <span
+      className="action-indicator__text"
+    >
+      REDO
+    </span>
+  </div>
+  <div />
+</li>
+`;

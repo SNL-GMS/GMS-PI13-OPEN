@@ -1,0 +1,501 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SohEnvironmentPanel class should match snapshot 1`] = `
+<ApolloProvider
+  client={
+    DefaultClient {
+      "cache": InMemoryCache {
+        "addTypename": true,
+        "cacheKeyRoot": KeyTrie {
+          "weakness": true,
+        },
+        "config": Object {
+          "addTypename": true,
+          "dataIdFromObject": [Function],
+          "fragmentMatcher": HeuristicFragmentMatcher {},
+          "freezeResults": false,
+          "resultCaching": true,
+        },
+        "data": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "maybeBroadcastWatch": [Function],
+        "optimisticData": DepTrackingCache {
+          "data": Object {},
+          "depend": [Function],
+        },
+        "silenceBroadcast": false,
+        "storeReader": StoreReader {
+          "executeSelectionSet": [Function],
+          "executeStoreQuery": [Function],
+          "executeSubSelectedArray": [Function],
+          "freezeResults": false,
+        },
+        "storeWriter": StoreWriter {},
+        "typenameDocumentCache": Map {},
+        "watches": Set {},
+      },
+      "clearStoreCallbacks": Array [],
+      "defaultOptions": Object {},
+      "disableNetworkFetches": false,
+      "link": ApolloLink {
+        "request": [Function],
+      },
+      "localState": LocalState {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "client": [Circular],
+      },
+      "mutate": [Function],
+      "query": [Function],
+      "queryDeduplication": true,
+      "queryManager": QueryManager {
+        "assumeImmutableResults": false,
+        "clientAwareness": Object {
+          "name": undefined,
+          "version": undefined,
+        },
+        "dataStore": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "fetchQueryRejectFns": Map {},
+        "idCounter": 1,
+        "inFlightLinkObservables": Map {},
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutationStore": MutationStore {
+          "store": Object {},
+        },
+        "onBroadcast": [Function],
+        "pollingInfoByQueryId": Map {},
+        "queries": Map {},
+        "queryDeduplication": true,
+        "queryStore": QueryStore {
+          "store": Object {},
+        },
+        "ssrMode": false,
+        "transformCache": WeakMap {},
+      },
+      "reFetchObservableQueries": [Function],
+      "resetStore": [Function],
+      "resetStoreCallbacks": Array [],
+      "store": DataStore {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+      },
+      "typeDefs": undefined,
+      "version": "2.6.4",
+      "watchQuery": [Function],
+    }
+  }
+>
+  <EnvironmentPanel
+    channelSohs={
+      Array [
+        Object {
+          "allSohMonitorValueAndStatuses": Array [
+            Object {
+              "contributing": false,
+              "hasUnacknowledgedChanges": false,
+              "monitorType": "ENV_ZEROED_DATA",
+              "quietUntilMs": 1,
+              "status": "GOOD",
+              "thresholdBad": 10,
+              "thresholdMarginal": 1,
+              "value": 1,
+              "valuePresent": true,
+            },
+          ],
+          "channelName": "channelName",
+          "channelSohStatus": "GOOD",
+        },
+      ]
+    }
+    channelStatusesToDisplay={
+      Map {
+        "GOOD" => true,
+      }
+    }
+    defaultQuietDurationMs={10}
+    isStale={false}
+    monitorStatusesToDisplay={
+      Map {
+        "GOOD" => true,
+      }
+    }
+    quietingDurationSelections={
+      Array [
+        1,
+        5,
+        10,
+      ]
+    }
+    stationName="AAK"
+  >
+    <Component>
+      <div
+        className="soh-environment-table 
+  with-separated-rows
+  ag-theme-dark
+  ag-theme-dark--soh
+   table--cell-selection-only"
+        style={
+          Object {
+            "minHeight": NaN,
+          }
+        }
+      >
+        <ClientSideTable
+          columnDefs={
+            Array [
+              Object {
+                "cellRendererFramework": [Function],
+                "colId": "Monitor Type",
+                "comparator": [Function],
+                "headerClass": "soh-header-cell soh-header-cell--neutral",
+                "headerName": "Monitor Type",
+                "pinned": "left",
+                "sort": "asc",
+                "suppressMovable": true,
+                "valueGetter": [Function],
+                "width": 200,
+              },
+              Object {
+                "cellRendererFramework": Object {
+                  "$$typeof": Symbol(react.memo),
+                  "compare": null,
+                  "type": [Function],
+                },
+                "colId": "channelName",
+                "comparator": [Function],
+                "field": "channelName",
+                "headerClass": [Function],
+                "headerName": "channelName",
+                "valueGetter": [Function],
+                "width": 160,
+              },
+            ]
+          }
+          context={
+            Object {
+              "dataReceivedByChannelName": Map {
+                "channelName" => "received",
+              },
+              "rollupStatusByChannelName": Map {
+                "channelName" => "NONE",
+              },
+              "selectedChannelMonitorPairs": Array [],
+              "uuid": "1",
+            }
+          }
+          debug={false}
+          defaultColDef={
+            Object {
+              "disableStaticMarkupForCellRendererFramework": true,
+              "disableStaticMarkupForHeaderComponentFramework": true,
+              "filter": true,
+              "sortable": true,
+            }
+          }
+          headerHeight={44}
+          id="soh-environment-table"
+          key="soh-environment-table"
+          onCellClicked={[Function]}
+          onCellContextMenu={[Function]}
+          overlayNoRowsTemplate="No SOH to display"
+          rowData={Array []}
+          rowHeight={40}
+          suppressCellSelection={true}
+          suppressRowClickSelection={true}
+        >
+          <CoreTable
+            columnDefs={
+              Array [
+                Object {
+                  "cellRendererFramework": [Function],
+                  "colId": "Monitor Type",
+                  "comparator": [Function],
+                  "headerClass": "soh-header-cell soh-header-cell--neutral",
+                  "headerName": "Monitor Type",
+                  "pinned": "left",
+                  "sort": "asc",
+                  "suppressMovable": true,
+                  "valueGetter": [Function],
+                  "width": 200,
+                },
+                Object {
+                  "cellRendererFramework": Object {
+                    "$$typeof": Symbol(react.memo),
+                    "compare": null,
+                    "type": [Function],
+                  },
+                  "colId": "channelName",
+                  "comparator": [Function],
+                  "field": "channelName",
+                  "headerClass": [Function],
+                  "headerName": "channelName",
+                  "valueGetter": [Function],
+                  "width": 160,
+                },
+              ]
+            }
+            context={
+              Object {
+                "dataReceivedByChannelName": Map {
+                  "channelName" => "received",
+                },
+                "rollupStatusByChannelName": Map {
+                  "channelName" => "NONE",
+                },
+                "selectedChannelMonitorPairs": Array [],
+                "uuid": "1",
+              }
+            }
+            debug={false}
+            defaultColDef={
+              Object {
+                "disableStaticMarkupForCellRendererFramework": true,
+                "disableStaticMarkupForHeaderComponentFramework": true,
+                "filter": true,
+                "sortable": true,
+              }
+            }
+            headerHeight={44}
+            id="soh-environment-table"
+            onCellClicked={[Function]}
+            onCellContextMenu={[Function]}
+            onGridReady={[Function]}
+            overlayNoRowsTemplate="No SOH to display"
+            rowBuffer={10}
+            rowData={Array []}
+            rowHeight={40}
+            suppressCellSelection={true}
+            suppressRowClickSelection={true}
+          >
+            <AgGridReact
+              animateRows={false}
+              columnDefs={
+                Array [
+                  Object {
+                    "cellRenderer": undefined,
+                    "cellRendererFramework": [Function],
+                    "colId": "Monitor Type",
+                    "comparator": [Function],
+                    "headerClass": "soh-header-cell soh-header-cell--neutral",
+                    "headerComponent": undefined,
+                    "headerComponentFramework": undefined,
+                    "headerName": "Monitor Type",
+                    "pinned": "left",
+                    "sort": "asc",
+                    "suppressMovable": true,
+                    "valueGetter": [Function],
+                    "width": 200,
+                  },
+                  Object {
+                    "cellRenderer": undefined,
+                    "cellRendererFramework": Object {
+                      "$$typeof": Symbol(react.memo),
+                      "compare": null,
+                      "type": [Function],
+                    },
+                    "colId": "channelName",
+                    "comparator": [Function],
+                    "field": "channelName",
+                    "headerClass": [Function],
+                    "headerComponent": undefined,
+                    "headerComponentFramework": undefined,
+                    "headerName": "channelName",
+                    "valueGetter": [Function],
+                    "width": 160,
+                  },
+                ]
+              }
+              context={
+                Object {
+                  "dataReceivedByChannelName": Map {
+                    "channelName" => "received",
+                  },
+                  "rollupStatusByChannelName": Map {
+                    "channelName" => "NONE",
+                  },
+                  "selectedChannelMonitorPairs": Array [],
+                  "uuid": "1",
+                }
+              }
+              debug={false}
+              defaultColDef={
+                Object {
+                  "filter": true,
+                  "lockVisible": true,
+                  "resizable": true,
+                  "sortable": true,
+                  "sortingOrder": Array [
+                    "asc",
+                    "desc",
+                  ],
+                  "suppressCellFlash": true,
+                }
+              }
+              deltaRowDataMode={true}
+              getRowNodeId={[Function]}
+              headerHeight={44}
+              id="soh-environment-table"
+              onCellClicked={[Function]}
+              onCellContextMenu={[Function]}
+              onColumnMoved={[Function]}
+              onGridReady={[Function]}
+              overlayNoRowsTemplate="No SOH to display"
+              preventDefaultOnContextMenu={true}
+              rowBuffer={10}
+              rowData={null}
+              rowDataChangeDetectionStrategy="IdentityCheck"
+              rowHeight={40}
+              suppressCellSelection={true}
+              suppressContextMenu={true}
+              suppressLoadingOverlay={true}
+              suppressRowClickSelection={true}
+              suppressScrollOnNewData={true}
+            >
+              <div
+                style={
+                  Object {
+                    "height": "100%",
+                  }
+                }
+              />
+            </AgGridReact>
+          </CoreTable>
+        </ClientSideTable>
+      </div>
+    </Component>
+  </EnvironmentPanel>
+</ApolloProvider>
+`;

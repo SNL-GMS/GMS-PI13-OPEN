@@ -1,0 +1,11 @@
+KDAK   BH1       2014243     5743  2286324 n         .088     .0   90.0 broad-band_one                                     20160316 12:00:00
+KDAK   BH2       2014243     5744  2286324 n         .088   90.0   90.0 broad-band_two                                     20160316 12:00:00
+KDAK   BHE       2003013     1847  2014243 n         .088   90.0   90.0 broad-band_east                                    20160316 12:00:00
+KDAK   BHN       2003013     1846  2014243 n         .088     .0   90.0 broad-band_north                                   20160316 12:00:00
+KDAK   BHZ       2003013     1845  2286324 n         .088   -1.0     .0 broad-band_vertical                                20160316 12:00:00
+KDAK   be        1997160      823  2003013 n         .088   90.0   90.0 broad-band_east                                    20160316 12:00:00
+KDAK   bn        1997160      824  2003013 n         .088     .0   90.0 broad-band_north                                   20160316 12:00:00
+KDAK   bz        1997160      825  2003013 n         .088   -1.0     .0 broad-band_vertical                                20160316 12:00:00
+KDAK   se        1997160      826  2003013 n         .088   90.0   90.0 short-period_east                                  20160316 12:00:00
+KDAK   sn        1997160      827  2003013 n         .088     .0   90.0 short-period_north                                 20160316 12:00:00
+KDAK   sz        1997160      828  2003013 n         .088   -1.0     .0 short-period_vertical                              20160316 12:00:00

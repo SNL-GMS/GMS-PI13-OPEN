@@ -1,0 +1,1926 @@
+{
+  "acquisitionMetadata": [
+    {
+      "payloadStartTime": "2020-03-16T17:04:01.426Z",
+      "payloadEndTime": "2020-03-16T17:04:11.426Z",
+      "receptionTime": "2020-03-16T17:04:37.296127Z",
+      "payloadFormat": "CD11",
+      "authenticationStatus": "NOT_YET_AUTHENTICATED",
+      "waveformSummaries": {
+        "ZALV.ZAA1.SHZ": {
+          "channelName": "ZALV.ZAA1.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAA2.SHZ": {
+          "channelName": "ZALV.ZAA2.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAB4.SHZ": {
+          "channelName": "ZALV.ZAB4.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAB1.SHZ": {
+          "channelName": "ZALV.ZAB1.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAA0.SHZ": {
+          "channelName": "ZALV.ZAA0.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAB2.SHZ": {
+          "channelName": "ZALV.ZAB2.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAA0B.BHZ": {
+          "channelName": "ZALV.ZAA0B.BHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAB3.SHZ": {
+          "channelName": "ZALV.ZAB3.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAB5.SHZ": {
+          "channelName": "ZALV.ZAB5.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAA3.SHZ": {
+          "channelName": "ZALV.ZAA3.SHZ",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAA0B.BH1": {
+          "channelName": "ZALV.ZAA0B.BH1",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        },
+        "ZALV.ZAA0B.BH2": {
+          "channelName": "ZALV.ZAA0B.BH2",
+          "startTime": "2020-03-16T17:04:01.426Z",
+          "endTime": "2020-03-16T17:04:11.401Z"
+        }
+      },
+      "channelNames": [
+        "ZALV.ZAA0B.BHZ",
+        "ZALV.ZAA0B.BH1",
+        "ZALV.ZAA0B.BH2",
+        "ZALV.ZAA0.SHZ",
+        "ZALV.ZAA1.SHZ",
+        "ZALV.ZAA2.SHZ",
+        "ZALV.ZAA3.SHZ",
+        "ZALV.ZAB1.SHZ",
+        "ZALV.ZAB2.SHZ",
+        "ZALV.ZAB3.SHZ",
+        "ZALV.ZAB4.SHZ",
+        "ZALV.ZAB5.SHZ"
+      ],
+      "stationName": "ZALV"
+    }
+  ],
+  "acquiredChannelEnvironmentIssues": [
+    {
+      "id": "de02793b-5f0b-4a4e-a195-43a4239d2369",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "c0aa9831-be7d-4dda-b2be-7fd2cd4c3581",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "035bafbf-3ae9-48c5-aa27-69a804919378",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a272d0c1-d2ab-4aa1-90d0-cb957e951d11",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "7af05e27-0486-426c-a0b8-49231b383966",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "04b54134-a362-49f2-b9d9-d4db0d8a778e",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a7102ac5-e68c-4700-adf5-b89f59ac192f",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "7464cfc6-5dd0-4e08-a56f-85b6a89f1ba7",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "37ad0653-12b9-4250-bf94-ace65eab17f1",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "59106d74-25c7-4909-a8c1-522dbb1cf31d",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b4ba03ca-a0ba-4e7d-a464-43ae3872019f",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a255cb88-901b-4729-969c-5eb3b609f50b",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "7e7d64f6-87bc-4b85-a909-00ed5179be85",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "9d0e4a34-4f51-4b7c-adf8-75d7327c8630",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "c7c334ad-193a-452f-a01a-502897952bec",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "04f8b4d4-87e2-4a83-ac30-a0ef1b01f475",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f404acae-1e38-4943-88b6-fc744202205c",
+      "channelName": "ZALV.ZAA0B.BHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "c395efc6-6a37-4fc9-a3a9-5e5723817343",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6f9777e9-74bb-47f7-85a5-87033853b205",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "0cceef42-25e3-4f47-b9ab-0d00ef9f917b",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a0884481-37d7-401b-939e-506ad02f288d",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6bcfc2a3-ac0a-4586-83af-65d85c191a8f",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "cbceec26-e709-4f2b-8916-1e39f527fd35",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5b84fee8-d398-452d-93be-530f329be4cf",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5ed8da50-f745-4874-bd9c-0be00aa4974e",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b3c97311-58e1-486c-90e7-5971dc90f46d",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "e6067599-6115-4e57-9e26-0b3cde9c7628",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "abdedc6a-a767-4509-b83b-adab22fe224a",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b3fc1323-6c11-4bc7-870d-cdfa81b9838e",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5e936cdd-fb28-45b9-ac3a-03fc29805906",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b8e2bc6b-e4c0-4668-8904-f0532e21f54e",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6e3bb963-f59e-4b1e-96e5-f513ffc3e9ba",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "375671ab-535e-4f10-a717-75bbfb7633d9",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "99b0f32e-f669-4629-9f81-02d7ff092020",
+      "channelName": "ZALV.ZAA0B.BH1",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "c607b05e-0c6b-4277-8e08-d1c87f707d11",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "262d647f-6ac4-4647-9d94-55d9adde2f1b",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a652c682-84e6-499e-9805-afc5c478fe69",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "abc9edcd-678c-4589-be2c-1099610412dc",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "2c0dc37c-fd9b-4ba9-8c1a-fb244dee032b",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b60ad184-9dd0-42b6-98e3-10bd1e50d3ad",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6b6357c6-b034-424a-ae32-5f405837f88a",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5d448824-72be-42c6-a323-b796b0b03d2b",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "699fef4d-10ff-4c69-be11-23404644a465",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "88438ca4-1352-4114-a00a-97cac8a85b2e",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "0be66881-f47b-4ffe-ac65-33f338e8d85b",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "e2db8b2f-1f0d-4837-be06-78816998ddb6",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "9c2aff54-ffa2-4502-a577-ee9c28e31580",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5c712e21-bfdc-443c-8bf7-ca77e99df6bf",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "8b4cbe09-6feb-436a-b522-f2bc8b6a7a54",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "617dbcc7-aee1-450c-9e04-10590d78be30",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "8a82ab1c-c4fe-43e2-8c01-a9bb267c688a",
+      "channelName": "ZALV.ZAA0B.BH2",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "0cafd1e5-753f-4400-a082-25eb0050c0e5",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "584f57c0-8cc2-4305-8fc9-fee4c24f6f0c",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "dcb0b24e-790d-496b-99b2-95bb8b0ad500",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "48e51430-58f8-4545-8e56-13cef0ffb2e3",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "98ea3660-dac6-45db-821b-2c7eb9163795",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "9001afd0-e15d-46c7-bab3-8d195779cfd5",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "13dc00a2-0449-4fe3-bc95-fdb5ed5d7af4",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "83359081-dc33-4d58-ab44-b734026e55e0",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "2be785b3-0376-4dae-8264-e259b75421e3",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "871ec17c-10d0-4a85-8f19-1e6daa1a4203",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6a9e9059-b343-44f1-ae6d-9df3af6fa8ee",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "de4ec596-01c1-48d7-a6d6-a8e9fda6926b",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "80bc5adf-c3bb-49e6-adee-61fa91a2822b",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f49d7507-3af5-4b65-89db-8262d73cb5fd",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "4e6b2cd7-b9ed-4cc5-9057-96422ecabebd",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "2a162633-9d66-43ba-917c-033c6f52d0e9",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a6c1d8ad-cdb6-4d08-9795-c19b280f3a7a",
+      "channelName": "ZALV.ZAA0.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "95e54bd0-6d6f-474b-8486-475086a4486d",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "bbf42e90-b94a-4ff9-b5ef-66723c2186c5",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "dd881191-9168-4f84-97ed-f9afd5833511",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "14a8ebb1-b3bb-4fa9-b78b-b60ea4ea1354",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "4ef903cb-4fbd-4bba-a438-4902ae8e044e",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "ff7f937f-3258-493d-99c2-0558094f439c",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "948179f5-66fe-4f99-a79e-6da2677a312e",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "655fd729-8562-4bf3-b1bd-a4196cb237a7",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f6e7a168-9010-4406-86d6-c06b906d0416",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5fb7fb0b-09af-4787-ac3d-ca66d88fad17",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "53d24fec-7ef7-404a-a856-d62bf9e97099",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "987fee19-2db5-47d8-82d7-a7d6cdaba0e3",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "3ac0a710-4878-480c-941e-e93f08907cc8",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "97209552-36bf-4213-acf7-9add4fb1a0b2",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "c7dd8db3-fd33-458b-b8fc-88c1dfaf5984",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "91a6b679-c68e-40ed-921f-20bfeadd3f4f",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "356a6bd5-28e0-47c4-8840-53b6bda244d4",
+      "channelName": "ZALV.ZAA1.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "76a3e4cb-6a4a-4e0f-a8d8-19d2dff90b58",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "97e633f9-d426-4eeb-99bc-b445ae2bb343",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "9e6630b2-f52a-4f98-a25c-a841ed20be9e",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b0ef7639-f452-4011-ac3f-f52efdfa4891",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "bb500fa9-3595-404d-8d7b-550ddc28a4d2",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "825e60e6-50b7-4a7e-8483-3d0b58d798c0",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5e3f18a9-ff33-4af7-8e63-8cea5e815ac8",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f9a4c7fe-43d9-4246-8e3c-d980030e69c0",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "211c2dae-cfd8-469d-a396-bea12253e010",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "da9b10ea-9e57-4d65-a8d4-f3dc28694945",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "baa0cabe-cb85-4e56-8f20-365a65569a7c",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "d93266b4-a531-4398-8bb9-c61d8ae06a3b",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f34c985c-467e-4b1c-b0d5-7c5e74967db6",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "e92beb15-71d3-4dd9-8b8c-609077f635aa",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "1c7b400e-d2f8-4969-9d0b-3b821894a024",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "67127b49-3add-4afc-a3fb-6b81e50165a6",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b3fe2867-971e-4b89-abba-5e0af9c76ec6",
+      "channelName": "ZALV.ZAA2.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "1c0eac54-729e-4ad5-a431-493fd2c1a8a8",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "301bfca3-0fb2-4489-a073-685e150126cb",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "51c20dfe-065c-4f3a-a817-14869e46c509",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5c8fbacf-fdf4-423d-a750-99cff070142d",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "ba3f7654-df94-42df-b5e8-766f266fa5e7",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "985cd6af-8fdc-49e7-98c4-1edb2fa21cc6",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "96a0b539-a3d4-40ac-b0cf-65481dd50775",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "891094fa-bd61-4fe5-833b-11a666079a25",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "94233f33-2048-4dfe-bc33-d015390eec63",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "74333564-fec6-47b7-89c8-d01a20d84a23",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "ff182824-c82c-43ff-a056-f38e44b38d3b",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "1ff5523d-032d-4fc8-a9ad-5c09a7eb7eb9",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "e0032061-f03d-4ee6-8612-55939d6c9032",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "0a93ed9c-2d32-4e18-937d-45a864367190",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a7aa57b9-ec77-4f4b-aa9a-9f26c0252e78",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "77124933-230a-43d1-a6d8-2a76bd7b29b3",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "9e84f86c-34a4-424a-a2bc-64c1a403f32c",
+      "channelName": "ZALV.ZAA3.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "bdeef52c-6c1c-43cd-90e6-3d6fac5b7ecb",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "940fcc15-b5a1-4957-a9d6-b6dd1eb0e06e",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a8540a2b-e85e-43bd-a868-f097b01cc630",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "8058270c-7906-495d-9734-0216d72751fb",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "d8595bf4-a9b2-4bc2-8e29-a6c5090deb29",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "8a455ca6-7a37-45c2-8b55-38d24e38279b",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "c48a468a-dc10-499c-a287-55e9a2d0929a",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f8279b70-90c9-4562-85e6-4cad69cafc80",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "7565bcc1-432c-4ed1-8166-9c70db4f0b10",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6aac7de7-c09f-4217-8447-0ce0dc6476ef",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "c05f313e-cbd7-4fa1-9001-31a192aca9dd",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a2691ddb-10f9-4474-84eb-f9578d9fa1d6",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "503516a0-e509-4199-857d-5d4e09c68cb7",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "0c7ec88c-08af-4b25-9778-29c9e4ccc003",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a400f04d-ff0a-47d6-b658-cacd38c163f0",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "d0a68c72-1023-47ed-8cdd-922f92cf03f7",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b3e8b92f-47ce-4b02-b284-6edfa1246554",
+      "channelName": "ZALV.ZAB1.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "8cfdbb71-733b-406f-af95-87d9e7a38393",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "9daea767-c961-475d-9005-022da099f678",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "8ddc7568-95a0-4d9b-87c4-27b0089e0bcd",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "ae6d7547-a067-4b3e-93cd-f0dc78ec3d0f",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "334330ba-67d9-4cda-b92e-5f2073f9c7b7",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "8847c3f3-4066-4944-ad50-052db5bef642",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "731526ca-36d5-4bcc-8a64-30330434fce2",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "593217ee-6798-4225-94ee-e8e4b5fe2a52",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "e7d32a5e-d4ec-4fe4-ad60-d82462cd1761",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "cdbe95e3-bed8-4ee0-a554-4d3f05f3faa8",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "22745fcb-987f-4dfe-8e64-0e7dbc3a3d59",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "8f4933ec-bf64-43a0-9843-0ebef36c8f64",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "e8ea9287-a3ab-4d83-a426-79fd6b6cef5d",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "705d4c00-d56a-472b-bd5d-0715c346d7d7",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "0c3ff446-e98e-4808-85dd-cd87f5529f38",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "1c5c777a-05d3-4db5-9730-8fdb6e20f603",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b6e5fe48-6b92-4610-86b0-6b29c1e2ce43",
+      "channelName": "ZALV.ZAB2.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "cd4996b9-aca4-4204-811a-313514951e3a",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "2bc9bbd6-bbe7-441d-b064-02133d9aed5d",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f3a4ed88-9cee-4ae2-bdbf-82c18b79e8be",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "1e19e7fe-49b1-4c0b-a9e8-4dfd7b86c40d",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "8a93fb3d-d516-4a77-b121-c3ffc12fee03",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "7c6fe25c-6ead-4700-b8f1-55ac86139191",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "2428d68a-34e3-400f-bfac-8a3418cfcec1",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "d9479b73-f00e-489c-b203-94346e6a6b0c",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "caf2bffa-983f-4da8-b0e2-1d07fe0d9ef6",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a4fa8f31-e025-4989-a49a-7b3e069217d2",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "e0a299b7-2f3d-44d4-b791-8a4ddd3f794f",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "66b96e6b-65df-4b2a-a844-5d664860b61a",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6f56f76c-750b-4750-a79d-9d139ec25fc7",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "7fba0779-8948-4418-9824-efdb9c424b50",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "68661a69-943b-4915-9b54-b16325131540",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "513040ab-ce72-4fa8-b373-2670ddb70e26",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "d7809ca0-30ad-4e2c-b036-38b30cee7299",
+      "channelName": "ZALV.ZAB3.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "9a1a7cbb-9fae-48be-baa9-328a52f2ff9e",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "a787011e-52d3-4bc1-bf29-d846423a906f",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "05b8e197-8270-438d-b1a3-4b79a01cffe7",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b94a99c2-db59-4d39-bda1-b9581685cea4",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "14dd2d1b-2195-43a5-b57e-7a2f3e1c02b4",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "d147a75c-2637-44c9-9bfc-ef81beac5f8a",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "9d6bdf0b-2b64-41f6-82b5-d669acf78b8b",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "7c43972a-ec57-4544-880d-fc6c000eb986",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "142d6486-d530-48e3-873e-c6fe1f556ae5",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6cfde914-a855-4f96-8329-919da6e1c950",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f72ed8da-5d71-4798-b0a9-bbdf69f56711",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "15a910b7-b886-4aee-b0da-7d2ac0a5a230",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "5b5f717a-853a-4ab0-961f-68e667454f18",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "b23ec524-a406-4706-ac93-8f333ed5fddd",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "85837861-353f-467e-b3f6-63e6ebe471f6",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "47c28a42-4021-43e6-8c69-50e5e3439bc1",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "bd8b1dce-ab12-4a22-9407-e33d578f5dd9",
+      "channelName": "ZALV.ZAB4.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    },
+    {
+      "id": "3d40ae04-7847-43ff-81c9-5f10ab48602a",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "DEAD_SENSOR_CHANNEL",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "7c9f5c96-1f9b-4e0e-bf15-ddde5f2b7112",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "ZEROED_DATA",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "6ee774d2-f678-4f18-acf0-83025fe2ccfd",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "CLIPPED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "93c72e59-f181-45aa-8599-e34e6c4d9ffe",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "CALIBRATION_UNDERWAY",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "acc621cd-40f4-4352-ab18-5c1eb4c0df5e",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "EQUIPMENT_HOUSING_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "48f1c891-1945-4b6b-b8f5-a738872bc839",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "DIGITIZING_EQUIPMENT_OPEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "ad92b842-11e9-42b6-84fb-b7af017b808e",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "VAULT_DOOR_OPENED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "c3947710-5e45-4818-b18e-2b414c683f75",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "AUTHENTICATION_SEAL_BROKEN",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "0faa8975-fe39-470a-a8aa-02d16ca77b3a",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "EQUIPMENT_MOVED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "27ce406a-010f-4b5e-a9e6-5971194b74ce",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_TOO_LARGE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "c3c59466-3c45-4d64-9e23-465dae348a04",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "GPS_RECEIVER_OFF",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f3629153-5fc9-4cd3-b891-0bb1505f7022",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "GPS_RECEIVER_UNLOCKED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "f59df202-e3ca-4410-9f38-f3975f9ffff7",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "DIGITIZER_ANALOG_INPUT_SHORTED",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "bb6ad4e2-22dc-49c4-a850-c8c803fa895f",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "DIGITIZER_CALIBRATION_LOOP_BACK",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "2b7eb8a8-72f0-4475-bd00-09426c2d8a1a",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "MAIN_POWER_FAILURE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "59e84249-abbb-4a49-a0a7-7f1e14c1e03f",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "BACKUP_POWER_UNSTABLE",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": false,
+      "clazz": "AcquiredChannelEnvironmentIssueBoolean"
+    },
+    {
+      "id": "e7d70a99-924b-43ea-9322-5a05fa2a5416",
+      "channelName": "ZALV.ZAB5.SHZ",
+      "type": "CLOCK_DIFFERENTIAL_IN_MICROSECONDS",
+      "startTime": "2020-03-16T17:04:01.426Z",
+      "endTime": "2020-03-16T17:04:11.401Z",
+      "status": 0.0,
+      "clazz": "AcquiredChannelEnvironmentIssueAnalog"
+    }
+  ]
+}

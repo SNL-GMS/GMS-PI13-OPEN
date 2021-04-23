@@ -1,0 +1,795 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`queries  should have graphqlTransferredFilesByTimeRangeQueryQuery 1`] = `
+Array [
+  Object {
+    "definitions": Array [
+      Object {
+        "directives": Array [],
+        "kind": "OperationDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "transferredFilesByTimeRange",
+        },
+        "operation": "query",
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [
+                Object {
+                  "kind": "Argument",
+                  "name": Object {
+                    "kind": "Name",
+                    "value": "timeRange",
+                  },
+                  "value": Object {
+                    "kind": "Variable",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "timeRange",
+                    },
+                  },
+                },
+              ],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "transferredFilesByTimeRange",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "FileGapsFragment",
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "variableDefinitions": Array [
+          Object {
+            "defaultValue": undefined,
+            "directives": Array [],
+            "kind": "VariableDefinition",
+            "type": Object {
+              "kind": "NonNullType",
+              "type": Object {
+                "kind": "NamedType",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "TimeRange",
+                },
+              },
+            },
+            "variable": Object {
+              "kind": "Variable",
+              "name": Object {
+                "kind": "Name",
+                "value": "timeRange",
+              },
+            },
+          },
+        ],
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "FileGapsFragment",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "stationName",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "channelNames",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "startTime",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "endTime",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "duration",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "location",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "priority",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "FileGap",
+          },
+        },
+      },
+    ],
+    "kind": "Document",
+    "loc": Object {
+      "end": 303,
+      "start": 0,
+    },
+  },
+  Object {
+    "name": "transferredFilesByTimeRangeQuery",
+    "options": [Function],
+  },
+]
+`;
+
+exports[`queries  should have graphqlTransferredFilesByTimeRangeQueryQuery 2`] = `
+Array [
+  Object {
+    "definitions": Array [
+      Object {
+        "directives": Array [],
+        "kind": "OperationDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "defaultReferenceStations",
+        },
+        "operation": "query",
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "defaultReferenceStations",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "ReferenceStationFragment",
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "variableDefinitions": Array [],
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "ReferenceStationFragment",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "id",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "name",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "latitude",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "longitude",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "elevation",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "stationType",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "description",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "defaultChannel",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "ReferenceChannelFragment",
+                    },
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "networks",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "id",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "name",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "monitoringOrganization",
+                    },
+                    "selectionSet": undefined,
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "location",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "LocationFragment",
+                    },
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "sites",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "ReferenceSiteFragment",
+                    },
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "dataAcquisition",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "dataAcquisition",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "interactiveProcessing",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "automaticProcessing",
+                    },
+                    "selectionSet": undefined,
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "ReferenceStation",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "ReferenceSiteFragment",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "id",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "name",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "channels",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "ReferenceChannelFragment",
+                    },
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "location",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "directives": Array [],
+                    "kind": "FragmentSpread",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "LocationFragment",
+                    },
+                  },
+                ],
+              },
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "ReferenceSite",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "LocationFragment",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "latitudeDegrees",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "longitudeDegrees",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "elevationKm",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "Location",
+          },
+        },
+      },
+      Object {
+        "directives": Array [],
+        "kind": "FragmentDefinition",
+        "name": Object {
+          "kind": "Name",
+          "value": "ReferenceChannelFragment",
+        },
+        "selectionSet": Object {
+          "kind": "SelectionSet",
+          "selections": Array [
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "id",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "name",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "channelType",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "sampleRate",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "position",
+              },
+              "selectionSet": Object {
+                "kind": "SelectionSet",
+                "selections": Array [
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "northDisplacementKm",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "eastDisplacementKm",
+                    },
+                    "selectionSet": undefined,
+                  },
+                  Object {
+                    "alias": undefined,
+                    "arguments": Array [],
+                    "directives": Array [],
+                    "kind": "Field",
+                    "name": Object {
+                      "kind": "Name",
+                      "value": "verticalDisplacementKm",
+                    },
+                    "selectionSet": undefined,
+                  },
+                ],
+              },
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "actualTime",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "systemTime",
+              },
+              "selectionSet": undefined,
+            },
+            Object {
+              "alias": undefined,
+              "arguments": Array [],
+              "directives": Array [],
+              "kind": "Field",
+              "name": Object {
+                "kind": "Name",
+                "value": "depth",
+              },
+              "selectionSet": undefined,
+            },
+          ],
+        },
+        "typeCondition": Object {
+          "kind": "NamedType",
+          "name": Object {
+            "kind": "Name",
+            "value": "ReferenceChannel",
+          },
+        },
+      },
+    ],
+    "kind": "Document",
+    "loc": Object {
+      "end": 1497,
+      "start": 0,
+    },
+  },
+  Object {
+    "name": "defaultStationsQuery",
+  },
+]
+`;

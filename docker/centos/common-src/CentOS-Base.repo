@@ -1,0 +1,38 @@
+# CentOS-Base.repo
+#
+# GMS artifactory centos remote mirror
+#
+
+
+[base]
+name=CentOS-$releasever - Base
+baseurl=#CENTOS_YUM_URL#/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+proxy=_none_
+
+#released updates 
+[updates]
+name=CentOS-$releasever - Updates
+baseurl=#CENTOS_YUM_URL#/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+proxy=_none_
+
+#additional packages that may be useful
+[extras]
+name=CentOS-$releasever - Extras
+baseurl=#CENTOS_YUM_URL#/$releasever/extras/$basearch/
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+proxy=_none_
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-$releasever - Plus
+baseurl=#CENTOS_YUM_URL#/$releasever/centosplus/$basearch/
+gpgcheck=1
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+proxy=_none_
+

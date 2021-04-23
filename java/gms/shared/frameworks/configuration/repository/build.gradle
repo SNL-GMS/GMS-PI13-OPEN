@@ -1,0 +1,39 @@
+// Apply Gradle plugins here, if you need extra ones for your builds
+apply plugin: "java-library"
+
+dependencies {
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':frameworks-configuration-commonobjects')
+    implementation project(':frameworks-configuration-api')
+    api project(':frameworks-system-config')
+    api project(":frameworks-service-generator")
+
+    implementation 'javax.persistence:javax.persistence-api'
+
+    implementation project(':frameworks-utilities')
+    implementation project(':frameworks-utilities-jpa')
+    
+    implementation 'com.google.auto.value:auto-value-annotations'
+    implementation 'javax.xml.bind:jaxb-api'
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'com.vladmihalcea:hibernate-types-52'
+
+    annotationProcessor 'com.google.auto.value:auto-value'
+
+    // Testing.
+    testImplementation 'org.jmockit:jmockit'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+    testImplementation project(':frameworks-osd-testfixtures')
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    test {
+        jvmArgs "-javaagent:${classpath.find { it.name.contains("jmockit") }.absolutePath}"
+        onlyIf {
+            project.hasProperty("integrationTests")
+        }
+    }
+}

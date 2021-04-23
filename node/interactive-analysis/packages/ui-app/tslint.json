@@ -1,0 +1,20 @@
+{
+  "extends": ["../../tslint.json"],
+  "rules": {
+    "no-implicit-dependencies": [
+      false,
+      "dev",
+      [
+        "~css",
+        "~app",
+        "~components",
+        "~analyst-ui",
+        "~data-acquisition-ui",
+        "~common-ui",
+        "~config",
+        "~resources",
+        "~scss-config"
+      ]
+    ]
+  }
+}

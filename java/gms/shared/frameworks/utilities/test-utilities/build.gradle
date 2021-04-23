@@ -1,0 +1,13 @@
+apply plugin: "java-library"
+
+dependencies {
+    implementation 'com.kohlschutter.junixsocket:junixsocket-common'
+    implementation 'com.kohlschutter.junixsocket:junixsocket-native-common'
+    implementation 'org.testcontainers:testcontainers'
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.testcontainers:junit-jupiter'
+    implementation 'org.testcontainers:postgresql'
+    implementation 'org.testcontainers:kafka'
+    implementation 'org.zeroturnaround:zt-exec'
+    implementation 'net.jodah:failsafe'
+}

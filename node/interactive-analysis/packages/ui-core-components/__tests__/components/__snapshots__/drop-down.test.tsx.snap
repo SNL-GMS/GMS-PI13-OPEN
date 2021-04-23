@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Core drop down Can render custom value 1`] = `
+<HTMLSelect
+  disabled={false}
+  onChange={[Function]}
+  style={
+    Object {
+      "minWidth": "120px",
+      "width": "120px",
+    }
+  }
+  title="undefined"
+  value="UNSELECTED_CUSTOM_VALUE"
+>
+  <option
+    key="test"
+    value="test"
+  >
+    test
+  </option>
+  <option
+    key="foo"
+    value="foo"
+  >
+    foo
+  </option>
+  <option
+    key="bar"
+    value="bar"
+  >
+    bar
+  </option>
+  <option
+    key="UNSELECTED_CUSTOM_VALUE"
+    value="UNSELECTED_CUSTOM_VALUE"
+  >
+    Custom
+  </option>
+</HTMLSelect>
+`;
+
+exports[`Core drop down Renders 1`] = `
+<HTMLSelect
+  disabled={false}
+  onChange={[Function]}
+  style={
+    Object {
+      "minWidth": "120px",
+      "width": "120px",
+    }
+  }
+  title="undefined"
+  value="bar"
+>
+  <option
+    key="test"
+    value="test"
+  >
+    test
+  </option>
+  <option
+    key="foo"
+    value="foo"
+  >
+    foo
+  </option>
+  <option
+    key="bar"
+    value="bar"
+  >
+    bar
+  </option>
+</HTMLSelect>
+`;

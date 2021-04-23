@@ -1,0 +1,67 @@
+#!/bin/bash
+
+#
+# This script builds the GMS PI 13 open source release after the
+# prerequisites have been installed.
+#
+# It's intended to be run on a CentOS/RHEL 7 system.
+#
+
+set -eux
+
+if [ -z "${REPO_PATH:-}" ]; then
+    REPO_PATH="$(cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd)"
+fi
+
+if [ -z "${CI_DOCKER_REGISTRY:-}" ]; then
+    export CI_DOCKER_REGISTRY=local
+fi
+
+if [ -z "${CI_THIRD_PARTY_DOCKER_REGISTRY:-}" ]; then
+    export CI_THIRD_PARTY_DOCKER_REGISTRY=registry-1.docker.io/library
+fi
+
+if [ -z "${CI_PROJECT_NAME:-}" ]; then
+    export CI_PROJECT_NAME=gms-common
+fi
+
+source ${REPO_PATH}/.bash_env
+source ${REPO_PATH}/ci/ci.env
+
+# export these values so subshells can see them
+export DOCKER_IMAGE_TAG
+export CI_BUILD_DATETIM
+export CI_COMMIT_REF_NAME
+export CI_COMMIT_REF_SLUG
+export CI_COMMIT_REF_SHA
+
+build_docker() {
+   cd ${REPO_PATH}/docker
+   time make all
+}
+
+build_python() {
+    cd ${REPO_PATH}/python
+    export PATH=$PATH:/opt/gradle/bin
+    time make all
+}
+
+build_java() {
+    cd ${REPO_PATH}/java
+    export PATH=$PATH:/opt/gradle/bin
+    time gradle -q --no-daemon build -x test docker dockerTagImageTag dockerTagCiCommitSha
+    time gradle -q --no-daemon test 
+}
+
+build_typescript() {
+    cd ${REPO_PATH}/node/interactive-analysis
+    time yarn 
+    time yarn build:prod
+    time yarn bundle:prod:soh
+    time make all
+}
+
+build_docker
+build_python
+build_java
+build_typescript

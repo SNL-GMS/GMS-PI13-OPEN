@@ -1,0 +1,21 @@
+{
+  "station": "BOSA",
+  "sohStatusChanges": [
+    {
+      "firstChangeTime": "2020-04-09T16:17:47.599447Z",
+      "sohMonitorType": "LAG",
+      "changedChannel": "BOSA.BOSAB.BHZ"
+    },
+    {
+      "firstChangeTime": "2020-04-09T16:17:47.599447Z",
+      "sohMonitorType": "ENV_AUTHENTICATION_SEAL_BROKEN",
+      "changedChannel": "BOSA.BOSAB.BHZ"
+    },
+    {
+      "firstChangeTime": "2020-04-09T16:17:47.599447Z",
+      "sohMonitorType": "ENV_BACKUP_POWER_UNSTABLE",
+      "changedChannel": "BOSA.BOSAB.BHZ"
+    }
+
+  ]
+}

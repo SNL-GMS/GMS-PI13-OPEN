@@ -1,0 +1,36 @@
+plugins {
+    id "application"
+    id "com.palantir.docker"
+}
+
+mainClassName = 'gms.dataacquisition.cd11.rsdf.processor.Cd11RsdfProcessorService'
+
+dependencies {
+    implementation project(':cd11-common')
+    implementation project(':data-acquisition-receiver-api')
+    implementation project(':frameworks-client-generator')
+    implementation project(':frameworks-control')
+    implementation project(":frameworks-service-interface-base")
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':kafka-utilities')
+
+    //dependencies for features currently disabled, but required to compile
+    implementation project(':waveman')
+    implementation project(':frameworks-osd-api')
+
+    // Third-party dependencies.
+    implementation 'com.google.guava:guava'
+    //remove after feature toggle removal
+    implementation 'org.apache.kafka:kafka-streams'
+    implementation 'net.jodah:failsafe'
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor.kafka:reactor-kafka'
+
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    testImplementation 'io.projectreactor:reactor-test'
+    //remove after feature toggle removal
+    testImplementation 'org.apache.kafka:kafka-streams-test-utils'
+}

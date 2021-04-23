@@ -1,0 +1,134 @@
+apply plugin: "com.jfrog.artifactory"
+apply plugin: "java"
+apply plugin: "jacoco"
+apply plugin: "net.ltgt.apt"
+apply plugin: "net.ltgt.apt-idea"
+
+// Define global variables for Docker.
+ext {
+    dockerRegistry = System.getenv('CI_DOCKER_REGISTRY') ?: 'local'
+    dockerPath = System.getenv('CI_PROJECT_NAME') ?: 'gms-common'
+    dockerImageTag = System.getenv('DOCKER_IMAGE_TAG') ?: 'local'
+    dockerPull = false
+    dockerNoCache = false
+    dockerCiCommitRefName = System.getenv('CI_COMMIT_REF_NAME') ?: 'NA'
+    dockerCiCommitSha = System.getenv('CI_COMMIT_SHA') ?: 'NA'
+    dockerCiBuildDatetime = System.getenv('CI_BUILD_DATETIME') ?: 'NA'
+}
+
+sourceCompatibility = 11
+
+repositories {
+    // For now we are not resolving 3rd party libraries with Artifactory.
+    if ("${artifactory_contextUrl}".trim()) {
+        maven {
+            url "${artifactory_contextUrl}/sandbox_java_${project.version.endsWith('-SNAPSHOT') ? 'snapshots_' : ''}virtual"
+        }
+    } else {
+        mavenCentral()
+    }
+}
+
+// Project-wide dependencies
+apply from: file("${rootDir}/gradle/scripts/dependencies.gradle"), to: dependencies
+// Project-wide dependency constraints.
+apply from: file("${rootDir}/gradle/scripts/constraints.gradle"), to: dependencies.constraints
+
+test {
+    useJUnitPlatform() {
+        excludeTags 'component'
+    }
+
+    testLogging{
+        quiet {
+            events = ["skipped", "failed"]
+        }
+    }
+}
+
+task componentTest(type: Test) {
+    group = 'verification'
+    description = 'Runs the component tests. Tag your test/test class/test superclass' +
+            ' with @Tag("component") to include here/exclude from unit tests'
+    maxParallelForks = 1
+    useJUnitPlatform() {
+        includeTags 'component'
+    }
+
+    testLogging {
+        quiet {
+            events = ["skipped", "failed"]
+        }
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.3"
+}
+
+jacocoTestReport {
+    executionData.setFrom(fileTree(buildDir).include("/jacoco/*.exec"))
+    reports {
+        xml.enabled true
+    }
+}
+
+// Add compiler args during java compilation.
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
+
+task allDependencies(type: DependencyReportTask, group: 'help') {}
+
+pluginManager.withPlugin('java-library') {
+    apply plugin: 'maven-publish'
+
+    publishing {
+        publications {
+            mavenJava(MavenPublication) {
+                from components.java
+            }
+        }
+    }
+
+    artifactory {
+        contextUrl = "${artifactory_contextUrl}"
+
+        publish {
+            repository {
+                repoKey = "sandbox_java_${project.version.endsWith('-SNAPSHOT') ? 'snapshots_' : ''}virtual"
+                maven = true
+            }
+            defaults {
+                publications("mavenJava")
+            }
+        }
+    }
+}
+
+pluginManager.withPlugin('application') {
+    artifactoryPublish.skip = true
+    tasks.distZip.enabled = false
+}
+
+pluginManager.withPlugin('com.palantir.docker') {
+    docker {
+        name "${dockerRegistry}/${dockerPath}/${project.name}"
+        tag 'ImageTag', "${dockerRegistry}/${dockerPath}/${project.name}:${dockerImageTag}"
+        tag 'CiCommitSha', "${dockerRegistry}/${dockerPath}/${project.name}:${dockerCiCommitSha}"
+        tag 'Latest', "${dockerRegistry}/${dockerPath}/${project.name}:latest"
+        pull dockerPull
+        noCache dockerNoCache
+        files tasks.distTar.outputs
+        buildArgs([DOCKER_REGISTRY: "${dockerRegistry}", DOCKER_IMAGE_TAG: "${dockerImageTag}", CI_COMMIT_REF_NAME: "${dockerCiCommitRefName}", CI_COMMIT_SHA: "${dockerCiCommitSha}", CI_BUILD_DATETIME: "${dockerCiBuildDatetime}"])
+    }
+}
+
+pluginManager.withPlugin('io.swagger.core.v3.swagger-gradle-plugin'){
+    tasks.resolve {
+        outputFileName = project.name
+        classpath = sourceSets.main.runtimeClasspath
+        outputDir = file("build/swagger")
+        modelConverterClasses = ["gms.shared.frameworks.swagger.JavaInstantSwaggerConverter"]
+    }
+}

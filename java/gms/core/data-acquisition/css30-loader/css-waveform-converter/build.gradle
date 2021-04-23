@@ -1,0 +1,21 @@
+apply plugin: 'application'
+
+mainClassName = 'gms.dataacquisition.csswaveformconverter.CssWaveformFileWriter'
+
+run {
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+}
+
+dependencies {
+    // GMS project dependencies.
+    implementation project(':css-reader')
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':stationref-file-reader-utility')
+
+    // Third-party dependencies.
+    implementation 'args4j:args4j'
+    compileOnly 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+}

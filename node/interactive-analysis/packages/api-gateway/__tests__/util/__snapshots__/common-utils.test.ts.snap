@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`common util payload helper function tests empty payload test 1`] = `
+Object {
+  "events": Array [],
+  "qcMasks": Array [],
+  "sds": Array [],
+}
+`;
+
+exports[`common util payload helper function tests full payload test 1`] = `
+Object {
+  "events": Array [],
+  "qcMasks": Array [],
+  "sds": Array [],
+}
+`;

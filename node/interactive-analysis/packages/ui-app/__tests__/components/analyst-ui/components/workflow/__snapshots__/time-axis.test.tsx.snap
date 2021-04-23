@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`workflow time axis tests renders a snapshot: component 1`] = `
+<WorkflowTimeAxis
+  endTimeSecs={3600}
+  intervalDurationSecs={60}
+  pixelsPerHour={5}
+  startTimeSecs={3000}
+>
+  <div
+    className="time-axis-wrapper"
+  >
+    <div
+      className="time-axis"
+    />
+  </div>
+</WorkflowTimeAxis>
+`;

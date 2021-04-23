@@ -1,0 +1,29 @@
+apply plugin: 'application'
+apply plugin: 'com.palantir.docker'
+
+mainClassName = 'gms.dataacquisition.stationreceiver.cd11.connman.Cd11ConnManService';
+
+run {
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+    systemProperties System.properties
+}
+
+dependencies {
+    // Project dependencies.
+    implementation project(':java-utilities')
+    implementation project(':cd11-common')
+    implementation project(':frameworks-control')
+    implementation project(":frameworks-service-interface-base")
+    implementation project(":frameworks-system-config")
+
+    // Third-party dependencies.
+    implementation 'com.google.guava:guava'
+    implementation 'net.jodah:failsafe'
+
+    // reactor and reactor netty dependencies
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor.netty:reactor-netty'
+    implementation 'io.micrometer:micrometer-core'
+}

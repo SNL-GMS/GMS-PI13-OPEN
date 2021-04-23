@@ -1,0 +1,19 @@
+apply plugin: 'java-library'
+apply plugin: 'io.swagger.core.v3.swagger-gradle-plugin'
+
+dependencies {
+    implementation project(":frameworks-service-interface-base")
+    api project(':frameworks-osd-commonobjects')
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+    implementation "org.apache.commons:commons-lang3"
+
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.postgresql:postgresql'
+    implementation 'javax.persistence:javax.persistence-api'
+
+    testImplementation project(":frameworks-osd-testfixtures")
+
+}

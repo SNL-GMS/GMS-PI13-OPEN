@@ -1,0 +1,47 @@
+package gms.utilities.waveformreader;
+
+
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import org.apache.commons.lang3.Validate;
+
+/**
+ * Code for reading waveform format 's4', SUN integer (4 bytes). Implements FunctionalInterface
+ * WaveformReaderInterface.
+ */
+public class Sun4FormatWaveformReader implements WaveformReaderInterface {
+
+    /**
+     * Reads the InputStream as an S4 waveform.
+     *
+     * @param input the input stream to read from
+     * @param skip number of samples to skip
+     * @param numSamples number of samples to read
+     * @return int[] of digitizer counts from the waveform
+     * @throws IOException if there were issues reading from the input stream
+     * @throws NullPointerException if no data was read successfully
+     */
+    public double[] read(InputStream input, int numSamples, int skip) throws IOException {
+        Validate.notNull(input);
+
+        int skipBytes = skip * Integer.SIZE / Byte.SIZE;
+        input.skip(Math.min(input.available(), skipBytes));
+
+        DataInputStream dis = new DataInputStream(input);
+
+        double[] data = new double[numSamples];
+        int i = 0;
+        for (; i < numSamples && dis.available() > 0; i++) {
+            data[i] = dis.readInt();
+        }
+
+        //  Check if no data could be read
+        if (i == 0) {
+            return new double[]{};
+        }
+
+        return data;
+    }
+}
+

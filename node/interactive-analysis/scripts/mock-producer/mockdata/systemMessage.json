@@ -1,0 +1,12 @@
+{
+  "id": "51ac447d-0e89-45cb-9542-5a2acc78e4be",
+  "time": 1592515836269,
+  "message": "Station StationA SOH status changed from MARGINAL to BAD",
+  "type": "STATION_SOH_STATUS_CHANGED",
+  "severity": "INFO",
+  "category": "SOH",
+  "subCategory": "STATION",
+  "messageTags": {
+    "station": "StationA"
+  }
+}

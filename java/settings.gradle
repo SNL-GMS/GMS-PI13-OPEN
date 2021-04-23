@@ -1,0 +1,186 @@
+/***************************************************************************************
+ MODIFY THIS FILE WITH CARE!!!
+ /***************************************************************************************/
+pluginManagement {
+    repositories {
+        if ("${artifactory_contextUrl}".trim()) {
+            maven {
+                url "${artifactory_contextUrl}/sandbox_java_virtual"
+            }
+        }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = "gms-common"
+
+include "acei-merge-processor"
+project(":acei-merge-processor").projectDir = file("gms/core/data-acquisition/acei-merge-processor")
+
+// Include the integration testing subproject
+include "integration"
+project(":integration").projectDir = file("gms/integration")
+// Used in integration tests
+include "kafka-client"
+project(":kafka-client").projectDir = file("gms/core/data-acquisition/kafka-client")
+
+// Include the interactive analysis config projects
+include "interactive-analysis-config-service"
+project(":interactive-analysis-config-service").projectDir = file("gms/core/interactive-analysis/interactive-analysis-config-service")
+
+// Include Data Acquisition subprojects
+include "data-acquisition-receiver-api"
+project(":data-acquisition-receiver-api").projectDir = file("gms/core/data-acquisition/data-acquisition-receiver-api")
+include "data-preloader"
+project(":data-preloader").projectDir = file("gms/core/data-acquisition/data-preloader")
+
+// Include the CD 1.1 Receiver subprojects.
+include "cd11-common"
+project(":cd11-common").projectDir = file("gms/core/data-acquisition/cd11-station-receiver/cd11-common")
+include "cd11-connman"
+project(":cd11-connman").projectDir = file("gms/core/data-acquisition/cd11-station-receiver/cd11-connman")
+include "cd11-dataman"
+project(":cd11-dataman").projectDir = file("gms/core/data-acquisition/cd11-station-receiver/cd11-dataman")
+include "cd11-parser"
+project(":cd11-parser").projectDir = file("gms/core/data-acquisition/cd11-station-receiver/cd11-parser")
+include "cd11-datamanipulator"
+project(":cd11-datamanipulator").projectDir = file("gms/core/data-acquisition/cd11-station-receiver/cd11-datamanipulator")
+
+// Include the station-soh-control subprojects
+include "soh-control"
+project(":soh-control").projectDir = file("gms/core/performance-monitoring/soh/soh-control")
+include "soh-control-api"
+project(":soh-control-api").projectDir = file("gms/core/performance-monitoring/soh/soh-control-api")
+include("soh-application")
+project(":soh-application").projectDir = file("gms/core/performance-monitoring/soh/soh-application")
+include("soh-config-checker")
+project(":soh-config-checker").projectDir = file("gms/core/performance-monitoring/soh/soh-config-checker")
+
+include "ui-materialized-view"
+project(":ui-materialized-view").projectDir = file("gms/core/performance-monitoring/ui-materialized-view")
+include "ssam-application"
+project(":ssam-application").projectDir = file("gms/core/performance-monitoring/station-soh-analysis-manager/ssam-application")
+include "ssam-control"
+project(":ssam-control").projectDir = file("gms/core/performance-monitoring/station-soh-analysis-manager/ssam-control")
+include "ssam-control-api"
+project(":ssam-control-api").projectDir = file("gms/core/performance-monitoring/station-soh-analysis-manager/ssam-control-api")
+
+include "smds-application"
+project(":smds-application").projectDir = file("gms/core/performance-monitoring/system-message-definition-service/smds-application")
+include "smds-service"
+project(":smds-service").projectDir = file("gms/core/performance-monitoring/system-message-definition-service/smds-service")
+
+// Include the CSS 3.0 Loader subprojects.
+include "css-reader"
+project(":css-reader").projectDir = file("gms/core/data-acquisition/css30-loader/css-reader")
+include "css-stationref-converter"
+project(":css-stationref-converter").projectDir = file("gms/core/data-acquisition/css30-loader/css-stationref-converter")
+include "css-processing-converter"
+project(":css-processing-converter").projectDir = file("gms/core/data-acquisition/css30-loader/css-processing-converter")
+include "css-waveform-converter"
+project(":css-waveform-converter").projectDir = file("gms/core/data-acquisition/css30-loader/css-waveform-converter")
+
+// Include the Waveform Reader Utility subprojects.
+include "waveman"
+project(":waveman").projectDir = file("gms/core/data-acquisition/waveform-reader-utility/waveman")
+
+// Include other data acquisition subprojects.
+include("cd11-rsdf-processor")
+project(":cd11-rsdf-processor").projectDir = file("gms/core/data-acquisition/cd11-rsdf-processor")
+
+// Include the Signal Processing subproject
+//include "signal-processing-utility"
+//project(":signal-processing-utility").projectDir = file("gms/shared/utilities/signal-processing-utility")
+
+// Include the Standard Earthmodel Format utility
+
+// Include Utility projects.
+include "java-utilities"
+project(":java-utilities").projectDir = file("gms/shared/utilities/java-utilities")
+include "kafka-utilities"
+project(":kafka-utilities").projectDir = file("gms/shared/utilities/kafka-utilities")
+//include "filter-definition-validator"
+//project(":filter-definition-validator").projectDir = file("gms/shared/utilities/standard-test-data-set/filter-definition-validator")
+//include "qc-mask-converter"
+//project(":qc-mask-converter").projectDir = file("gms/shared/utilities/standard-test-data-set/qc-mask-converter")
+include "stationref-file-reader-utility"
+project(":stationref-file-reader-utility").projectDir = file("gms/shared/utilities/standard-test-data-set/stationref-file-reader-utility")
+//include "beam-converter"
+//project(":beam-converter").projectDir = file("gms/shared/utilities/standard-test-data-set/beam-converter")
+include "coi-data-loader"
+project(":coi-data-loader").projectDir = file("gms/shared/utilities/data-loading/coi-data-loader")
+
+// Include frameworks projects
+include "frameworks-client-generator"
+project(":frameworks-client-generator").projectDir = file("gms/shared/frameworks/frameworks-client-generator")
+include "frameworks-client-library"
+project(":frameworks-client-library").projectDir = file("gms/shared/frameworks/frameworks-client-library")
+include "frameworks-control"
+project(":frameworks-control").projectDir = file("gms/shared/frameworks/frameworks-control")
+include "frameworks-data-injector"
+project(":frameworks-data-injector").projectDir = file("gms/shared/frameworks/data-injector")
+include "frameworks-service-interface-base"
+project(":frameworks-service-interface-base").projectDir = file("gms/shared/frameworks/frameworks-service-interface-base")
+include "frameworks-http-service-library"
+project(":frameworks-http-service-library").projectDir = file("gms/shared/frameworks/frameworks-http-service-library")
+include "frameworks-plugin-registry"
+project(":frameworks-plugin-registry").projectDir = file("gms/shared/frameworks/frameworks-plugin-registry")
+include "frameworks-service-generator"
+project(":frameworks-service-generator").projectDir = file("gms/shared/frameworks/frameworks-service-generator")
+include "frameworks-shared-objects"
+project(":frameworks-shared-objects").projectDir = file("gms/shared/frameworks/frameworks-shared-objects")
+include "frameworks-osd-commonobjects"
+project(":frameworks-osd-commonobjects").projectDir = file("gms/shared/frameworks/frameworks-osd/frameworks-osd-commonobjects")
+include "frameworks-osd-testfixtures"
+project(":frameworks-osd-testfixtures").projectDir = file("gms/shared/frameworks/frameworks-osd/frameworks-osd-testfixtures")
+include "frameworks-system-config"
+project(":frameworks-system-config").projectDir = file("gms/shared/frameworks/frameworks-system-config")
+include "frameworks-utilities"
+project(":frameworks-utilities").projectDir = file("gms/shared/frameworks/frameworks-utilities")
+include(':frameworks-osd-daos')
+project(':frameworks-osd-daos').projectDir = file('gms/shared/frameworks/frameworks-osd/frameworks-osd-daos')
+include(':frameworks-soh-daos')
+project(':frameworks-soh-daos').projectDir = file('gms/shared/frameworks/frameworks-osd/frameworks-soh-daos')
+include 'frameworks-osd-repository'
+project(':frameworks-osd-repository').projectDir = file("gms/shared/frameworks/frameworks-osd/frameworks-osd-repository")
+include 'frameworks-soh-repository'
+project(':frameworks-soh-repository').projectDir = file("gms/shared/frameworks/frameworks-osd/frameworks-soh-repository")
+include 'frameworks-osd-service'
+project(':frameworks-osd-service').projectDir = file("gms/shared/frameworks/frameworks-osd/frameworks-osd-service")
+include(':frameworks-osd-api')
+project(':frameworks-osd-api').projectDir = file('gms/shared/frameworks/frameworks-osd/frameworks-osd-api')
+include(':kafka-consumer-frameworks')
+project(':kafka-consumer-frameworks').projectDir = file('gms/shared/frameworks/messaging/kafka-consumer-frameworks')
+
+
+// Include the metrics subproject.
+include(':metrics')
+project(':metrics').projectDir = file('gms/shared/metrics')
+
+
+// Include the configuration subproject.
+include "frameworks-configuration-commonobjects"
+project(":frameworks-configuration-commonobjects").projectDir = file("gms/shared/frameworks/configuration/commonobjects")
+include "frameworks-configuration-service"
+project(":frameworks-configuration-service").projectDir = file("gms/shared/frameworks/configuration/service")
+include "frameworks-osd-rsdf-kafka-consumer"
+project(':frameworks-osd-rsdf-kafka-consumer').projectDir = file('gms/shared/frameworks/frameworks-osd/frameworks-osd-rsdf-kafka-consumer')
+include "soh-status-change-kafka-consumer"
+project(':soh-status-change-kafka-consumer').projectDir = file('gms/shared/frameworks/frameworks-osd/soh-status-change-kafka-consumer')
+include "frameworks-osd-station-soh-kafka-consumer"
+project(':frameworks-osd-station-soh-kafka-consumer').projectDir = file('gms/shared/frameworks/frameworks-osd/frameworks-osd-station-soh-kafka-consumer')
+include "frameworks-configuration-api"
+project(":frameworks-configuration-api").projectDir = file("gms/shared/frameworks/configuration/api")
+include "frameworks-configuration-repository"
+project(":frameworks-configuration-repository").projectDir = file("gms/shared/frameworks/configuration/repository")
+include "frameworks-utilities-jpa"
+project(":frameworks-utilities-jpa").projectDir = file("gms/shared/frameworks/utilities/jpa")
+include "frameworks-test-utilities"
+project(":frameworks-test-utilities").projectDir = file("gms/shared/frameworks/utilities/test-utilities")
+include 'frameworks-osd-systemmessage-kafka-consumer'
+project(':frameworks-osd-systemmessage-kafka-consumer').projectDir = file('gms/shared/frameworks/frameworks-osd/frameworks-osd-systemmessage-kafka-consumer')
+include "soh-quieted-list-kafka-consumer"
+project(':soh-quieted-list-kafka-consumer').projectDir = file("gms/shared/frameworks/frameworks-osd/soh-quieted-list-kafka-consumer")
+include "capability-soh-rollup-kafka-consumer"
+project(':capability-soh-rollup-kafka-consumer').projectDir = file("gms/shared/frameworks/frameworks-osd/capability-soh-rollup-kafka-consumer")
+

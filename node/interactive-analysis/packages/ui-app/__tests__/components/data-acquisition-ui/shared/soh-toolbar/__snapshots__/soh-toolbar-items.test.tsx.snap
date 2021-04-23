@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Soh toolbar items function makeStationLabel should create a label 1`] = `
+Object {
+  "label": "Station Name",
+  "rank": 3,
+  "tooltip": "Station Name",
+  "type": "LabelValue",
+  "value": "my station name",
+}
+`;
+
+exports[`Soh toolbar items function makeStationLabel should create a label 2`] = `
+Object {
+  "dropdownOptions": Object {
+    "CHANNEL_FIRST": "Channel: A - Z",
+    "CHANNEL_LAST": "Channel: Z - A",
+    "LAG_HIGHEST": "Lag: highest to lowest",
+    "LAG_LOWEST": "Lag: lowest to highest",
+  },
+  "label": "Sort Channels",
+  "onChange": [MockFunction],
+  "rank": undefined,
+  "tooltip": "Sort",
+  "type": "Dropdown",
+  "value": "Channel: A - Z",
+  "widthPx": 220,
+}
+`;
+
+exports[`Soh toolbar items function makeStationLabel should create a label 3`] = `
+Object {
+  "dropdownOptions": Object {
+    "CHANNEL_FIRST": "Channel: A - Z",
+    "CHANNEL_LAST": "Channel: Z - A",
+    "MISSING_HIGHEST": "Missing %: highest to lowest",
+    "MISSING_LOWEST": "Missing %: lowest to highest",
+  },
+  "label": "Sort Channels",
+  "onChange": [MockFunction],
+  "rank": undefined,
+  "tooltip": "Sort",
+  "type": "Dropdown",
+  "value": "Channel: A - Z",
+  "widthPx": 220,
+}
+`;

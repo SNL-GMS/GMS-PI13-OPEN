@@ -1,0 +1,85 @@
+{{- $appName := "kafka2" }}
+{{- $appValues := get .Values $appName }}
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ $appName }}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  storageClassName: {{ .Values.storageClassName }}
+  resources:
+    requests:
+      storage: {{ $appValues.storageSize }}
+{{/* Remove the Deployment if the app's restartDuringReconfig and the reconfigInProgress value are both true */}}
+{{- if not (and $appValues.restartDuringReconfig .Values.reconfigInProgress) }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "soh.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-soh-elevated
+      volumes:
+        - name: "{{ $appName }}-volume"
+          persistentVolumeClaim:
+            claimName: {{ $appName }}
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "soh.deployment.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          env: {{- include "soh.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          ports:
+            - containerPort: 7071
+            - containerPort: 9092
+          volumeMounts:
+            - name: "{{ $appName }}-volume"
+              mountPath: /var/lib/postgresql/data
+{{- if or (and $appValues.cpu_requests $appValues.cpu_limit) (and $appValues.memory_requests $appValues.memory_limit)}}
+          resources:
+            requests:
+{{- if ($appValues.cpu_requests)}}
+              cpu: {{ $appValues.cpu_requests }}
+{{- end }}
+{{- if ($appValues.memory_requests)}}
+              memory: {{ $appValues.memory_requests }}
+{{- end }}
+            limits:
+{{- if ($appValues.cpu_limit)}}
+              cpu: {{ $appValues.cpu_limit }}
+{{- end }}
+{{- if ($appValues.memory_limit)}}
+              memory: {{ $appValues.memory_limit }}
+{{- end }}
+{{- end }}
+{{- end }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $appName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: metrics
+      port: 7071
+      protocol: TCP
+      targetPort: 7071
+    - name: kafka
+      port: 9092
+      protocol: TCP
+      targetPort: 9092
+  selector:
+    app: {{ $appName }}

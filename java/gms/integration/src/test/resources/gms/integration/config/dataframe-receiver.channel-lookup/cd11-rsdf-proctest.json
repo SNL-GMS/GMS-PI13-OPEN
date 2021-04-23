@@ -1,0 +1,24 @@
+{
+  "name": "cd-1.1",
+  "constraints": [
+    {
+      "constraintType": "STRING",
+      "criterion": "protocol",
+      "operator": {
+        "type": "EQ",
+        "negated": false
+      },
+      "value": [
+        "CD11"
+      ]
+    }
+  ],
+  "parameters": {
+    "channelIdsByPacketName": {
+      "PLCA.PLCA1.SHZ": "PLCA.PLCA1.SHZ",
+      "PLCA.PLCAB.BHZ": "PLCA.PLCAB.BHZ",
+      "PLCA.PLCAB.BHN": "PLCA.PLCAB.BHN",
+      "PLCA.PLCAB.BHE": "PLCA.PLCAB.BHE"
+    }
+  }
+}

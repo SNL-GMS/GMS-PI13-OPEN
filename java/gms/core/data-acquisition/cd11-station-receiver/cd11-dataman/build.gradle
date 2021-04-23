@@ -1,0 +1,54 @@
+apply plugin: 'application'
+apply plugin: 'com.palantir.docker'
+
+mainClassName = 'gms.dataacquisition.stationreceiver.cd11.dataman.Cd11DataManControlService'
+
+run {
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+    systemProperties System.properties
+}
+
+dependencies {
+    // Project dependencies.
+    implementation project(':java-utilities')
+    implementation project(':cd11-common')
+    implementation project(':cd11-parser')
+    implementation project(':frameworks-configuration-repository')
+    implementation project(':waveman')
+    implementation project(':frameworks-control')
+    implementation project(':frameworks-configuration-repository')
+    implementation project(":frameworks-service-interface-base")
+    implementation project(':kafka-utilities')
+
+    // Third-party dependencies.
+
+    // Logback for Structured Logging
+    implementation 'ch.qos.logback:logback-classic:1.3.0-alpha5'
+    implementation 'net.logstash.logback:logstash-logback-encoder:5.2'
+
+    implementation 'com.google.guava:guava'
+    implementation 'org.apache.kafka:kafka-clients'
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // reactor kafka dependencies
+    implementation 'io.projectreactor.kafka:reactor-kafka'
+
+    // reactor and reactor netty dependencies
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor.netty:reactor-netty'
+
+    // Reactor and kafka test tools
+    testImplementation 'io.projectreactor:reactor-test'
+    implementation 'io.projectreactor.tools:blockhound'
+    testImplementation 'org.apache.kafka:kafka-streams-test-utils'
+
+    testImplementation 'org.jmockit:jmockit'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    test {
+        jvmArgs "-javaagent:${classpath.find { it.name.contains("jmockit") }.absolutePath}"
+    }
+}

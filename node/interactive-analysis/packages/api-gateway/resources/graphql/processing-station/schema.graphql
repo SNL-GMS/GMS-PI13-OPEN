@@ -1,0 +1,75 @@
+# Represents a group of stations used for monitoring.
+# This is the processing equivalent of the ReferenceNetwork.
+type ProcessingStationGroup {
+    name: String
+    description: String
+    stations: [ProcessingStation]
+}
+
+# Represents an installation of monitoring sensors for the purposes of processing.
+# Multiple sensors can be installed at the same station.
+type ProcessingStation {
+    name: String
+    type: StationType
+    description: String
+    location: Location
+    channelGroups: [ProcessingChannelGroup]
+    channels: [ProcessingChannel]
+}
+
+# ChannelGroupType enum represents the different groupings of channels
+enum ChannelGroupType {
+    PROCESSING_GROUP
+    SITE_GROUP
+}
+
+# Represents a physical installation (e.g., building, underground vault, borehole)
+# containing a collection of Instruments that produce Raw Channel waveform data.
+type ProcessingChannelGroup {
+    name: String
+    description: String
+    location: Location
+    type: ChannelGroupType
+    channels: [ProcessingChannel]
+}
+
+# Represents a source for unprocessed (raw) or processed (derived) time series data
+# from a seismic, hydroacoustic, or infrasonic sensor.
+type ProcessingChannel {
+    name: String
+    displayName: String
+    canonicalName: String
+    description: String
+    station: String
+    channelDataType: ChannelDataType
+    nominalSampleRateHz: Int
+    location: Location
+    orientationAngles: Orientation
+}
+
+# Enumeration representing the different types of processing channels.
+enum ChannelDataType {
+  SEISMIC
+  HYDROACOUSTIC
+  INFRASOUND
+  WEATHER
+  DIAGNOSTIC_SOH
+  DIAGNOSTIC_WEATHER
+}
+
+# Represents the orientation angles used in processing channels
+type Orientation {
+    horizontalAngleDeg: Float
+    verticalAngleDeg: Float
+}
+
+#####################################################
+# Resolver entries Mutation, Query and Subscriptions
+# The following channel-related queries are supported.
+extend type Query {
+
+    # Retrieve the default station list for use in automated and interactive analysis
+    defaultProcessingStations: [ProcessingStation]
+}
+
+

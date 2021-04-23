@@ -1,0 +1,19 @@
+.lag-history-display,
+.missing-history-display {
+  .soh-legend {
+    // # is passing through the contents as a string
+    height: calc(100% - #{$toolbar-height} - 1rem);
+    top: initial !important;
+  }
+  .legend-and-charts {
+    @include flexColumn;
+    flex-grow: 1;
+    height: auto;
+  }
+  .core-chart {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,352 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`channel cell renderer's should match snapshot 1`] = `
+<Memo()
+  colDef={
+    Object {
+      "colId": "channelName",
+      "headerName": "channelName",
+    }
+  }
+  columnId="channelName"
+  context={
+    Object {
+      "selectedChannelMonitorPairs": Array [
+        Object {
+          "channelName": "channelName",
+          "monitorType": "monitorType",
+        },
+      ],
+    }
+  }
+  data={
+    Object {
+      "id": "id",
+      "monitorStatus": "GOOD",
+      "monitorType": "LAG",
+      "valueAndStatusByChannelName": Map {
+        "channelName" => Object {
+          "channelName": "channelName",
+          "hasUnacknowledgedChanges": true,
+          "isContributing": true,
+          "isSelected": false,
+          "monitorTypes": "MISSING",
+          "quietTimingInfo": Object {
+            "quietDurationMs": 100000,
+            "quietUntilMs": null,
+          },
+          "status": "GOOD",
+          "value": 10,
+        },
+      },
+    }
+  }
+  parentCellHeight={1}
+  parentCellWidth={1}
+  rowIndex={1}
+  setTooltipProps={[MockFunction]}
+>
+  <div
+    data-cy="channel-cell"
+  >
+    <Memo()
+      environmentSoh={
+        Object {
+          "channelName": "channelName",
+          "hasUnacknowledgedChanges": true,
+          "isContributing": true,
+          "isSelected": false,
+          "monitorTypes": "MISSING",
+          "quietTimingInfo": Object {
+            "quietDurationMs": 100000,
+            "quietUntilMs": null,
+          },
+          "status": "GOOD",
+          "value": 10,
+        }
+      }
+    >
+      <div
+        className=""
+      >
+        <Component
+          environmentSoh={
+            Object {
+              "channelName": "channelName",
+              "hasUnacknowledgedChanges": true,
+              "isContributing": true,
+              "isSelected": false,
+              "monitorTypes": "MISSING",
+              "quietTimingInfo": Object {
+                "quietDurationMs": 100000,
+                "quietUntilMs": null,
+              },
+              "status": "GOOD",
+              "value": 10,
+            }
+          }
+        >
+          <div
+            className="table-cell soh-cell table-cell__value--numeric"
+            data-cell-status="good"
+            data-cy="soh-cell"
+            data-received-status="received"
+            style={
+              Object {
+                "height": "36px",
+              }
+            }
+            title=""
+          >
+            <Component
+              data={
+                Object {
+                  "channelName": "channelName",
+                  "hasUnacknowledgedChanges": true,
+                  "isContributing": true,
+                  "isSelected": false,
+                  "monitorTypes": "MISSING",
+                  "quietTimingInfo": Object {
+                    "quietDurationMs": 100000,
+                    "quietUntilMs": null,
+                  },
+                  "status": "GOOD",
+                  "value": 10,
+                }
+              }
+              diameterPx={12}
+            />
+            <PercentBar
+              percentage={10}
+            >
+              <div
+                className="percent-bar"
+                key="1"
+                style={
+                  Object {
+                    "transform": "translateX(-90%)",
+                    "width": "100%",
+                  }
+                }
+              />
+            </PercentBar>
+            <Component
+              hasUnacknowledgedChanges={true}
+              value={10}
+            >
+              <div
+                className="table-cell__value table-cell__value--numeric"
+                data-cy="environment-cell"
+              >
+                <Blueprint3.Icon
+                  className="env-dirty-dot"
+                  icon="symbol-circle"
+                >
+                  <span
+                    className="bp3-icon bp3-icon-symbol-circle env-dirty-dot"
+                    icon="symbol-circle"
+                  >
+                    <svg
+                      data-icon="symbol-circle"
+                      height={16}
+                      viewBox="0 0 16 16"
+                      width={16}
+                    >
+                      <desc>
+                        symbol-circle
+                      </desc>
+                      <path
+                        d="M8 3.01a5 5 0 100 10 5 5 0 100-10z"
+                        fillRule="evenodd"
+                        key="0"
+                      />
+                    </svg>
+                  </span>
+                </Blueprint3.Icon>
+                <span>
+                  10.0
+                </span>
+              </div>
+            </Component>
+          </div>
+        </Component>
+      </div>
+    </Memo()>
+  </div>
+</Memo()>
+`;
+
+exports[`channel cell renderer's should match snapshot with bad data 1`] = `
+<Memo()
+  colDef={
+    Object {
+      "colId": "channelName",
+      "headerName": "badChannel",
+    }
+  }
+  columnId="channelName"
+  context={
+    Object {
+      "selectedChannelMonitorPairs": Array [
+        Object {
+          "channelName": "channelName",
+          "monitorType": "monitorType",
+        },
+      ],
+    }
+  }
+  data={
+    Object {
+      "id": "id",
+      "monitorStatus": "GOOD",
+      "monitorType": "LAG",
+      "valueAndStatusByChannelName": Map {
+        "channelName" => Object {
+          "channelName": "channelName",
+          "hasUnacknowledgedChanges": true,
+          "isContributing": true,
+          "isSelected": false,
+          "monitorTypes": "MISSING",
+          "quietTimingInfo": Object {
+            "quietDurationMs": 100000,
+            "quietUntilMs": null,
+          },
+          "status": "GOOD",
+          "value": 10,
+        },
+      },
+    }
+  }
+  parentCellHeight={1}
+  parentCellWidth={1}
+  rowIndex={1}
+>
+  <div
+    data-cy="channel-cell"
+  >
+    <Memo()
+      environmentSoh={
+        Object {
+          "channelName": "channelName",
+          "hasUnacknowledgedChanges": true,
+          "isContributing": true,
+          "isSelected": false,
+          "monitorTypes": "MISSING",
+          "quietTimingInfo": Object {
+            "quietDurationMs": 100000,
+            "quietUntilMs": null,
+          },
+          "status": "GOOD",
+          "value": 10,
+        }
+      }
+    >
+      <div
+        className=""
+      >
+        <Component
+          environmentSoh={
+            Object {
+              "channelName": "channelName",
+              "hasUnacknowledgedChanges": true,
+              "isContributing": true,
+              "isSelected": false,
+              "monitorTypes": "MISSING",
+              "quietTimingInfo": Object {
+                "quietDurationMs": 100000,
+                "quietUntilMs": null,
+              },
+              "status": "GOOD",
+              "value": 10,
+            }
+          }
+        >
+          <div
+            className="table-cell soh-cell table-cell__value--numeric"
+            data-cell-status="good"
+            data-cy="soh-cell"
+            data-received-status="received"
+            style={
+              Object {
+                "height": "36px",
+              }
+            }
+            title=""
+          >
+            <Component
+              data={
+                Object {
+                  "channelName": "channelName",
+                  "hasUnacknowledgedChanges": true,
+                  "isContributing": true,
+                  "isSelected": false,
+                  "monitorTypes": "MISSING",
+                  "quietTimingInfo": Object {
+                    "quietDurationMs": 100000,
+                    "quietUntilMs": null,
+                  },
+                  "status": "GOOD",
+                  "value": 10,
+                }
+              }
+              diameterPx={12}
+            />
+            <PercentBar
+              percentage={10}
+            >
+              <div
+                className="percent-bar"
+                key="2"
+                style={
+                  Object {
+                    "transform": "translateX(-90%)",
+                    "width": "100%",
+                  }
+                }
+              />
+            </PercentBar>
+            <Component
+              hasUnacknowledgedChanges={true}
+              value={10}
+            >
+              <div
+                className="table-cell__value table-cell__value--numeric"
+                data-cy="environment-cell"
+              >
+                <Blueprint3.Icon
+                  className="env-dirty-dot"
+                  icon="symbol-circle"
+                >
+                  <span
+                    className="bp3-icon bp3-icon-symbol-circle env-dirty-dot"
+                    icon="symbol-circle"
+                  >
+                    <svg
+                      data-icon="symbol-circle"
+                      height={16}
+                      viewBox="0 0 16 16"
+                      width={16}
+                    >
+                      <desc>
+                        symbol-circle
+                      </desc>
+                      <path
+                        d="M8 3.01a5 5 0 100 10 5 5 0 100-10z"
+                        fillRule="evenodd"
+                        key="0"
+                      />
+                    </svg>
+                  </span>
+                </Blueprint3.Icon>
+                <span>
+                  10.0
+                </span>
+              </div>
+            </Component>
+          </div>
+        </Component>
+      </div>
+    </Memo()>
+  </div>
+</Memo()>
+`;

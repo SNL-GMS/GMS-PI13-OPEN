@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`base environment cell should match snapshot 1`] = `
+<Component
+  environmentSoh={
+    Object {
+      "channelName": "channelName",
+      "hasUnacknowledgedChanges": true,
+      "isContributing": true,
+      "isSelected": false,
+      "monitorTypes": "MISSING",
+      "quietTimingInfo": Object {
+        "quietDurationMs": 100000,
+        "quietUntilMs": 100000000,
+      },
+      "status": "GOOD",
+      "value": 10,
+    }
+  }
+>
+  <div
+    className="table-cell soh-cell table-cell__value--numeric"
+    data-cell-status="good"
+    data-cy="soh-cell"
+    data-received-status="received"
+    style={
+      Object {
+        "height": "36px",
+      }
+    }
+    title=""
+  />
+</Component>
+`;
+
+exports[`base environment cell should match snapshot for null data 1`] = `
+<Component
+  environmentSoh={null}
+>
+  <div
+    className="table-cell soh-cell table-cell__value--numeric"
+    data-cell-status="non-contributing"
+    data-cy="soh-cell"
+    data-received-status="not-received"
+    style={
+      Object {
+        "height": "36px",
+      }
+    }
+    title="This value was not received in the latest SOH status update"
+  />
+</Component>
+`;

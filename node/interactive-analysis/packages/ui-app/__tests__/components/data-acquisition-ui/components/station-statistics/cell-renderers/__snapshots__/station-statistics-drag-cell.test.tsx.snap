@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Soh Drag Cell Matches snapshot 1`] = `
+<Component
+  stationId="AAA"
+>
+  <DragCell
+    getSelectedStationIds={[Function]}
+    getSingleDragImage={[Function]}
+    setSelectedStationIds={[Function]}
+    stationId="AAA"
+  >
+    <DragInitiator
+      getDragImage={[Function]}
+      getDragPayload={[Function]}
+      onDragEnd={[Function]}
+      onDragStart={[Function]}
+    >
+      <div
+        draggable={true}
+        onDragEnd={[Function]}
+        onDragStart={[Function]}
+      />
+    </DragInitiator>
+  </DragCell>
+</Component>
+`;

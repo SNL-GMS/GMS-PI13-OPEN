@@ -1,0 +1,1549 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`history panel renders ideal-state 1`] = `
+<Component>
+  <div
+    className="history-panel"
+    data-cy="history"
+  >
+    <div
+      className="list-toolbar-wrapper"
+    >
+      <ToolbarComponent
+        items={
+          Array [
+            Object {
+              "buttons": Array [
+                Object {
+                  "disabled": false,
+                  "icon": "undo",
+                  "label": "Undo",
+                  "onClick": [Function],
+                  "onMouseEnter": [Function],
+                  "onMouseOut": [Function],
+                  "rank": 1,
+                  "tooltip": "Undo last action",
+                  "type": "Button",
+                  "widthPx": 80,
+                },
+                Object {
+                  "disabled": false,
+                  "icon": "redo",
+                  "label": "Redo",
+                  "onClick": [Function],
+                  "onMouseEnter": [Function],
+                  "onMouseOut": [Function],
+                  "rank": 2,
+                  "tooltip": "Redo last undone action",
+                  "type": "Button",
+                  "widthPx": 80,
+                },
+              ],
+              "label": "Undo or Redo",
+              "rank": 1,
+              "tooltip": "Undo or Redo",
+              "type": "ButtonGroup",
+            },
+          ]
+        }
+        itemsLeft={
+          Array [
+            Object {
+              "hideOutstandingCount": true,
+              "hideTheWordLoading": true,
+              "itemsToLoad": 0,
+              "label": "",
+              "onlyShowIcon": true,
+              "rank": 1,
+              "tooltip": "undo or redo in progress",
+              "type": "LoadingSpinner",
+            },
+          ]
+        }
+        toolbarWidthPx={486}
+      >
+        <div
+          className="toolbar"
+          style={
+            Object {
+              "width": "486px",
+            }
+          }
+        >
+          <div
+            className="toolbar__left-group"
+          >
+            <div
+              className="toolbar-item toolbar-item__left"
+              key="1"
+            >
+              <Component
+                addToPopoverMap={[Function]}
+                hasIssue={false}
+                item={
+                  Object {
+                    "hideOutstandingCount": true,
+                    "hideTheWordLoading": true,
+                    "itemsToLoad": 0,
+                    "label": "",
+                    "onlyShowIcon": true,
+                    "rank": 1,
+                    "tooltip": "undo or redo in progress",
+                    "type": "LoadingSpinner",
+                  }
+                }
+                key="1"
+              >
+                <div
+                  style={Object {}}
+                >
+                  <Component
+                    hideTheWordLoading={true}
+                    itemsToLoad={0}
+                    key="1"
+                    label=""
+                    onlyShowSpinner={true}
+                  >
+                    <div
+                      className="loading-spinner__container"
+                      style={
+                        Object {
+                          "minWidth": "undefinedpx",
+                        }
+                      }
+                    />
+                  </Component>
+                </div>
+              </Component>
+            </div>
+          </div>
+          <div
+            className="toolbar__center-group"
+          >
+            <div
+              className="toolbar__whitespace"
+              style={
+                Object {
+                  "width": "470px",
+                }
+              }
+            />
+          </div>
+          <div
+            className="toolbar__right-group"
+          >
+            <div
+              className="toolbar-item
+                    "
+              key="1"
+            >
+              <Component
+                addToPopoverMap={[Function]}
+                hasIssue={false}
+                item={
+                  Object {
+                    "buttons": Array [
+                      Object {
+                        "disabled": false,
+                        "icon": "undo",
+                        "label": "Undo",
+                        "onClick": [Function],
+                        "onMouseEnter": [Function],
+                        "onMouseOut": [Function],
+                        "rank": 1,
+                        "tooltip": "Undo last action",
+                        "type": "Button",
+                        "widthPx": 80,
+                      },
+                      Object {
+                        "disabled": false,
+                        "icon": "redo",
+                        "label": "Redo",
+                        "onClick": [Function],
+                        "onMouseEnter": [Function],
+                        "onMouseOut": [Function],
+                        "rank": 2,
+                        "tooltip": "Redo last undone action",
+                        "type": "Button",
+                        "widthPx": 80,
+                      },
+                    ],
+                    "label": "Undo or Redo",
+                    "rank": 1,
+                    "tooltip": "Undo or Redo",
+                    "type": "ButtonGroup",
+                  }
+                }
+                key="1"
+              >
+                <div
+                  className="toolbar-button-group"
+                  key="1"
+                  style={Object {}}
+                >
+                  <div
+                    style={Object {}}
+                  >
+                    <Blueprint3.Button
+                      alignText="left"
+                      className="toolbar-button"
+                      disabled={false}
+                      key="1"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseOut={[Function]}
+                      style={
+                        Object {
+                          "marginRight": "2px",
+                          "width": "80px",
+                        }
+                      }
+                      title="Undo last action"
+                    >
+                      <button
+                        className="bp3-button bp3-align-left toolbar-button"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseOut={[Function]}
+                        style={
+                          Object {
+                            "marginRight": "2px",
+                            "width": "80px",
+                          }
+                        }
+                        title="Undo last action"
+                        type="button"
+                      >
+                        <Blueprint3.Icon
+                          key="leftIcon"
+                        />
+                        <span
+                          className="bp3-button-text"
+                          key="text"
+                        >
+                          <span>
+                            Undo
+                          </span>
+                          <Blueprint3.Icon
+                            icon="undo"
+                            title={false}
+                          >
+                            <span
+                              className="bp3-icon bp3-icon-undo"
+                              icon="undo"
+                            >
+                              <svg
+                                data-icon="undo"
+                                height={16}
+                                viewBox="0 0 16 16"
+                                width={16}
+                              >
+                                <path
+                                  d="M4 11c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H3.41L4.7 2.71c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-3 3C.11 4.47 0 4.72 0 5c0 .28.11.53.29.71l3 3a1.003 1.003 0 001.42-1.42L3.41 6H11c1.66 0 3 1.34 3 3s-1.34 3-3 3H7v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                                  fillRule="evenodd"
+                                  key="0"
+                                />
+                              </svg>
+                            </span>
+                          </Blueprint3.Icon>
+                        </span>
+                        <Blueprint3.Icon
+                          key="rightIcon"
+                        />
+                      </button>
+                    </Blueprint3.Button>
+                  </div>
+                  <div
+                    style={Object {}}
+                  >
+                    <Blueprint3.Button
+                      alignText="left"
+                      className="toolbar-button"
+                      disabled={false}
+                      key="2"
+                      onClick={[Function]}
+                      onMouseEnter={[Function]}
+                      onMouseOut={[Function]}
+                      style={
+                        Object {
+                          "marginRight": undefined,
+                          "width": "80px",
+                        }
+                      }
+                      title="Redo last undone action"
+                    >
+                      <button
+                        className="bp3-button bp3-align-left toolbar-button"
+                        onClick={[Function]}
+                        onKeyDown={[Function]}
+                        onKeyUp={[Function]}
+                        onMouseEnter={[Function]}
+                        onMouseOut={[Function]}
+                        style={
+                          Object {
+                            "marginRight": undefined,
+                            "width": "80px",
+                          }
+                        }
+                        title="Redo last undone action"
+                        type="button"
+                      >
+                        <Blueprint3.Icon
+                          key="leftIcon"
+                        />
+                        <span
+                          className="bp3-button-text"
+                          key="text"
+                        >
+                          <span>
+                            Redo
+                          </span>
+                          <Blueprint3.Icon
+                            icon="redo"
+                            title={false}
+                          >
+                            <span
+                              className="bp3-icon bp3-icon-redo"
+                              icon="redo"
+                            >
+                              <svg
+                                data-icon="redo"
+                                height={16}
+                                viewBox="0 0 16 16"
+                                width={16}
+                              >
+                                <path
+                                  d="M12 11c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm3.71-6.71l-3-3a1.003 1.003 0 00-1.42 1.42L12.59 4H5C2.24 4 0 6.24 0 9s2.24 5 5 5h4v-2H5c-1.66 0-3-1.34-3-3s1.34-3 3-3h7.59L11.3 7.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l3-3c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                  fillRule="evenodd"
+                                  key="0"
+                                />
+                              </svg>
+                            </span>
+                          </Blueprint3.Icon>
+                        </span>
+                        <Blueprint3.Icon
+                          key="rightIcon"
+                        />
+                      </button>
+                    </Blueprint3.Button>
+                  </div>
+                </div>
+              </Component>
+            </div>
+          </div>
+        </div>
+      </ToolbarComponent>
+    </div>
+    <HistoryStack
+      historyActions={
+        Map {
+          "Undo" => [Function],
+          "Redo" => [Function],
+        }
+      }
+      isIncluded={[Function]}
+    >
+      <div
+        className="list list--history"
+      >
+        <Component
+          areUndoRedoAdjacent={false}
+          areUndoRedoJoined={false}
+          isFirstRow={true}
+          redoTarget={true}
+          undoTarget={false}
+        >
+          <li
+            className="list__row entry-row
+      
+      action-indicator-top "
+          >
+            <div
+              className="list__column list__column--meta-container
+        bottom
+        
+        "
+            >
+              <span
+                className="action-indicator__text"
+              />
+              <span
+                className="action-indicator__text"
+              >
+                REDO
+              </span>
+            </div>
+            <Component
+              changes={
+                Array [
+                  Object {
+                    "active": true,
+                    "conflictCreated": false,
+                    "eventId": "earrterta9dgjdfogiesrg2451qe",
+                    "hypothesisChangeInformation": Object {
+                      "hypothesisId": "serysezdfgzdesrtdfxgwerts",
+                      "id": "aiuesdf93qtfhsadsa90dgad",
+                      "parentId": "qet[esguodfgoesgdfg",
+                      "type": "SignalDetectionHypothesis",
+                      "userAction": "Test Rejected a Signal Detection",
+                    },
+                    "id": "3044534095aet34452tewd",
+                  },
+                ]
+              }
+              description="Reject detection"
+              entryType="Undo"
+              handleAction={[Function]}
+              handleKeyDown={[Function]}
+              handleKeyUp={[Function]}
+              handleMouseEnter={[Function]}
+              handleMouseOut={[Function]}
+              id="12345"
+              isAffected={true}
+              isAssociated={false}
+              isEventReset={false}
+              isInConflict={false}
+              isOrphaned={false}
+              key="12345"
+              message="Test Rejected a Signal Detection"
+              redoPriorityOrder={1}
+            >
+              <Component
+                changes={
+                  Array [
+                    Object {
+                      "active": true,
+                      "conflictCreated": false,
+                      "eventId": "earrterta9dgjdfogiesrg2451qe",
+                      "hypothesisChangeInformation": Object {
+                        "hypothesisId": "serysezdfgzdesrtdfxgwerts",
+                        "id": "aiuesdf93qtfhsadsa90dgad",
+                        "parentId": "qet[esguodfgoesgdfg",
+                        "type": "SignalDetectionHypothesis",
+                        "userAction": "Test Rejected a Signal Detection",
+                      },
+                      "id": "3044534095aet34452tewd",
+                    },
+                  ]
+                }
+                description="Reject detection"
+                entryType="Undo"
+                handleAction={[Function]}
+                handleKeyDown={[Function]}
+                handleKeyUp={[Function]}
+                handleMouseEnter={[Function]}
+                handleMouseOut={[Function]}
+                id="12345"
+                isAffected={true}
+                isAssociated={false}
+                isEventReset={false}
+                isInConflict={false}
+                isOrphaned={false}
+                message="Test Rejected a Signal Detection"
+                redoPriorityOrder={1}
+              >
+                <div
+                  className="
+      list__column history-entry
+      history-entry--undo
+      
+      is-affected
+      
+      
+      
+      
+    "
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  tabIndex={0}
+                >
+                  <span
+                    className="history-entry__description"
+                  >
+                    Test Rejected a Signal Detection
+                  </span>
+                  <Blueprint3.Tooltip
+                    content="Undo this action"
+                    hoverCloseDelay={0}
+                    hoverOpenDelay={750}
+                    position="bottom"
+                    transitionDuration={100}
+                  >
+                    <Blueprint3.Popover
+                      autoFocus={false}
+                      boundary="scrollParent"
+                      canEscapeKeyClose={false}
+                      captureDismiss={false}
+                      content="Undo this action"
+                      defaultIsOpen={false}
+                      disabled={false}
+                      enforceFocus={false}
+                      fill={false}
+                      hasBackdrop={false}
+                      hoverCloseDelay={0}
+                      hoverOpenDelay={750}
+                      inheritDarkTheme={true}
+                      interactionKind="hover-target"
+                      lazy={true}
+                      minimal={false}
+                      modifiers={Object {}}
+                      openOnTargetFocus={true}
+                      popoverClassName="bp3-tooltip"
+                      position="bottom"
+                      targetTagName="span"
+                      transitionDuration={100}
+                      usePortal={true}
+                      wrapperTagName="span"
+                    >
+                      <Manager>
+                        <span
+                          className="bp3-popover-wrapper"
+                        >
+                          <Reference
+                            innerRef={[Function]}
+                          >
+                            <InnerReference
+                              innerRef={[Function]}
+                              setReferenceNode={[Function]}
+                            >
+                              <Blueprint3.ResizeSensor
+                                onResize={[Function]}
+                              >
+                                <span
+                                  className="bp3-popover-target"
+                                  onBlur={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                >
+                                  <Blueprint3.Icon
+                                    className="history-entry__icon"
+                                    icon="undo"
+                                    key=".0"
+                                    tabIndex={0}
+                                  >
+                                    <span
+                                      className="bp3-icon bp3-icon-undo history-entry__icon"
+                                      icon="undo"
+                                      tabIndex={0}
+                                    >
+                                      <svg
+                                        data-icon="undo"
+                                        height={16}
+                                        viewBox="0 0 16 16"
+                                        width={16}
+                                      >
+                                        <desc>
+                                          undo
+                                        </desc>
+                                        <path
+                                          d="M4 11c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H3.41L4.7 2.71c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-3 3C.11 4.47 0 4.72 0 5c0 .28.11.53.29.71l3 3a1.003 1.003 0 001.42-1.42L3.41 6H11c1.66 0 3 1.34 3 3s-1.34 3-3 3H7v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                                          fillRule="evenodd"
+                                          key="0"
+                                        />
+                                      </svg>
+                                    </span>
+                                  </Blueprint3.Icon>
+                                </span>
+                              </Blueprint3.ResizeSensor>
+                            </InnerReference>
+                          </Reference>
+                          <Blueprint3.Overlay
+                            autoFocus={false}
+                            backdropClassName="bp3-popover-backdrop"
+                            backdropProps={Object {}}
+                            canEscapeKeyClose={false}
+                            canOutsideClickClose={false}
+                            enforceFocus={false}
+                            hasBackdrop={false}
+                            isOpen={false}
+                            lazy={true}
+                            onClose={[Function]}
+                            transitionDuration={100}
+                            transitionName="bp3-popover"
+                            usePortal={true}
+                          />
+                        </span>
+                      </Manager>
+                    </Blueprint3.Popover>
+                  </Blueprint3.Tooltip>
+                </div>
+              </Component>
+            </Component>
+          </li>
+        </Component>
+        <Component
+          areUndoRedoAdjacent={false}
+          areUndoRedoJoined={false}
+          isFirstRow={false}
+          redoTarget={false}
+          undoTarget={true}
+        >
+          <li
+            className="list__row entry-row
+      action-indicator-bottom 
+      "
+          >
+            <div
+              className="list__column list__column--meta-container
+        
+        
+        "
+            >
+              <span
+                className="action-indicator__text"
+              >
+                UNDO
+              </span>
+              <span
+                className="action-indicator__text"
+              />
+            </div>
+            <Component
+              changes={
+                Array [
+                  Object {
+                    "active": true,
+                    "conflictCreated": false,
+                    "eventId": "rtyrthhgsrhh",
+                    "hypothesisChangeInformation": Object {
+                      "hypothesisId": "rtgsrtgrsthr",
+                      "id": "sergrthdthfhrg",
+                      "parentId": "htrshrhtrtstgrt",
+                      "type": "SignalDetectionHypothesis",
+                      "userAction": "Phase",
+                    },
+                    "id": "sdfgsdgrsthrh",
+                  },
+                  Object {
+                    "active": false,
+                    "conflictCreated": false,
+                    "eventId": "134ijq3tioq43pt",
+                    "hypothesisChangeInformation": Object {
+                      "hypothesisId": "3iqtoegjeaoir",
+                      "id": "qoiejgqoi3j134jt",
+                      "parentId": "qoergo3ut834gq3",
+                      "type": "SignalDetectionHypothesis",
+                      "userAction": "Phase",
+                    },
+                    "id": "1[urq3oetj980u34q4tr",
+                  },
+                  Object {
+                    "active": true,
+                    "conflictCreated": false,
+                    "eventId": "dfgijsldgjfdohijosrh",
+                    "hypothesisChangeInformation": Object {
+                      "hypothesisId": "srtohkrphrp",
+                      "id": "eroigjsfodgijsroigj",
+                      "parentId": "spogjkpsohkpo",
+                      "type": "SignalDetectionHypothesis",
+                      "userAction": "Create event",
+                    },
+                    "id": "1[earjgoisedfjgdfgj",
+                  },
+                ]
+              }
+              description="Phase multiple detections"
+              handleAction={[Function]}
+              handleKeyDown={[Function]}
+              handleKeyUp={[Function]}
+              handleMouseEnter={[Function]}
+              handleMouseOut={[Function]}
+              historyEntryChildren={
+                Array [
+                  Object {
+                    "entryType": "Undo",
+                    "isAffected": true,
+                    "isAssociated": false,
+                    "isCompleted": undefined,
+                    "isEventReset": false,
+                    "isInConflict": false,
+                    "isOrphaned": false,
+                    "message": "Phase",
+                  },
+                  Object {
+                    "entryType": "Redo",
+                    "isAffected": false,
+                    "isAssociated": false,
+                    "isCompleted": undefined,
+                    "isEventReset": false,
+                    "isInConflict": false,
+                    "isOrphaned": false,
+                    "message": "Phase",
+                  },
+                  Object {
+                    "entryType": "Undo",
+                    "isAffected": true,
+                    "isAssociated": false,
+                    "isCompleted": undefined,
+                    "isEventReset": false,
+                    "isInConflict": false,
+                    "isOrphaned": false,
+                    "message": "Create event",
+                  },
+                ]
+              }
+              historySummary={
+                Object {
+                  "changes": Array [
+                    Object {
+                      "active": true,
+                      "conflictCreated": false,
+                      "eventId": "rtyrthhgsrhh",
+                      "hypothesisChangeInformation": Object {
+                        "hypothesisId": "rtgsrtgrsthr",
+                        "id": "sergrthdthfhrg",
+                        "parentId": "htrshrhtrtstgrt",
+                        "type": "SignalDetectionHypothesis",
+                        "userAction": "Phase",
+                      },
+                      "id": "sdfgsdgrsthrh",
+                    },
+                    Object {
+                      "active": false,
+                      "conflictCreated": false,
+                      "eventId": "134ijq3tioq43pt",
+                      "hypothesisChangeInformation": Object {
+                        "hypothesisId": "3iqtoegjeaoir",
+                        "id": "qoiejgqoi3j134jt",
+                        "parentId": "qoergo3ut834gq3",
+                        "type": "SignalDetectionHypothesis",
+                        "userAction": "Phase",
+                      },
+                      "id": "1[urq3oetj980u34q4tr",
+                    },
+                    Object {
+                      "active": true,
+                      "conflictCreated": false,
+                      "eventId": "dfgijsldgjfdohijosrh",
+                      "hypothesisChangeInformation": Object {
+                        "hypothesisId": "srtohkrphrp",
+                        "id": "eroigjsfodgijsroigj",
+                        "parentId": "spogjkpsohkpo",
+                        "type": "SignalDetectionHypothesis",
+                        "userAction": "Create event",
+                      },
+                      "id": "1[earjgoisedfjgdfgj",
+                    },
+                  ],
+                  "description": "Phase multiple detections",
+                  "id": "23456",
+                  "redoPriorityOrder": 1,
+                }
+              }
+              id="23456"
+              redoPriorityOrder={1}
+            >
+              <div
+                className="history-row--multi"
+              >
+                <Component
+                  changes={
+                    Array [
+                      Object {
+                        "active": true,
+                        "conflictCreated": false,
+                        "eventId": "rtyrthhgsrhh",
+                        "hypothesisChangeInformation": Object {
+                          "hypothesisId": "rtgsrtgrsthr",
+                          "id": "sergrthdthfhrg",
+                          "parentId": "htrshrhtrtstgrt",
+                          "type": "SignalDetectionHypothesis",
+                          "userAction": "Phase",
+                        },
+                        "id": "sdfgsdgrsthrh",
+                      },
+                      Object {
+                        "active": false,
+                        "conflictCreated": false,
+                        "eventId": "134ijq3tioq43pt",
+                        "hypothesisChangeInformation": Object {
+                          "hypothesisId": "3iqtoegjeaoir",
+                          "id": "qoiejgqoi3j134jt",
+                          "parentId": "qoergo3ut834gq3",
+                          "type": "SignalDetectionHypothesis",
+                          "userAction": "Phase",
+                        },
+                        "id": "1[urq3oetj980u34q4tr",
+                      },
+                      Object {
+                        "active": true,
+                        "conflictCreated": false,
+                        "eventId": "dfgijsldgjfdohijosrh",
+                        "hypothesisChangeInformation": Object {
+                          "hypothesisId": "srtohkrphrp",
+                          "id": "eroigjsfodgijsroigj",
+                          "parentId": "spogjkpsohkpo",
+                          "type": "SignalDetectionHypothesis",
+                          "userAction": "Create event",
+                        },
+                        "id": "1[earjgoisedfjgdfgj",
+                      },
+                    ]
+                  }
+                  description="Phase multiple detections"
+                  entryType="Undo"
+                  handleAction={[Function]}
+                  handleKeyDown={[Function]}
+                  handleKeyUp={[Function]}
+                  handleMouseEnter={[Function]}
+                  handleMouseOut={[Function]}
+                  historyEntryChildren={
+                    Array [
+                      Object {
+                        "entryType": "Undo",
+                        "isAffected": true,
+                        "isAssociated": false,
+                        "isCompleted": undefined,
+                        "isEventReset": false,
+                        "isInConflict": false,
+                        "isOrphaned": false,
+                        "message": "Phase",
+                      },
+                      Object {
+                        "entryType": "Redo",
+                        "isAffected": false,
+                        "isAssociated": false,
+                        "isCompleted": undefined,
+                        "isEventReset": false,
+                        "isInConflict": false,
+                        "isOrphaned": false,
+                        "message": "Phase",
+                      },
+                      Object {
+                        "entryType": "Undo",
+                        "isAffected": true,
+                        "isAssociated": false,
+                        "isCompleted": undefined,
+                        "isEventReset": false,
+                        "isInConflict": false,
+                        "isOrphaned": false,
+                        "message": "Create event",
+                      },
+                    ]
+                  }
+                  historySummary={
+                    Object {
+                      "changes": Array [
+                        Object {
+                          "active": true,
+                          "conflictCreated": false,
+                          "eventId": "rtyrthhgsrhh",
+                          "hypothesisChangeInformation": Object {
+                            "hypothesisId": "rtgsrtgrsthr",
+                            "id": "sergrthdthfhrg",
+                            "parentId": "htrshrhtrtstgrt",
+                            "type": "SignalDetectionHypothesis",
+                            "userAction": "Phase",
+                          },
+                          "id": "sdfgsdgrsthrh",
+                        },
+                        Object {
+                          "active": false,
+                          "conflictCreated": false,
+                          "eventId": "134ijq3tioq43pt",
+                          "hypothesisChangeInformation": Object {
+                            "hypothesisId": "3iqtoegjeaoir",
+                            "id": "qoiejgqoi3j134jt",
+                            "parentId": "qoergo3ut834gq3",
+                            "type": "SignalDetectionHypothesis",
+                            "userAction": "Phase",
+                          },
+                          "id": "1[urq3oetj980u34q4tr",
+                        },
+                        Object {
+                          "active": true,
+                          "conflictCreated": false,
+                          "eventId": "dfgijsldgjfdohijosrh",
+                          "hypothesisChangeInformation": Object {
+                            "hypothesisId": "srtohkrphrp",
+                            "id": "eroigjsfodgijsroigj",
+                            "parentId": "spogjkpsohkpo",
+                            "type": "SignalDetectionHypothesis",
+                            "userAction": "Create event",
+                          },
+                          "id": "1[earjgoisedfjgdfgj",
+                        },
+                      ],
+                      "description": "Phase multiple detections",
+                      "id": "23456",
+                      "redoPriorityOrder": 1,
+                    }
+                  }
+                  id="23456"
+                  isAffected={true}
+                  isAssociated={false}
+                  isEventReset={false}
+                  isInConflict={false}
+                  isOrphaned={false}
+                  key="Multi:23456"
+                  message="Phase multiple detections"
+                  redoPriorityOrder={1}
+                >
+                  <Component
+                    changes={
+                      Array [
+                        Object {
+                          "active": true,
+                          "conflictCreated": false,
+                          "eventId": "rtyrthhgsrhh",
+                          "hypothesisChangeInformation": Object {
+                            "hypothesisId": "rtgsrtgrsthr",
+                            "id": "sergrthdthfhrg",
+                            "parentId": "htrshrhtrtstgrt",
+                            "type": "SignalDetectionHypothesis",
+                            "userAction": "Phase",
+                          },
+                          "id": "sdfgsdgrsthrh",
+                        },
+                        Object {
+                          "active": false,
+                          "conflictCreated": false,
+                          "eventId": "134ijq3tioq43pt",
+                          "hypothesisChangeInformation": Object {
+                            "hypothesisId": "3iqtoegjeaoir",
+                            "id": "qoiejgqoi3j134jt",
+                            "parentId": "qoergo3ut834gq3",
+                            "type": "SignalDetectionHypothesis",
+                            "userAction": "Phase",
+                          },
+                          "id": "1[urq3oetj980u34q4tr",
+                        },
+                        Object {
+                          "active": true,
+                          "conflictCreated": false,
+                          "eventId": "dfgijsldgjfdohijosrh",
+                          "hypothesisChangeInformation": Object {
+                            "hypothesisId": "srtohkrphrp",
+                            "id": "eroigjsfodgijsroigj",
+                            "parentId": "spogjkpsohkpo",
+                            "type": "SignalDetectionHypothesis",
+                            "userAction": "Create event",
+                          },
+                          "id": "1[earjgoisedfjgdfgj",
+                        },
+                      ]
+                    }
+                    description="Phase multiple detections"
+                    entryType="Undo"
+                    handleAction={[Function]}
+                    handleKeyDown={[Function]}
+                    handleKeyUp={[Function]}
+                    handleMouseEnter={[Function]}
+                    handleMouseOut={[Function]}
+                    historyEntryChildren={
+                      Array [
+                        Object {
+                          "entryType": "Undo",
+                          "isAffected": true,
+                          "isAssociated": false,
+                          "isCompleted": undefined,
+                          "isEventReset": false,
+                          "isInConflict": false,
+                          "isOrphaned": false,
+                          "message": "Phase",
+                        },
+                        Object {
+                          "entryType": "Redo",
+                          "isAffected": false,
+                          "isAssociated": false,
+                          "isCompleted": undefined,
+                          "isEventReset": false,
+                          "isInConflict": false,
+                          "isOrphaned": false,
+                          "message": "Phase",
+                        },
+                        Object {
+                          "entryType": "Undo",
+                          "isAffected": true,
+                          "isAssociated": false,
+                          "isCompleted": undefined,
+                          "isEventReset": false,
+                          "isInConflict": false,
+                          "isOrphaned": false,
+                          "message": "Create event",
+                        },
+                      ]
+                    }
+                    historySummary={
+                      Object {
+                        "changes": Array [
+                          Object {
+                            "active": true,
+                            "conflictCreated": false,
+                            "eventId": "rtyrthhgsrhh",
+                            "hypothesisChangeInformation": Object {
+                              "hypothesisId": "rtgsrtgrsthr",
+                              "id": "sergrthdthfhrg",
+                              "parentId": "htrshrhtrtstgrt",
+                              "type": "SignalDetectionHypothesis",
+                              "userAction": "Phase",
+                            },
+                            "id": "sdfgsdgrsthrh",
+                          },
+                          Object {
+                            "active": false,
+                            "conflictCreated": false,
+                            "eventId": "134ijq3tioq43pt",
+                            "hypothesisChangeInformation": Object {
+                              "hypothesisId": "3iqtoegjeaoir",
+                              "id": "qoiejgqoi3j134jt",
+                              "parentId": "qoergo3ut834gq3",
+                              "type": "SignalDetectionHypothesis",
+                              "userAction": "Phase",
+                            },
+                            "id": "1[urq3oetj980u34q4tr",
+                          },
+                          Object {
+                            "active": true,
+                            "conflictCreated": false,
+                            "eventId": "dfgijsldgjfdohijosrh",
+                            "hypothesisChangeInformation": Object {
+                              "hypothesisId": "srtohkrphrp",
+                              "id": "eroigjsfodgijsroigj",
+                              "parentId": "spogjkpsohkpo",
+                              "type": "SignalDetectionHypothesis",
+                              "userAction": "Create event",
+                            },
+                            "id": "1[earjgoisedfjgdfgj",
+                          },
+                        ],
+                        "description": "Phase multiple detections",
+                        "id": "23456",
+                        "redoPriorityOrder": 1,
+                      }
+                    }
+                    id="23456"
+                    isAffected={true}
+                    isAssociated={false}
+                    isEventReset={false}
+                    isInConflict={false}
+                    isOrphaned={false}
+                    message="Phase multiple detections"
+                    redoPriorityOrder={1}
+                  >
+                    <div
+                      className="
+      list__column history-entry
+      history-entry--undo
+      
+      is-affected
+      
+      
+      
+      
+    "
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      onKeyUp={[Function]}
+                      onMouseOut={[Function]}
+                      onMouseOver={[Function]}
+                      tabIndex={0}
+                    >
+                      <span
+                        className="history-entry__description"
+                      >
+                        Phase multiple detections
+                      </span>
+                      <Blueprint3.Tooltip
+                        content="Undo this action"
+                        hoverCloseDelay={0}
+                        hoverOpenDelay={750}
+                        position="bottom"
+                        transitionDuration={100}
+                      >
+                        <Blueprint3.Popover
+                          autoFocus={false}
+                          boundary="scrollParent"
+                          canEscapeKeyClose={false}
+                          captureDismiss={false}
+                          content="Undo this action"
+                          defaultIsOpen={false}
+                          disabled={false}
+                          enforceFocus={false}
+                          fill={false}
+                          hasBackdrop={false}
+                          hoverCloseDelay={0}
+                          hoverOpenDelay={750}
+                          inheritDarkTheme={true}
+                          interactionKind="hover-target"
+                          lazy={true}
+                          minimal={false}
+                          modifiers={Object {}}
+                          openOnTargetFocus={true}
+                          popoverClassName="bp3-tooltip"
+                          position="bottom"
+                          targetTagName="span"
+                          transitionDuration={100}
+                          usePortal={true}
+                          wrapperTagName="span"
+                        >
+                          <Manager>
+                            <span
+                              className="bp3-popover-wrapper"
+                            >
+                              <Reference
+                                innerRef={[Function]}
+                              >
+                                <InnerReference
+                                  innerRef={[Function]}
+                                  setReferenceNode={[Function]}
+                                >
+                                  <Blueprint3.ResizeSensor
+                                    onResize={[Function]}
+                                  >
+                                    <span
+                                      className="bp3-popover-target"
+                                      onBlur={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseEnter={[Function]}
+                                      onMouseLeave={[Function]}
+                                    >
+                                      <Blueprint3.Icon
+                                        className="history-entry__icon"
+                                        icon="undo"
+                                        key=".0"
+                                        tabIndex={0}
+                                      >
+                                        <span
+                                          className="bp3-icon bp3-icon-undo history-entry__icon"
+                                          icon="undo"
+                                          tabIndex={0}
+                                        >
+                                          <svg
+                                            data-icon="undo"
+                                            height={16}
+                                            viewBox="0 0 16 16"
+                                            width={16}
+                                          >
+                                            <desc>
+                                              undo
+                                            </desc>
+                                            <path
+                                              d="M4 11c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H3.41L4.7 2.71c.19-.18.3-.43.3-.71a1.003 1.003 0 00-1.71-.71l-3 3C.11 4.47 0 4.72 0 5c0 .28.11.53.29.71l3 3a1.003 1.003 0 001.42-1.42L3.41 6H11c1.66 0 3 1.34 3 3s-1.34 3-3 3H7v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+                                              fillRule="evenodd"
+                                              key="0"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </Blueprint3.Icon>
+                                    </span>
+                                  </Blueprint3.ResizeSensor>
+                                </InnerReference>
+                              </Reference>
+                              <Blueprint3.Overlay
+                                autoFocus={false}
+                                backdropClassName="bp3-popover-backdrop"
+                                backdropProps={Object {}}
+                                canEscapeKeyClose={false}
+                                canOutsideClickClose={false}
+                                enforceFocus={false}
+                                hasBackdrop={false}
+                                isOpen={false}
+                                lazy={true}
+                                onClose={[Function]}
+                                transitionDuration={100}
+                                transitionName="bp3-popover"
+                                usePortal={true}
+                              />
+                            </span>
+                          </Manager>
+                        </Blueprint3.Popover>
+                      </Blueprint3.Tooltip>
+                    </div>
+                  </Component>
+                </Component>
+                <div
+                  className="history-row__child-container "
+                />
+                <div
+                  className="toggle-button
+          toggle-button--undo"
+                  onClick={[Function]}
+                >
+                  <Blueprint3.Icon
+                    className=""
+                    icon="chevron-down"
+                  >
+                    <span
+                      className="bp3-icon bp3-icon-chevron-down"
+                      icon="chevron-down"
+                    >
+                      <svg
+                        data-icon="chevron-down"
+                        height={16}
+                        viewBox="0 0 16 16"
+                        width={16}
+                      >
+                        <desc>
+                          chevron-down
+                        </desc>
+                        <path
+                          d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                          fillRule="evenodd"
+                          key="0"
+                        />
+                      </svg>
+                    </span>
+                  </Blueprint3.Icon>
+                </div>
+              </div>
+            </Component>
+          </li>
+        </Component>
+        <Component
+          areUndoRedoAdjacent={false}
+          areUndoRedoJoined={false}
+          isFirstRow={false}
+          redoTarget={false}
+          undoTarget={false}
+        >
+          <li
+            className="list__row entry-row
+      
+      "
+          >
+            <div
+              className="list__column list__column--meta-container
+        
+        
+        "
+            >
+              <span
+                className="action-indicator__text"
+              />
+              <span
+                className="action-indicator__text"
+              />
+            </div>
+            <Component
+              changes={
+                Array [
+                  Object {
+                    "active": false,
+                    "conflictCreated": true,
+                    "eventId": "srhjrstlhrt",
+                    "hypothesisChangeInformation": Object {
+                      "hypothesisId": "trshrthsrtth",
+                      "id": "rthrstphohkpr",
+                      "parentId": "rthoshijostr",
+                      "type": "SignalDetectionHypothesis",
+                      "userAction": "Test Conflicted Signal Detection",
+                    },
+                    "id": "sfhofskhprtoh",
+                  },
+                ]
+              }
+              description="Reject detection"
+              entryType="Redo"
+              handleAction={[Function]}
+              handleKeyDown={[Function]}
+              handleKeyUp={[Function]}
+              handleMouseEnter={[Function]}
+              handleMouseOut={[Function]}
+              id="w4542653636536"
+              isAffected={false}
+              isAssociated={false}
+              isEventReset={false}
+              isInConflict={true}
+              isOrphaned={false}
+              key="w4542653636536"
+              message="Test Conflicted Signal Detection"
+              redoPriorityOrder={1}
+            >
+              <Component
+                changes={
+                  Array [
+                    Object {
+                      "active": false,
+                      "conflictCreated": true,
+                      "eventId": "srhjrstlhrt",
+                      "hypothesisChangeInformation": Object {
+                        "hypothesisId": "trshrthsrtth",
+                        "id": "rthrstphohkpr",
+                        "parentId": "rthoshijostr",
+                        "type": "SignalDetectionHypothesis",
+                        "userAction": "Test Conflicted Signal Detection",
+                      },
+                      "id": "sfhofskhprtoh",
+                    },
+                  ]
+                }
+                description="Reject detection"
+                entryType="Redo"
+                handleAction={[Function]}
+                handleKeyDown={[Function]}
+                handleKeyUp={[Function]}
+                handleMouseEnter={[Function]}
+                handleMouseOut={[Function]}
+                id="w4542653636536"
+                isAffected={false}
+                isAssociated={false}
+                isEventReset={false}
+                isInConflict={true}
+                isOrphaned={false}
+                message="Test Conflicted Signal Detection"
+                redoPriorityOrder={1}
+              >
+                <div
+                  className="
+      list__column history-entry
+      history-entry--redo
+      
+      
+      
+      
+      
+      
+    "
+                  onClick={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseOut={[Function]}
+                  onMouseOver={[Function]}
+                  tabIndex={0}
+                >
+                  <span
+                    className="history-entry__description"
+                  >
+                    Test Conflicted Signal Detection
+                  </span>
+                  <Blueprint3.Tooltip
+                    content="This action created a conflict"
+                    hoverCloseDelay={0}
+                    hoverOpenDelay={750}
+                    position="bottom"
+                    transitionDuration={100}
+                  >
+                    <Blueprint3.Popover
+                      autoFocus={false}
+                      boundary="scrollParent"
+                      canEscapeKeyClose={false}
+                      captureDismiss={false}
+                      content="This action created a conflict"
+                      defaultIsOpen={false}
+                      disabled={false}
+                      enforceFocus={false}
+                      fill={false}
+                      hasBackdrop={false}
+                      hoverCloseDelay={0}
+                      hoverOpenDelay={750}
+                      inheritDarkTheme={true}
+                      interactionKind="hover-target"
+                      lazy={true}
+                      minimal={false}
+                      modifiers={Object {}}
+                      openOnTargetFocus={true}
+                      popoverClassName="bp3-tooltip"
+                      position="bottom"
+                      targetTagName="span"
+                      transitionDuration={100}
+                      usePortal={true}
+                      wrapperTagName="span"
+                    >
+                      <Manager>
+                        <span
+                          className="bp3-popover-wrapper"
+                        >
+                          <Reference
+                            innerRef={[Function]}
+                          >
+                            <InnerReference
+                              innerRef={[Function]}
+                              setReferenceNode={[Function]}
+                            >
+                              <Blueprint3.ResizeSensor
+                                onResize={[Function]}
+                              >
+                                <span
+                                  className="bp3-popover-target"
+                                  onBlur={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                >
+                                  <Blueprint3.Icon
+                                    className="history-entry__icon"
+                                    icon="issue"
+                                    intent="danger"
+                                    key=".0"
+                                    tabIndex={0}
+                                  >
+                                    <span
+                                      className="bp3-icon bp3-icon-issue bp3-intent-danger history-entry__icon"
+                                      icon="issue"
+                                      tabIndex={0}
+                                    >
+                                      <svg
+                                        data-icon="issue"
+                                        height={16}
+                                        viewBox="0 0 16 16"
+                                        width={16}
+                                      >
+                                        <desc>
+                                          issue
+                                        </desc>
+                                        <path
+                                          d="M8 16A8 8 0 118 0a8 8 0 010 16zm0-2A6 6 0 108 2a6 6 0 000 12zm1-2H7v-2h2v2zm0-3H7V4h2v5z"
+                                          fillRule="evenodd"
+                                          key="0"
+                                        />
+                                      </svg>
+                                    </span>
+                                  </Blueprint3.Icon>
+                                </span>
+                              </Blueprint3.ResizeSensor>
+                            </InnerReference>
+                          </Reference>
+                          <Blueprint3.Overlay
+                            autoFocus={false}
+                            backdropClassName="bp3-popover-backdrop"
+                            backdropProps={Object {}}
+                            canEscapeKeyClose={false}
+                            canOutsideClickClose={false}
+                            enforceFocus={false}
+                            hasBackdrop={false}
+                            isOpen={false}
+                            lazy={true}
+                            onClose={[Function]}
+                            transitionDuration={100}
+                            transitionName="bp3-popover"
+                            usePortal={true}
+                          />
+                        </span>
+                      </Manager>
+                    </Blueprint3.Popover>
+                  </Blueprint3.Tooltip>
+                  <Blueprint3.Tooltip
+                    content="Redo this action"
+                    hoverCloseDelay={0}
+                    hoverOpenDelay={750}
+                    position="bottom"
+                    transitionDuration={100}
+                  >
+                    <Blueprint3.Popover
+                      autoFocus={false}
+                      boundary="scrollParent"
+                      canEscapeKeyClose={false}
+                      captureDismiss={false}
+                      content="Redo this action"
+                      defaultIsOpen={false}
+                      disabled={false}
+                      enforceFocus={false}
+                      fill={false}
+                      hasBackdrop={false}
+                      hoverCloseDelay={0}
+                      hoverOpenDelay={750}
+                      inheritDarkTheme={true}
+                      interactionKind="hover-target"
+                      lazy={true}
+                      minimal={false}
+                      modifiers={Object {}}
+                      openOnTargetFocus={true}
+                      popoverClassName="bp3-tooltip"
+                      position="bottom"
+                      targetTagName="span"
+                      transitionDuration={100}
+                      usePortal={true}
+                      wrapperTagName="span"
+                    >
+                      <Manager>
+                        <span
+                          className="bp3-popover-wrapper"
+                        >
+                          <Reference
+                            innerRef={[Function]}
+                          >
+                            <InnerReference
+                              innerRef={[Function]}
+                              setReferenceNode={[Function]}
+                            >
+                              <Blueprint3.ResizeSensor
+                                onResize={[Function]}
+                              >
+                                <span
+                                  className="bp3-popover-target"
+                                  onBlur={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                >
+                                  <Blueprint3.Icon
+                                    className="history-entry__icon"
+                                    icon="redo"
+                                    key=".0"
+                                    tabIndex={0}
+                                  >
+                                    <span
+                                      className="bp3-icon bp3-icon-redo history-entry__icon"
+                                      icon="redo"
+                                      tabIndex={0}
+                                    >
+                                      <svg
+                                        data-icon="redo"
+                                        height={16}
+                                        viewBox="0 0 16 16"
+                                        width={16}
+                                      >
+                                        <desc>
+                                          redo
+                                        </desc>
+                                        <path
+                                          d="M12 11c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm3.71-6.71l-3-3a1.003 1.003 0 00-1.42 1.42L12.59 4H5C2.24 4 0 6.24 0 9s2.24 5 5 5h4v-2H5c-1.66 0-3-1.34-3-3s1.34-3 3-3h7.59L11.3 7.29c-.19.18-.3.43-.3.71a1.003 1.003 0 001.71.71l3-3c.18-.18.29-.43.29-.71 0-.28-.11-.53-.29-.71z"
+                                          fillRule="evenodd"
+                                          key="0"
+                                        />
+                                      </svg>
+                                    </span>
+                                  </Blueprint3.Icon>
+                                </span>
+                              </Blueprint3.ResizeSensor>
+                            </InnerReference>
+                          </Reference>
+                          <Blueprint3.Overlay
+                            autoFocus={false}
+                            backdropClassName="bp3-popover-backdrop"
+                            backdropProps={Object {}}
+                            canEscapeKeyClose={false}
+                            canOutsideClickClose={false}
+                            enforceFocus={false}
+                            hasBackdrop={false}
+                            isOpen={false}
+                            lazy={true}
+                            onClose={[Function]}
+                            transitionDuration={100}
+                            transitionName="bp3-popover"
+                            usePortal={true}
+                          />
+                        </span>
+                      </Manager>
+                    </Blueprint3.Popover>
+                  </Blueprint3.Tooltip>
+                </div>
+              </Component>
+            </Component>
+          </li>
+        </Component>
+      </div>
+    </HistoryStack>
+  </div>
+</Component>
+`;
+
+exports[`history panel renders non-ideal-state 1`] = `
+<Component
+  nonIdealState={
+    Object {
+      "loadingEvent": <div>
+        I'm a non-ideal div, duh
+      </div>,
+      "loadingHistory": undefined,
+    }
+  }
+/>
+`;

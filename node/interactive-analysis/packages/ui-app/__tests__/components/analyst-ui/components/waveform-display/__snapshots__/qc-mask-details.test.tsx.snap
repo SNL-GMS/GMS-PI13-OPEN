@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Multi Mask dialog renders & matches snapshot  (overlapping masks) 1`] = `
+<div
+  className="qc-mask-modify"
+>
+  <div>
+    <Component
+      className="qc-mask-modify__label"
+    >
+      QC Masks
+    </Component>
+    <div
+      className="ag-dark qc-mask-overlapping-table"
+    >
+      <div
+        style={
+          Object {
+            "flex": "1 1 auto",
+            "minHeight": "150px",
+            "position": "relative",
+          }
+        }
+      >
+        <div
+          className="max"
+        >
+          <ClientSideTable
+            columnDefs={
+              Array [
+                Object {
+                  "cellRendererFramework": [Function],
+                  "cellStyle": Object {
+                    "text-align": "left",
+                    "vertical-align": "middle",
+                  },
+                  "field": "select",
+                  "headerName": "",
+                  "width": 25,
+                },
+                Object {
+                  "cellRendererFramework": [Function],
+                  "cellStyle": Object {
+                    "text-align": "left",
+                    "vertical-align": "middle",
+                  },
+                  "field": "modify",
+                  "headerName": "",
+                  "width": 25,
+                },
+                Object {
+                  "cellRendererFramework": [Function],
+                  "cellStyle": Object {
+                    "text-align": "left",
+                    "vertical-align": "middle",
+                  },
+                  "field": "reject",
+                  "headerName": "",
+                  "width": 25,
+                },
+                Object {
+                  "cellRendererFramework": [Function],
+                  "cellStyle": Object {
+                    "text-align": "left",
+                    "vertical-align": "middle",
+                  },
+                  "field": "color",
+                  "headerName": "",
+                  "width": 30,
+                },
+                Object {
+                  "cellStyle": Object {
+                    "text-align": "left",
+                  },
+                  "field": "category",
+                  "headerName": "Category",
+                  "width": 130,
+                },
+                Object {
+                  "cellStyle": Object {
+                    "text-align": "left",
+                  },
+                  "field": "type",
+                  "headerName": "Type",
+                  "width": 130,
+                },
+                Object {
+                  "cellStyle": Object {
+                    "text-align": "left",
+                  },
+                  "field": "startTime",
+                  "headerName": "Start time",
+                  "valueFormatter": [Function],
+                  "width": 170,
+                },
+                Object {
+                  "cellStyle": Object {
+                    "text-align": "left",
+                  },
+                  "field": "endTime",
+                  "headerName": "End time",
+                  "valueFormatter": [Function],
+                  "width": 170,
+                },
+                Object {
+                  "cellStyle": Object {
+                    "text-align": "left",
+                  },
+                  "field": "author",
+                  "headerName": "Author",
+                  "width": 75,
+                },
+                Object {
+                  "cellStyle": Object {
+                    "text-align": "left",
+                  },
+                  "field": "rationale",
+                  "headerName": "Rationale",
+                  "width": 300,
+                },
+              ]
+            }
+            getRowNodeId={[Function]}
+            id="overlapping-mask-table"
+            key="overlapping-mask-table"
+            onRowDoubleClicked={[Function]}
+            overlayNoRowsTemplate="No Masks"
+            rowData={
+              Array [
+                Object {
+                  "category": "Waveform quality",
+                  "channelSegmentIds": "AS03/SHZ",
+                  "color": "#fff",
+                  "endTime": 1274395221,
+                  "id": "27",
+                  "modify": Object {
+                    "disabled": false,
+                    "onClick": [Function],
+                    "qcDialogType": "Modify",
+                  },
+                  "rationale": "Hedgehog crossed the road upside down",
+                  "reject": Object {
+                    "disabled": false,
+                    "onClick": [Function],
+                    "qcDialogType": "Reject",
+                  },
+                  "select": Object {
+                    "disabled": false,
+                    "onClick": [Function],
+                  },
+                  "startTime": 1274395161,
+                  "type": "Calibration",
+                  "versionId": "1",
+                },
+                Object {
+                  "category": "Analyst defined",
+                  "channelSegmentIds": "AS03/SHZ",
+                  "color": "#fff",
+                  "endTime": 1274395221,
+                  "id": "28",
+                  "modify": Object {
+                    "disabled": false,
+                    "onClick": [Function],
+                    "qcDialogType": "Modify",
+                  },
+                  "rationale": "Hedgehog crossed the road upside down",
+                  "reject": Object {
+                    "disabled": false,
+                    "onClick": [Function],
+                    "qcDialogType": "Reject",
+                  },
+                  "select": Object {
+                    "disabled": false,
+                    "onClick": [Function],
+                  },
+                  "startTime": 1274395161,
+                  "type": "Calibration",
+                  "versionId": "1",
+                },
+              ]
+            }
+            rowSelection="single"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`QC Mask details renders & matches snapshot (single mask) 1`] = `
+<div
+  className="qc-dialog"
+>
+  <Form
+    defaultPanel={
+      Object {
+        "formItems": Array [
+          Object {
+            "itemKey": "startTime",
+            "itemType": "Input",
+            "labelText": "Start Time",
+            "value": Object {
+              "defaultValue": 2010-05-20T22:29:16.000Z,
+              "type": "TimePicker",
+            },
+          },
+          Object {
+            "itemKey": "endTime",
+            "itemType": "Input",
+            "labelText": "End Time",
+            "value": Object {
+              "defaultValue": 2010-05-20T22:30:21.000Z,
+              "type": "TimePicker",
+            },
+          },
+          Object {
+            "displayText": "Analyst defined",
+            "itemKey": "category",
+            "itemType": "Display",
+            "labelText": "Category",
+          },
+          Object {
+            "itemKey": "type",
+            "itemType": "Input",
+            "labelText": "Type",
+            "value": Object {
+              "defaultValue": "Spike",
+              "params": Object {
+                "dropDownItems": Object {
+                  "CALIBRATION": "Calibration",
+                  "LONG_GAP": "Long gap",
+                  "REPAIRABLE_GAP": "Repairable gap",
+                  "REPEATED_ADJACENT_AMPLITUDE_VALUE": "Repeated adjacent amplitude value",
+                  "SENSOR_PROBLEM": "Sensor problem",
+                  "SPIKE": "Spike",
+                  "STATION_PROBLEM": "Station problem",
+                  "STATION_SECURITY": "Station security",
+                  "TIMING": "Timing",
+                },
+              },
+              "type": "DropDown",
+            },
+          },
+          Object {
+            "itemKey": "rationale",
+            "itemType": "Input",
+            "labelText": "Rationale",
+            "value": Object {
+              "defaultValue": "",
+              "type": "TextArea",
+            },
+          },
+        ],
+        "key": "Current Version",
+      }
+    }
+    disableSubmit={false}
+    extraPanels={Array []}
+    header="QC Mask"
+    headerDecoration={
+      <div
+        className="qc-mask-swatch"
+        style={
+          Object {
+            "backgroundColor": "#fff",
+          }
+        }
+      />
+    }
+    onCancel={[Function]}
+    onSubmit={[Function]}
+    requiresModificationForSubmit={false}
+    submitButtonText="Save"
+  />
+</div>
+`;

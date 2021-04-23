@@ -1,0 +1,11 @@
+plugins {
+    id "java-library"
+}
+dependencies {
+    api 'javax.ws.rs:javax.ws.rs-api'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'org.apache.commons:commons-math3'
+    api project(":frameworks-shared-objects")
+}

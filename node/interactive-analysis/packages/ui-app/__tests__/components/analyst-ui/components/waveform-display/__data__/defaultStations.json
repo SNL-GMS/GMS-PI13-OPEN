@@ -1,0 +1,1373 @@
+[
+  {
+    "name": "PDAR",
+    "type": "SeismicArray",
+    "description": "Pinedale,_Wyoming:_USA_array_element",
+    "relativePositionsByChannel": {
+      "PDAR.PD08.SHZ": {
+        "northDisplacementKm": -0.934,
+        "eastDisplacementKm": -2.091,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD11.SHZ": {
+        "northDisplacementKm": -1.636,
+        "eastDisplacementKm": -1.548,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD01.SHZ": {
+        "northDisplacementKm": 1.014,
+        "eastDisplacementKm": -2.066,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD07.SHZ": {
+        "northDisplacementKm": 0.297,
+        "eastDisplacementKm": 1.046,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD12.SHZ": {
+        "northDisplacementKm": -1.352,
+        "eastDisplacementKm": -0.416,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD05.SHZ": {
+        "northDisplacementKm": 0.345,
+        "eastDisplacementKm": -0.7,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD32.SHN": {
+        "northDisplacementKm": -0.038,
+        "eastDisplacementKm": -0.022,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD31.BHN": {
+        "northDisplacementKm": 0,
+        "eastDisplacementKm": 0,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD03.SHZ": {
+        "northDisplacementKm": 0.939,
+        "eastDisplacementKm": 0.688,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD10.SHZ": {
+        "northDisplacementKm": -0.875,
+        "eastDisplacementKm": 0.087,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD09.SHZ": {
+        "northDisplacementKm": -0.61,
+        "eastDisplacementKm": -0.737,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD31.BHE": {
+        "northDisplacementKm": 0,
+        "eastDisplacementKm": 0,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD32.SHE": {
+        "northDisplacementKm": -0.038,
+        "eastDisplacementKm": -0.022,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD06.SHZ": {
+        "northDisplacementKm": -0.069,
+        "eastDisplacementKm": -0.018,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD32.SHZ": {
+        "northDisplacementKm": -0.038,
+        "eastDisplacementKm": -0.022,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD31.BHZ": {
+        "northDisplacementKm": 0,
+        "eastDisplacementKm": 0,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD13.SHZ": {
+        "northDisplacementKm": -1.334,
+        "eastDisplacementKm": 0.718,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD02.SHZ": {
+        "northDisplacementKm": 1.201,
+        "eastDisplacementKm": -0.688,
+        "verticalDisplacementKm": 0
+      },
+      "PDAR.PD04.SHZ": {
+        "northDisplacementKm": -0.15,
+        "eastDisplacementKm": -1.34,
+        "verticalDisplacementKm": 0
+      }
+    },
+    "location": {
+      "latitudeDegrees": 42.76738,
+      "longitudeDegrees": -109.5579,
+      "depthKm": 0,
+      "elevationKm": 2.215
+    },
+    "channelGroups": [
+      {
+        "name": "PD10",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.75951,
+          "longitudeDegrees": -109.55685,
+          "depthKm": 0,
+          "elevationKm": 2.199
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD10.SHZ",
+            "canonicalName": "PDAR.PD10.SHZ",
+            "description": "Raw Channel created from ReferenceChannel c50b6edc-8862-3230-8a4b-e4167ae17d49 with version e5f9a523-b071-3278-9ed3-2c87c8c67167",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.75951,
+              "longitudeDegrees": -109.55685,
+              "depthKm": 0.0381,
+              "elevationKm": 2.199
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD10"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD08",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.75897,
+          "longitudeDegrees": -109.58343,
+          "depthKm": 0,
+          "elevationKm": 2.172
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD08.SHZ",
+            "canonicalName": "PDAR.PD08.SHZ",
+            "description": "Raw Channel created from ReferenceChannel 660b9971-b817-3641-b5e9-eb0455baa0ec with version 33a65e8f-6b68-380d-aeaf-4feed0f3492f",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.75897,
+              "longitudeDegrees": -109.58343,
+              "depthKm": 0.0381,
+              "elevationKm": 2.172
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD08"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD07",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.77004,
+          "longitudeDegrees": -109.54513,
+          "depthKm": 0,
+          "elevationKm": 2.341
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD07.SHZ",
+            "canonicalName": "PDAR.PD07.SHZ",
+            "description": "Raw Channel created from ReferenceChannel ae39c449-07be-3e07-95ec-daca53d56582 with version c49a8bf7-f272-34fe-92d8-019ff4377851",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.77004,
+              "longitudeDegrees": -109.54513,
+              "depthKm": 0.0381,
+              "elevationKm": 2.341
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD07"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD06",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.76675,
+          "longitudeDegrees": -109.55813,
+          "depthKm": 0,
+          "elevationKm": 2.21
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD06.SHZ",
+            "canonicalName": "PDAR.PD06.SHZ",
+            "description": "Raw Channel created from ReferenceChannel b68c80b0-6af7-363a-b591-50d34e7600dd with version aeee85e9-8f62-35d0-af58-c4d6bc21f31c",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.76675,
+              "longitudeDegrees": -109.55813,
+              "depthKm": 0.0381,
+              "elevationKm": 2.21
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD06"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD05",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.77048,
+          "longitudeDegrees": -109.56646,
+          "depthKm": 0,
+          "elevationKm": 2.185
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD05.SHZ",
+            "canonicalName": "PDAR.PD05.SHZ",
+            "description": "Raw Channel created from ReferenceChannel ede1a5d8-010c-32c4-93f8-7f394862f9d4 with version 6bd1baa2-74d5-3df9-ad27-d6ec7d1bee95",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.77048,
+              "longitudeDegrees": -109.56646,
+              "depthKm": 0.0381,
+              "elevationKm": 2.185
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD05"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD01",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.7765,
+          "longitudeDegrees": -109.58314,
+          "depthKm": 0,
+          "elevationKm": 2.192
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD01.SHZ",
+            "canonicalName": "PDAR.PD01.SHZ",
+            "description": "Raw Channel created from ReferenceChannel 2fabc2d3-858b-3e85-9f47-e2ee72060f0b with version d767395c-850e-36f8-a6f2-a1c7398440e4",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.7765,
+              "longitudeDegrees": -109.58314,
+              "depthKm": 0.0381,
+              "elevationKm": 2.192
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD01"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD12",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.75521,
+          "longitudeDegrees": -109.56299,
+          "depthKm": 0,
+          "elevationKm": 2.169
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD12.SHZ",
+            "canonicalName": "PDAR.PD12.SHZ",
+            "description": "Raw Channel created from ReferenceChannel 76e8ff5a-1eca-3a9e-a020-c620900370b8 with version 293bc5fe-8bce-330f-8813-73bf6c4064ce",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.75521,
+              "longitudeDegrees": -109.56299,
+              "depthKm": 0.0381,
+              "elevationKm": 2.169
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD12"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD31",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.76738,
+          "longitudeDegrees": -109.5579,
+          "depthKm": 0,
+          "elevationKm": 2.215
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD31.BHZ",
+            "canonicalName": "PDAR.PD31.BHZ",
+            "description": "Raw Channel created from ReferenceChannel 02be332d-7516-3211-a2e8-7201a7d84557 with version 9bc5de37-51e2-3f8b-9e1f-8d6edd9dc40e",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "BROADBAND",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 40,
+            "location": {
+              "latitudeDegrees": 42.76738,
+              "longitudeDegrees": -109.5579,
+              "depthKm": 0.0457,
+              "elevationKm": 2.215
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD31"
+            }
+          },
+          {
+            "name": "PDAR.PD31.BHE",
+            "canonicalName": "PDAR.PD31.BHE",
+            "description": "Raw Channel created from ReferenceChannel 02c16723-362e-3bae-b189-364a48b75393 with version 80b434e6-482c-3265-9ff6-83291c52517d",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "BROADBAND",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "EAST_WEST",
+            "channelOrientationCode": "E",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 40,
+            "location": {
+              "latitudeDegrees": 42.76738,
+              "longitudeDegrees": -109.5579,
+              "depthKm": 0.0457,
+              "elevationKm": 2.215
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": 90,
+              "verticalAngleDeg": 90
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD31"
+            }
+          },
+          {
+            "name": "PDAR.PD31.BHN",
+            "canonicalName": "PDAR.PD31.BHN",
+            "description": "Raw Channel created from ReferenceChannel 3c6e29ea-e0a6-3469-93da-5c5ad312c635 with version c6d6abd0-ed3d-3e09-aac0-1b87a1e83f9c",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "BROADBAND",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "NORTH_SOUTH",
+            "channelOrientationCode": "N",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 40,
+            "location": {
+              "latitudeDegrees": 42.76738,
+              "longitudeDegrees": -109.5579,
+              "depthKm": 0.0457,
+              "elevationKm": 2.215
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": 0,
+              "verticalAngleDeg": 90
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD31"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD03",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.77582,
+          "longitudeDegrees": -109.5495,
+          "depthKm": 0,
+          "elevationKm": 2.286
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD03.SHZ",
+            "canonicalName": "PDAR.PD03.SHZ",
+            "description": "Raw Channel created from ReferenceChannel a8c4a1f5-ff8c-330d-8e83-cb07b88da81f with version 11105cfd-4a56-38f6-82b4-0c56caec0057",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.77582,
+              "longitudeDegrees": -109.5495,
+              "depthKm": 0.0381,
+              "elevationKm": 2.286
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD03"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD13",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.75537,
+          "longitudeDegrees": -109.54914,
+          "depthKm": 0,
+          "elevationKm": 2.234
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD13.SHZ",
+            "canonicalName": "PDAR.PD13.SHZ",
+            "description": "Raw Channel created from ReferenceChannel e43c771e-a630-3223-be61-c06d60bf0fe0 with version 3c7f0aec-2ec3-3ea4-ba12-d0a53377ff46",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.75537,
+              "longitudeDegrees": -109.54914,
+              "depthKm": 0.0381,
+              "elevationKm": 2.234
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD13"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD32",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.76704,
+          "longitudeDegrees": -109.55817,
+          "depthKm": 0,
+          "elevationKm": 2.213
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD32.SHE",
+            "canonicalName": "PDAR.PD32.SHE",
+            "description": "Raw Channel created from ReferenceChannel 0ee2535c-bde0-3c7d-bff4-8c3573432e5b with version d0f44121-3e51-3837-8ef9-03fc80463614",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "EAST_WEST",
+            "channelOrientationCode": "E",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 40,
+            "location": {
+              "latitudeDegrees": 42.76704,
+              "longitudeDegrees": -109.55817,
+              "depthKm": 0.003,
+              "elevationKm": 2.213
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": 90,
+              "verticalAngleDeg": 90
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD32"
+            }
+          },
+          {
+            "name": "PDAR.PD32.SHN",
+            "canonicalName": "PDAR.PD32.SHN",
+            "description": "Raw Channel created from ReferenceChannel 3d5bd721-3f55-3e57-9ca0-1c41d9f1fbc7 with version 11028336-3eea-30fa-b61a-b5e16755077b",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "NORTH_SOUTH",
+            "channelOrientationCode": "N",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 40,
+            "location": {
+              "latitudeDegrees": 42.76704,
+              "longitudeDegrees": -109.55817,
+              "depthKm": 0.003,
+              "elevationKm": 2.213
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": 0,
+              "verticalAngleDeg": 90
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD32"
+            }
+          },
+          {
+            "name": "PDAR.PD32.SHZ",
+            "canonicalName": "PDAR.PD32.SHZ",
+            "description": "Raw Channel created from ReferenceChannel ff34449e-bdbe-350f-98a8-b38d222d20b5 with version 18e51a49-502c-303c-bacb-c0e3fa924ad6",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 40,
+            "location": {
+              "latitudeDegrees": 42.76704,
+              "longitudeDegrees": -109.55817,
+              "depthKm": 0.003,
+              "elevationKm": 2.213
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD32"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD09",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.76189,
+          "longitudeDegrees": -109.56691,
+          "depthKm": 0,
+          "elevationKm": 2.173
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD09.SHZ",
+            "canonicalName": "PDAR.PD09.SHZ",
+            "description": "Raw Channel created from ReferenceChannel 713a2ad2-2bab-30a3-9503-1288b7e5ced7 with version 5e6d523a-e177-30c5-b79c-a897044ed10f",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.76189,
+              "longitudeDegrees": -109.56691,
+              "depthKm": 0.0381,
+              "elevationKm": 2.173
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD09"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD02",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.77818,
+          "longitudeDegrees": -109.5663,
+          "depthKm": 0,
+          "elevationKm": 2.207
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD02.SHZ",
+            "canonicalName": "PDAR.PD02.SHZ",
+            "description": "Raw Channel created from ReferenceChannel 04abdfb2-0fac-37cd-8b9e-18a997362ea6 with version d621a702-3f21-34ba-8bae-fd242438152b",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.77818,
+              "longitudeDegrees": -109.5663,
+              "depthKm": 0.0381,
+              "elevationKm": 2.207
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD02"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD11",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.75265,
+          "longitudeDegrees": -109.57681,
+          "depthKm": 0,
+          "elevationKm": 2.172
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD11.SHZ",
+            "canonicalName": "PDAR.PD11.SHZ",
+            "description": "Raw Channel created from ReferenceChannel 60a33f28-2bf2-3837-8fbe-335f01cfe18d with version 2b12997a-8a89-3e3b-9e00-e85ad4206163",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.75265,
+              "longitudeDegrees": -109.57681,
+              "depthKm": 0.0381,
+              "elevationKm": 2.172
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD11"
+            }
+          }
+        ]
+      },
+      {
+        "name": "PD04",
+        "description": "Pinedale,_Wyoming:_USA_array_element",
+        "location": {
+          "latitudeDegrees": 42.76602,
+          "longitudeDegrees": -109.57426,
+          "depthKm": 0,
+          "elevationKm": 2.172
+        },
+        "type": "SITE_GROUP",
+        "channels": [
+          {
+            "name": "PDAR.PD04.SHZ",
+            "canonicalName": "PDAR.PD04.SHZ",
+            "description": "Raw Channel created from ReferenceChannel 4a83612e-8050-3418-b6dd-ccd1aef2502e with version 4fd8837b-bdf7-366c-bbd0-5a52ce7614eb",
+            "station": "PDAR",
+            "channelDataType": "SEISMIC",
+            "channelBandType": "SHORT_PERIOD",
+            "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+            "channelOrientationType": "VERTICAL",
+            "channelOrientationCode": "Z",
+            "units": "NANOMETERS_PER_COUNT",
+            "nominalSampleRateHz": 20,
+            "location": {
+              "latitudeDegrees": 42.76602,
+              "longitudeDegrees": -109.57426,
+              "depthKm": 0.0381,
+              "elevationKm": 2.172
+            },
+            "orientationAngles": {
+              "horizontalAngleDeg": -1,
+              "verticalAngleDeg": 0
+            },
+            "configuredInputs": [],
+            "processingDefinition": {},
+            "processingMetadata": {
+              "CHANNEL_GROUP": "PD04"
+            }
+          }
+        ]
+      }
+    ],
+    "channels": [
+      {
+        "name": "PDAR.PD10.SHZ",
+        "canonicalName": "PDAR.PD10.SHZ",
+        "description": "Raw Channel created from ReferenceChannel c50b6edc-8862-3230-8a4b-e4167ae17d49 with version e5f9a523-b071-3278-9ed3-2c87c8c67167",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.75951,
+          "longitudeDegrees": -109.55685,
+          "depthKm": 0.0381,
+          "elevationKm": 2.199
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD10"
+        }
+      },
+      {
+        "name": "PDAR.PD08.SHZ",
+        "canonicalName": "PDAR.PD08.SHZ",
+        "description": "Raw Channel created from ReferenceChannel 660b9971-b817-3641-b5e9-eb0455baa0ec with version 33a65e8f-6b68-380d-aeaf-4feed0f3492f",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.75897,
+          "longitudeDegrees": -109.58343,
+          "depthKm": 0.0381,
+          "elevationKm": 2.172
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD08"
+        }
+      },
+      {
+        "name": "PDAR.PD07.SHZ",
+        "canonicalName": "PDAR.PD07.SHZ",
+        "description": "Raw Channel created from ReferenceChannel ae39c449-07be-3e07-95ec-daca53d56582 with version c49a8bf7-f272-34fe-92d8-019ff4377851",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.77004,
+          "longitudeDegrees": -109.54513,
+          "depthKm": 0.0381,
+          "elevationKm": 2.341
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD07"
+        }
+      },
+      {
+        "name": "PDAR.PD06.SHZ",
+        "canonicalName": "PDAR.PD06.SHZ",
+        "description": "Raw Channel created from ReferenceChannel b68c80b0-6af7-363a-b591-50d34e7600dd with version aeee85e9-8f62-35d0-af58-c4d6bc21f31c",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.76675,
+          "longitudeDegrees": -109.55813,
+          "depthKm": 0.0381,
+          "elevationKm": 2.21
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD06"
+        }
+      },
+      {
+        "name": "PDAR.PD05.SHZ",
+        "canonicalName": "PDAR.PD05.SHZ",
+        "description": "Raw Channel created from ReferenceChannel ede1a5d8-010c-32c4-93f8-7f394862f9d4 with version 6bd1baa2-74d5-3df9-ad27-d6ec7d1bee95",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.77048,
+          "longitudeDegrees": -109.56646,
+          "depthKm": 0.0381,
+          "elevationKm": 2.185
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD05"
+        }
+      },
+      {
+        "name": "PDAR.PD01.SHZ",
+        "canonicalName": "PDAR.PD01.SHZ",
+        "description": "Raw Channel created from ReferenceChannel 2fabc2d3-858b-3e85-9f47-e2ee72060f0b with version d767395c-850e-36f8-a6f2-a1c7398440e4",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.7765,
+          "longitudeDegrees": -109.58314,
+          "depthKm": 0.0381,
+          "elevationKm": 2.192
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD01"
+        }
+      },
+      {
+        "name": "PDAR.PD12.SHZ",
+        "canonicalName": "PDAR.PD12.SHZ",
+        "description": "Raw Channel created from ReferenceChannel 76e8ff5a-1eca-3a9e-a020-c620900370b8 with version 293bc5fe-8bce-330f-8813-73bf6c4064ce",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.75521,
+          "longitudeDegrees": -109.56299,
+          "depthKm": 0.0381,
+          "elevationKm": 2.169
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD12"
+        }
+      },
+      {
+        "name": "PDAR.PD31.BHZ",
+        "canonicalName": "PDAR.PD31.BHZ",
+        "description": "Raw Channel created from ReferenceChannel 02be332d-7516-3211-a2e8-7201a7d84557 with version 9bc5de37-51e2-3f8b-9e1f-8d6edd9dc40e",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "BROADBAND",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 40,
+        "location": {
+          "latitudeDegrees": 42.76738,
+          "longitudeDegrees": -109.5579,
+          "depthKm": 0.0457,
+          "elevationKm": 2.215
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD31"
+        }
+      },
+      {
+        "name": "PDAR.PD31.BHE",
+        "canonicalName": "PDAR.PD31.BHE",
+        "description": "Raw Channel created from ReferenceChannel 02c16723-362e-3bae-b189-364a48b75393 with version 80b434e6-482c-3265-9ff6-83291c52517d",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "BROADBAND",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "EAST_WEST",
+        "channelOrientationCode": "E",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 40,
+        "location": {
+          "latitudeDegrees": 42.76738,
+          "longitudeDegrees": -109.5579,
+          "depthKm": 0.0457,
+          "elevationKm": 2.215
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": 90,
+          "verticalAngleDeg": 90
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD31"
+        }
+      },
+      {
+        "name": "PDAR.PD31.BHN",
+        "canonicalName": "PDAR.PD31.BHN",
+        "description": "Raw Channel created from ReferenceChannel 3c6e29ea-e0a6-3469-93da-5c5ad312c635 with version c6d6abd0-ed3d-3e09-aac0-1b87a1e83f9c",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "BROADBAND",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "NORTH_SOUTH",
+        "channelOrientationCode": "N",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 40,
+        "location": {
+          "latitudeDegrees": 42.76738,
+          "longitudeDegrees": -109.5579,
+          "depthKm": 0.0457,
+          "elevationKm": 2.215
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": 0,
+          "verticalAngleDeg": 90
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD31"
+        }
+      },
+      {
+        "name": "PDAR.PD03.SHZ",
+        "canonicalName": "PDAR.PD03.SHZ",
+        "description": "Raw Channel created from ReferenceChannel a8c4a1f5-ff8c-330d-8e83-cb07b88da81f with version 11105cfd-4a56-38f6-82b4-0c56caec0057",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.77582,
+          "longitudeDegrees": -109.5495,
+          "depthKm": 0.0381,
+          "elevationKm": 2.286
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD03"
+        }
+      },
+      {
+        "name": "PDAR.PD13.SHZ",
+        "canonicalName": "PDAR.PD13.SHZ",
+        "description": "Raw Channel created from ReferenceChannel e43c771e-a630-3223-be61-c06d60bf0fe0 with version 3c7f0aec-2ec3-3ea4-ba12-d0a53377ff46",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.75537,
+          "longitudeDegrees": -109.54914,
+          "depthKm": 0.0381,
+          "elevationKm": 2.234
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD13"
+        }
+      },
+      {
+        "name": "PDAR.PD32.SHE",
+        "canonicalName": "PDAR.PD32.SHE",
+        "description": "Raw Channel created from ReferenceChannel 0ee2535c-bde0-3c7d-bff4-8c3573432e5b with version d0f44121-3e51-3837-8ef9-03fc80463614",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "EAST_WEST",
+        "channelOrientationCode": "E",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 40,
+        "location": {
+          "latitudeDegrees": 42.76704,
+          "longitudeDegrees": -109.55817,
+          "depthKm": 0.003,
+          "elevationKm": 2.213
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": 90,
+          "verticalAngleDeg": 90
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD32"
+        }
+      },
+      {
+        "name": "PDAR.PD32.SHN",
+        "canonicalName": "PDAR.PD32.SHN",
+        "description": "Raw Channel created from ReferenceChannel 3d5bd721-3f55-3e57-9ca0-1c41d9f1fbc7 with version 11028336-3eea-30fa-b61a-b5e16755077b",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "NORTH_SOUTH",
+        "channelOrientationCode": "N",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 40,
+        "location": {
+          "latitudeDegrees": 42.76704,
+          "longitudeDegrees": -109.55817,
+          "depthKm": 0.003,
+          "elevationKm": 2.213
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": 0,
+          "verticalAngleDeg": 90
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD32"
+        }
+      },
+      {
+        "name": "PDAR.PD32.SHZ",
+        "canonicalName": "PDAR.PD32.SHZ",
+        "description": "Raw Channel created from ReferenceChannel ff34449e-bdbe-350f-98a8-b38d222d20b5 with version 18e51a49-502c-303c-bacb-c0e3fa924ad6",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 40,
+        "location": {
+          "latitudeDegrees": 42.76704,
+          "longitudeDegrees": -109.55817,
+          "depthKm": 0.003,
+          "elevationKm": 2.213
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD32"
+        }
+      },
+      {
+        "name": "PDAR.PD09.SHZ",
+        "canonicalName": "PDAR.PD09.SHZ",
+        "description": "Raw Channel created from ReferenceChannel 713a2ad2-2bab-30a3-9503-1288b7e5ced7 with version 5e6d523a-e177-30c5-b79c-a897044ed10f",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.76189,
+          "longitudeDegrees": -109.56691,
+          "depthKm": 0.0381,
+          "elevationKm": 2.173
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD09"
+        }
+      },
+      {
+        "name": "PDAR.PD02.SHZ",
+        "canonicalName": "PDAR.PD02.SHZ",
+        "description": "Raw Channel created from ReferenceChannel 04abdfb2-0fac-37cd-8b9e-18a997362ea6 with version d621a702-3f21-34ba-8bae-fd242438152b",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.77818,
+          "longitudeDegrees": -109.5663,
+          "depthKm": 0.0381,
+          "elevationKm": 2.207
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD02"
+        }
+      },
+      {
+        "name": "PDAR.PD11.SHZ",
+        "canonicalName": "PDAR.PD11.SHZ",
+        "description": "Raw Channel created from ReferenceChannel 60a33f28-2bf2-3837-8fbe-335f01cfe18d with version 2b12997a-8a89-3e3b-9e00-e85ad4206163",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.75265,
+          "longitudeDegrees": -109.57681,
+          "depthKm": 0.0381,
+          "elevationKm": 2.172
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD11"
+        }
+      },
+      {
+        "name": "PDAR.PD04.SHZ",
+        "canonicalName": "PDAR.PD04.SHZ",
+        "description": "Raw Channel created from ReferenceChannel 4a83612e-8050-3418-b6dd-ccd1aef2502e with version 4fd8837b-bdf7-366c-bbd0-5a52ce7614eb",
+        "station": "PDAR",
+        "channelDataType": "SEISMIC",
+        "channelBandType": "SHORT_PERIOD",
+        "channelInstrumentType": "HIGH_GAIN_SEISMOMETER",
+        "channelOrientationType": "VERTICAL",
+        "channelOrientationCode": "Z",
+        "units": "NANOMETERS_PER_COUNT",
+        "nominalSampleRateHz": 20,
+        "location": {
+          "latitudeDegrees": 42.76602,
+          "longitudeDegrees": -109.57426,
+          "depthKm": 0.0381,
+          "elevationKm": 2.172
+        },
+        "orientationAngles": {
+          "horizontalAngleDeg": -1,
+          "verticalAngleDeg": 0
+        },
+        "configuredInputs": [],
+        "processingDefinition": {},
+        "processingMetadata": {
+          "CHANNEL_GROUP": "PD04"
+        }
+      }
+    ]
+  }
+]

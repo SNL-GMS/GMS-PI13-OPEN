@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: gms
+  labels:
+    gms/type: {{ .Chart.Name }}
+    gms/user: {{ .Values.user | default "UNKNOWN" }}
+    gms/name: {{ .Release.Name }}
+    gms/namespace: {{ .Release.Namespace }}
+    gms/image-tag: {{ .Values.imageTag }}
+    gms/update-time: {{ dateInZone "2006-01-02T150405Z" (now) "UTC" | quote }}
+    gms/cd11-live-data: {{ .Values.liveData | quote }}
+    gms/cd11-connman-port: {{ get (get .Values "da-connman") "connPort" | quote }}
+    gms/cd11-dataman-port-start: {{ get (get .Values "da-dataman") "dataPortStart" | quote }}
+    gms/cd11-dataman-port-end: {{ get (get .Values "da-dataman") "dataPortEnd" | quote }}

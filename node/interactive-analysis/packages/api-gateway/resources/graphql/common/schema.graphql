@@ -1,0 +1,63 @@
+# A date/time type
+scalar Date
+
+# The log level
+enum LogLevel {
+  error
+  warn
+  client
+  info
+  timing
+  data
+  debug
+}
+
+# Input verion of a time range
+input TimeRange {
+  startTime: Float!
+  endTime: Float!
+}
+
+# The version of the software, and commit SHA for displaying
+type VersionInfo {
+  versionNumber: String
+  commitSHA: String
+}
+
+# The client log
+type ClientLog {
+  logLevel: LogLevel!
+  message: String!
+  time: String!
+}
+
+# The client log input
+input ClientLogInput {
+  logLevel: LogLevel!
+  message: String!
+  time: String
+}
+
+# The following queries are supported
+type Query {
+  # Query count (Dummy)
+  queryCount: Int
+
+  # The version information
+  versionInfo: VersionInfo
+}
+
+# The following mutations are supported
+type Mutation {
+  # Mutation count (Dummy)
+  mutationCount: Int
+
+  # Client log
+  clientLog(logs: [ClientLogInput]): ClientLog
+}
+
+# The following subscriptions are supported
+type Subscription {
+  # Subscription Count (Dummy)
+  subscriptionCount: Int
+}

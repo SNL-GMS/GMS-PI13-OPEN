@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Waveform content query should match snapshot 1`] = `
+Object {
+  "getRawWaveformSegmentsByChannels": Array [
+    Object {
+      "channelId": "KDAK.KDAK.BHZ",
+      "endTime": 1274394600.05,
+      "startTime": 1274385600,
+      "timeseries": Array [
+        Object {
+          "sampleCount": 180001,
+          "sampleRate": 20,
+          "startTime": 1274385600,
+        },
+      ],
+      "type": "RAW",
+    },
+    Object {
+      "channelId": "KDAK.KDAK.BHZ",
+      "endTime": 1274396400.05,
+      "startTime": 1274395500,
+      "timeseries": Array [
+        Object {
+          "sampleCount": 18001,
+          "sampleRate": 20,
+          "startTime": 1274395500,
+        },
+      ],
+      "type": "RAW",
+    },
+    Object {
+      "channelId": "KDAK.KDAK.BHZ",
+      "endTime": 1274397600.05,
+      "startTime": 1274397000.05,
+      "timeseries": Array [
+        Object {
+          "sampleCount": 12000,
+          "sampleRate": 20,
+          "startTime": 1274397000.05,
+        },
+      ],
+      "type": "RAW",
+    },
+    Object {
+      "channelId": "KDAK.KDAK.BHZ",
+      "endTime": 1274399100.05,
+      "startTime": 1274398200,
+      "timeseries": Array [
+        Object {
+          "sampleCount": 18001,
+          "sampleRate": 20,
+          "startTime": 1274398200,
+        },
+      ],
+      "type": "RAW",
+    },
+  ],
+}
+`;

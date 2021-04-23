@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Station cell renderers PercentBar match snapshot 1`] = `
+<PercentBar
+  percentage={10}
+>
+  <div
+    className="percent-bar"
+    key="1"
+    style={
+      Object {
+        "transform": "translateX(-90%)",
+        "width": "100%",
+      }
+    }
+  />
+</PercentBar>
+`;
+
+exports[`Station cell renderers stationCellRenderer should have props of type stationCellRendererProps 1`] = `
+Object {
+  "cellStatus": "good",
+  "className": "string",
+  "dataReceivedStatus": "received",
+  "stationId": "string",
+  "value": "string",
+}
+`;
+
+exports[`Station cell renderers stationCellRenderer should match snapshot 1`] = `
+<Component
+  cellStatus="good"
+  className="string"
+  dataReceivedStatus="received"
+  stationId="string"
+  value="string"
+>
+  <Component
+    cellStatus="good"
+    className="soh-cell string"
+    data-cell-status="good"
+    data-received-status="received"
+    data-station-id="string"
+    dataReceivedStatus="received"
+    stationId="string"
+    value="string"
+  >
+    <div
+      className="table-cell soh-cell string"
+      data-cell-status="good"
+      data-cy="table-cell"
+      data-received-status="received"
+      data-station-id="string"
+      style={
+        Object {
+          "height": "36px",
+          "overflow": "hidden",
+        }
+      }
+      title="string"
+    >
+      <div
+        className=" table-cell__value"
+      >
+        <span>
+          string
+        </span>
+      </div>
+    </div>
+  </Component>
+</Component>
+`;

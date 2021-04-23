@@ -1,0 +1,47 @@
+
+# Interface for analyst configuration used to determine fields based on roles
+type AnalystConfiguration {
+  logLevel: LogLevel!
+  defaultNetwork: String!
+  sohStationGroupNames: [SOHStationGroupNameWithPriority]!
+  defaultFilters: [WaveformFilter]!
+  redisplayPeriod: Int!
+  reprocessingPeriod: Int!
+  acknowledgementQuietDuration: Int!
+  availableQuietDurations: [Int]!
+  sohStationStaleTimeMS: Int!
+  sohHistoricalDurations: [Int]!
+  systemMessageLimit: Int!
+}
+
+# SOH StationGroup and Priority interface definition
+type SOHStationGroupNameWithPriority {
+  name: String
+  priority: Int
+}
+
+# Represents a Waveform Filter
+type WaveformFilter {
+  id: String!
+  name: String!
+  description: String!
+  filterType: String!
+  filterPassBandType: String!
+  lowFrequencyHz: Float
+  highFrequencyHz: Float
+  order: Float!
+  filterSource: String!
+  filterCausality: String!
+  zeroPhase: String!
+  sampleRate: Float!
+  sampleRateTolerance: Float!
+  validForSampleRate: String!
+  aCoefficients: [Float]
+  bCoefficients: [Float]
+  groupDelaySecs: Float
+}
+
+# The following event related queries are supported.
+extend type Query {
+    uiAnalystConfiguration: AnalystConfiguration
+}

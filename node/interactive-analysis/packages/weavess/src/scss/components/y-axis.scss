@@ -1,0 +1,24 @@
+.y-axis {
+  width: 50px;
+
+  .y-axis-axis {
+    path,
+    line {
+      fill: none;
+      stroke: rgb(167, 182, 194);
+      shape-rendering: crispEdges;
+    }
+
+    text {
+      font-family: sans-serif;
+      font-size: 11px;
+      fill: #ddd;
+    }
+  }
+}
+
+.y-axis-even-tick {
+  .tick:nth-child(even) line {
+    visibility: hidden;
+  }
+}

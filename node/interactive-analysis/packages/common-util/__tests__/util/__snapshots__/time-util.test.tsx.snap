@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Time utils Can convert to osd time 1`] = `"1970-01-01T00:01:00.000Z"`;
+
+exports[`Time utils Can put time units into a fixed precision string: 1 week 1 day 0 hour  1`] = `"1 week 1 day 0 hour "`;
+
+exports[`Time utils Can put time units into a high precision string 1`] = `"1 week 1 day 1 minute 30 seconds"`;
+
+exports[`Time utils Can split seconds 1`] = `
+Object {
+  "days": 1,
+  "hours": 0,
+  "milliseconds": 0,
+  "minutes": 1,
+  "seconds": 30,
+  "weeks": 1,
+}
+`;

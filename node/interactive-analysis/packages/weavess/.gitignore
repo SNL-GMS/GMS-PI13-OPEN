@@ -1,0 +1,13 @@
+.sonarlint/
+node_modules/
+build/
+dist/
+lib/
+bundle-analyzer/
+coverage/
+**/.DS_STORE
+*.map
+*.log
+*.swp
+*.out
+.cache/

@@ -1,0 +1,373 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Soh Lag panel should match snapshot 1`] = `
+<ContextProvider
+  value={
+    Object {
+      "client": DefaultClient {
+        "cache": InMemoryCache {
+          "addTypename": true,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": true,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "clearStoreCallbacks": Array [],
+        "defaultOptions": Object {},
+        "disableNetworkFetches": false,
+        "link": ApolloLink {
+          "request": [Function],
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutate": [Function],
+        "query": [Function],
+        "queryDeduplication": true,
+        "queryManager": QueryManager {
+          "assumeImmutableResults": false,
+          "clientAwareness": Object {
+            "name": undefined,
+            "version": undefined,
+          },
+          "dataStore": DataStore {
+            "cache": InMemoryCache {
+              "addTypename": true,
+              "cacheKeyRoot": KeyTrie {
+                "weakness": true,
+              },
+              "config": Object {
+                "addTypename": true,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "freezeResults": false,
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimisticData": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "executeSubSelectedArray": [Function],
+                "freezeResults": false,
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+          },
+          "fetchQueryRejectFns": Map {},
+          "idCounter": 1,
+          "inFlightLinkObservables": Map {},
+          "link": ApolloLink {
+            "request": [Function],
+          },
+          "localState": LocalState {
+            "cache": InMemoryCache {
+              "addTypename": true,
+              "cacheKeyRoot": KeyTrie {
+                "weakness": true,
+              },
+              "config": Object {
+                "addTypename": true,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "freezeResults": false,
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimisticData": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "executeSubSelectedArray": [Function],
+                "freezeResults": false,
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+            "client": [Circular],
+          },
+          "mutationStore": MutationStore {
+            "store": Object {},
+          },
+          "onBroadcast": [Function],
+          "pollingInfoByQueryId": Map {},
+          "queries": Map {},
+          "queryDeduplication": true,
+          "queryStore": QueryStore {
+            "store": Object {},
+          },
+          "ssrMode": false,
+          "transformCache": WeakMap {},
+        },
+        "reFetchObservableQueries": [Function],
+        "resetStore": [Function],
+        "resetStoreCallbacks": Array [],
+        "store": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": true,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": true,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "typeDefs": undefined,
+        "version": "2.6.4",
+        "watchQuery": [Function],
+      },
+    }
+  }
+>
+  <ContextProvider
+    value={
+      Object {
+        "glContainer": Object {
+          "height": 100,
+          "width": 100,
+        },
+        "heightPx": 100,
+        "widthPx": 100,
+      }
+    }
+  >
+    <Component
+      monitorType="MISSING"
+      sohHistoricalDurations={
+        Array [
+          30000,
+          90000,
+        ]
+      }
+      sohStatus={
+        Object {
+          "error": undefined,
+          "lastUpdated": 0,
+          "loading": false,
+          "stationAndStationGroupSoh": Object {
+            "isUpdateResponse": false,
+            "stationGroups": Array [],
+            "stationSoh": Array [
+              Object {
+                "allStationAggregates": Array [],
+                "channelSohs": Array [
+                  Object {
+                    "allSohMonitorValueAndStatuses": Array [
+                      Object {
+                        "contributing": false,
+                        "hasUnacknowledgedChanges": true,
+                        "monitorType": "LAG",
+                        "quietUntilMs": 1,
+                        "status": "GOOD",
+                        "thresholdBad": 3,
+                        "thresholdMarginal": 3,
+                        "value": 10,
+                        "valuePresent": true,
+                      },
+                      Object {
+                        "contributing": false,
+                        "hasUnacknowledgedChanges": true,
+                        "monitorType": "LAG",
+                        "quietUntilMs": 1,
+                        "status": "GOOD",
+                        "thresholdBad": 3,
+                        "thresholdMarginal": 3,
+                        "value": 11,
+                        "valuePresent": true,
+                      },
+                    ],
+                    "channelName": "adsf",
+                    "channelSohStatus": undefined,
+                  },
+                ],
+                "id": "1",
+                "needsAcknowledgement": true,
+                "needsAttention": true,
+                "sohStatusSummary": undefined,
+                "stationGroups": Array [],
+                "stationName": "1",
+                "statusContributors": Array [],
+                "time": undefined,
+                "uuid": "1",
+              },
+            ],
+          },
+        }
+      }
+      station={
+        Object {
+          "allStationAggregates": Array [],
+          "channelSohs": Array [
+            Object {
+              "allSohMonitorValueAndStatuses": Array [
+                Object {
+                  "contributing": false,
+                  "hasUnacknowledgedChanges": true,
+                  "monitorType": "LAG",
+                  "quietUntilMs": 1,
+                  "status": "GOOD",
+                  "thresholdBad": 3,
+                  "thresholdMarginal": 3,
+                  "value": 10,
+                  "valuePresent": true,
+                },
+                Object {
+                  "contributing": false,
+                  "hasUnacknowledgedChanges": true,
+                  "monitorType": "LAG",
+                  "quietUntilMs": 1,
+                  "status": "GOOD",
+                  "thresholdBad": 3,
+                  "thresholdMarginal": 3,
+                  "value": 11,
+                  "valuePresent": true,
+                },
+              ],
+              "channelName": "adsf",
+              "channelSohStatus": undefined,
+            },
+            Object {
+              "allSohMonitorValueAndStatuses": Array [
+                Object {
+                  "contributing": false,
+                  "hasUnacknowledgedChanges": true,
+                  "monitorType": "LAG",
+                  "quietUntilMs": 1,
+                  "status": "GOOD",
+                  "thresholdBad": 3,
+                  "thresholdMarginal": 3,
+                  "value": 10,
+                  "valuePresent": true,
+                },
+                Object {
+                  "contributing": false,
+                  "hasUnacknowledgedChanges": true,
+                  "monitorType": "LAG",
+                  "quietUntilMs": 1,
+                  "status": "GOOD",
+                  "thresholdBad": 3,
+                  "thresholdMarginal": 3,
+                  "value": 11,
+                  "valuePresent": true,
+                },
+              ],
+              "channelName": "adsf2",
+              "channelSohStatus": undefined,
+            },
+          ],
+          "id": "1",
+          "needsAcknowledgement": true,
+          "needsAttention": true,
+          "sohStatusSummary": undefined,
+          "stationGroups": Array [],
+          "stationName": "1",
+          "statusContributors": Array [],
+          "time": undefined,
+          "uuid": "1",
+        }
+      }
+      valueType="PERCENTAGE"
+    />
+  </ContextProvider>
+</ContextProvider>
+`;

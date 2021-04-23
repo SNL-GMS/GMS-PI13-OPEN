@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`compute feature predictions compute feature prediction 1`] = `
+Array [
+  "featurePredictions",
+  "id",
+  "location",
+  "locationBehaviors",
+  "locationRestraint",
+  "locationUncertainty",
+  "networkMagnitudeSolutions",
+]
+`;

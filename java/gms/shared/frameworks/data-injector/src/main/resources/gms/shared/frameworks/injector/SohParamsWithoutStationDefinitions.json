@@ -1,0 +1,36 @@
+{
+  "stationSohControlConfiguration": {
+    "reprocessingPeriod": "PT20S",
+    "displayedStationGroups": [
+      "All_1",
+      "All_2",
+      "EurAsia",
+      "OthCont",
+      "CD1.1",
+      "Wrapped",
+      "A_To_H",
+      "I_To_Z",
+      "IMS_Sta",
+      "NON_IMS"
+    ],
+    "rollupStationSohTimeTolerance": "PT10M",
+    "stationSohDefinitions": []
+  },
+  "stationSohMonitoringDisplayParameters": {
+    "redisplayPeriod": "PT5S",
+    "acknowledgementQuietDuration": "PT5M",
+    "availableQuietDurations": [
+      "PT5M",
+      "PT15M",
+      "PT1H",
+      "PT24H",
+      "PT168H"
+    ],
+    "sohStationStaleDuration": "PT5M",
+    "sohHistoricalDurations": [
+      "PT12H",
+      "PT24H",
+      "PT168H"
+    ]
+  }
+}

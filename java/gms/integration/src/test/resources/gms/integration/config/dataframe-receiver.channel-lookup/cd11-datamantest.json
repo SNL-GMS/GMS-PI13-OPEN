@@ -1,0 +1,24 @@
+{
+  "name": "cd-1.1",
+  "constraints": [
+    {
+      "constraintType": "STRING",
+      "criterion": "protocol",
+      "operator": {
+        "type": "EQ",
+        "negated": false
+      },
+      "value": [
+        "CD11"
+      ]
+    }
+  ],
+  "parameters": {
+    "channelIdsByPacketName": {
+      "LBTB.LBTB1.SHZ": "LBTB.LBTB1.SHZ",
+      "LBTB.LBTBB.BHZ": "LBTB.LBTBB.BHZ",
+      "LBTB.LBTBB.BHN": "LBTB.LBTBB.BHN",
+      "LBTB.LBTBB.BHE": "LBTB.LBTBB.BHE"
+    }
+  }
+}

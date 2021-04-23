@@ -1,0 +1,20 @@
+ARG DOCKER_REGISTRY
+ARG DOCKER_IMAGE_TAG
+ARG PROJECT_NAME
+
+FROM ${DOCKER_REGISTRY}/${PROJECT_NAME}/centos:${DOCKER_IMAGE_TAG} as builder
+
+# Python Builder Template Begin
+# Python Builder Template End
+
+ARG DOCKER_REGISTRY
+ARG DOCKER_IMAGE_TAG
+ARG PROJECT_NAME
+
+FROM ${DOCKER_REGISTRY}/${PROJECT_NAME}/centos:${DOCKER_IMAGE_TAG}
+
+# Python Base Template Begin
+# Python Base Template End
+
+CMD ["/bin/bash"]
+

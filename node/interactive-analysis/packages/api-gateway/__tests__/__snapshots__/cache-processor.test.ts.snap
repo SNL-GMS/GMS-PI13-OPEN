@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Workspace State Test Adding event to users to workspace state 1`] = `
+Object {
+  "eventToUsers": Array [],
+}
+`;
+
+exports[`Workspace State Test Adding event to users to workspace state 2`] = `
+Object {
+  "eventToUsers": Array [
+    Object {
+      "eventId": "test",
+      "userNames": Array [
+        "user1",
+      ],
+    },
+  ],
+}
+`;
+
+exports[`Workspace State Test Adding event to users to workspace state 3`] = `
+Object {
+  "eventToUsers": Array [
+    Object {
+      "eventId": "test",
+      "userNames": Array [],
+    },
+  ],
+}
+`;

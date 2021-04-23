@@ -1,0 +1,14 @@
+plugins {
+    id "java-library"
+}
+dependencies {
+    implementation project(":frameworks-http-service-library")
+    api project(':frameworks-system-config')
+    implementation project(':frameworks-utilities')
+    
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    testImplementation 'com.google.auto.value:auto-value-annotations'
+    testAnnotationProcessor "com.google.auto.value:auto-value"
+}

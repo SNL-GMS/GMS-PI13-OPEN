@@ -1,0 +1,2359 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Station statistics class Panel should match snapshot 1`] = `
+<StationStatisticsPanel
+  selectedStationIds={Array []}
+  setSelectedStationIds={[MockFunction]}
+  stationGroups={
+    Array [
+      Object {
+        "groupCapabilityStatus": "BAD",
+        "id": "1",
+        "priority": 1,
+        "stationGroupName": "Group 4",
+        "time": 0,
+      },
+    ]
+  }
+  stationSohs={
+    Array [
+      Object {
+        "allStationAggregates": Array [],
+        "channelSohs": Array [],
+        "id": "1",
+        "needsAcknowledgement": true,
+        "needsAttention": true,
+        "sohStatusSummary": "GOOD",
+        "stationGroups": Array [
+          Object {
+            "groupName": "Group 4",
+            "sohStationCapability": "GOOD",
+            "stationName": "H05N",
+          },
+        ],
+        "stationName": "H05N",
+        "statusContributors": Array [
+          Object {
+            "contributing": true,
+            "statusSummary": "GOOD",
+            "type": "LAG",
+            "value": 5,
+            "valuePresent": true,
+          },
+        ],
+        "time": 2,
+        "uuid": "1",
+      },
+      Object {
+        "allStationAggregates": Array [],
+        "channelSohs": Array [],
+        "id": "2",
+        "needsAcknowledgement": true,
+        "needsAttention": true,
+        "sohStatusSummary": "MARGINAL",
+        "stationGroups": Array [
+          Object {
+            "groupName": "Group 4",
+            "sohStationCapability": "GOOD",
+            "stationName": "H06N",
+          },
+        ],
+        "stationName": "H06N",
+        "statusContributors": Array [
+          Object {
+            "contributing": true,
+            "statusSummary": "GOOD",
+            "type": "LAG",
+            "value": 5,
+            "valuePresent": true,
+          },
+        ],
+        "time": 2,
+        "uuid": "2",
+      },
+      Object {
+        "allStationAggregates": Array [],
+        "channelSohs": Array [],
+        "id": "3",
+        "needsAcknowledgement": true,
+        "needsAttention": true,
+        "sohStatusSummary": "BAD",
+        "stationGroups": Array [
+          Object {
+            "groupName": "Group 4",
+            "sohStationCapability": "GOOD",
+            "stationName": "H07N",
+          },
+        ],
+        "stationName": "H07N",
+        "statusContributors": Array [
+          Object {
+            "contributing": true,
+            "statusSummary": "GOOD",
+            "type": "LAG",
+            "value": 5,
+            "valuePresent": true,
+          },
+        ],
+        "time": 2,
+        "uuid": "3",
+      },
+      Object {
+        "allStationAggregates": Array [],
+        "channelSohs": Array [],
+        "id": "4",
+        "needsAcknowledgement": true,
+        "needsAttention": true,
+        "sohStatusSummary": "GOOD",
+        "stationGroups": Array [
+          Object {
+            "groupName": "Group 4",
+            "sohStationCapability": "MARGINAL",
+            "stationName": "H08N",
+          },
+        ],
+        "stationName": "H08N",
+        "statusContributors": Array [
+          Object {
+            "contributing": true,
+            "statusSummary": "GOOD",
+            "type": "LAG",
+            "value": 5,
+            "valuePresent": true,
+          },
+        ],
+        "time": 2,
+        "uuid": "4",
+      },
+    ]
+  }
+  updateIntervalSecs={5}
+>
+  <div
+    className="soh-toolbar-container"
+  >
+    <Component
+      displayTimeWarning={true}
+      leftItems={
+        Array [
+          Object {
+            "cyData": "station-statistics-group-selector",
+            "dropdownOptions": Object {
+              "1": "Group 4",
+              "default": "All Groups",
+            },
+            "label": "Select a Group",
+            "onChange": [Function],
+            "rank": 2,
+            "tooltip": "Show only a single group",
+            "type": "Dropdown",
+            "value": "All Groups",
+            "widthPx": 150,
+          },
+          Object {
+            "cyData": "filter-column",
+            "enumOfKeys": Array [
+              "Channel Issues",
+              "Channel Lag",
+              "Channel Missing",
+              "Channel Timeliness",
+              "Station Issues",
+              "Station Lag",
+              "Station Missing",
+              "Station Timeliness",
+            ],
+            "label": "Show columns",
+            "menuLabel": "Show columns",
+            "onChange": [Function],
+            "rank": 3,
+            "tooltip": "Set which columns are visible",
+            "type": "CheckboxList",
+            "values": Map {
+              "Station" => true,
+              "Channel Issues" => true,
+              "Channel Lag" => true,
+              "Channel Missing" => true,
+              "Channel Timeliness" => true,
+              "Station Issues" => true,
+              "Station Lag" => true,
+              "Station Missing" => true,
+              "Station Timeliness" => true,
+            },
+            "widthPx": 150,
+          },
+        ]
+      }
+      rightItems={Array []}
+      setStatusesToDisplay={[Function]}
+      sohStationStaleTimeMS={30000}
+      statusFilterText="Filter by Status"
+      statusFilterTooltip="Set which statuses appear in the lower bin"
+      statusesToDisplay={
+        Map {
+          "GOOD" => true,
+          "BAD" => true,
+          "MARGINAL" => true,
+          "NONE" => true,
+        }
+      }
+      toggleHighlight={[Function]}
+      updateIntervalSecs={5}
+      updatedAt={2}
+    >
+      <Component
+        items={
+          Array [
+            Object {
+              "hasIssue": true,
+              "label": "Last Updated",
+              "rank": 1,
+              "style": Object {
+                "marginLeft": "1em",
+              },
+              "tooltip": "Most recent SOH data received",
+              "tooltipForIssue": "SOH data has not updated in over 30 seconds",
+              "type": "LabelValue",
+              "value": "1970/01/01 00:00:02",
+              "widthPx": 400,
+            },
+            Object {
+              "label": "Update Interval",
+              "rank": 2,
+              "tooltip": "Interval at which SOH data is processed",
+              "type": "LabelValue",
+              "value": "5 seconds",
+              "widthPx": 400,
+            },
+          ]
+        }
+        itemsLeft={
+          Array [
+            Object {
+              "colors": Map {
+                "GOOD" => "#fff",
+                "MARGINAL" => "#fff",
+                "BAD" => "#fff",
+                "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+              },
+              "cyData": "filter-soh",
+              "enumKeysToDisplayStrings": Map {
+                "GOOD" => "Good",
+                "MARGINAL" => "Marginal",
+                "BAD" => "Bad",
+                "NONE" => "None",
+              },
+              "enumOfKeys": Object {
+                "BAD": "BAD",
+                "GOOD": "GOOD",
+                "MARGINAL": "MARGINAL",
+                "NONE": "NONE",
+              },
+              "label": "Filter by Status",
+              "menuLabel": "Filter by Status",
+              "onChange": [Function],
+              "onPopUp": [Function],
+              "onPopoverDismissed": [Function],
+              "rank": 1,
+              "tooltip": "Set which statuses appear in the lower bin",
+              "type": "CheckboxList",
+              "values": Map {
+                "GOOD" => true,
+                "BAD" => true,
+                "MARGINAL" => true,
+                "NONE" => true,
+              },
+              "widthPx": 200,
+            },
+            Object {
+              "cyData": "station-statistics-group-selector",
+              "dropdownOptions": Object {
+                "1": "Group 4",
+                "default": "All Groups",
+              },
+              "label": "Select a Group",
+              "onChange": [Function],
+              "rank": 2,
+              "tooltip": "Show only a single group",
+              "type": "Dropdown",
+              "value": "All Groups",
+              "widthPx": 150,
+            },
+            Object {
+              "cyData": "filter-column",
+              "enumOfKeys": Array [
+                "Channel Issues",
+                "Channel Lag",
+                "Channel Missing",
+                "Channel Timeliness",
+                "Station Issues",
+                "Station Lag",
+                "Station Missing",
+                "Station Timeliness",
+              ],
+              "label": "Show columns",
+              "menuLabel": "Show columns",
+              "onChange": [Function],
+              "rank": 3,
+              "tooltip": "Set which columns are visible",
+              "type": "CheckboxList",
+              "values": Map {
+                "Station" => true,
+                "Channel Issues" => true,
+                "Channel Lag" => true,
+                "Channel Missing" => true,
+                "Channel Timeliness" => true,
+                "Station Issues" => true,
+                "Station Lag" => true,
+                "Station Missing" => true,
+                "Station Timeliness" => true,
+              },
+              "widthPx": 150,
+            },
+          ]
+        }
+        widthPx={150}
+      >
+        <ToolbarComponent
+          items={
+            Array [
+              Object {
+                "hasIssue": true,
+                "label": "Last Updated",
+                "rank": 1,
+                "style": Object {
+                  "marginLeft": "1em",
+                },
+                "tooltip": "Most recent SOH data received",
+                "tooltipForIssue": "SOH data has not updated in over 30 seconds",
+                "type": "LabelValue",
+                "value": "1970/01/01 00:00:02",
+                "widthPx": 400,
+              },
+              Object {
+                "label": "Update Interval",
+                "rank": 2,
+                "tooltip": "Interval at which SOH data is processed",
+                "type": "LabelValue",
+                "value": "5 seconds",
+                "widthPx": 400,
+              },
+            ]
+          }
+          itemsLeft={
+            Array [
+              Object {
+                "colors": Map {
+                  "GOOD" => "#fff",
+                  "MARGINAL" => "#fff",
+                  "BAD" => "#fff",
+                  "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                },
+                "cyData": "filter-soh",
+                "enumKeysToDisplayStrings": Map {
+                  "GOOD" => "Good",
+                  "MARGINAL" => "Marginal",
+                  "BAD" => "Bad",
+                  "NONE" => "None",
+                },
+                "enumOfKeys": Object {
+                  "BAD": "BAD",
+                  "GOOD": "GOOD",
+                  "MARGINAL": "MARGINAL",
+                  "NONE": "NONE",
+                },
+                "label": "Filter by Status",
+                "menuLabel": "Filter by Status",
+                "onChange": [Function],
+                "onPopUp": [Function],
+                "onPopoverDismissed": [Function],
+                "rank": 1,
+                "tooltip": "Set which statuses appear in the lower bin",
+                "type": "CheckboxList",
+                "values": Map {
+                  "GOOD" => true,
+                  "BAD" => true,
+                  "MARGINAL" => true,
+                  "NONE" => true,
+                },
+                "widthPx": 200,
+              },
+              Object {
+                "cyData": "station-statistics-group-selector",
+                "dropdownOptions": Object {
+                  "1": "Group 4",
+                  "default": "All Groups",
+                },
+                "label": "Select a Group",
+                "onChange": [Function],
+                "rank": 2,
+                "tooltip": "Show only a single group",
+                "type": "Dropdown",
+                "value": "All Groups",
+                "widthPx": 150,
+              },
+              Object {
+                "cyData": "filter-column",
+                "enumOfKeys": Array [
+                  "Channel Issues",
+                  "Channel Lag",
+                  "Channel Missing",
+                  "Channel Timeliness",
+                  "Station Issues",
+                  "Station Lag",
+                  "Station Missing",
+                  "Station Timeliness",
+                ],
+                "label": "Show columns",
+                "menuLabel": "Show columns",
+                "onChange": [Function],
+                "rank": 3,
+                "tooltip": "Set which columns are visible",
+                "type": "CheckboxList",
+                "values": Map {
+                  "Station" => true,
+                  "Channel Issues" => true,
+                  "Channel Lag" => true,
+                  "Channel Missing" => true,
+                  "Channel Timeliness" => true,
+                  "Station Issues" => true,
+                  "Station Lag" => true,
+                  "Station Missing" => true,
+                  "Station Timeliness" => true,
+                },
+                "widthPx": 150,
+              },
+            ]
+          }
+          minWhiteSpacePx={1}
+          toolbarWidthPx={110}
+          widthPx={150}
+        >
+          <div
+            className="toolbar"
+            style={
+              Object {
+                "width": "110px",
+              }
+            }
+          >
+            <div
+              className="toolbar__left-group"
+            >
+              <div
+                className="toolbar-item toolbar-item__left"
+                key="1"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={false}
+                  item={
+                    Object {
+                      "colors": Map {
+                        "GOOD" => "#fff",
+                        "MARGINAL" => "#fff",
+                        "BAD" => "#fff",
+                        "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                      },
+                      "cyData": "filter-soh",
+                      "enumKeysToDisplayStrings": Map {
+                        "GOOD" => "Good",
+                        "MARGINAL" => "Marginal",
+                        "BAD" => "Bad",
+                        "NONE" => "None",
+                      },
+                      "enumOfKeys": Object {
+                        "BAD": "BAD",
+                        "GOOD": "GOOD",
+                        "MARGINAL": "MARGINAL",
+                        "NONE": "NONE",
+                      },
+                      "label": "Filter by Status",
+                      "menuLabel": "Filter by Status",
+                      "onChange": [Function],
+                      "onPopUp": [Function],
+                      "onPopoverDismissed": [Function],
+                      "rank": 1,
+                      "tooltip": "Set which statuses appear in the lower bin",
+                      "type": "CheckboxList",
+                      "values": Map {
+                        "GOOD" => true,
+                        "BAD" => true,
+                        "MARGINAL" => true,
+                        "NONE" => true,
+                      },
+                      "widthPx": 200,
+                    }
+                  }
+                  key="1"
+                >
+                  <div
+                    style={Object {}}
+                  >
+                    <PopoverButtonComponent
+                      cyData="filter-soh"
+                      key="1"
+                      label="Filter by Status"
+                      onClick={[Function]}
+                      onPopoverDismissed={[Function]}
+                      popupContent={
+                        <CheckboxList
+                          checkboxEnum={
+                            Object {
+                              "BAD": "BAD",
+                              "GOOD": "GOOD",
+                              "MARGINAL": "MARGINAL",
+                              "NONE": "NONE",
+                            }
+                          }
+                          enumKeysToDisplayStrings={
+                            Map {
+                              "GOOD" => "Good",
+                              "MARGINAL" => "Marginal",
+                              "BAD" => "Bad",
+                              "NONE" => "None",
+                            }
+                          }
+                          enumToCheckedMap={
+                            Map {
+                              "GOOD" => true,
+                              "BAD" => true,
+                              "MARGINAL" => true,
+                              "NONE" => true,
+                            }
+                          }
+                          enumToColorMap={
+                            Map {
+                              "GOOD" => "#fff",
+                              "MARGINAL" => "#fff",
+                              "BAD" => "#fff",
+                              "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                            }
+                          }
+                          onChange={[Function]}
+                        />
+                      }
+                      tooltip="Set which statuses appear in the lower bin"
+                      widthPx={200}
+                    >
+                      <div
+                        data-cy="filter-soh"
+                      >
+                        <Blueprint3.Button
+                          active={false}
+                          alignText="left"
+                          className="toolbar-button"
+                          onClick={[Function]}
+                          style={
+                            Object {
+                              "width": "200px",
+                            }
+                          }
+                          title="Set which statuses appear in the lower bin"
+                        >
+                          <button
+                            className="bp3-button bp3-align-left toolbar-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            style={
+                              Object {
+                                "width": "200px",
+                              }
+                            }
+                            title="Set which statuses appear in the lower bin"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <span>
+                                Filter by Status
+                              </span>
+                              <Blueprint3.Icon
+                                icon="chevron-down"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-chevron-down"
+                                  icon="chevron-down"
+                                >
+                                  <svg
+                                    data-icon="chevron-down"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </PopoverButtonComponent>
+                  </div>
+                </Component>
+              </div>
+              <div
+                className="toolbar-item toolbar-item__left"
+                key="2"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={false}
+                  item={
+                    Object {
+                      "cyData": "station-statistics-group-selector",
+                      "dropdownOptions": Object {
+                        "1": "Group 4",
+                        "default": "All Groups",
+                      },
+                      "label": "Select a Group",
+                      "onChange": [Function],
+                      "rank": 2,
+                      "tooltip": "Show only a single group",
+                      "type": "Dropdown",
+                      "value": "All Groups",
+                      "widthPx": 150,
+                    }
+                  }
+                  key="2"
+                >
+                  <div
+                    style={Object {}}
+                  >
+                    <DropDown
+                      data-cy="station-statistics-group-selector"
+                      dropDownItems={
+                        Object {
+                          "1": "Group 4",
+                          "default": "All Groups",
+                        }
+                      }
+                      key="2"
+                      onMaybeValue={[Function]}
+                      title="Show only a single group"
+                      value="All Groups"
+                      widthPx={150}
+                    >
+                      <HTMLSelect
+                        data-cy="station-statistics-group-selector"
+                        onChange={[Function]}
+                        style={
+                          Object {
+                            "minWidth": "150px",
+                            "width": "150px",
+                          }
+                        }
+                        title="Show only a single group"
+                        value="All Groups"
+                      >
+                        <div
+                          className="bp3-html-select"
+                        >
+                          <select
+                            data-cy="station-statistics-group-selector"
+                            multiple={false}
+                            onChange={[Function]}
+                            style={
+                              Object {
+                                "minWidth": "150px",
+                                "width": "150px",
+                              }
+                            }
+                            title="Show only a single group"
+                            value="All Groups"
+                          >
+                            <option
+                              key="1"
+                              value="Group 4"
+                            >
+                              Group 4
+                            </option>
+                            <option
+                              key="default"
+                              value="All Groups"
+                            >
+                              All Groups
+                            </option>
+                          </select>
+                          <Blueprint3.Icon
+                            icon="double-caret-vertical"
+                          >
+                            <span
+                              className="bp3-icon bp3-icon-double-caret-vertical"
+                              icon="double-caret-vertical"
+                            >
+                              <svg
+                                data-icon="double-caret-vertical"
+                                height={16}
+                                viewBox="0 0 16 16"
+                                width={16}
+                              >
+                                <desc>
+                                  double-caret-vertical
+                                </desc>
+                                <path
+                                  d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                                  fillRule="evenodd"
+                                  key="0"
+                                />
+                              </svg>
+                            </span>
+                          </Blueprint3.Icon>
+                        </div>
+                      </HTMLSelect>
+                    </DropDown>
+                  </div>
+                </Component>
+              </div>
+              <div
+                className="toolbar-item toolbar-item__left"
+                key="3"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={false}
+                  item={
+                    Object {
+                      "cyData": "filter-column",
+                      "enumOfKeys": Array [
+                        "Channel Issues",
+                        "Channel Lag",
+                        "Channel Missing",
+                        "Channel Timeliness",
+                        "Station Issues",
+                        "Station Lag",
+                        "Station Missing",
+                        "Station Timeliness",
+                      ],
+                      "label": "Show columns",
+                      "menuLabel": "Show columns",
+                      "onChange": [Function],
+                      "rank": 3,
+                      "tooltip": "Set which columns are visible",
+                      "type": "CheckboxList",
+                      "values": Map {
+                        "Station" => true,
+                        "Channel Issues" => true,
+                        "Channel Lag" => true,
+                        "Channel Missing" => true,
+                        "Channel Timeliness" => true,
+                        "Station Issues" => true,
+                        "Station Lag" => true,
+                        "Station Missing" => true,
+                        "Station Timeliness" => true,
+                      },
+                      "widthPx": 150,
+                    }
+                  }
+                  key="3"
+                >
+                  <div
+                    style={Object {}}
+                  >
+                    <PopoverButtonComponent
+                      cyData="filter-column"
+                      key="3"
+                      label="Show columns"
+                      onClick={[Function]}
+                      onPopoverDismissed={[Function]}
+                      popupContent={
+                        <CheckboxList
+                          checkboxEnum={
+                            Array [
+                              "Channel Issues",
+                              "Channel Lag",
+                              "Channel Missing",
+                              "Channel Timeliness",
+                              "Station Issues",
+                              "Station Lag",
+                              "Station Missing",
+                              "Station Timeliness",
+                            ]
+                          }
+                          enumToCheckedMap={
+                            Map {
+                              "Station" => true,
+                              "Channel Issues" => true,
+                              "Channel Lag" => true,
+                              "Channel Missing" => true,
+                              "Channel Timeliness" => true,
+                              "Station Issues" => true,
+                              "Station Lag" => true,
+                              "Station Missing" => true,
+                              "Station Timeliness" => true,
+                            }
+                          }
+                          onChange={[Function]}
+                        />
+                      }
+                      tooltip="Set which columns are visible"
+                      widthPx={150}
+                    >
+                      <div
+                        data-cy="filter-column"
+                      >
+                        <Blueprint3.Button
+                          active={false}
+                          alignText="left"
+                          className="toolbar-button"
+                          onClick={[Function]}
+                          style={
+                            Object {
+                              "width": "150px",
+                            }
+                          }
+                          title="Set which columns are visible"
+                        >
+                          <button
+                            className="bp3-button bp3-align-left toolbar-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            style={
+                              Object {
+                                "width": "150px",
+                              }
+                            }
+                            title="Set which columns are visible"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <span>
+                                Show columns
+                              </span>
+                              <Blueprint3.Icon
+                                icon="chevron-down"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-chevron-down"
+                                  icon="chevron-down"
+                                >
+                                  <svg
+                                    data-icon="chevron-down"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </PopoverButtonComponent>
+                  </div>
+                </Component>
+              </div>
+            </div>
+            <div
+              className="toolbar__center-group"
+            >
+              <div
+                className="toolbar__whitespace"
+                style={
+                  Object {
+                    "width": "94px",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="toolbar__right-group"
+            >
+              <div
+                className="toolbar-item
+                    toolbar-item--issue"
+                key="1"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={true}
+                  item={
+                    Object {
+                      "hasIssue": true,
+                      "label": "Last Updated",
+                      "rank": 1,
+                      "style": Object {
+                        "marginLeft": "1em",
+                      },
+                      "tooltip": "Most recent SOH data received",
+                      "tooltipForIssue": "SOH data has not updated in over 30 seconds",
+                      "type": "LabelValue",
+                      "value": "1970/01/01 00:00:02",
+                      "widthPx": 400,
+                    }
+                  }
+                  key="1"
+                >
+                  <div
+                    className="toolbar-label-value"
+                    style={
+                      Object {
+                        "marginLeft": "1em",
+                      }
+                    }
+                  >
+                    <Component
+                      label="Last Updated"
+                      tooltip="SOH data has not updated in over 30 seconds"
+                      value="1970/01/01 00:00:02"
+                    >
+                      <div
+                        className="label-value-container"
+                      >
+                        <div
+                          className="label-value__label"
+                        >
+                          Last Updated: 
+                        </div>
+                        <div
+                          className="label-value__value"
+                          style={
+                            Object {
+                              "color": "",
+                            }
+                          }
+                          title="SOH data has not updated in over 30 seconds"
+                        >
+                          1970/01/01 00:00:02
+                        </div>
+                      </div>
+                    </Component>
+                  </div>
+                </Component>
+              </div>
+              <div
+                className="toolbar-item
+                    "
+                key="2"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={false}
+                  item={
+                    Object {
+                      "label": "Update Interval",
+                      "rank": 2,
+                      "tooltip": "Interval at which SOH data is processed",
+                      "type": "LabelValue",
+                      "value": "5 seconds",
+                      "widthPx": 400,
+                    }
+                  }
+                  key="2"
+                >
+                  <div
+                    className="toolbar-label-value"
+                    style={Object {}}
+                  >
+                    <Component
+                      label="Update Interval"
+                      tooltip="Interval at which SOH data is processed"
+                      value="5 seconds"
+                    >
+                      <div
+                        className="label-value-container"
+                      >
+                        <div
+                          className="label-value__label"
+                        >
+                          Update Interval: 
+                        </div>
+                        <div
+                          className="label-value__value"
+                          style={
+                            Object {
+                              "color": "",
+                            }
+                          }
+                          title="Interval at which SOH data is processed"
+                        >
+                          5 seconds
+                        </div>
+                      </div>
+                    </Component>
+                  </div>
+                </Component>
+              </div>
+            </div>
+          </div>
+        </ToolbarComponent>
+      </Component>
+    </Component>
+  </div>
+  <HorizontalDivider
+    bottom={
+      <Unknown
+        className="station-statistics-table-container station-statistics-table-container--acknowledged gms-drop-zone
+                  
+  with-separated-rows
+  ag-theme-dark
+  ag-theme-dark--soh
+  
+                  "
+        dataCy="soh-acknowledged"
+        setSelectedStationIds={[Function]}
+      >
+        <DropZone
+          onDrop={[Function]}
+        >
+          <StationStatisticsTable
+            acknowledgeContextMenu={[Function]}
+            highlightDropZone={[Function]}
+            id="soh-acknowledged"
+            onRowClicked={[Function]}
+            suppressContextMenu={true}
+            tableData={Array []}
+          />
+        </DropZone>
+      </Unknown>
+    }
+    sizeRange={
+      Object {
+        "minimumBottomHeightPx": 110,
+        "minimumTopHeightPx": 145,
+      }
+    }
+    top={
+      <Unknown
+        className="station-statistics-table-container station-statistics-table-container--needs-attention 
+  with-separated-rows
+  ag-theme-dark
+  ag-theme-dark--soh
+  "
+        dataCy="soh-unacknowledged"
+        setSelectedStationIds={[Function]}
+      >
+        <div
+          className="soh-table-label"
+        >
+          Needs Attention
+        </div>
+        <StationStatisticsTable
+          acknowledgeContextMenu={[Function]}
+          id="soh-unacknowledged"
+          onRowClicked={[Function]}
+          tableData={
+            Array [
+              Object {
+                "channelEnvironment": Object {
+                  "isContributing": false,
+                  "status": "NONE",
+                  "value": undefined,
+                },
+                "channelLag": Object {
+                  "isContributing": true,
+                  "status": "GOOD",
+                  "value": 5,
+                },
+                "channelMissing": Object {
+                  "isContributing": false,
+                  "status": undefined,
+                  "value": undefined,
+                },
+                "channelTimeliness": Object {
+                  "isContributing": false,
+                  "status": undefined,
+                  "value": undefined,
+                },
+                "id": "H05N",
+                "needsAcknowledgement": true,
+                "needsAttention": true,
+                "stationData": Object {
+                  "stationCapabilityStatus": "GOOD",
+                  "stationName": "H05N",
+                  "stationStatus": "GOOD",
+                },
+                "stationEnvironment": undefined,
+                "stationGroups": Array [
+                  Object {
+                    "groupName": "Group 4",
+                    "sohStationCapability": "GOOD",
+                    "stationName": "H05N",
+                  },
+                ],
+                "stationLag": undefined,
+                "stationMissing": undefined,
+                "stationTimeliness": undefined,
+              },
+              Object {
+                "channelEnvironment": Object {
+                  "isContributing": false,
+                  "status": "NONE",
+                  "value": undefined,
+                },
+                "channelLag": Object {
+                  "isContributing": true,
+                  "status": "GOOD",
+                  "value": 5,
+                },
+                "channelMissing": Object {
+                  "isContributing": false,
+                  "status": undefined,
+                  "value": undefined,
+                },
+                "channelTimeliness": Object {
+                  "isContributing": false,
+                  "status": undefined,
+                  "value": undefined,
+                },
+                "id": "H06N",
+                "needsAcknowledgement": true,
+                "needsAttention": true,
+                "stationData": Object {
+                  "stationCapabilityStatus": "GOOD",
+                  "stationName": "H06N",
+                  "stationStatus": "MARGINAL",
+                },
+                "stationEnvironment": undefined,
+                "stationGroups": Array [
+                  Object {
+                    "groupName": "Group 4",
+                    "sohStationCapability": "GOOD",
+                    "stationName": "H06N",
+                  },
+                ],
+                "stationLag": undefined,
+                "stationMissing": undefined,
+                "stationTimeliness": undefined,
+              },
+              Object {
+                "channelEnvironment": Object {
+                  "isContributing": false,
+                  "status": "NONE",
+                  "value": undefined,
+                },
+                "channelLag": Object {
+                  "isContributing": true,
+                  "status": "GOOD",
+                  "value": 5,
+                },
+                "channelMissing": Object {
+                  "isContributing": false,
+                  "status": undefined,
+                  "value": undefined,
+                },
+                "channelTimeliness": Object {
+                  "isContributing": false,
+                  "status": undefined,
+                  "value": undefined,
+                },
+                "id": "H07N",
+                "needsAcknowledgement": true,
+                "needsAttention": true,
+                "stationData": Object {
+                  "stationCapabilityStatus": "GOOD",
+                  "stationName": "H07N",
+                  "stationStatus": "BAD",
+                },
+                "stationEnvironment": undefined,
+                "stationGroups": Array [
+                  Object {
+                    "groupName": "Group 4",
+                    "sohStationCapability": "GOOD",
+                    "stationName": "H07N",
+                  },
+                ],
+                "stationLag": undefined,
+                "stationMissing": undefined,
+                "stationTimeliness": undefined,
+              },
+              Object {
+                "channelEnvironment": Object {
+                  "isContributing": false,
+                  "status": "NONE",
+                  "value": undefined,
+                },
+                "channelLag": Object {
+                  "isContributing": true,
+                  "status": "GOOD",
+                  "value": 5,
+                },
+                "channelMissing": Object {
+                  "isContributing": false,
+                  "status": undefined,
+                  "value": undefined,
+                },
+                "channelTimeliness": Object {
+                  "isContributing": false,
+                  "status": undefined,
+                  "value": undefined,
+                },
+                "id": "H08N",
+                "needsAcknowledgement": true,
+                "needsAttention": true,
+                "stationData": Object {
+                  "stationCapabilityStatus": "MARGINAL",
+                  "stationName": "H08N",
+                  "stationStatus": "GOOD",
+                },
+                "stationEnvironment": undefined,
+                "stationGroups": Array [
+                  Object {
+                    "groupName": "Group 4",
+                    "sohStationCapability": "MARGINAL",
+                    "stationName": "H08N",
+                  },
+                ],
+                "stationLag": undefined,
+                "stationMissing": undefined,
+                "stationTimeliness": undefined,
+              },
+            ]
+          }
+        />
+      </Unknown>
+    }
+    topHeightPx={425}
+  >
+    <div
+      className="divider-container"
+    >
+      <div
+        className="top-component"
+        style={
+          Object {
+            "height": "425px",
+          }
+        }
+      >
+        <Component
+          className="station-statistics-table-container station-statistics-table-container--needs-attention 
+  with-separated-rows
+  ag-theme-dark
+  ag-theme-dark--soh
+  "
+          dataCy="soh-unacknowledged"
+          setSelectedStationIds={[Function]}
+        >
+          <div
+            className="deselect-handler station-statistics-table-container station-statistics-table-container--needs-attention 
+  with-separated-rows
+  ag-theme-dark
+  ag-theme-dark--soh
+  "
+            data-cy="soh-unacknowledged"
+            onKeyDown={[Function]}
+          >
+            <div
+              className="soh-table-label"
+            >
+              Needs Attention
+            </div>
+            <StationStatisticsTable
+              acknowledgeContextMenu={[Function]}
+              id="soh-unacknowledged"
+              onRowClicked={[Function]}
+              tableData={
+                Array [
+                  Object {
+                    "channelEnvironment": Object {
+                      "isContributing": false,
+                      "status": "NONE",
+                      "value": undefined,
+                    },
+                    "channelLag": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 5,
+                    },
+                    "channelMissing": Object {
+                      "isContributing": false,
+                      "status": undefined,
+                      "value": undefined,
+                    },
+                    "channelTimeliness": Object {
+                      "isContributing": false,
+                      "status": undefined,
+                      "value": undefined,
+                    },
+                    "id": "H05N",
+                    "needsAcknowledgement": true,
+                    "needsAttention": true,
+                    "stationData": Object {
+                      "stationCapabilityStatus": "GOOD",
+                      "stationName": "H05N",
+                      "stationStatus": "GOOD",
+                    },
+                    "stationEnvironment": undefined,
+                    "stationGroups": Array [
+                      Object {
+                        "groupName": "Group 4",
+                        "sohStationCapability": "GOOD",
+                        "stationName": "H05N",
+                      },
+                    ],
+                    "stationLag": undefined,
+                    "stationMissing": undefined,
+                    "stationTimeliness": undefined,
+                  },
+                  Object {
+                    "channelEnvironment": Object {
+                      "isContributing": false,
+                      "status": "NONE",
+                      "value": undefined,
+                    },
+                    "channelLag": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 5,
+                    },
+                    "channelMissing": Object {
+                      "isContributing": false,
+                      "status": undefined,
+                      "value": undefined,
+                    },
+                    "channelTimeliness": Object {
+                      "isContributing": false,
+                      "status": undefined,
+                      "value": undefined,
+                    },
+                    "id": "H06N",
+                    "needsAcknowledgement": true,
+                    "needsAttention": true,
+                    "stationData": Object {
+                      "stationCapabilityStatus": "GOOD",
+                      "stationName": "H06N",
+                      "stationStatus": "MARGINAL",
+                    },
+                    "stationEnvironment": undefined,
+                    "stationGroups": Array [
+                      Object {
+                        "groupName": "Group 4",
+                        "sohStationCapability": "GOOD",
+                        "stationName": "H06N",
+                      },
+                    ],
+                    "stationLag": undefined,
+                    "stationMissing": undefined,
+                    "stationTimeliness": undefined,
+                  },
+                  Object {
+                    "channelEnvironment": Object {
+                      "isContributing": false,
+                      "status": "NONE",
+                      "value": undefined,
+                    },
+                    "channelLag": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 5,
+                    },
+                    "channelMissing": Object {
+                      "isContributing": false,
+                      "status": undefined,
+                      "value": undefined,
+                    },
+                    "channelTimeliness": Object {
+                      "isContributing": false,
+                      "status": undefined,
+                      "value": undefined,
+                    },
+                    "id": "H07N",
+                    "needsAcknowledgement": true,
+                    "needsAttention": true,
+                    "stationData": Object {
+                      "stationCapabilityStatus": "GOOD",
+                      "stationName": "H07N",
+                      "stationStatus": "BAD",
+                    },
+                    "stationEnvironment": undefined,
+                    "stationGroups": Array [
+                      Object {
+                        "groupName": "Group 4",
+                        "sohStationCapability": "GOOD",
+                        "stationName": "H07N",
+                      },
+                    ],
+                    "stationLag": undefined,
+                    "stationMissing": undefined,
+                    "stationTimeliness": undefined,
+                  },
+                  Object {
+                    "channelEnvironment": Object {
+                      "isContributing": false,
+                      "status": "NONE",
+                      "value": undefined,
+                    },
+                    "channelLag": Object {
+                      "isContributing": true,
+                      "status": "GOOD",
+                      "value": 5,
+                    },
+                    "channelMissing": Object {
+                      "isContributing": false,
+                      "status": undefined,
+                      "value": undefined,
+                    },
+                    "channelTimeliness": Object {
+                      "isContributing": false,
+                      "status": undefined,
+                      "value": undefined,
+                    },
+                    "id": "H08N",
+                    "needsAcknowledgement": true,
+                    "needsAttention": true,
+                    "stationData": Object {
+                      "stationCapabilityStatus": "MARGINAL",
+                      "stationName": "H08N",
+                      "stationStatus": "GOOD",
+                    },
+                    "stationEnvironment": undefined,
+                    "stationGroups": Array [
+                      Object {
+                        "groupName": "Group 4",
+                        "sohStationCapability": "MARGINAL",
+                        "stationName": "H08N",
+                      },
+                    ],
+                    "stationLag": undefined,
+                    "stationMissing": undefined,
+                    "stationTimeliness": undefined,
+                  },
+                ]
+              }
+            >
+              <div
+                className="station-statistics-table__wrapper"
+                data-cy="station-statistics-table__wrapper"
+              >
+                <ClientSideTable
+                  columnDefs={
+                    Array [
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Station",
+                        "comparator": [Function],
+                        "headerName": "Station",
+                        "headerTooltip": "Name of the station",
+                        "sort": "asc",
+                        "valueGetter": [Function],
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Station Missing",
+                        "headerName": "Station Missing (%)",
+                        "headerTooltip": "Total percentage of missing data across all channels over a configurable time window",
+                        "valueGetter": [Function],
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Station Timeliness",
+                        "headerName": "Station Timeliness (s)",
+                        "headerTooltip": "Time in seconds since the time of the latest data sample that has been acquired on any channel (now - latest data sample time that has been acquired on any channel)",
+                        "valueGetter": [Function],
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Station Lag",
+                        "headerName": "Station Lag (s)",
+                        "headerTooltip": "Average transmission time for received data samples across all channels over a configurable time window, e.g., last 10 minutes (reception time - latest data sample time)",
+                        "valueGetter": [Function],
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Station Issues",
+                        "headerName": "Station Issues (%)",
+                        "headerTooltip": "Average percentage of 'bad' indicators across all channels (time windows are configurable and can vary by channel; station value is a straight average of the channel percentages)",
+                        "valueGetter": [Function],
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Channel Missing",
+                        "headerName": "Channel Missing (%)",
+                        "headerTooltip": "Largest percentage of missing data on a single channel over a configurable time window (worst channel)",
+                        "valueGetter": [Function],
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Channel Timeliness",
+                        "headerName": "Channel Timeliness (s)",
+                        "headerTooltip": "Longest time in seconds since the time of the latest data sample that has been acquired on a single channel (now - latest data sample time that has been acquired, worst channel)",
+                        "valueGetter": [Function],
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Channel Lag",
+                        "headerName": "Channel Lag (s)",
+                        "headerTooltip": "Longest transmission time for received data samples on a single channel over a configurable time window (reception time - latest data sample time, worst channel)",
+                        "valueGetter": [Function],
+                      },
+                      Object {
+                        "cellRendererFramework": [Function],
+                        "colId": "Channel Issues",
+                        "headerName": "Channel Issues (%)",
+                        "headerTooltip": "Largest percentage of 'bad' indicators on a single channel/environmental monitor pair over a configurable time window",
+                        "valueGetter": [Function],
+                      },
+                    ]
+                  }
+                  context={
+                    Object {
+                      "acknowledgeSohStatus": [MockFunction],
+                      "quietTimerMs": 5000,
+                      "selectedStationIds": Array [
+                        "H05N",
+                        "H06N",
+                      ],
+                      "setSelectedStationIds": [MockFunction],
+                      "sohStationStaleTimeMS": 30000,
+                      "updateIntervalSecs": 5,
+                    }
+                  }
+                  defaultColDef={
+                    Object {
+                      "comparator": [Function],
+                      "disableStaticMarkupForCellRendererFramework": true,
+                      "disableStaticMarkupForHeaderComponentFramework": true,
+                      "filter": true,
+                      "headerClass": "soh-header-cell soh-header-cell--neutral",
+                      "sortable": true,
+                      "width": 200,
+                    }
+                  }
+                  headerHeight={44}
+                  id="station-statistics-table-soh-unacknowledged"
+                  key="station-statistics-table-soh-unacknowledged"
+                  onCellContextMenu={[Function]}
+                  onRowClicked={[Function]}
+                  overlayNoRowsTemplate="No SOH to display"
+                  rowData={
+                    Array [
+                      Object {
+                        "id": "H05N",
+                      },
+                      Object {
+                        "id": "H06N",
+                      },
+                      Object {
+                        "id": "H07N",
+                      },
+                      Object {
+                        "id": "H08N",
+                      },
+                    ]
+                  }
+                  rowDeselection={true}
+                  rowHeight={40}
+                  rowSelection="multiple"
+                  suppressCellSelection={true}
+                  suppressContextMenu={false}
+                >
+                  <CoreTable
+                    columnDefs={
+                      Array [
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Station",
+                          "comparator": [Function],
+                          "headerName": "Station",
+                          "headerTooltip": "Name of the station",
+                          "sort": "asc",
+                          "valueGetter": [Function],
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Station Missing",
+                          "headerName": "Station Missing (%)",
+                          "headerTooltip": "Total percentage of missing data across all channels over a configurable time window",
+                          "valueGetter": [Function],
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Station Timeliness",
+                          "headerName": "Station Timeliness (s)",
+                          "headerTooltip": "Time in seconds since the time of the latest data sample that has been acquired on any channel (now - latest data sample time that has been acquired on any channel)",
+                          "valueGetter": [Function],
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Station Lag",
+                          "headerName": "Station Lag (s)",
+                          "headerTooltip": "Average transmission time for received data samples across all channels over a configurable time window, e.g., last 10 minutes (reception time - latest data sample time)",
+                          "valueGetter": [Function],
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Station Issues",
+                          "headerName": "Station Issues (%)",
+                          "headerTooltip": "Average percentage of 'bad' indicators across all channels (time windows are configurable and can vary by channel; station value is a straight average of the channel percentages)",
+                          "valueGetter": [Function],
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Channel Missing",
+                          "headerName": "Channel Missing (%)",
+                          "headerTooltip": "Largest percentage of missing data on a single channel over a configurable time window (worst channel)",
+                          "valueGetter": [Function],
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Channel Timeliness",
+                          "headerName": "Channel Timeliness (s)",
+                          "headerTooltip": "Longest time in seconds since the time of the latest data sample that has been acquired on a single channel (now - latest data sample time that has been acquired, worst channel)",
+                          "valueGetter": [Function],
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Channel Lag",
+                          "headerName": "Channel Lag (s)",
+                          "headerTooltip": "Longest transmission time for received data samples on a single channel over a configurable time window (reception time - latest data sample time, worst channel)",
+                          "valueGetter": [Function],
+                        },
+                        Object {
+                          "cellRendererFramework": [Function],
+                          "colId": "Channel Issues",
+                          "headerName": "Channel Issues (%)",
+                          "headerTooltip": "Largest percentage of 'bad' indicators on a single channel/environmental monitor pair over a configurable time window",
+                          "valueGetter": [Function],
+                        },
+                      ]
+                    }
+                    context={
+                      Object {
+                        "acknowledgeSohStatus": [MockFunction],
+                        "quietTimerMs": 5000,
+                        "selectedStationIds": Array [
+                          "H05N",
+                          "H06N",
+                        ],
+                        "setSelectedStationIds": [MockFunction],
+                        "sohStationStaleTimeMS": 30000,
+                        "updateIntervalSecs": 5,
+                      }
+                    }
+                    defaultColDef={
+                      Object {
+                        "comparator": [Function],
+                        "disableStaticMarkupForCellRendererFramework": true,
+                        "disableStaticMarkupForHeaderComponentFramework": true,
+                        "filter": true,
+                        "headerClass": "soh-header-cell soh-header-cell--neutral",
+                        "sortable": true,
+                        "width": 200,
+                      }
+                    }
+                    headerHeight={44}
+                    id="station-statistics-table-soh-unacknowledged"
+                    onCellContextMenu={[Function]}
+                    onGridReady={[Function]}
+                    onRowClicked={[Function]}
+                    overlayNoRowsTemplate="No SOH to display"
+                    rowBuffer={10}
+                    rowData={
+                      Array [
+                        Object {
+                          "id": "H05N",
+                        },
+                        Object {
+                          "id": "H06N",
+                        },
+                        Object {
+                          "id": "H07N",
+                        },
+                        Object {
+                          "id": "H08N",
+                        },
+                      ]
+                    }
+                    rowDeselection={true}
+                    rowHeight={40}
+                    rowSelection="multiple"
+                    suppressCellSelection={true}
+                    suppressContextMenu={false}
+                  >
+                    <AgGridReact
+                      animateRows={false}
+                      columnDefs={
+                        Array [
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Station",
+                            "comparator": [Function],
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Station",
+                            "headerTooltip": "Name of the station",
+                            "sort": "asc",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Station Missing",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Station Missing (%)",
+                            "headerTooltip": "Total percentage of missing data across all channels over a configurable time window",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Station Timeliness",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Station Timeliness (s)",
+                            "headerTooltip": "Time in seconds since the time of the latest data sample that has been acquired on any channel (now - latest data sample time that has been acquired on any channel)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Station Lag",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Station Lag (s)",
+                            "headerTooltip": "Average transmission time for received data samples across all channels over a configurable time window, e.g., last 10 minutes (reception time - latest data sample time)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Station Issues",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Station Issues (%)",
+                            "headerTooltip": "Average percentage of 'bad' indicators across all channels (time windows are configurable and can vary by channel; station value is a straight average of the channel percentages)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Channel Missing",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Channel Missing (%)",
+                            "headerTooltip": "Largest percentage of missing data on a single channel over a configurable time window (worst channel)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Channel Timeliness",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Channel Timeliness (s)",
+                            "headerTooltip": "Longest time in seconds since the time of the latest data sample that has been acquired on a single channel (now - latest data sample time that has been acquired, worst channel)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Channel Lag",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Channel Lag (s)",
+                            "headerTooltip": "Longest transmission time for received data samples on a single channel over a configurable time window (reception time - latest data sample time, worst channel)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRenderer": undefined,
+                            "cellRendererFramework": [Function],
+                            "colId": "Channel Issues",
+                            "headerComponent": undefined,
+                            "headerComponentFramework": undefined,
+                            "headerName": "Channel Issues (%)",
+                            "headerTooltip": "Largest percentage of 'bad' indicators on a single channel/environmental monitor pair over a configurable time window",
+                            "valueGetter": [Function],
+                          },
+                        ]
+                      }
+                      context={
+                        Object {
+                          "acknowledgeSohStatus": [MockFunction],
+                          "quietTimerMs": 5000,
+                          "selectedStationIds": Array [
+                            "H05N",
+                            "H06N",
+                          ],
+                          "setSelectedStationIds": [MockFunction],
+                          "sohStationStaleTimeMS": 30000,
+                          "updateIntervalSecs": 5,
+                        }
+                      }
+                      defaultColDef={
+                        Object {
+                          "comparator": [Function],
+                          "filter": true,
+                          "headerClass": "soh-header-cell soh-header-cell--neutral",
+                          "lockVisible": true,
+                          "resizable": true,
+                          "sortable": true,
+                          "sortingOrder": Array [
+                            "asc",
+                            "desc",
+                          ],
+                          "suppressCellFlash": true,
+                          "width": 200,
+                        }
+                      }
+                      deltaRowDataMode={true}
+                      getRowNodeId={[Function]}
+                      headerHeight={44}
+                      id="station-statistics-table-soh-unacknowledged"
+                      onCellContextMenu={[Function]}
+                      onColumnMoved={[Function]}
+                      onGridReady={[Function]}
+                      onRowClicked={[Function]}
+                      overlayNoRowsTemplate="No SOH to display"
+                      preventDefaultOnContextMenu={true}
+                      rowBuffer={10}
+                      rowData={null}
+                      rowDataChangeDetectionStrategy="IdentityCheck"
+                      rowDeselection={true}
+                      rowHeight={40}
+                      rowSelection="multiple"
+                      suppressCellSelection={true}
+                      suppressContextMenu={false}
+                      suppressLoadingOverlay={true}
+                      suppressScrollOnNewData={true}
+                    >
+                      <div
+                        style={
+                          Object {
+                            "height": "100%",
+                          }
+                        }
+                      />
+                    </AgGridReact>
+                  </CoreTable>
+                </ClientSideTable>
+              </div>
+            </StationStatisticsTable>
+          </div>
+        </Component>
+      </div>
+      <Component
+        handleHeight={7}
+        onDrag={[Function]}
+      >
+        <div
+          className="horizontal-divider "
+          onMouseDown={[Function]}
+          onMouseOut={[Function]}
+          onMouseOver={[Function]}
+          onMouseUp={[Function]}
+        >
+          <div
+            className="horizontal-divider__target"
+          />
+          <div
+            className="horizontal-divider__spacer"
+          />
+          <svg
+            className="resize-handle"
+            height="7"
+            viewBox="0 0 18 7"
+            width="18"
+          >
+            <title>
+              Resize
+            </title>
+            <g
+              className="resize-handle-group"
+              data-name="resize-handle-group"
+            >
+              <rect
+                height="7"
+                rx="1"
+                width="2"
+              />
+              <rect
+                height="7"
+                rx="1"
+                width="2"
+                x="4"
+              />
+              <rect
+                height="7"
+                rx="1"
+                width="2"
+                x="8"
+              />
+              <rect
+                height="7"
+                rx="1"
+                width="2"
+                x="12"
+              />
+              <rect
+                height="7"
+                rx="1"
+                width="2"
+                x="16"
+              />
+            </g>
+          </svg>
+          <div
+            className="horizontal-divider__spacer"
+          />
+        </div>
+      </Component>
+      <div
+        className="bottom-component"
+        style={
+          Object {
+            "height": "1px",
+          }
+        }
+      >
+        <Component
+          className="station-statistics-table-container station-statistics-table-container--acknowledged gms-drop-zone
+                  
+  with-separated-rows
+  ag-theme-dark
+  ag-theme-dark--soh
+  
+                  "
+          dataCy="soh-acknowledged"
+          setSelectedStationIds={[Function]}
+        >
+          <div
+            className="deselect-handler station-statistics-table-container station-statistics-table-container--acknowledged gms-drop-zone
+                  
+  with-separated-rows
+  ag-theme-dark
+  ag-theme-dark--soh
+  
+                  "
+            data-cy="soh-acknowledged"
+            onKeyDown={[Function]}
+          >
+            <DropZone
+              onDrop={[Function]}
+            >
+              <div
+                className="drop-zone
+          
+          "
+                onDragOver={[Function]}
+                onDrop={[Function]}
+              >
+                <StationStatisticsTable
+                  acknowledgeContextMenu={[Function]}
+                  highlightDropZone={[Function]}
+                  id="soh-acknowledged"
+                  onRowClicked={[Function]}
+                  suppressContextMenu={true}
+                  tableData={Array []}
+                >
+                  <div
+                    className="station-statistics-table__wrapper"
+                    data-cy="station-statistics-table__wrapper"
+                  >
+                    <ClientSideTable
+                      columnDefs={
+                        Array [
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Station",
+                            "comparator": [Function],
+                            "headerName": "Station",
+                            "headerTooltip": "Name of the station",
+                            "sort": "asc",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Station Missing",
+                            "headerName": "Station Missing (%)",
+                            "headerTooltip": "Total percentage of missing data across all channels over a configurable time window",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Station Timeliness",
+                            "headerName": "Station Timeliness (s)",
+                            "headerTooltip": "Time in seconds since the time of the latest data sample that has been acquired on any channel (now - latest data sample time that has been acquired on any channel)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Station Lag",
+                            "headerName": "Station Lag (s)",
+                            "headerTooltip": "Average transmission time for received data samples across all channels over a configurable time window, e.g., last 10 minutes (reception time - latest data sample time)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Station Issues",
+                            "headerName": "Station Issues (%)",
+                            "headerTooltip": "Average percentage of 'bad' indicators across all channels (time windows are configurable and can vary by channel; station value is a straight average of the channel percentages)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Channel Missing",
+                            "headerName": "Channel Missing (%)",
+                            "headerTooltip": "Largest percentage of missing data on a single channel over a configurable time window (worst channel)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Channel Timeliness",
+                            "headerName": "Channel Timeliness (s)",
+                            "headerTooltip": "Longest time in seconds since the time of the latest data sample that has been acquired on a single channel (now - latest data sample time that has been acquired, worst channel)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Channel Lag",
+                            "headerName": "Channel Lag (s)",
+                            "headerTooltip": "Longest transmission time for received data samples on a single channel over a configurable time window (reception time - latest data sample time, worst channel)",
+                            "valueGetter": [Function],
+                          },
+                          Object {
+                            "cellRendererFramework": [Function],
+                            "colId": "Channel Issues",
+                            "headerName": "Channel Issues (%)",
+                            "headerTooltip": "Largest percentage of 'bad' indicators on a single channel/environmental monitor pair over a configurable time window",
+                            "valueGetter": [Function],
+                          },
+                        ]
+                      }
+                      context={
+                        Object {
+                          "acknowledgeSohStatus": [MockFunction],
+                          "quietTimerMs": 5000,
+                          "selectedStationIds": Array [
+                            "H05N",
+                            "H06N",
+                          ],
+                          "setSelectedStationIds": [MockFunction],
+                          "sohStationStaleTimeMS": 30000,
+                          "updateIntervalSecs": 5,
+                        }
+                      }
+                      defaultColDef={
+                        Object {
+                          "comparator": [Function],
+                          "disableStaticMarkupForCellRendererFramework": true,
+                          "disableStaticMarkupForHeaderComponentFramework": true,
+                          "filter": true,
+                          "headerClass": "soh-header-cell soh-header-cell--neutral",
+                          "sortable": true,
+                          "width": 200,
+                        }
+                      }
+                      headerHeight={44}
+                      id="station-statistics-table-soh-acknowledged"
+                      key="station-statistics-table-soh-acknowledged"
+                      onCellContextMenu={[Function]}
+                      onRowClicked={[Function]}
+                      overlayNoRowsTemplate="No SOH to display"
+                      rowData={Array []}
+                      rowDeselection={true}
+                      rowHeight={40}
+                      rowSelection="multiple"
+                      suppressCellSelection={true}
+                      suppressContextMenu={true}
+                    >
+                      <CoreTable
+                        columnDefs={
+                          Array [
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Station",
+                              "comparator": [Function],
+                              "headerName": "Station",
+                              "headerTooltip": "Name of the station",
+                              "sort": "asc",
+                              "valueGetter": [Function],
+                            },
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Station Missing",
+                              "headerName": "Station Missing (%)",
+                              "headerTooltip": "Total percentage of missing data across all channels over a configurable time window",
+                              "valueGetter": [Function],
+                            },
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Station Timeliness",
+                              "headerName": "Station Timeliness (s)",
+                              "headerTooltip": "Time in seconds since the time of the latest data sample that has been acquired on any channel (now - latest data sample time that has been acquired on any channel)",
+                              "valueGetter": [Function],
+                            },
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Station Lag",
+                              "headerName": "Station Lag (s)",
+                              "headerTooltip": "Average transmission time for received data samples across all channels over a configurable time window, e.g., last 10 minutes (reception time - latest data sample time)",
+                              "valueGetter": [Function],
+                            },
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Station Issues",
+                              "headerName": "Station Issues (%)",
+                              "headerTooltip": "Average percentage of 'bad' indicators across all channels (time windows are configurable and can vary by channel; station value is a straight average of the channel percentages)",
+                              "valueGetter": [Function],
+                            },
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Channel Missing",
+                              "headerName": "Channel Missing (%)",
+                              "headerTooltip": "Largest percentage of missing data on a single channel over a configurable time window (worst channel)",
+                              "valueGetter": [Function],
+                            },
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Channel Timeliness",
+                              "headerName": "Channel Timeliness (s)",
+                              "headerTooltip": "Longest time in seconds since the time of the latest data sample that has been acquired on a single channel (now - latest data sample time that has been acquired, worst channel)",
+                              "valueGetter": [Function],
+                            },
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Channel Lag",
+                              "headerName": "Channel Lag (s)",
+                              "headerTooltip": "Longest transmission time for received data samples on a single channel over a configurable time window (reception time - latest data sample time, worst channel)",
+                              "valueGetter": [Function],
+                            },
+                            Object {
+                              "cellRendererFramework": [Function],
+                              "colId": "Channel Issues",
+                              "headerName": "Channel Issues (%)",
+                              "headerTooltip": "Largest percentage of 'bad' indicators on a single channel/environmental monitor pair over a configurable time window",
+                              "valueGetter": [Function],
+                            },
+                          ]
+                        }
+                        context={
+                          Object {
+                            "acknowledgeSohStatus": [MockFunction],
+                            "quietTimerMs": 5000,
+                            "selectedStationIds": Array [
+                              "H05N",
+                              "H06N",
+                            ],
+                            "setSelectedStationIds": [MockFunction],
+                            "sohStationStaleTimeMS": 30000,
+                            "updateIntervalSecs": 5,
+                          }
+                        }
+                        defaultColDef={
+                          Object {
+                            "comparator": [Function],
+                            "disableStaticMarkupForCellRendererFramework": true,
+                            "disableStaticMarkupForHeaderComponentFramework": true,
+                            "filter": true,
+                            "headerClass": "soh-header-cell soh-header-cell--neutral",
+                            "sortable": true,
+                            "width": 200,
+                          }
+                        }
+                        headerHeight={44}
+                        id="station-statistics-table-soh-acknowledged"
+                        onCellContextMenu={[Function]}
+                        onGridReady={[Function]}
+                        onRowClicked={[Function]}
+                        overlayNoRowsTemplate="No SOH to display"
+                        rowBuffer={10}
+                        rowData={Array []}
+                        rowDeselection={true}
+                        rowHeight={40}
+                        rowSelection="multiple"
+                        suppressCellSelection={true}
+                        suppressContextMenu={true}
+                      >
+                        <AgGridReact
+                          animateRows={false}
+                          columnDefs={
+                            Array [
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Station",
+                                "comparator": [Function],
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Station",
+                                "headerTooltip": "Name of the station",
+                                "sort": "asc",
+                                "valueGetter": [Function],
+                              },
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Station Missing",
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Station Missing (%)",
+                                "headerTooltip": "Total percentage of missing data across all channels over a configurable time window",
+                                "valueGetter": [Function],
+                              },
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Station Timeliness",
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Station Timeliness (s)",
+                                "headerTooltip": "Time in seconds since the time of the latest data sample that has been acquired on any channel (now - latest data sample time that has been acquired on any channel)",
+                                "valueGetter": [Function],
+                              },
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Station Lag",
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Station Lag (s)",
+                                "headerTooltip": "Average transmission time for received data samples across all channels over a configurable time window, e.g., last 10 minutes (reception time - latest data sample time)",
+                                "valueGetter": [Function],
+                              },
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Station Issues",
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Station Issues (%)",
+                                "headerTooltip": "Average percentage of 'bad' indicators across all channels (time windows are configurable and can vary by channel; station value is a straight average of the channel percentages)",
+                                "valueGetter": [Function],
+                              },
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Channel Missing",
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Channel Missing (%)",
+                                "headerTooltip": "Largest percentage of missing data on a single channel over a configurable time window (worst channel)",
+                                "valueGetter": [Function],
+                              },
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Channel Timeliness",
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Channel Timeliness (s)",
+                                "headerTooltip": "Longest time in seconds since the time of the latest data sample that has been acquired on a single channel (now - latest data sample time that has been acquired, worst channel)",
+                                "valueGetter": [Function],
+                              },
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Channel Lag",
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Channel Lag (s)",
+                                "headerTooltip": "Longest transmission time for received data samples on a single channel over a configurable time window (reception time - latest data sample time, worst channel)",
+                                "valueGetter": [Function],
+                              },
+                              Object {
+                                "cellRenderer": undefined,
+                                "cellRendererFramework": [Function],
+                                "colId": "Channel Issues",
+                                "headerComponent": undefined,
+                                "headerComponentFramework": undefined,
+                                "headerName": "Channel Issues (%)",
+                                "headerTooltip": "Largest percentage of 'bad' indicators on a single channel/environmental monitor pair over a configurable time window",
+                                "valueGetter": [Function],
+                              },
+                            ]
+                          }
+                          context={
+                            Object {
+                              "acknowledgeSohStatus": [MockFunction],
+                              "quietTimerMs": 5000,
+                              "selectedStationIds": Array [
+                                "H05N",
+                                "H06N",
+                              ],
+                              "setSelectedStationIds": [MockFunction],
+                              "sohStationStaleTimeMS": 30000,
+                              "updateIntervalSecs": 5,
+                            }
+                          }
+                          defaultColDef={
+                            Object {
+                              "comparator": [Function],
+                              "filter": true,
+                              "headerClass": "soh-header-cell soh-header-cell--neutral",
+                              "lockVisible": true,
+                              "resizable": true,
+                              "sortable": true,
+                              "sortingOrder": Array [
+                                "asc",
+                                "desc",
+                              ],
+                              "suppressCellFlash": true,
+                              "width": 200,
+                            }
+                          }
+                          deltaRowDataMode={true}
+                          getRowNodeId={[Function]}
+                          headerHeight={44}
+                          id="station-statistics-table-soh-acknowledged"
+                          onCellContextMenu={[Function]}
+                          onColumnMoved={[Function]}
+                          onGridReady={[Function]}
+                          onRowClicked={[Function]}
+                          overlayNoRowsTemplate="No SOH to display"
+                          preventDefaultOnContextMenu={true}
+                          rowBuffer={10}
+                          rowData={null}
+                          rowDataChangeDetectionStrategy="IdentityCheck"
+                          rowDeselection={true}
+                          rowHeight={40}
+                          rowSelection="multiple"
+                          suppressCellSelection={true}
+                          suppressContextMenu={true}
+                          suppressLoadingOverlay={true}
+                          suppressScrollOnNewData={true}
+                        >
+                          <div
+                            style={
+                              Object {
+                                "height": "100%",
+                              }
+                            }
+                          />
+                        </AgGridReact>
+                      </CoreTable>
+                    </ClientSideTable>
+                  </div>
+                </StationStatisticsTable>
+              </div>
+            </DropZone>
+          </div>
+        </Component>
+      </div>
+    </div>
+  </HorizontalDivider>
+</StationStatisticsPanel>
+`;

@@ -1,0 +1,57 @@
+.login-screen-body {
+  background-color: $gms-prominent-background;
+  height: 100%;
+}
+
+.login-container {
+  font-size: 16px;
+  width: 100%;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-row {
+  display: flex;
+  width: 380px;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.login-row.login-button {
+  justify-content: flex-end;
+}
+
+.login-label {
+  margin-right: 16px;
+  width: 84px;
+}
+
+.login-input {
+  border-radius: 0;
+  color: $analyst-requires-review;
+  background-color: $gms-prominent-background;
+  font-size: 16px;
+  width: 280px;
+  line-height: 16px;
+  margin-top: 3px;
+  border: none;
+  border-bottom: 1px solid $gms-soft;
+}
+
+.login-legal {
+  max-width: 660px;
+  line-height: 12px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.app-menu-button {
+  padding-right: 1.25em;
+  padding-left: 1em;
+  border-left: 1px solid $gms-prominent;
+  border-radius: 0px;
+}

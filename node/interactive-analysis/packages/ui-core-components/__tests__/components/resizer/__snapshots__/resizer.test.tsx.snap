@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Resizer should match snap 1`] = `
+<Component>
+  <div
+    className="resize-container "
+  >
+    <Component>
+      <div
+        className="resizer "
+        style={
+          Object {
+            "height": 360,
+            "maxHeight": "100vh",
+          }
+        }
+      >
+        <Memo()
+          handleMouseMove={[Function]}
+          onResizeEnd={[Function]}
+          onResizeStart={[Function]}
+        >
+          <ResizeHandle
+            handleMouseMove={[Function]}
+            onResizeEnd={[Function]}
+            onResizeStart={[Function]}
+            orientation="BOTTOM"
+          >
+            <div
+              className="resizer__handle resizer__handle--height resizer__handle--bottom "
+            />
+            <DragSensor
+              handleMouseMove={[Function]}
+              highlightManager={
+                Object {
+                  "getVisualState": [Function],
+                  "onMouseDown": [Function],
+                  "onMouseOut": [Function],
+                  "onMouseOver": [Function],
+                  "onMouseUp": [Function],
+                }
+              }
+              onResizeEnd={[Function]}
+              onResizeStart={[Function]}
+              orientation="BOTTOM"
+            >
+              <div
+                className="resizer__sensor resizer__sensor--bottom "
+                onMouseDown={[Function]}
+                onMouseOut={[Function]}
+                onMouseOver={[Function]}
+              />
+            </DragSensor>
+          </ResizeHandle>
+        </Memo()>
+      </div>
+    </Component>
+  </div>
+</Component>
+`;

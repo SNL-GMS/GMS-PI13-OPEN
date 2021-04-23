@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`checkbox dropdown matches the snapshot 1`] = `
+<div
+  className="checkbox-list__body"
+>
+  <div
+    className="checkbox-list__row"
+    key="firstBox"
+  >
+    <div
+      className="checkbox-list__box-and-label"
+    >
+      <Blueprint3.Checkbox
+        checked={false}
+        className="checkbox-list__checkbox"
+        data-cy="checkbox-list-firstBox"
+        onChange={[Function]}
+      >
+        <div
+          className="checkbox-list__label"
+        />
+        <div
+          className="checkbox-list__legend-box"
+          style={
+            Object {
+              "backgroundColor": "#123123",
+            }
+          }
+        />
+      </Blueprint3.Checkbox>
+    </div>
+  </div>
+  <div
+    className="checkbox-list__row"
+    key="secondBox"
+  >
+    <div
+      className="checkbox-list__box-and-label"
+    >
+      <Blueprint3.Checkbox
+        checked={true}
+        className="checkbox-list__checkbox"
+        data-cy="checkbox-list-secondBox"
+        onChange={[Function]}
+      >
+        <div
+          className="checkbox-list__label"
+        />
+        <div
+          className="checkbox-list__legend-box"
+          style={
+            Object {
+              "backgroundColor": "#ABC123",
+            }
+          }
+        />
+      </Blueprint3.Checkbox>
+    </div>
+  </div>
+  <div
+    className="checkbox-list__row"
+    key="thirdBox"
+  >
+    <div
+      className="checkbox-list__box-and-label"
+    >
+      <Blueprint3.Checkbox
+        checked={false}
+        className="checkbox-list__checkbox"
+        data-cy="checkbox-list-thirdBox"
+        onChange={[Function]}
+      >
+        <div
+          className="checkbox-list__label"
+        />
+        <div
+          className="checkbox-list__legend-box"
+          style={
+            Object {
+              "backgroundColor": "#000000",
+            }
+          }
+        />
+      </Blueprint3.Checkbox>
+    </div>
+  </div>
+</div>
+`;

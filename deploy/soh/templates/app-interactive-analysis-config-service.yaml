@@ -1,0 +1,71 @@
+{{- $appName := "interactive-analysis-config-service" }}
+{{- $appValues := get .Values $appName }}
+{{/* Remove the Deployment if the app's restartDuringReconfig and the reconfigInProgress value are both true */}}
+{{- if not (and $appValues.restartDuringReconfig .Values.reconfigInProgress) }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+  namespace: {{ .Release.Name }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-soh-elevated
+      initContainers:
+        - name: check-data-load
+          image: {{ include "soh.deployment.image" (dict "Values" .Values "appValues" (dict "imageName" "gms-common/centos")) }}
+          imagePullPolicy: Always
+          command: ["/bin/bash", "-c"]
+          args: ["http_code=$(curl -s -o /dev/null -I -w \"%{http_code}\" --insecure http://config-loader:8080/initialized); echo \"http_code: $http_code\"; while [[ $http_code != \"200\" ]]; do echo \"http_code: $http_code - data is NOT loaded\"; echo \"Curling config-loader to check initialized status\"; http_code=$(curl -s -o /dev/null -I -w \"%{http_code}\" --insecure http://config-loader:8080/initialized); done; echo \"http_code: $http_code - Data is loaded\""]
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "soh.deployment.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          env: {{- include "soh.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          ports:
+            - containerPort: 8080
+{{- end }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $appName }}
+  namespace: {{ .Release.Name }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: {{ $appName }}
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: {{ $appName }}
+  namespace: {{ .Release.Name }}
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+    - secretName: ingress-default-cert
+      hosts:
+        - "{{ $appName }}-{{ .Release.Name }}.{{ .Values.baseDomain }}"
+  rules:
+  - host: "{{ $appName }}-{{ .Release.Name }}.{{ .Values.baseDomain }}"
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: {{ $appName }}
+          servicePort: 8080

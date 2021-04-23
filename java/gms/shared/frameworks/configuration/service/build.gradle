@@ -1,0 +1,25 @@
+apply plugin: 'application'
+apply plugin: 'com.palantir.docker'
+
+mainClassName = 'gms.shared.frameworks.processing.configuration.service.ProcessingConfigurationServiceApplication'
+
+dependencies {
+    implementation project(':frameworks-system-config')
+    implementation project(':frameworks-configuration-commonobjects')
+    implementation project(':frameworks-configuration-api')
+    implementation project(':frameworks-configuration-repository')
+    implementation project(":frameworks-service-generator")
+    implementation project(':frameworks-osd-commonobjects')
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+
+    implementation project(':frameworks-utilities')
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    testImplementation 'org.jmockit:jmockit'
+}
+
+test {
+    jvmArgs "-javaagent:${classpath.find { it.name.contains("jmockit") }.absolutePath}"
+}

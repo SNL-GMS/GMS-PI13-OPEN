@@ -1,0 +1,31 @@
+{{/* Only apply the following limits if either of the global constraint flags are set */}}
+{{- if (or .Values.globalConstrainMemory .Values.globalConstrainCpu) }}
+---
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: limit-range
+spec:
+  limits:
+  - default:
+{{- if (.Values.globalConstrainCpu) }}
+      cpu: {{ .Values.cpu_default }}
+{{- end }}
+{{- if (.Values.globalConstrainMemory) }}
+      memory: {{ .Values.memory_default }}
+{{- end }}
+    defaultRequest:
+{{- if (.Values.globalConstrainCpu) }}
+      cpu: {{ .Values.cpu_requests }}
+{{- end }}
+{{- if (.Values.globalConstrainMemory) }}
+      memory: {{ .Values.memory_requests }}
+{{- end }}
+{{- if (.Values.globalConstrainCpu) }}
+    max:
+      cpu: {{ .Values.cpu_max }}
+    min:
+      cpu: {{ .Values.cpu_min }}
+{{- end }}
+    type: Container
+{{- end }}

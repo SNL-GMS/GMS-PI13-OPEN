@@ -1,0 +1,13 @@
+artifactory:
+  url:    https://my-artifactory.com/artifactory #Replace with artifactory url or specify --url on the command line
+  apiKey: 123456ABCDE #Replace with artifactory admin apikey or specify --apikey on the command line
+  docker:
+    keep_pattern: '(release-)?[0-9]+[-.][0-9]+([-.][0-9]+)?'
+    days_to_keep: 14
+    repos:
+      - sandbox_docker_local
+  generic:
+    keep_pattern: ''
+    days_to_keep: 21
+    repos:
+      - sandbox_files_local/developer-vm

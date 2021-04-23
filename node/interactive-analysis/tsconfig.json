@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "module": "CommonJs",
+    "target": "ES6",
+    "jsx": "react",
+    "declaration": true,
+    "allowJs": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": false,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "moduleResolution": "node",
+    "lib": ["ES2018", "ES2017", "ES7", "ES6", "DOM", "DOM.Iterable", "ScriptHost"],
+    "plugins": [
+      {
+        "name": "typescript-tslint-plugin"
+      }
+    ],
+    "types": ["node", "jest"],
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "preserveSymlinks": true
+  },
+  "exclude": [
+    ".vscode",
+    "build",
+    "config",
+    "coverage",
+    "dist",
+    "docs",
+    "nginx",
+    "node_modules",
+    "resources",
+    "webpack-config"
+  ]
+}

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`System Messages Display matches snapshot 1`] = `
+<Component
+  className="mock-display"
+  glContainer={
+    Object {
+      "heightPx": 150,
+      "on": [MockFunction],
+      "widthPx": 150,
+    }
+  }
+>
+  <div
+    className="base-display mock-display"
+  />
+</Component>
+`;

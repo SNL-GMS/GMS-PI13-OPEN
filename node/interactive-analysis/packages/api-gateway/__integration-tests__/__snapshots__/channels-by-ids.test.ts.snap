@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`channel by id tests channel by id 1`] = `
+Array [
+  Object {
+    "actualTime": "2003-01-13T00:00:00Z",
+    "aliases": Array [],
+    "comment": "Channel is associated with site KDAK",
+    "dataType": "SEISMIC",
+    "depth": 0.088,
+    "elevation": 0.152,
+    "entityId": "3f3d6b26-148c-3ae2-9c0c-e5097816d1e7",
+    "horizontalAngle": 90,
+    "informationSource": Object {
+      "informationTime": "2003-01-13T00:00:00Z",
+      "originatingOrganization": "External",
+      "reference": "OffDate: 2014-08-31T00:00:00Z, Loaded from CSS file",
+    },
+    "latitude": 57.7828,
+    "locationCode": "",
+    "longitude": -152.5835,
+    "name": "KDAK/BHE",
+    "nominalSampleRate": 20,
+    "position": Object {
+      "eastDisplacementKm": 0,
+      "northDisplacementKm": 0,
+      "verticalDisplacementKm": 0,
+    },
+    "systemTime": "2003-01-13T00:00:00Z",
+    "type": "BROADBAND_HIGH_GAIN_EAST_WEST",
+    "versionId": "842e91ea-4401-3d36-9a63-0fcc6da11c45",
+    "verticalAngle": 90,
+  },
+  Object {
+    "actualTime": "2003-01-13T00:00:00Z",
+    "aliases": Array [],
+    "comment": "Channel is associated with site KDAK",
+    "dataType": "SEISMIC",
+    "depth": 0.088,
+    "elevation": 0.152,
+    "entityId": "6d92d0db-2557-3abb-b307-6533c4eafbef",
+    "horizontalAngle": -1,
+    "informationSource": Object {
+      "informationTime": "2003-01-13T00:00:00Z",
+      "originatingOrganization": "External",
+      "reference": "OffDate: 2286-11-20T00:00:00Z, Loaded from CSS file",
+    },
+    "latitude": 57.7828,
+    "locationCode": "",
+    "longitude": -152.5835,
+    "name": "KDAK/BHZ",
+    "nominalSampleRate": 20,
+    "position": Object {
+      "eastDisplacementKm": 0,
+      "northDisplacementKm": 0,
+      "verticalDisplacementKm": 0,
+    },
+    "systemTime": "2003-01-13T00:00:00Z",
+    "type": "BROADBAND_HIGH_GAIN_VERTICAL",
+    "versionId": "991b0b6c-9708-3f63-98c4-b22ce06448f6",
+    "verticalAngle": 0,
+  },
+]
+`;

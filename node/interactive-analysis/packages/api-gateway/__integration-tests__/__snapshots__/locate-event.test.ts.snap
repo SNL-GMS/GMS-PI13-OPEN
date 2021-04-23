@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`locate event tests locate event 1`] = `
+Array [
+  "5685cc2f-40c0-400b-a6ce-c3569f953853",
+]
+`;
+
+exports[`locate event tests locate event 2`] = `
+Array [
+  "featurePredictions",
+  "id",
+  "location",
+  "locationBehaviors",
+  "locationRestraint",
+  "locationUncertainty",
+  "networkMagnitudeSolutions",
+]
+`;

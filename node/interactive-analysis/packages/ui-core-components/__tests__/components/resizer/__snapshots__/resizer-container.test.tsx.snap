@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResizeContainer will match its snapshot 1`] = `
+<div
+  className="resize-container "
+>
+  <ContextProvider
+    value={
+      Object {
+        "containerHeight": undefined,
+        "height": 360,
+        "isResizing": false,
+        "setHeight": [Function],
+        "setIsResizing": [Function],
+      }
+    }
+  >
+    <div />
+  </ContextProvider>
+</div>
+`;

@@ -1,0 +1,30 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':frameworks-osd-daos')
+
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // JPA dependencies
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'com.datastax.cassandra:cassandra-driver-core'
+    implementation 'com.datastax.cassandra:cassandra-driver-extras'
+
+    implementation 'net.jodah:failsafe'
+
+    // Testing.
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+    testImplementation 'com.h2database:h2'
+    testImplementation project(':frameworks-osd-testfixtures')
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    test {
+        onlyIf {
+            project.hasProperty("integrationTests")
+        }
+    }
+}

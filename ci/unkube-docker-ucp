@@ -1,0 +1,9 @@
+#!/bin/sh
+
+IFS=$'\n'
+for env_file in $(find ${HOME} -name env.sh -maxdepth 4 2>/dev/null); do
+    if [[ $(head -1 "${env_file}") == "export DOCKER_TLS_VERIFY=1" ]]; then
+        echo "Fixing ${env_file}..."
+        sed -e "s/if kubectl/if 0 and kubectl/g" -e "s/\$export KUBECONFIG/#export KUBECONFIG/g" -i.bak "${env_file}"
+    fi
+done

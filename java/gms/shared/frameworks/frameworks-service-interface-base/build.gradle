@@ -1,0 +1,7 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api 'io.swagger.core.v3:swagger-core'
+    api 'javax.ws.rs:javax.ws.rs-api'
+    api project(":frameworks-shared-objects")
+}

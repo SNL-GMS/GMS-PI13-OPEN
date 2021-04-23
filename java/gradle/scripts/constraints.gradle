@@ -1,0 +1,103 @@
+// ---- Test Dependencies ----
+testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+testImplementation 'org.junit.jupiter:junit-jupiter-params:5.7.0'
+testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+testImplementation 'org.jmockit:jmockit:1.46'
+testImplementation 'org.mockito:mockito-core:2.23.4'
+testImplementation 'org.mockito:mockito-junit-jupiter:2.23.4'
+
+testImplementation 'io.projectreactor:reactor-test:3.3.7.RELEASE'
+implementation 'io.projectreactor.tools:blockhound:1.0.4.RELEASE'
+
+testImplementation 'com.h2database:h2:1.4.200'
+testImplementation 'com.google.auto.value:auto-value-annotations:1.6.3'
+testImplementation 'com.github.tomakehurst:wiremock-jre8:2.27.2'
+
+testImplementation 'javax.json:javax.json-api:1.1.2'
+
+//remove after rsdf processor feature toggle removal
+testImplementation 'org.apache.kafka:kafka-streams-test-utils:2.6.0'
+
+testImplementation 'org.glassfish:javax.json:1.1'
+testImplementation 'io.cucumber:cucumber-java:5.4.0'
+testImplementation 'io.cucumber:cucumber-picocontainer:5.4.0'
+implementation('nl.jqno.equalsverifier:equalsverifier:3.0') {
+    because 'leveraged by testing-related subprojects'
+}
+
+// Testcontainers dependencies (implementation to allow as library)
+implementation 'com.kohlschutter.junixsocket:junixsocket-common:2.3.2'
+implementation 'com.kohlschutter.junixsocket:junixsocket-native-common:2.3.2'
+implementation 'org.testcontainers:testcontainers:1.14.3'
+implementation 'org.testcontainers:junit-jupiter:1.14.3'
+implementation 'org.testcontainers:postgresql:1.14.3'
+implementation 'org.testcontainers:kafka:1.14.3'
+implementation 'org.zeroturnaround:zt-exec:1.10'
+
+
+// ---- Compile/Runtime Dependencies ----
+
+// Annotation Processing
+annotationProcessor 'com.google.auto.value:auto-value:1.6.3'
+testAnnotationProcessor 'com.google.auto.value:auto-value:1.6.3'
+implementation 'com.google.auto.value:auto-value-annotations:1.6.3'
+annotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
+testAnnotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
+implementation 'com.google.auto.service:auto-service:1.0-rc4'
+
+// OSD/Persistence dependencies
+implementation 'com.datastax.cassandra:cassandra-driver-core:3.9.0'
+implementation 'com.datastax.cassandra:cassandra-driver-extras:3.9.0'
+implementation 'org.hibernate:hibernate-c3p0:5.4.15.Final'
+implementation 'org.hibernate:hibernate-core:5.4.15.Final'
+implementation 'org.hibernate:hibernate-entitymanager:5.4.15.Final'
+implementation 'org.postgresql:postgresql:42.2.5'
+implementation 'com.vladmihalcea:hibernate-types-52:2.4.3'
+implementation 'org.hibernate:hibernate-ehcache:5.3.6.Final'
+
+
+
+// Misc 3rd Party dependencies
+implementation 'args4j:args4j:2.33'
+implementation 'com.fasterxml.jackson.core:jackson-databind:2.11.1'
+implementation 'com.fasterxml.jackson.datatype:jackson-datatype-guava:2.11.0'
+implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.0'
+implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.0'
+implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.0'
+implementation 'com.github.ffpojo:ffpojo:1.0'
+implementation 'com.google.guava:guava:29.0-jre'
+implementation('com.google.protobuf:protobuf-java:3.9.1'){
+    because 'overriding transitive version from etcd'
+}
+implementation 'com.ibm.etcd:etcd-java:0.0.14'
+implementation 'commons-io:commons-io:2.6'
+implementation 'io.swagger.core.v3:swagger-core:2.1.3'
+implementation 'javax.persistence:javax.persistence-api:2.2'
+implementation 'javax.ws.rs:javax.ws.rs-api:2.1.1'
+implementation 'javax.xml.bind:jaxb-api:2.3.0'
+implementation 'net.jodah:failsafe:2.0.1'
+implementation 'org.apache.commons:commons-lang3:3.6'
+implementation 'org.apache.commons:commons-math3:3.6.1'
+implementation 'org.apache.commons:commons-text:1.6'
+implementation 'commons-cli:commons-cli:1.4'
+
+//remove after rsdf processor feature toggle removal
+implementation 'org.apache.kafka:kafka-streams:2.6.0'
+
+implementation 'org.apache.kafka:kafka-clients:2.6.0'
+implementation 'org.apache.httpcomponents:httpclient:4.5.2'
+implementation 'org.apache.logging.log4j:log4j-core:2.13.3'
+implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.13.3'
+implementation 'org.msgpack:jackson-dataformat-msgpack:0.8.20'
+implementation 'org.quartz-scheduler:quartz:2.3.2'
+implementation 'org.yaml:snakeyaml:1.19'
+
+// reactor and reactor dependencies
+implementation 'io.projectreactor:reactor-core:3.3.7.RELEASE'
+implementation 'io.projectreactor.kafka:reactor-kafka:1.2.2.RELEASE'
+implementation 'io.projectreactor.netty:reactor-netty:0.9.10.RELEASE'
+implementation 'io.micrometer:micrometer-core:1.5.2'
+
+
+

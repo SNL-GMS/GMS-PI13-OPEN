@@ -1,0 +1,1797 @@
+[
+  {
+    "id": "892ee98a-0c64-4b63-8777-d8d717e40cb2",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "MSVF",
+    "sohStatusRollup": "BAD",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": 100.0,
+        "status": "BAD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": null,
+        "status": "MARGINAL",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": "PT9H9M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "channelSohs": [
+      {
+        "channelName": "MSVF.MSVF.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "MSVF.MSVF.BH2",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "MSVF.MSVF.BH1",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": "PT9H9M2.80274S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 100.0,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "f6410cf6-e7de-4047-8356-c6b2fcbc8f91",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "AAK",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": 100.0,
+        "status": "BAD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": null,
+        "status": "MARGINAL",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": "PT9H9M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "AAK.AAK.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT9H5M12.78374S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT9H5M12.78374S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "AAK.AAK.BHN",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "AAK.AAK.BHE",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT9H9M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": 100.0,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": "PT9H5M12.78374S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "22035251-1ce2-476b-89dd-f6413e0a2e12",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "I35NA",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": "PT43H52M22.82774S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": 100.0,
+        "status": "BAD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": null,
+        "status": "MARGINAL",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "I35NA.I35H5.BDF",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": "PT30H11M22.82774S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT30H11M22.82774S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "I35NA.I35H2.BDF",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": "PT30H12M22.82774S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT30H12M22.82774S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "I35NA.I35H6.BDF",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": "PT43H52M22.82774S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT43H52M22.82774S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": "PT30H11M22.82774S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 100.0,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "60a72cf8-351d-4e61-aaca-59fec0641fb6",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "LPIG",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": "PT13H24M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": 100.0,
+        "status": "BAD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": null,
+        "status": "MARGINAL",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "LPIG.LPIG.BHN",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": "PT13H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT13H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "LPIG.LPIG.BHE",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": "PT13H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT13H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "LPIG.LPIG.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT12H54M22.78374S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT12H54M22.78374S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": "PT12H54M22.78374S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 100.0,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "e7b5419b-96aa-4d8a-9552-34da7458adee",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "ATAH",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": 0.25000000000030553,
+        "status": "GOOD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": "PT1H6M52.403421S",
+        "status": "BAD",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": "PT24M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "ATAH.ATAH.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H6M52.403308S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H6M52.403308S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "ATAH.ATAH.BH2",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H6M52.403367S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H6M52.403367S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "ATAH.ATAH.BH1",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H6M52.403421S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H6M52.403421S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": "PT37M38.445095896S",
+        "aggregateType": "LAG",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": "PT24M2.80274S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 0.25000000000030553,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "4e3340b1-5bfe-41e0-9a9d-6d1782d1dc03",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "INK",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": 0.25000000000030553,
+        "status": "GOOD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": "PT1H5M32.971807S",
+        "status": "BAD",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": "PT24M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "INK.INK.BHE",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H5M32.971807S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H5M32.971807S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "INK.INK.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H5M32.932616S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H5M32.932616S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "INK.INK.BHN",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H5M32.971539S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H5M32.971539S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": "PT24M2.80274S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": "PT51M38.399282099S",
+        "aggregateType": "LAG",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 0.25000000000030553,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "278099d3-bf33-49ef-a261-35c7fa1ead9d",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "RAO",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": 0.2513888888891924,
+        "status": "GOOD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": "PT1H4M54.428575S",
+        "status": "BAD",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": "PT24M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "RAO.RAO.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H4M54.428449S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H4M54.428449S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "RAO.RAO.BHE",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H4M54.428575S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H4M54.428575S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "RAO.RAO.BHN",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H4M54.428514S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H4M54.428514S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": 0.2513888888891924,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": "PT24M2.80274S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": "PT51M46.864383454S",
+        "aggregateType": "LAG",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "7d08bf07-374b-4d77-b4e9-d0aefce691f0",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "FITZ",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": 0.25000000000030553,
+        "status": "GOOD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": "PT50M26.169367S",
+        "status": "MARGINAL",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": "PT24M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "FITZ.FITZ.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT50M26.169242S",
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT50M26.169242S",
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "FITZ.FITZ.BH1",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT50M26.169367S",
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT50M26.169367S",
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "FITZ.FITZ.BH2",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT50M26.169311S",
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT50M26.169311S",
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.25000000000030553,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": "PT24M2.80274S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": "PT39M38.623651723S",
+        "aggregateType": "LAG",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 0.25000000000030553,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "9f900756-b738-4ccc-923f-fad54b516d06",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "TIXI",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": 100.0,
+        "status": "BAD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": null,
+        "status": "MARGINAL",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": "PT15H24M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "TIXI.TIXI.BHE",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT15H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT15H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "TIXI.TIXI.BHN",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT15H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT15H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "TIXI.TIXI.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT15H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT15H24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": null,
+            "status": "MARGINAL",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 100.0,
+            "status": "BAD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": "PT15H24M2.80274S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 100.0,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  },
+  {
+    "id": "2d79b527-5bb2-48fb-917c-5b83fed70fa3",
+    "time": "2020-10-02T13:09:02.777740Z",
+    "stationName": "VRAC",
+    "sohMonitorValueAndStatuses": [
+      {
+        "value": 0.2513888888891924,
+        "status": "GOOD",
+        "monitorType": "MISSING",
+        "sohValueType": "PERCENT"
+      },
+      {
+        "value": "PT1H2M36.102996S",
+        "status": "BAD",
+        "monitorType": "LAG",
+        "sohValueType": "DURATION"
+      },
+      {
+        "value": "PT24M2.80274S",
+        "status": "BAD",
+        "monitorType": "TIMELINESS",
+        "sohValueType": "DURATION"
+      }
+    ],
+    "sohStatusRollup": "BAD",
+    "channelSohs": [
+      {
+        "channelName": "VRAC.VRAC.BHN",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H2M36.102922S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H2M36.102922S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "VRAC.VRAC.BHE",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H2M36.102961S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H2M36.102961S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      },
+      {
+        "channelName": "VRAC.VRAC.BHZ",
+        "sohStatusRollup": "BAD",
+        "allSohMonitorValueAndStatuses": [
+          {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          },
+          {
+            "value": "PT1H2M36.102996S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          }
+        ],
+        "sohMonitorValueAndStatusMap": {
+          "TIMELINESS": {
+            "value": "PT24M2.80274S",
+            "status": "BAD",
+            "monitorType": "TIMELINESS",
+            "sohValueType": "DURATION"
+          },
+          "LAG": {
+            "value": "PT1H2M36.102996S",
+            "status": "BAD",
+            "monitorType": "LAG",
+            "sohValueType": "DURATION"
+          },
+          "MISSING": {
+            "value": 0.2513888888891924,
+            "status": "GOOD",
+            "monitorType": "MISSING",
+            "sohValueType": "PERCENT"
+          }
+        }
+      }
+    ],
+    "allStationAggregates": [
+      {
+        "value": "PT50M57.726103564S",
+        "aggregateType": "LAG",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 0.2513888888891924,
+        "aggregateType": "MISSING",
+        "stationValueType": "PERCENT"
+      },
+      {
+        "value": "PT24M2.80274S",
+        "aggregateType": "TIMELINESS",
+        "stationValueType": "DURATION"
+      },
+      {
+        "value": 0.0,
+        "aggregateType": "ENVIRONMENTAL_ISSUES",
+        "stationValueType": "PERCENT"
+      }
+    ]
+  }
+]

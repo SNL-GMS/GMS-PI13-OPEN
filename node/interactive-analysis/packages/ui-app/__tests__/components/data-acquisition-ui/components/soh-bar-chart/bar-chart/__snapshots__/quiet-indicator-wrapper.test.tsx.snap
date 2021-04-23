@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`quiet indicator wrapper should match snapshot 1`] = `
+<Component
+  data={
+    Object {
+      "channelName": "channelName",
+      "hasUnacknowledgedChanges": true,
+      "isContributing": true,
+      "isSelected": false,
+      "monitorTypes": "MISSING",
+      "quietTimingInfo": Object {
+        "quietDurationMs": 100,
+        "quietUntilMs": 100,
+      },
+      "status": "GOOD",
+      "value": 10,
+    }
+  }
+  diameterPx={34}
+>
+  <Memo()
+    quietTimingInfo={
+      Object {
+        "quietDurationMs": 100,
+        "quietUntilMs": 100,
+      }
+    }
+    status="good"
+    style={
+      Object {
+        "diameterPx": 34,
+      }
+    }
+  />
+</Component>
+`;

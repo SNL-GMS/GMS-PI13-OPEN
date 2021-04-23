@@ -1,0 +1,51 @@
+#!/bin/bash
+
+set -eu
+
+# Default to a TTL period of 24 hours if $TTL_PERIOD was not passed in.
+if [ -z ${TTL_PERIOD+x} ]; then
+    TTL_PERIOD=24h
+fi
+
+# Default to 730 hours (30 days) if $ACEI_TTL_IN_HOURS was not passed in.
+if [ -z ${ACEI_TTL_IN_HOURS+x} ]; then
+    ACEI_TTL_IN_HOURS=730
+fi
+
+# Default to 730 hours (30 days) if $RSDF_TTL_IN_HOURS was not passed in.
+if [ -z ${RSDF_TTL_IN_HOURS+x} ]; then
+    RSDF_TTL_IN_HOURS=730
+fi
+
+# Default to 730 hours (30 days) if $SSOH_TTL_IN_HOURS was not passed in.
+if [ -z ${SSOH_TTL_IN_HOURS+x} ]; then
+    SSOH_TTL_IN_HOURS=730
+fi
+
+if [ -z ${DATA_SOURCE_USER+x} ]; then
+    DATA_SOURCE_USER=gms_admin
+fi
+
+if [ -z ${DATA_SOURCE_PASS+x} ]; then
+    DATA_SOURCE_PASS=gmsdb:postgres:gms_admin:over-realized-exclusivism
+fi
+
+if [ -z ${DATA_SOURCE_HOST+x} ]; then
+    DATA_SOURCE_HOST=postgresql-gms 
+fi
+
+PROCEDURE_CALL="call delete_stale_records(${ACEI_TTL_IN_HOURS}, ${RSDF_TTL_IN_HOURS}, ${SSOH_TTL_IN_HOURS});"
+echo $PROCEDURE_CALL > tmp.sql
+
+echo STARTING TTL CLEANUP RUNNER WITH PERIOD OF ${TTL_PERIOD}
+
+while true; do
+    echo KICKING OFF TTL RUN AT `date`...
+
+    set -x
+    PGPASSWORD=${DATA_SOURCE_PASS} psql -h ${DATA_SOURCE_HOST} -U ${DATA_SOURCE_USER} gms -a -f tmp.sql > most_recent_ttl_run.log
+    set +x
+
+    echo SLEEPING FOR ${TTL_PERIOD} STARTING AT `date`...
+    sleep ${TTL_PERIOD}
+done

@@ -1,0 +1,29 @@
+apply plugin: 'application'
+apply plugin: 'com.palantir.docker'
+
+run {
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+}
+
+dependencies {
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':ui-materialized-view')
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor.kafka:reactor-kafka'
+    implementation 'args4j:args4j'
+    implementation 'org.apache.kafka:kafka-clients'
+    implementation project(":frameworks-system-config")
+    implementation project(':ssam-control')
+    implementation project(':ssam-control-api')
+    implementation project(':frameworks-control')
+    implementation project(':frameworks-soh-repository')
+    implementation project(':soh-control')
+
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+}
+
+mainClassName = 'gms.shared.frameworks.injector.DataInjector'

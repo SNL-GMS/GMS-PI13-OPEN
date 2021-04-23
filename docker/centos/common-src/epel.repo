@@ -1,0 +1,29 @@
+# epel.repo
+#
+# GMS artifactory centos EPEL remote mirror
+#
+
+[epel]
+name=Extra Packages for Enterprise Linux 7 - $basearch
+baseurl=#EPEL_YUM_URL#/7/$basearch
+enabled=1
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+proxy=_none_
+
+[epel-debuginfo]
+name=Extra Packages for Enterprise Linux 7 - $basearch - Debug
+baseurl=#EPEL_YUM_URL#/7/$basearch/debug
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+gpgcheck=1
+proxy=_none_
+
+[epel-source]
+name=Extra Packages for Enterprise Linux 7 - $basearch - Source
+baseurl=#EPEL_YUM_URL#/7/SRPMS
+enabled=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL-7
+gpgcheck=1
+proxy=_none_
+

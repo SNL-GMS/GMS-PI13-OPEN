@@ -1,0 +1,5 @@
+IMS_PRI  IMS Primary Seismic Stations                                                     ww   -                      -1 20180918 12:00:00
+IMS_AUX  IMS Auxiliary Seismic Stations                                                   ww   -                      -1 20180918 12:00:00
+IMS_HYD  IMS Hydroacoustic Stations                                                       ww   -                      -1 20180918 12:00:00
+IMS_INF  IMS Infrasound Stations                                                          ww   -                      -1 20180918 12:00:00
+test     network of all stations in the test network                                      ww   -                      -1 20181011 12:00:00

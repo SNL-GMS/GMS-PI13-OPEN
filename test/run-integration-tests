@@ -1,0 +1,149 @@
+#!/bin/bash
+
+# -------------------------------------------------------------------
+#  run-integration-tests
+#
+#  This script runs all available integration tests and generates a
+#  consolidated HTML test report in the test/report directory.
+#  -------------------------------------------------------------------
+
+localTest=false
+while :; do
+    case $1 in
+        --local|--flag1) localTest=true
+        ;;
+        *) break
+    esac
+    shift
+done
+echo "Local test = $localTest"
+
+# Function to force kill and cleanup any rogue containers
+docker_container_cleanup() {
+    for id in $(docker ps -aq); do
+        docker kill ${id}
+    done
+    docker container prune -f
+}
+
+# TODO: would be nice to make these command-line options (with defaults)
+PROJECT_NAME=gms-common
+
+# Determine our branch name (default to develop if indeterminate)
+GIT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+VERSION=${GIT_BRANCH-develop}
+
+# TESTCONTAINERS_RYUK_DISABLED=true
+
+# NOTE: Use this for local testing
+if [ "$localTest" = true ] ; then
+    VERSION=latest
+    REGISTRY=local
+fi
+echo "Version = $VERSION"
+echo "Registry = $REGISTRY"
+
+JAVA_DIRECTORY=java
+NODE_INTEGRATION_DIRECTORY=node/integration
+
+#TODO: would be nice if these tag names could be auto-discovered to keep them up-to-date
+# {'@soh-quieted-soh-status-change', '@skip', '@soh-storage', '@feature', '@data-burst', '@environment', '@all-displays', '@interactive', '@deselection', '@system-message', '@cd11-rsdf-processor', '@destructive', '@dataman', '@soh-acei', '@soh-messaging', '@lag', '@system', '@db', '@soh-status-change-event', '@osd', '@daily', '@capability-soh-rollup', '@Feature', '@end2end', '@common-ui', '@soh-is-up', '@F-07.03.09', '@connman', '@app', '@smoke', '@F-01.01.27', '@selection', '@station-soh-storage', '@overview', '@soh-control', '@frameworks-configuration-service', '@soh', '@osd-consumers', '@historical-station-soh', '@ignore', '@component', '@smoke-test', '@station-soh', '@integration', '@missing', '@frameworks-osd-service', '@kafka', '@non-destructive', '@stress', '@sorting', '@details'}
+
+TEST_TAGS=("@smoke and @component and not @ignore" \
+    "@smoke and not @component and not @ignore" \
+    "@soh-acei and not @ignore" \
+    "@dataman and not @ignore" \
+    "@soh-control and not @ignore" \
+    "@capability-soh-rollup and not @ignore" \
+    "@cd11-rsdf-processor and not @ignore" \
+    "@frameworks-osd-service and not @ignore" \
+    "@soh-storage and not @ignore" \
+    "@soh-messaging and not @ignore" \
+    "@soh-status-change-event and not @ignore" \
+    "@soh-quieted-soh-status-change and not @ignore"); 
+
+script_path=$(cd $(dirname $0); pwd)  # full path to script
+project_path=$(echo $script_path | sed s/${PROJECT_NAME}.*/${PROJECT_NAME}/) # remove path after project name
+
+if [ $(basename $project_path) != ${PROJECT_NAME} ]; then
+    echo "ERROR: run-integration-test must be under ${PROJECT_NAME}. Unable to locate relative path to source code."
+    exit 1
+fi
+
+# Set up test containers 
+if [ "${CI_DOCKER_REGISTRY}" == "" ]; then
+    echo "ERROR: CI_DOCKER_REGISTRY must be defined. Unable to locate containers to test."
+    exit 1
+fi
+bash ${project_path}/.testcontainers_setup.sh
+
+# -------------------------------------------------------------------
+#  Clear out docker UCP environment settings so tests run locally
+# -------------------------------------------------------------------
+unset DOCKER_TLS_VERIFY
+unset COMPOSE_TLS_VERSION
+unset DOCKER_CERT_PATH
+unset DOCKER_HOST
+unset KUBECONFIG
+
+# -------------------------------------------------------------------
+#  Clean up prior results from previous runs
+# -------------------------------------------------------------------
+rm -rf ../java/gms/integration/reports/*
+
+
+# -------------------------------------------------------------------
+#  Serially run each of the specified Java integration tests.
+#
+#  Note that the tests can not be run in reliably in parallel since
+#  they share the same docker instance and containers will conflict
+#  between tests.
+# -------------------------------------------------------------------
+pushd ${project_path}/${JAVA_DIRECTORY}
+start_date=$(date)
+for TAG in "${TEST_TAGS[@]}"; do
+    echo "====================================================================================="
+    echo "    RUNNING ${TAG} TEST"
+    echo "====================================================================================="
+    report_basename="${TAG//@}"  # remove all '@' symbols
+    report_basepath="reports/${report_basename// /-}"  # replace spaces with dashes
+    # must use printf to preserve arguments as a single command-line argument when running gradle
+    args=$(printf " -t \"${TAG}\" -p pretty -p html:${report_basepath}-html -p json:${report_basepath}.json -p junit:${report_basepath}.xml src/test/resources")
+
+    # NOTE: Use this for local testing 
+    if [ "$localTest" = true ] ; then
+        echo CI_DOCKER_REGISTRY=${REGISTRY} DOCKER_IMAGE_TAG=${VERSION} gradle :integration:cucumber --args "$args"
+        CI_DOCKER_REGISTRY=${REGISTRY} DOCKER_IMAGE_TAG=${VERSION} gradle :integration:cucumber --args "$args"
+    else
+        echo DOCKER_IMAGE_TAG=${VERSION} gradle :integration:cucumber --args "$args"
+        DOCKER_IMAGE_TAG=${VERSION} gradle :integration:cucumber --args "$args"
+    fi
+
+    docker_container_cleanup
+done
+end_date=$(date)
+popd
+
+# -------------------------------------------------------------------
+#  Clean up docker resources leaked by the test
+# -------------------------------------------------------------------
+docker_container_cleanup
+docker network prune -f
+docker image prune -f
+
+# -------------------------------------------------------------------
+#  Generate a consolidated Cucumber report
+# -------------------------------------------------------------------
+current_git_hash=$(git log --pretty=format:'%h' -n 1)
+
+pushd ${project_path}/${NODE_INTEGRATION_DIRECTORY}
+npm install multiple-cucumber-html-reporter
+echo "====================================================================================="
+echo "    GENERATING CONSOLIDATED REPORT"
+echo "====================================================================================="
+node generate-full-report.js "${PROJECT_NAME}" "${VERSION}" "${current_git_hash}" "${start_date}" "${end_date}"
+popd
+
+# Remove leftever files from test run (TODO: Fix this in the original tests)
+rm -rf /tmp/default-query-results-region.data
+rm -rf /tmp/default-update-timestamps-region.data

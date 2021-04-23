@@ -1,0 +1,13 @@
+plugins {
+
+    id "application"
+    id "com.palantir.docker"
+}
+
+mainClassName = "gms.core.performancemonitoring.smds.application.SystemMessageDefinitionServiceApplication"
+
+dependencies {
+
+    implementation project(':frameworks-control')
+    implementation project(':smds-service')
+}

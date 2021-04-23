@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration name="MyApp" packages="" status="warn">
+  <Appenders>
+    <Console name="STDOUT" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d %p %c [%t] %m%n"/>
+    </Console>
+  </Appenders>
+  <Loggers>
+    <Logger name="org.hibernate.SQL" level="info" additivity="false">
+      <AppenderRef ref="STDOUT"/>
+    </Logger>
+    <Logger name="org.hibernate.type.descriptor.sql" level="info" additivity="false">
+      <AppenderRef ref="STDOUT"/>
+    </Logger>
+    <Root level="info">
+      <AppenderRef ref="STDOUT"/>
+    </Root>
+  </Loggers>
+</Configuration>

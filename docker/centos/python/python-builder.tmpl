@@ -1,0 +1,11 @@
+ARG MINICONDA_URL=https://repo.anaconda.com
+ARG PYPI_URL=https://files.pythonhosted.org
+
+ENV MINICONDA_VERSION=4.7.12.1 \
+    MINICONDA_INSTALL_DIR=/usr/local/miniconda \
+    PIP_INDEX_URL=$PYPI_URL
+
+ADD $MINICONDA_URL/miniconda/Miniconda3-$MINICONDA_VERSION-Linux-x86_64.sh /tmp/Miniconda3-$MINICONDA_VERSION-Linux-x86_64.sh
+
+RUN bash /tmp/Miniconda3-$MINICONDA_VERSION-Linux-x86_64.sh -b -p $MINICONDA_INSTALL_DIR
+

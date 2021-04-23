@@ -1,0 +1,21 @@
+name: gms
+
+dependencies:
+- python=3.7.6
+- pip
+- pip:
+  - ./gms-config
+  - ./gmskube
+  - ./gms-artifactory
+  - ./gms-utils
+  - ./gms-data-loader
+  - tenacity==4.12.0
+  - etcd3==0.8.1
+  - six==1.11.0
+  - jproperties==2.0.0
+  - protobuf==3.6.0
+  - grpcio==1.12.1
+  - requests==2.22.0
+  - docker==4.0.2
+  - pyyaml==5.3
+

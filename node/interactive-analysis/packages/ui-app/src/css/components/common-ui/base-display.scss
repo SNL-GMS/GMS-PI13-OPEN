@@ -1,0 +1,10 @@
+.base-display {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  &.full-width-height {
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+  }
+}

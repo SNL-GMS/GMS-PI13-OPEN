@@ -1,0 +1,18 @@
+{
+  "injectorOperationMode":"repeater",
+  "runDebugKafkaPublisher": true,
+
+  "repeaterTimeoutSeconds": 1800,
+
+  "kafkaConsumerTopic": "repeater.rsdf",
+  "kafkaConsumerID": "repeater",
+
+  "kafkaRepeaterServers": "kafka1:9092",
+
+  "connManAddress" : "da-connman",
+  "connManPort": 8041,
+
+  "frameDestination": "IDC",
+  "frameCreator": "TEST"
+}
+

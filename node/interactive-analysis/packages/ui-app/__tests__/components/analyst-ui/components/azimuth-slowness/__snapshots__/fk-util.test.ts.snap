@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getSortedSignalDetections test getSortedSignalDetections correctly sorts by station 1`] = `
+Array [
+  Object {
+    "conflictingHypotheses": Array [],
+    "currentHypothesis": Object {
+      "featureMeasurements": Array [
+        Object {
+          "featureMeasurementType": "ARRIVAL_TIME",
+          "id": "e8d95a93-382d-4d84-85ce-983e87bdcb0c",
+          "measurementValue": Object {
+            "standardDeviation": 0.685,
+            "value": 1274393334.1,
+          },
+        },
+        Object {
+          "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+          "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+          "measurementValue": Object {
+            "measurementValue": 0,
+            "referenceTime": 0,
+          },
+        },
+        Object {
+          "featureMeasurementType": "SLOWNESS",
+          "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+          "measurementValue": Object {
+            "measurementValue": 0,
+            "referenceTime": 0,
+          },
+        },
+        Object {
+          "featureMeasurementType": "PHASE",
+          "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+          "measurementValue": Object {
+            "confidence": 0,
+            "phase": "P",
+          },
+        },
+      ],
+      "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+      "rejected": false,
+    },
+    "hasConflict": false,
+    "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+    "modified": false,
+    "monitoringOrganization": "TEST",
+    "requiresReview": Object {
+      "amplitudeMeasurement": false,
+    },
+    "reviewed": Object {
+      "amplitudeMeasurement": false,
+    },
+    "signalDetectionHypothesisHistory": Array [
+      Object {
+        "arrivalTimeSecs": 1274393334.1,
+        "arrivalTimeUncertainty": 0.685,
+        "id": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+        "phase": "tx",
+        "rejected": false,
+      },
+      Object {
+        "arrivalTimeSecs": 1274393334.1,
+        "arrivalTimeUncertainty": 0.685,
+        "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+        "phase": "P",
+        "rejected": false,
+      },
+    ],
+    "stationName": "SONM",
+  },
+  Object {
+    "conflictingHypotheses": Array [],
+    "currentHypothesis": Object {
+      "featureMeasurements": Array [
+        Object {
+          "featureMeasurementType": "ARRIVAL_TIME",
+          "id": "dbdd8420-a448-44a0-9fea-d39fe55b0136",
+          "measurementValue": Object {
+            "standardDeviation": 0.685,
+            "value": 1274393237.85,
+          },
+        },
+        Object {
+          "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+          "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+          "measurementValue": Object {
+            "measurementValue": 0,
+            "referenceTime": 0,
+          },
+        },
+        Object {
+          "featureMeasurementType": "SLOWNESS",
+          "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+          "measurementValue": Object {
+            "measurementValue": 0,
+            "referenceTime": 0,
+          },
+        },
+        Object {
+          "featureMeasurementType": "PHASE",
+          "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+          "measurementValue": Object {
+            "confidence": 0,
+            "phase": "P",
+          },
+        },
+      ],
+      "id": "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+      "rejected": false,
+    },
+    "hasConflict": false,
+    "id": "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+    "modified": false,
+    "monitoringOrganization": "TEST",
+    "requiresReview": Object {
+      "amplitudeMeasurement": false,
+    },
+    "reviewed": Object {
+      "amplitudeMeasurement": false,
+    },
+    "signalDetectionHypothesisHistory": Array [
+      Object {
+        "arrivalTimeSecs": 1274393334.1,
+        "arrivalTimeUncertainty": 0.685,
+        "id": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+        "phase": "tx",
+        "rejected": false,
+      },
+      Object {
+        "arrivalTimeSecs": 1274393334.1,
+        "arrivalTimeUncertainty": 0.685,
+        "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+        "phase": "P",
+        "rejected": false,
+      },
+    ],
+    "stationName": "USRK",
+  },
+]
+`;

@@ -1,0 +1,72 @@
+apply plugin: 'com.github.johnrengelman.shadow'
+apply plugin: 'application'
+apply plugin: 'com.palantir.docker'
+
+mainClassName = 'io.vertx.core.Launcher'
+
+application {
+  applicationDefaultJvmArgs = ["-Dvertx.logger-delegate-factory-class-name=io.vertx.core.logging.SLF4JLogDelegateFactory"]
+}
+
+shadowJar {
+  baseName = 'cd11-injector'
+  classifier = 'fat'
+  manifest {
+    attributes 'Main-Verticle': 'gms.dataacquisition.stationreceiver.cd11.injector.Cd11MainVerticle',
+               'Main-Class': 'io.vertx.core.Launcher'
+  }
+  mergeServiceFiles {
+    include 'META-INF/services/io.vertx.core.spi.VerticleFactory'
+  }
+}
+
+docker {
+  files tasks.distTar.outputs, 'resources'
+}
+
+test {
+  jvmArgs = ['-Dvertx.disableFileCPResolving=true', '-XX:-UsePerfData']
+  testLogging.showStandardStreams true
+}
+
+dependencies {
+    // Project dependencies.
+
+    implementation project(':cd11-common')
+    implementation project(':frameworks-osd-commonobjects')
+
+    // Third-party dependencies.
+    // google autovalue
+    implementation 'com.google.guava:guava'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+    implementation "net.jodah:failsafe"
+
+    // vertx
+    compile 'io.vertx:vertx-config:3.8.3'
+    compile 'io.vertx:vertx-circuit-breaker:3.8.3'
+
+    //these exclusions exist because CoiObjectMapper fails silently w/o them, presumably due to
+    // a version mismatch for the jackson serialization/deserialization
+    compile ('io.vertx:vertx-kafka-client:3.8.3') {
+        exclude group: 'org.slf4j'
+        exclude group: 'com.fasterxml.jackson.core'
+        exclude group: 'com.fasterxml.jackson.module'
+        exclude group: 'com.fasterxml.jackson.dataformat'
+        exclude group: 'com.fasterxml.jackson.datatype'
+    }
+
+    implementation 'io.vertx:vertx-core:3.9.1'
+    implementation 'io.vertx:vertx-rx-java2:3.9.1'
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.4'
+
+    testImplementation 'io.vertx:vertx-junit5:3.8.3'
+    testCompileOnly 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '4.0'
+}
+

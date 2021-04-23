@@ -1,0 +1,3133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Event loading and getting get event by id 1`] = `
+Object {
+  "eventById": Object {
+    "currentEventHypothesis": Object {
+      "eventHypothesis": Object {
+        "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+        "rejected": false,
+        "signalDetectionAssociations": Array [],
+      },
+    },
+    "hasConflict": false,
+    "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+    "modified": false,
+    "monitoringOrganization": "CTBTO",
+    "status": "ReadyForRefinement",
+  },
+}
+`;
+
+exports[`Event loading and getting get events in time range 1`] = `
+Object {
+  "eventsInTimeRange": Array [
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "f1b76535-88e4-34e2-b3fc-408a15491573",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "P",
+                    },
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2_OR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_SBSNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_FKSNR",
+                    "measurementValue": Object {},
+                  },
+                ],
+                "id": "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+                "parentSignalDetectionId": "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+              },
+            },
+          ],
+        },
+      },
+      "id": "f1b76535-88e4-34e2-b3fc-408a15491573",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "ff31a99c-c4dd-32da-9fa6-09d336442154",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "ff31a99c-c4dd-32da-9fa6-09d336442154",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "031ac882-36c6-3b64-b641-6808d2e49150",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "031ac882-36c6-3b64-b641-6808d2e49150",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7667f6ec-06fa-3116-af2d-6823fc0a6790",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7667f6ec-06fa-3116-af2d-6823fc0a6790",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "90b29999-32f8-3096-b76e-e25ed7a2a4ce",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "90b29999-32f8-3096-b76e-e25ed7a2a4ce",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1e6ade2f-4f85-3ad2-9618-1aa3a569fcb2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1e6ade2f-4f85-3ad2-9618-1aa3a569fcb2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "578b93db-580c-3094-884e-3ece065d2942",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "578b93db-580c-3094-884e-3ece065d2942",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "99686e77-972a-3aae-bf5f-9836c26535d4",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "99686e77-972a-3aae-bf5f-9836c26535d4",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1ede837e-0ec4-3405-acf3-565d8279d80e",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1ede837e-0ec4-3405-acf3-565d8279d80e",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "fec310b9-9163-3b61-ae85-fe9794a00ea0",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "fec310b9-9163-3b61-ae85-fe9794a00ea0",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "30e3d9cb-07ec-3457-88df-5a632d6b16fc",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "30e3d9cb-07ec-3457-88df-5a632d6b16fc",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "d98c979e-ea6d-3510-b4fb-0ffad2fbe418",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "d98c979e-ea6d-3510-b4fb-0ffad2fbe418",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "b09f8e47-dac7-3b24-9af9-57c1c2ae30b6",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "b09f8e47-dac7-3b24-9af9-57c1c2ae30b6",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "af9a8ec7-36ac-38fd-b3ca-1f0b8ab6519a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "af9a8ec7-36ac-38fd-b3ca-1f0b8ab6519a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7ba78fa8-0892-31c0-af1c-3d0996c60e6c",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7ba78fa8-0892-31c0-af1c-3d0996c60e6c",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2ccdbc2a-0ab9-3a36-99ba-d639d694ffa5",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2ccdbc2a-0ab9-3a36-99ba-d639d694ffa5",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "5122b6c1-3c4e-3ea7-8624-18ea1c22017b",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "5122b6c1-3c4e-3ea7-8624-18ea1c22017b",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1a4c3bcd-9c60-394c-9d7c-46ae57f16a43",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1a4c3bcd-9c60-394c-9d7c-46ae57f16a43",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "d9444b6c-4c0f-3be9-a6fb-f29afd18a386",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "d9444b6c-4c0f-3be9-a6fb-f29afd18a386",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a58f6c0e-b715-3864-b216-f41e99209fab",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "a58f6c0e-b715-3864-b216-f41e99209fab",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a6ad39e4-ebdf-3dbd-abcb-721bd2ab1fb8",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "a6ad39e4-ebdf-3dbd-abcb-721bd2ab1fb8",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7d28e531-00c7-3eb5-8503-20d73c77254f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7d28e531-00c7-3eb5-8503-20d73c77254f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "898108bc-50ef-3991-9acc-7bbbacafd959",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "898108bc-50ef-3991-9acc-7bbbacafd959",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3a1c45b0-1430-3347-8a9d-e0036f89ec6d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3a1c45b0-1430-3347-8a9d-e0036f89ec6d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "0c66ad2e-fbd0-3925-874e-274f0d46b7e2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "0c66ad2e-fbd0-3925-874e-274f0d46b7e2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7810e8a5-e3f1-3afd-bff4-667bff4d1c0d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7810e8a5-e3f1-3afd-bff4-667bff4d1c0d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "629d8c0b-43be-3370-ad72-f6c038bb6a32",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "629d8c0b-43be-3370-ad72-f6c038bb6a32",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "120ccede-3d15-3492-81ed-dac16c061537",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "120ccede-3d15-3492-81ed-dac16c061537",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "566a8731-66c2-3680-b37d-ee1b8d32051c",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "P",
+                    },
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2_OR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_SBSNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_FKSNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+                    "measurementValue": Object {},
+                  },
+                ],
+                "id": "e3569b62-1db1-3ada-8ee4-8537b455f142",
+                "parentSignalDetectionId": "e3569b62-1db1-3ada-8ee4-8537b455f142",
+              },
+            },
+          ],
+        },
+      },
+      "id": "566a8731-66c2-3680-b37d-ee1b8d32051c",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3a06fac7-46ad-337e-a8da-090a1cc801a1",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3a06fac7-46ad-337e-a8da-090a1cc801a1",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3440a8f1-14be-3ec9-857a-c51871bd7eb0",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3440a8f1-14be-3ec9-857a-c51871bd7eb0",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7b6ecf2a-17ba-3d8a-9dfe-c93b83a42f9f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "P",
+                    },
+                  },
+                ],
+                "id": "8679e176-7bd4-3db2-89ed-49f766cebdcb",
+                "parentSignalDetectionId": "8679e176-7bd4-3db2-89ed-49f766cebdcb",
+              },
+            },
+          ],
+        },
+      },
+      "id": "7b6ecf2a-17ba-3d8a-9dfe-c93b83a42f9f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "8ac2d786-22c3-3d63-b15a-6e86e62b44f7",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "8ac2d786-22c3-3d63-b15a-6e86e62b44f7",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "95a0f161-84eb-3a88-bb1c-aa56da41f22b",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "95a0f161-84eb-3a88-bb1c-aa56da41f22b",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "f2529605-c314-3bc6-9841-f9631f7063e7",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "f2529605-c314-3bc6-9841-f9631f7063e7",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "8630cfd2-0a27-3e94-866f-c4d4f694604d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "8630cfd2-0a27-3e94-866f-c4d4f694604d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2ab2e45d-a724-3d0f-a3de-de8095c372e7",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2ab2e45d-a724-3d0f-a3de-de8095c372e7",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a6d15c94-417e-3e61-b352-8ce107905e29",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "P",
+                    },
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2_OR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_SBSNR",
+                    "measurementValue": Object {},
+                  },
+                ],
+                "id": "43c9c870-c870-3753-a24e-9ba86d700ca2",
+                "parentSignalDetectionId": "43c9c870-c870-3753-a24e-9ba86d700ca2",
+              },
+            },
+          ],
+        },
+      },
+      "id": "a6d15c94-417e-3e61-b352-8ce107905e29",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1ee6c27c-a120-326d-985c-e48075ec251d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1ee6c27c-a120-326d-985c-e48075ec251d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "70c240b0-785f-3ada-896e-86ca8e6ccf90",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "70c240b0-785f-3ada-896e-86ca8e6ccf90",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "fc5a8813-39fe-35f3-b404-99e60e68cc15",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "fc5a8813-39fe-35f3-b404-99e60e68cc15",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "6d9bc3fc-73d2-31f1-8608-144b76bd8b1d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "6d9bc3fc-73d2-31f1-8608-144b76bd8b1d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "478a3962-e6f5-3419-878f-c8439a26d7b2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "478a3962-e6f5-3419-878f-c8439a26d7b2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "81fe91cd-f95e-359d-86d6-af34d7d9591a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "81fe91cd-f95e-359d-86d6-af34d7d9591a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "10e77d1f-b9dd-3f96-ac69-37d76fd2cbc5",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "10e77d1f-b9dd-3f96-ac69-37d76fd2cbc5",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "9810d3a3-a499-345c-bc01-bd2feb130484",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "9810d3a3-a499-345c-bc01-bd2feb130484",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "774a2a0f-7039-3376-87b6-19711c89d1d2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "774a2a0f-7039-3376-87b6-19711c89d1d2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "46b5ef4c-6e1a-3195-b834-82111dcf8097",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "46b5ef4c-6e1a-3195-b834-82111dcf8097",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "649e4618-8843-3d7b-b38c-1b3dcf7ea61d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "649e4618-8843-3d7b-b38c-1b3dcf7ea61d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "81a4ae31-0966-3da0-ab03-32934dac13ab",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "81a4ae31-0966-3da0-ab03-32934dac13ab",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1f7a2e44-e83e-390f-8a38-8a7a21ad5169",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1f7a2e44-e83e-390f-8a38-8a7a21ad5169",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "6c4110bc-6da8-3661-a948-975e4b3e8b6f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "6c4110bc-6da8-3661-a948-975e4b3e8b6f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1503af2c-fc99-3fb5-99ea-88014f5ec6b2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "PKhKP",
+                    },
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_SBSNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_FKSNR",
+                    "measurementValue": Object {},
+                  },
+                ],
+                "id": "9ceb258f-81a0-32ad-82e9-4f614b4f4701",
+                "parentSignalDetectionId": "9ceb258f-81a0-32ad-82e9-4f614b4f4701",
+              },
+            },
+          ],
+        },
+      },
+      "id": "1503af2c-fc99-3fb5-99ea-88014f5ec6b2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "434493a0-3fe4-316d-b216-70e17d0fd230",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "P",
+                    },
+                  },
+                ],
+                "id": "a30027aa-5b7e-3b8a-8b90-29ec889105a5",
+                "parentSignalDetectionId": "a30027aa-5b7e-3b8a-8b90-29ec889105a5",
+              },
+            },
+          ],
+        },
+      },
+      "id": "434493a0-3fe4-316d-b216-70e17d0fd230",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3e64a14f-9b84-3c6b-a6ac-1834125256b9",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3e64a14f-9b84-3c6b-a6ac-1834125256b9",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a6bd4ad6-6224-309d-9cb2-866461abe679",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "a6bd4ad6-6224-309d-9cb2-866461abe679",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "dbbf89f1-6a59-39c5-9dea-4aa62c99e961",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "dbbf89f1-6a59-39c5-9dea-4aa62c99e961",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "94155d3f-0590-3aa6-a407-d7cc1f6c6c13",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "94155d3f-0590-3aa6-a407-d7cc1f6c6c13",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "21c56e20-9f79-3645-8523-06202f13dd25",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "21c56e20-9f79-3645-8523-06202f13dd25",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "0a746a85-ba3e-37d7-8480-6db895806e47",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "0a746a85-ba3e-37d7-8480-6db895806e47",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "d85c32c7-96e2-3d07-96e2-47c4b60e28a8",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "d85c32c7-96e2-3d07-96e2-47c4b60e28a8",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "e1311edf-6a4b-3b9c-97e0-50fc5b9a78c1",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "e1311edf-6a4b-3b9c-97e0-50fc5b9a78c1",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "5e54ca7a-1d77-31bf-92ce-6360136aa73a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "5e54ca7a-1d77-31bf-92ce-6360136aa73a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "b9d2af87-cfe9-3acf-8f47-f284e49665c2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "b9d2af87-cfe9-3acf-8f47-f284e49665c2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "fd62ebc0-c7b7-39a4-abc9-9f3a321f0ea4",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "fd62ebc0-c7b7-39a4-abc9-9f3a321f0ea4",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "56eebd6a-9166-3e8f-8a24-2b3518e55489",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "56eebd6a-9166-3e8f-8a24-2b3518e55489",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "4a7dfbaf-6279-340b-8dac-6c8af646fa6f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "4a7dfbaf-6279-340b-8dac-6c8af646fa6f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2d2b6efa-7b05-39c4-a523-9899622539a4",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2d2b6efa-7b05-39c4-a523-9899622539a4",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "933ec2d4-2a84-3076-a4b0-425e688c1286",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "933ec2d4-2a84-3076-a4b0-425e688c1286",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1306ce5a-f763-3ee3-a5d2-2f9c1f170c16",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1306ce5a-f763-3ee3-a5d2-2f9c1f170c16",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a48a03c4-de3c-3ade-b8b3-7194393c29fd",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "P",
+                    },
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2_OR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_SBSNR",
+                    "measurementValue": Object {},
+                  },
+                ],
+                "id": "d0c57552-6e73-3172-995a-bbfb11342c52",
+                "parentSignalDetectionId": "d0c57552-6e73-3172-995a-bbfb11342c52",
+              },
+            },
+          ],
+        },
+      },
+      "id": "a48a03c4-de3c-3ade-b8b3-7194393c29fd",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3db9b181-5e02-32f4-a473-764ff4ab5dd0",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3db9b181-5e02-32f4-a473-764ff4ab5dd0",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "ee209435-14cf-3cb4-9593-dd36c7466c2b",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "ee209435-14cf-3cb4-9593-dd36c7466c2b",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "c1b04190-5d09-3d0e-8e1b-30bcd8ea71f6",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "P",
+                    },
+                  },
+                ],
+                "id": "1292899e-51c7-3d2b-aab9-4951b6b0e987",
+                "parentSignalDetectionId": "1292899e-51c7-3d2b-aab9-4951b6b0e987",
+              },
+            },
+          ],
+        },
+      },
+      "id": "c1b04190-5d09-3d0e-8e1b-30bcd8ea71f6",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "5c96346e-66bf-331c-8802-c5fb787008cd",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "5c96346e-66bf-331c-8802-c5fb787008cd",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "6a401297-34d3-3ca3-a25a-be9f864c3fd1",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "6a401297-34d3-3ca3-a25a-be9f864c3fd1",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "f976d47a-a6b5-3360-bca1-b94d97c13391",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "f976d47a-a6b5-3360-bca1-b94d97c13391",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "8af6621e-5f1a-306a-906a-b88e4ca6b5b2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "8af6621e-5f1a-306a-906a-b88e4ca6b5b2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2893298f-b065-3313-b24b-854a07a63538",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2893298f-b065-3313-b24b-854a07a63538",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "aed761ac-ea1f-34b1-b3e3-d87ec51c6688",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "aed761ac-ea1f-34b1-b3e3-d87ec51c6688",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "75d7e15d-6e91-365d-9ecd-82046c3a27c5",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "75d7e15d-6e91-365d-9ecd-82046c3a27c5",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "25bf9b6e-846b-323b-914e-1253c7cbaf9a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "25bf9b6e-846b-323b-914e-1253c7cbaf9a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "c6c156be-e2da-3f9f-b2de-a6c59412dbf6",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "featureMeasurements": Array [
+                  Object {
+                    "featureMeasurementType": "ARRIVAL_TIME",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "FILTERED_BEAM",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "EMERGENCE_ANGLE",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PERIOD",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "RECTILINEARITY",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SLOWNESS",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "SNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "PHASE",
+                    "measurementValue": Object {
+                      "phase": "P",
+                    },
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2_OR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_A5_OVER_2",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_SBSNR",
+                    "measurementValue": Object {},
+                  },
+                  Object {
+                    "featureMeasurementType": "AMPLITUDE_FKSNR",
+                    "measurementValue": Object {},
+                  },
+                ],
+                "id": "63eaa3fc-aa3f-31bf-952c-24e648e736f9",
+                "parentSignalDetectionId": "63eaa3fc-aa3f-31bf-952c-24e648e736f9",
+              },
+            },
+          ],
+        },
+      },
+      "id": "c6c156be-e2da-3f9f-b2de-a6c59412dbf6",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "540f2e6b-325e-3e6c-8673-c4ebc15ceb9c",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "540f2e6b-325e-3e6c-8673-c4ebc15ceb9c",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "27fdceae-d758-3334-98dd-baa03085fb79",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "27fdceae-d758-3334-98dd-baa03085fb79",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "dbf60d73-00da-32d9-8fe8-41821742878f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "dbf60d73-00da-32d9-8fe8-41821742878f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3d8e9f4f-ebf4-3ba4-8515-e874e6410f1f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3d8e9f4f-ebf4-3ba4-8515-e874e6410f1f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "4c6aba6c-b294-310b-b5c0-e91fbcc61d89",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "4c6aba6c-b294-310b-b5c0-e91fbcc61d89",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "dd5eb637-061e-396f-a413-55258f1d7a32",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "dd5eb637-061e-396f-a413-55258f1d7a32",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "6f208e1f-3166-34cc-a905-81f75eca4909",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "6f208e1f-3166-34cc-a905-81f75eca4909",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "84f513f7-dfc3-3917-9335-babbd33ef1b8",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "84f513f7-dfc3-3917-9335-babbd33ef1b8",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "fa48314d-bdc0-316c-a14e-f6c461329ec1",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "fa48314d-bdc0-316c-a14e-f6c461329ec1",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1b6cc66a-9014-3b7d-9d53-2842e2e00914",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1b6cc66a-9014-3b7d-9d53-2842e2e00914",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "54032fa6-b478-371f-a325-df4fac671a71",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "54032fa6-b478-371f-a325-df4fac671a71",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "e1236672-15a5-3d0f-a906-9f090db8f7b6",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "e1236672-15a5-3d0f-a906-9f090db8f7b6",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "0b322877-e795-3721-956a-47e794ec831a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "0b322877-e795-3721-956a-47e794ec831a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "03507d92-ffd2-3609-ab62-04433a08bbee",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "03507d92-ffd2-3609-ab62-04433a08bbee",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7109a064-741d-3895-8bd0-9a2a4e9dd2a3",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7109a064-741d-3895-8bd0-9a2a4e9dd2a3",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "25430a17-6754-35b3-9fc4-46e4b65082c9",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "25430a17-6754-35b3-9fc4-46e4b65082c9",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2b5e6736-69d6-3f5b-9f54-e363b6e80889",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2b5e6736-69d6-3f5b-9f54-e363b6e80889",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "f587793b-8c91-36bf-8b96-8d1b6f917ef5",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "f587793b-8c91-36bf-8b96-8d1b6f917ef5",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "79ec68c4-3492-38c2-8047-6b17323e42f2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "79ec68c4-3492-38c2-8047-6b17323e42f2",
+      "monitoringOrganization": "CTBTO",
+    },
+  ],
+}
+`;
+
+exports[`Event loading and getting loads events in time range 1`] = `
+Object {
+  "loadEventsInTimeRange": Array [
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "f1b76535-88e4-34e2-b3fc-408a15491573",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+              },
+            },
+          ],
+        },
+      },
+      "id": "f1b76535-88e4-34e2-b3fc-408a15491573",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "ff31a99c-c4dd-32da-9fa6-09d336442154",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "ff31a99c-c4dd-32da-9fa6-09d336442154",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "031ac882-36c6-3b64-b641-6808d2e49150",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "031ac882-36c6-3b64-b641-6808d2e49150",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7667f6ec-06fa-3116-af2d-6823fc0a6790",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7667f6ec-06fa-3116-af2d-6823fc0a6790",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "90b29999-32f8-3096-b76e-e25ed7a2a4ce",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "90b29999-32f8-3096-b76e-e25ed7a2a4ce",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1e6ade2f-4f85-3ad2-9618-1aa3a569fcb2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1e6ade2f-4f85-3ad2-9618-1aa3a569fcb2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "578b93db-580c-3094-884e-3ece065d2942",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "578b93db-580c-3094-884e-3ece065d2942",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "99686e77-972a-3aae-bf5f-9836c26535d4",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "99686e77-972a-3aae-bf5f-9836c26535d4",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1ede837e-0ec4-3405-acf3-565d8279d80e",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1ede837e-0ec4-3405-acf3-565d8279d80e",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "fec310b9-9163-3b61-ae85-fe9794a00ea0",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "fec310b9-9163-3b61-ae85-fe9794a00ea0",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "30e3d9cb-07ec-3457-88df-5a632d6b16fc",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "30e3d9cb-07ec-3457-88df-5a632d6b16fc",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "d98c979e-ea6d-3510-b4fb-0ffad2fbe418",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "d98c979e-ea6d-3510-b4fb-0ffad2fbe418",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "b09f8e47-dac7-3b24-9af9-57c1c2ae30b6",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "b09f8e47-dac7-3b24-9af9-57c1c2ae30b6",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "af9a8ec7-36ac-38fd-b3ca-1f0b8ab6519a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "af9a8ec7-36ac-38fd-b3ca-1f0b8ab6519a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7ba78fa8-0892-31c0-af1c-3d0996c60e6c",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7ba78fa8-0892-31c0-af1c-3d0996c60e6c",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2ccdbc2a-0ab9-3a36-99ba-d639d694ffa5",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2ccdbc2a-0ab9-3a36-99ba-d639d694ffa5",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "5122b6c1-3c4e-3ea7-8624-18ea1c22017b",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "5122b6c1-3c4e-3ea7-8624-18ea1c22017b",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1a4c3bcd-9c60-394c-9d7c-46ae57f16a43",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1a4c3bcd-9c60-394c-9d7c-46ae57f16a43",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "d9444b6c-4c0f-3be9-a6fb-f29afd18a386",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "d9444b6c-4c0f-3be9-a6fb-f29afd18a386",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a58f6c0e-b715-3864-b216-f41e99209fab",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "a58f6c0e-b715-3864-b216-f41e99209fab",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a6ad39e4-ebdf-3dbd-abcb-721bd2ab1fb8",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "a6ad39e4-ebdf-3dbd-abcb-721bd2ab1fb8",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7d28e531-00c7-3eb5-8503-20d73c77254f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7d28e531-00c7-3eb5-8503-20d73c77254f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "898108bc-50ef-3991-9acc-7bbbacafd959",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "898108bc-50ef-3991-9acc-7bbbacafd959",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3a1c45b0-1430-3347-8a9d-e0036f89ec6d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3a1c45b0-1430-3347-8a9d-e0036f89ec6d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "0c66ad2e-fbd0-3925-874e-274f0d46b7e2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "0c66ad2e-fbd0-3925-874e-274f0d46b7e2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7810e8a5-e3f1-3afd-bff4-667bff4d1c0d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7810e8a5-e3f1-3afd-bff4-667bff4d1c0d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "629d8c0b-43be-3370-ad72-f6c038bb6a32",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "629d8c0b-43be-3370-ad72-f6c038bb6a32",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "120ccede-3d15-3492-81ed-dac16c061537",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "120ccede-3d15-3492-81ed-dac16c061537",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "566a8731-66c2-3680-b37d-ee1b8d32051c",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "e3569b62-1db1-3ada-8ee4-8537b455f142",
+              },
+            },
+          ],
+        },
+      },
+      "id": "566a8731-66c2-3680-b37d-ee1b8d32051c",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3a06fac7-46ad-337e-a8da-090a1cc801a1",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3a06fac7-46ad-337e-a8da-090a1cc801a1",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3440a8f1-14be-3ec9-857a-c51871bd7eb0",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3440a8f1-14be-3ec9-857a-c51871bd7eb0",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7b6ecf2a-17ba-3d8a-9dfe-c93b83a42f9f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "8679e176-7bd4-3db2-89ed-49f766cebdcb",
+              },
+            },
+          ],
+        },
+      },
+      "id": "7b6ecf2a-17ba-3d8a-9dfe-c93b83a42f9f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "8ac2d786-22c3-3d63-b15a-6e86e62b44f7",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "8ac2d786-22c3-3d63-b15a-6e86e62b44f7",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "95a0f161-84eb-3a88-bb1c-aa56da41f22b",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "95a0f161-84eb-3a88-bb1c-aa56da41f22b",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "f2529605-c314-3bc6-9841-f9631f7063e7",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "f2529605-c314-3bc6-9841-f9631f7063e7",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "8630cfd2-0a27-3e94-866f-c4d4f694604d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "8630cfd2-0a27-3e94-866f-c4d4f694604d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2ab2e45d-a724-3d0f-a3de-de8095c372e7",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2ab2e45d-a724-3d0f-a3de-de8095c372e7",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a6d15c94-417e-3e61-b352-8ce107905e29",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "43c9c870-c870-3753-a24e-9ba86d700ca2",
+              },
+            },
+          ],
+        },
+      },
+      "id": "a6d15c94-417e-3e61-b352-8ce107905e29",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1ee6c27c-a120-326d-985c-e48075ec251d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1ee6c27c-a120-326d-985c-e48075ec251d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "70c240b0-785f-3ada-896e-86ca8e6ccf90",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "70c240b0-785f-3ada-896e-86ca8e6ccf90",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "fc5a8813-39fe-35f3-b404-99e60e68cc15",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "fc5a8813-39fe-35f3-b404-99e60e68cc15",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "6d9bc3fc-73d2-31f1-8608-144b76bd8b1d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "6d9bc3fc-73d2-31f1-8608-144b76bd8b1d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "478a3962-e6f5-3419-878f-c8439a26d7b2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "478a3962-e6f5-3419-878f-c8439a26d7b2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "81fe91cd-f95e-359d-86d6-af34d7d9591a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "81fe91cd-f95e-359d-86d6-af34d7d9591a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "10e77d1f-b9dd-3f96-ac69-37d76fd2cbc5",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "10e77d1f-b9dd-3f96-ac69-37d76fd2cbc5",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "9810d3a3-a499-345c-bc01-bd2feb130484",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "9810d3a3-a499-345c-bc01-bd2feb130484",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "774a2a0f-7039-3376-87b6-19711c89d1d2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "774a2a0f-7039-3376-87b6-19711c89d1d2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "46b5ef4c-6e1a-3195-b834-82111dcf8097",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "46b5ef4c-6e1a-3195-b834-82111dcf8097",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "649e4618-8843-3d7b-b38c-1b3dcf7ea61d",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "649e4618-8843-3d7b-b38c-1b3dcf7ea61d",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "81a4ae31-0966-3da0-ab03-32934dac13ab",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "81a4ae31-0966-3da0-ab03-32934dac13ab",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1f7a2e44-e83e-390f-8a38-8a7a21ad5169",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1f7a2e44-e83e-390f-8a38-8a7a21ad5169",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "6c4110bc-6da8-3661-a948-975e4b3e8b6f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "6c4110bc-6da8-3661-a948-975e4b3e8b6f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1503af2c-fc99-3fb5-99ea-88014f5ec6b2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "9ceb258f-81a0-32ad-82e9-4f614b4f4701",
+              },
+            },
+          ],
+        },
+      },
+      "id": "1503af2c-fc99-3fb5-99ea-88014f5ec6b2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "434493a0-3fe4-316d-b216-70e17d0fd230",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "a30027aa-5b7e-3b8a-8b90-29ec889105a5",
+              },
+            },
+          ],
+        },
+      },
+      "id": "434493a0-3fe4-316d-b216-70e17d0fd230",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3e64a14f-9b84-3c6b-a6ac-1834125256b9",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3e64a14f-9b84-3c6b-a6ac-1834125256b9",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a6bd4ad6-6224-309d-9cb2-866461abe679",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "a6bd4ad6-6224-309d-9cb2-866461abe679",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "dbbf89f1-6a59-39c5-9dea-4aa62c99e961",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "dbbf89f1-6a59-39c5-9dea-4aa62c99e961",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "94155d3f-0590-3aa6-a407-d7cc1f6c6c13",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "94155d3f-0590-3aa6-a407-d7cc1f6c6c13",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "21c56e20-9f79-3645-8523-06202f13dd25",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "21c56e20-9f79-3645-8523-06202f13dd25",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "0a746a85-ba3e-37d7-8480-6db895806e47",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "0a746a85-ba3e-37d7-8480-6db895806e47",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "d85c32c7-96e2-3d07-96e2-47c4b60e28a8",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "d85c32c7-96e2-3d07-96e2-47c4b60e28a8",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "e1311edf-6a4b-3b9c-97e0-50fc5b9a78c1",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "e1311edf-6a4b-3b9c-97e0-50fc5b9a78c1",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "5e54ca7a-1d77-31bf-92ce-6360136aa73a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "5e54ca7a-1d77-31bf-92ce-6360136aa73a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "b9d2af87-cfe9-3acf-8f47-f284e49665c2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "b9d2af87-cfe9-3acf-8f47-f284e49665c2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "fd62ebc0-c7b7-39a4-abc9-9f3a321f0ea4",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "fd62ebc0-c7b7-39a4-abc9-9f3a321f0ea4",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "56eebd6a-9166-3e8f-8a24-2b3518e55489",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "56eebd6a-9166-3e8f-8a24-2b3518e55489",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "4a7dfbaf-6279-340b-8dac-6c8af646fa6f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "4a7dfbaf-6279-340b-8dac-6c8af646fa6f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2d2b6efa-7b05-39c4-a523-9899622539a4",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2d2b6efa-7b05-39c4-a523-9899622539a4",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "933ec2d4-2a84-3076-a4b0-425e688c1286",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "933ec2d4-2a84-3076-a4b0-425e688c1286",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1306ce5a-f763-3ee3-a5d2-2f9c1f170c16",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1306ce5a-f763-3ee3-a5d2-2f9c1f170c16",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "a48a03c4-de3c-3ade-b8b3-7194393c29fd",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "d0c57552-6e73-3172-995a-bbfb11342c52",
+              },
+            },
+          ],
+        },
+      },
+      "id": "a48a03c4-de3c-3ade-b8b3-7194393c29fd",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3db9b181-5e02-32f4-a473-764ff4ab5dd0",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3db9b181-5e02-32f4-a473-764ff4ab5dd0",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "ee209435-14cf-3cb4-9593-dd36c7466c2b",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "ee209435-14cf-3cb4-9593-dd36c7466c2b",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "c1b04190-5d09-3d0e-8e1b-30bcd8ea71f6",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "1292899e-51c7-3d2b-aab9-4951b6b0e987",
+              },
+            },
+          ],
+        },
+      },
+      "id": "c1b04190-5d09-3d0e-8e1b-30bcd8ea71f6",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "5c96346e-66bf-331c-8802-c5fb787008cd",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "5c96346e-66bf-331c-8802-c5fb787008cd",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "6a401297-34d3-3ca3-a25a-be9f864c3fd1",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "6a401297-34d3-3ca3-a25a-be9f864c3fd1",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "f976d47a-a6b5-3360-bca1-b94d97c13391",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "f976d47a-a6b5-3360-bca1-b94d97c13391",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "8af6621e-5f1a-306a-906a-b88e4ca6b5b2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "8af6621e-5f1a-306a-906a-b88e4ca6b5b2",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2893298f-b065-3313-b24b-854a07a63538",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2893298f-b065-3313-b24b-854a07a63538",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "aed761ac-ea1f-34b1-b3e3-d87ec51c6688",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "aed761ac-ea1f-34b1-b3e3-d87ec51c6688",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "75d7e15d-6e91-365d-9ecd-82046c3a27c5",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "75d7e15d-6e91-365d-9ecd-82046c3a27c5",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "25bf9b6e-846b-323b-914e-1253c7cbaf9a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "25bf9b6e-846b-323b-914e-1253c7cbaf9a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "c6c156be-e2da-3f9f-b2de-a6c59412dbf6",
+          "rejected": false,
+          "signalDetectionAssociations": Array [
+            Object {
+              "signalDetectionHypothesis": Object {
+                "id": "63eaa3fc-aa3f-31bf-952c-24e648e736f9",
+              },
+            },
+          ],
+        },
+      },
+      "id": "c6c156be-e2da-3f9f-b2de-a6c59412dbf6",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "540f2e6b-325e-3e6c-8673-c4ebc15ceb9c",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "540f2e6b-325e-3e6c-8673-c4ebc15ceb9c",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "27fdceae-d758-3334-98dd-baa03085fb79",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "27fdceae-d758-3334-98dd-baa03085fb79",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "dbf60d73-00da-32d9-8fe8-41821742878f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "dbf60d73-00da-32d9-8fe8-41821742878f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "3d8e9f4f-ebf4-3ba4-8515-e874e6410f1f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "3d8e9f4f-ebf4-3ba4-8515-e874e6410f1f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "4c6aba6c-b294-310b-b5c0-e91fbcc61d89",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "4c6aba6c-b294-310b-b5c0-e91fbcc61d89",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "dd5eb637-061e-396f-a413-55258f1d7a32",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "dd5eb637-061e-396f-a413-55258f1d7a32",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "186f997b-7d7d-3151-8b4d-5609f7a8f31f",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "6f208e1f-3166-34cc-a905-81f75eca4909",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "6f208e1f-3166-34cc-a905-81f75eca4909",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "84f513f7-dfc3-3917-9335-babbd33ef1b8",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "84f513f7-dfc3-3917-9335-babbd33ef1b8",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "fa48314d-bdc0-316c-a14e-f6c461329ec1",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "fa48314d-bdc0-316c-a14e-f6c461329ec1",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "1b6cc66a-9014-3b7d-9d53-2842e2e00914",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "1b6cc66a-9014-3b7d-9d53-2842e2e00914",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "54032fa6-b478-371f-a325-df4fac671a71",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "54032fa6-b478-371f-a325-df4fac671a71",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "e1236672-15a5-3d0f-a906-9f090db8f7b6",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "e1236672-15a5-3d0f-a906-9f090db8f7b6",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "0b322877-e795-3721-956a-47e794ec831a",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "0b322877-e795-3721-956a-47e794ec831a",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "03507d92-ffd2-3609-ab62-04433a08bbee",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "03507d92-ffd2-3609-ab62-04433a08bbee",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "7109a064-741d-3895-8bd0-9a2a4e9dd2a3",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "7109a064-741d-3895-8bd0-9a2a4e9dd2a3",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "25430a17-6754-35b3-9fc4-46e4b65082c9",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "25430a17-6754-35b3-9fc4-46e4b65082c9",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "2b5e6736-69d6-3f5b-9f54-e363b6e80889",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "2b5e6736-69d6-3f5b-9f54-e363b6e80889",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "f587793b-8c91-36bf-8b96-8d1b6f917ef5",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "f587793b-8c91-36bf-8b96-8d1b6f917ef5",
+      "monitoringOrganization": "CTBTO",
+    },
+    Object {
+      "currentEventHypothesis": Object {
+        "eventHypothesis": Object {
+          "id": "79ec68c4-3492-38c2-8047-6b17323e42f2",
+          "rejected": false,
+          "signalDetectionAssociations": Array [],
+        },
+      },
+      "id": "79ec68c4-3492-38c2-8047-6b17323e42f2",
+      "monitoringOrganization": "CTBTO",
+    },
+  ],
+}
+`;
+
+exports[`Updating and Saving events can compute magnitude 1`] = `
+Object {
+  "computeNetworkMagnitudeSolution": Object {
+    "dataPayload": Object {
+      "events": Array [
+        Object {
+          "currentEventHypothesis": Object {
+            "eventHypothesis": Object {
+              "locationSolutionSets": Array [
+                Object {
+                  "locationSolutions": Array [
+                    Object {
+                      "networkMagnitudeSolutions": Array [
+                        Object {
+                          "magnitudeType": "MBMLE",
+                          "networkMagnitudeBehaviors": Array [
+                            Object {
+                              "defining": true,
+                              "stationMagnitudeSolution": Object {
+                                "model": "VEITH_CLAWSON",
+                                "modelCorrection": 0,
+                                "phase": "P",
+                                "stationCorrection": 0,
+                                "stationName": "ASAR",
+                                "type": "MBMLE",
+                              },
+                              "weight": 1,
+                            },
+                          ],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        },
+      ],
+    },
+  },
+}
+`;
+
+exports[`Updating and Saving events can generate signal detections behaviors map 1`] = `
+Object {
+  "test1": Object {
+    "definitionMap": Object {
+      "ARRIVAL_TIME": Object {
+        "defining": true,
+        "overrideThreshold": 1000,
+        "systemOverridable": false,
+      },
+      "RECEIVER_TO_SOURCE_AZIMUTH": Object {
+        "defining": false,
+        "overrideThreshold": 1000,
+        "systemOverridable": false,
+      },
+    },
+  },
+}
+`;
+
+exports[`Updating and Saving events change associations on event to modify event 1`] = `
+Object {
+  "changeSignalDetectionAssociations": Object {
+    "events": Array [
+      Object {
+        "conflictingSdIds": Array [
+          "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+        ],
+        "currentEventHypothesis": Object {
+          "eventHypothesis": Object {
+            "signalDetectionAssociations": Array [
+              Object {
+                "signalDetectionHypothesis": Object {
+                  "parentSignalDetectionId": "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+                },
+              },
+            ],
+          },
+        },
+        "hasConflict": true,
+        "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+        "modified": true,
+        "status": "OpenForRefinement",
+      },
+      Object {
+        "conflictingSdIds": Array [
+          "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+        ],
+        "currentEventHypothesis": Object {
+          "eventHypothesis": Object {
+            "signalDetectionAssociations": Array [
+              Object {
+                "signalDetectionHypothesis": Object {
+                  "parentSignalDetectionId": "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+                },
+              },
+            ],
+          },
+        },
+        "hasConflict": true,
+        "id": "f1b76535-88e4-34e2-b3fc-408a15491573",
+        "modified": false,
+        "status": "ReadyForRefinement",
+      },
+    ],
+  },
+}
+`;
+
+exports[`Updating and Saving events get event by id to check for conflict 1`] = `
+Object {
+  "eventById": Object {
+    "hasConflict": true,
+    "id": "f1b76535-88e4-34e2-b3fc-408a15491573",
+    "modified": false,
+    "monitoringOrganization": "CTBTO",
+    "status": "ReadyForRefinement",
+  },
+}
+`;
+
+exports[`Updating and Saving events get sd that was just associated and check conflict 1`] = `
+Object {
+  "signalDetectionsById": Array [
+    Object {
+      "hasConflict": true,
+      "id": "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+    },
+  ],
+}
+`;
+
+exports[`Updating and Saving events save event 1`] = `
+Object {
+  "saveEvent": Object {
+    "events": Array [
+      Object {
+        "conflictingSdIds": Array [
+          "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+        ],
+        "currentEventHypothesis": Object {
+          "eventHypothesis": Object {
+            "signalDetectionAssociations": Array [
+              Object {
+                "signalDetectionHypothesis": Object {
+                  "parentSignalDetectionId": "7c4715da-04d4-3c1e-b78d-4241ff10cade",
+                },
+              },
+            ],
+          },
+        },
+        "hasConflict": true,
+        "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+        "modified": false,
+        "status": "OpenForRefinement",
+      },
+    ],
+  },
+}
+`;
+
+exports[`Updating and Saving events update event to be in refinement 1`] = `
+Object {
+  "updateEvents": Object {
+    "events": Array [
+      Object {
+        "id": "a95cb01a-d26d-37a1-ac00-7a4e2f55241f",
+        "modified": false,
+        "status": "OpenForRefinement",
+      },
+    ],
+  },
+}
+`;

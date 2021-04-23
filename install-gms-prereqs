@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#
+# This script installs the prerequisites required to build the GMS PI 13 open
+# source release.  It's intended to be run on a CentOS/RHEL 7 system.
+#
+
+set -eux
+
+if [ -z "${1:-}" ]; then
+    TARGET_USER=${USER}
+else
+    TARGET_USER=${1}
+fi
+
+# Base tools
+sudo yum install -y git unzip vim
+
+# Docker CE
+sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install -y docker-ce
+sudo systemctl start docker
+sudo systemctl enable docker
+sudo usermod -G docker ${TARGET_USER}
+
+# Java and Gradle
+sudo yum install -y java-11-openjdk
+GRADLE_VERSION=4.10.3
+curl https://downloads.gradle.org/distributions/gradle-${GRADLE_VERSION}-all.zip -o /tmp/gradle-${GRADLE_VERSION}-all.zip
+sudo unzip -d /opt /tmp/gradle-${GRADLE_VERSION}-all.zip
+sudo mv /opt/gradle-${GRADLE_VERSION} /opt/gradle
+echo 'export PATH=$PATH:/opt/gradle/bin' > /etc/profile.d/gradle.sh
+
+# NodeJS and Yarn
+curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+curl -fsSL https://rpm.nodesource.com/setup_10.x | sudo bash -
+sudo yum groupinstall -y "Development Tools"
+sudo yum install -y yarn nodejs-10.19.0 postgresql-devel
+sudo yarn config set disable-self-update-check true

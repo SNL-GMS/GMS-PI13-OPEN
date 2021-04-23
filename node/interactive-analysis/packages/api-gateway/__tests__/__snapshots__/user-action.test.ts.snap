@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Action Tests Snapshot for event actions 1`] = `"Unknown"`;
+
+exports[`User Action Tests Snapshot for event actions 2`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 3`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 4`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 5`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 6`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 7`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 8`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 9`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 10`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 11`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 12`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 13`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 14`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 15`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 16`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 17`] = `"Create event at 10:00:00"`;
+
+exports[`User Action Tests Snapshot for event actions 18`] = `"Locate event at 10:00:00"`;
+
+exports[`User Action Tests Snapshot for event actions 19`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for event actions 20`] = `"Update event feature predictions"`;
+
+exports[`User Action Tests Snapshot for event actions 21`] = `"Event opened for refinement"`;
+
+exports[`User Action Tests Snapshot for event actions 22`] = `"Event marked complete"`;
+
+exports[`User Action Tests Snapshot for event actions 23`] = `"Update event preferred hypothesis"`;
+
+exports[`User Action Tests Snapshot for event actions 24`] = `"Change Magnitude defining settings"`;
+
+exports[`User Action Tests Snapshot for event actions 25`] = `"Save event"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 1`] = `"Unknown"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 2`] = `"Associate S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 3`] = `"Associate S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 4`] = `"Unassociate S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 5`] = `"Unassociate S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 6`] = `"Create detection S on TEST at 04:12:00"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 7`] = `"Reject detection S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 8`] = `"Reject detection S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 9`] = `"Time S from 10:00:00 to 04:12:00 on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 10`] = `"Phase from P to S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 11`] = `"Phase from P to S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 12`] = `"Amplitude for S on TEST from 1.230 to 0.230"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 13`] = `"Update detection review amplitude"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 14`] = `"Update detection"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 15`] = `"Fk S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 16`] = `"Fk S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 17`] = `"Associate S on TEST"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 18`] = `"Locate event"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 19`] = `"Update event from signal detection change"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 20`] = `"Update event feature predictions"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 21`] = `"Event opened for refinement"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 22`] = `"Event marked complete"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 23`] = `"Update event preferred hypothesis"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 24`] = `"Change Magnitude defining settings"`;
+
+exports[`User Action Tests Snapshot for signal detection actions 25`] = `"Save event"`;

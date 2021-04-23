@@ -1,0 +1,10 @@
+ALL      All stations in datafeed                                                         ww   opensource             -1 20210219 12:00:00
+PS       Stations with primary priority                                                   ww   opensource             -1 20210219 12:00:00
+AS       Stations with auxiliary priority                                                 ww   opensource             -1 20210219 12:00:00
+IS       INFRASOUND stations                                                              ww   opensource             -1 20210219 12:00:00
+HA       HYDRO-ACOUSTIC stations                                                          ww   opensource             -1 20210219 12:00:00
+PRIMARY  Stations with primary priority                                                   ww   opensource             -1 20210219 12:00:00
+AUX      Stations with auxiliary priority                                                 ww   opensource             -1 20210219 12:00:00
+SEISMIC  Stations with SEISMIC channels                                                   ww   opensource             -1 20210219 12:00:00
+INFRA    Stations with INFRASOUND channels                                                ww   opensource             -1 20210219 12:00:00
+HYDRO    Stations with HYDRO-ACOUSTIC channels                                            ww   opensource             -1 20210219 12:00:00

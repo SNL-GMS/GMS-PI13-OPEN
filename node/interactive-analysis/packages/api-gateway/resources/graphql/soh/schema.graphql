@@ -1,0 +1,423 @@
+# ***************************************
+# Model
+# ***************************************
+
+enum SohStatusSummary {
+  NONE
+  BAD
+  MARGINAL
+  GOOD
+}
+
+enum SohMonitorType {
+  LAG
+  MISSING
+  TIMELINESS
+  ENV_AUTHENTICATION_SEAL_BROKEN
+  ENV_BACKUP_POWER_UNSTABLE
+  ENV_CALIBRATION_UNDERWAY
+  ENV_CLIPPED
+  ENV_CLOCK_DIFFERENTIAL_IN_MICROSECONDS
+  ENV_CLOCK_DIFFERENTIAL_TOO_LARGE
+  ENV_LAST_GPS_SYNC_TIME
+  ENV_DEAD_SENSOR_CHANNEL
+  ENV_DIGITIZER_ANALOG_INPUT_SHORTED
+  ENV_DIGITIZER_CALIBRATION_LOOP_BACK
+  ENV_DIGITIZING_EQUIPMENT_OPEN
+  ENV_EQUIPMENT_HOUSING_OPEN
+  ENV_EQUIPMENT_MOVED
+  ENV_GPS_RECEIVER_OFF
+  ENV_GPS_RECEIVER_UNLOCKED
+  ENV_MAIN_POWER_FAILURE
+  ENV_STATION_POWER_VOLTAGE
+  ENV_VAULT_DOOR_OPENED
+  ENV_ZEROED_DATA
+}
+
+# Acquired Channel Environment Issue enunerations 
+# (defined in section 2.4.5 of Data Model v2.1)
+enum AceiType {
+  AMPLIFIER_SATURATION_DETECTED
+  AUTHENTICATION_SEAL_BROKEN
+  BACKUP_POWER_UNSTABLE
+  BEGINNING_DATE_OUTAGE
+  BEGINNING_TIME_OUTAGE
+  CALIBRATION_UNDERWAY
+  CLIPPED
+  CLOCK_DIFFERENTIAL_IN_MICROSECONDS
+  CLOCK_DIFFERENTIAL_TOO_LARGE
+  CLOCK_LOCKED
+  DATA_AVAILABILITY_MINIMUM_CHANNELS
+  DATA_AVAILABLITY_GEOPHYSICAL_CHANNELS
+  DATA_AVAILABLITY_GEOPHYSICAL_CHANNELS_UNAUTHENTICATED
+  ENV_LAST_GPS_SYNC_TIME
+  DEAD_SENSOR_CHANNEL
+  DIGITAL_FILTER_MAY_BE_CHARGING
+  DIGITIZER_ANALOG_INPUT_SHORTED
+  DIGITIZER_CALIBRATION_LOOP_BACK
+  DIGITIZING_EQUIPMENT_OPEN
+  DURATION_OUTAGE
+  ENDING_DATE_OUTAGE
+  ENDING_TIME_OUTAGE
+  END_TIME_SERIES_BLOCKETTE
+  EQUIPMENT_HOUSING_OPEN
+  EQUIPMENT_MOVED
+  EVENT_IN_PROGRESS
+  GAP
+  GLITCHES_DETECTED
+  GPS_RECEIVER_OFF
+  GPS_RECEIVER_UNLOCKED
+  LONG_DATA_RECORD
+  MAIN_POWER_FAILURE
+  MAXIMUM_DATA_TIME
+  MEAN_AMPLITUDE
+  MISSION_CAPABILITY_STATISTIC
+  NEGATIVE_LEAP_SECOND_DETECTED
+  NUMBER_OF_CONSTANT_VALUES
+  NUMBER_OF_DATA_GAPS
+  NUMBER_OF_SAMPLE
+  OUTAGE_COMMENT
+  PERCENT_AUTHENTICATED_DATA_AVAILABLE
+  PERCENT_DATA_RECEIVED
+  PERCENT_UNAUTHENTICATED_DATA_AVAILABLE
+  PERCENTAGE_GEOPHYSICAL_CHANNEL_RECEIVED
+  POSITIVE_LEAP_SECOND_DETECTED
+  QUESTIONABLE_TIME_TAG
+  ROOT_MEAN_SQUARE_AMPLITUDE
+  SHORT_DATA_RECORD
+  SPIKE_DETECTED
+  START_TIME_SERIES_BLOCKETTE
+  STATION_EVENT_DETRIGGER
+  STATION_EVENT_TRIGGER
+  STATION_POWER_VOLTAGE
+  STATION_VOLUME_PARITY_ERROR_POSSIBLY_PRESENT
+  TELEMETRY_SYNCHRONIZATION_ERROR
+  TIMELY_DATA_AVAILABILITY
+  TIMING_CORRECTION_APPLIED
+  VAULT_DOOR_OPENED
+  ZEROED_DATA
+}
+
+ # Station AggregrateTypes enumeration
+ enum StationAggregateType {
+  LAG
+  MISSING
+  TIMELINESS
+  ENVIRONMENTAL_ISSUES
+}
+
+# SohContributor type definition used in UiStationSoh
+type SohContributor {
+  value: Float
+  valuePresent: Boolean!
+  statusSummary: SohStatusSummary!
+  contributing: Boolean!
+  type: String!
+}
+
+type SohMonitorValueAndStatus {
+  status: SohStatusSummary
+  value: Float
+  valuePresent: Boolean!
+  monitorType: SohMonitorType!
+  hasUnacknowledgedChanges: Boolean!
+  contributing: Boolean!
+  thresholdMarginal: Float
+  thresholdBad: Float
+  quietUntilMs: Float
+  quietDurationMs: Float
+}
+
+type ChannelSoh {
+  channelName: String!
+  channelSohStatus: SohStatusSummary
+  allSohMonitorValueAndStatuses: [SohMonitorValueAndStatus]!
+}
+
+type StationSohCapabilityStatus {
+  groupName: String!
+  stationName: String!
+  sohStationCapability: SohStatusSummary!
+}
+
+ # StationAggregate list for StationAggregrates (Missing, Lag, Timeliness and Environmental_Issue)
+type StationAggregate {
+  value: Float!
+  valuePresent: Boolean!
+  aggregateType: StationAggregateType!
+}
+
+# UiStationSoh created by the SSAM in the OSD and sent on Kafka topic
+type UiStationSoh {
+  id: String!
+  uuid: String
+  stationName: String
+  sohStatusSummary: SohStatusSummary
+  needsAcknowledgement: Boolean!
+  needsAttention: Boolean!
+  statusContributors: [SohContributor]!
+  stationGroups: [StationSohCapabilityStatus]!
+  channelSohs: [ChannelSoh]!
+  time: Float
+  allStationAggregates: [StationAggregate]!
+}
+
+input UiHistoricalSohInput {
+  stationName: String!
+  startTime: Float!
+  endTime: Float!
+  sohMonitorTypes: [SohMonitorType!]!
+}
+
+type LAG {
+  values: [Float]!
+  type: String!
+}
+type MISSING {
+  values: [Float]!
+  type: String!
+}
+type ValuesByType {
+  LAG: LAG
+  MISSING: MISSING
+}
+
+type MonitorValue {
+  channelName: String!
+  valuesByType: ValuesByType!
+}
+
+type UiHistoricalSoh {
+  stationName: String!
+  calculationTimes: [Float]!
+  monitorValues: [MonitorValue]!
+}
+
+type UiHistoricalAcei {
+  channelName: String!
+  monitorType: AceiType!
+  issues: [[[Float!]]]!
+}
+
+type StationSohIssue {
+  requiresAcknowledgement: Boolean
+  acknowledgedAt: String
+}
+
+type SohStatus {
+  stationAcquisitionSohStatus: StationAcquisitionSohStatus
+  environmentSohStatus: EnvironmentSohStatus
+}
+
+type StationAcquisitionSohStatus {
+  completeness: Float
+  completenessSummary: SohStatusSummary
+  lag: String
+  lagSummary: SohStatusSummary
+}
+
+type EnvironmentSohStatus {
+  countBySohType: CountBySoh
+  summaryBySohType: SummaryBySoh
+}
+
+type StationGroupSohStatus {
+  id: String!
+  stationGroupName: String!
+  time: Float!
+  groupCapabilityStatus: SohStatusSummary!
+  priority: Float!
+}
+
+type SaveStationGroupSohStatusResult {
+  id: String!
+  result: Boolean!
+}
+
+type CountBySoh {
+  CLOCK_LOCKED: Int
+  POSITIVE_LEAP_SECOND_DETECTED: Int
+  QUESTIONABLE_TIME_TAG: Int
+  START_TIME_SERIES_BLOCKETTE: Int
+  EVENT_IN_PROGRESS: Int
+  STATION_EVENT_DETRIGGER: Int
+  DIGITAL_FILTER_MAY_BE_CHARGING: Int
+  SPIKE_DETECTED: Int
+  GLITCHES_DETECTED: Int
+  STATION_EVENT_TRIGGER: Int
+  END_TIME_SERIES_BLOCKETTE: Int
+  SHORT_DATA_RECORD: Int
+  NEGATIVE_LEAP_SECOND_DETECTED: Int
+  LONG_DATA_RECORD: Int
+}
+
+type SummaryBySoh {
+  CLOCK_LOCKED: SohStatusSummary
+  POSITIVE_LEAP_SECOND_DETECTED: SohStatusSummary
+  QUESTIONABLE_TIME_TAG: SohStatusSummary
+  START_TIME_SERIES_BLOCKETTE: SohStatusSummary
+  EVENT_IN_PROGRESS: SohStatusSummary
+  STATION_EVENT_DETRIGGER: SohStatusSummary
+  DIGITAL_FILTER_MAY_BE_CHARGING: SohStatusSummary
+  SPIKE_DETECTED: SohStatusSummary
+  GLITCHES_DETECTED: SohStatusSummary
+  STATION_EVENT_TRIGGER: SohStatusSummary
+  END_TIME_SERIES_BLOCKETTE: SohStatusSummary
+  SHORT_DATA_RECORD: SohStatusSummary
+  NEGATIVE_LEAP_SECOND_DETECTED: SohStatusSummary
+  LONG_DATA_RECORD: SohStatusSummary
+}
+
+type UnacknowledgedSohStatusChange {
+  unacknowledgedChanges: [SohStatusChange]!
+}
+
+type SohStatusChange {
+  firstChangeTime: Float!
+  sohMonitorType: SohMonitorType!
+  changedChannel: String!
+}
+
+type StationAndStationGroupSoh {
+  stationGroups: [StationGroupSohStatus]!
+  stationSoh: [UiStationSoh]!
+  isUpdateResponse: Boolean!
+}
+
+type ChannelSohForStation {
+  channelSohs: [ChannelSoh]!
+  stationName: String
+  uuid: String
+}
+
+# ***************************************
+# Input
+# ***************************************
+
+enum SohStatusSummaryInput {
+  NONE
+  BAD
+  MARGINAL
+  GOOD
+}
+
+input UiStationSohInput {
+  stationName: String
+  sohStatusSummary: SohStatusSummaryInput
+  stationSohIssue: StationSohIssueInput
+  sohStatus: SohStatusInput
+  channelSohStatus: [ChannelSohStatusInput]
+}
+
+input UiHistoricalAceiInput {
+  stationName: String!
+  startTime: Float!
+  endTime: Float!
+  type: AceiType!
+}
+
+input StationSohIssueInput {
+  requiresAcknowledgement: Boolean
+  acknowledgedAt: String
+}
+
+input SohStatusInput {
+  stationAcquisitionSohStatus: StationAcquisitionSohStatusInput
+  environmentSohStatus: EnvironmentSohStatusInput
+}
+
+input StationAcquisitionSohStatusInput {
+  completeness: Float
+  completenessSummary: SohStatusSummaryInput
+  lag: String
+  lagSummary: SohStatusSummaryInput
+}
+
+input EnvironmentSohStatusInput {
+  countBySohType: CountBySohInput
+  summaryBySohType: SummaryBySohInput
+}
+
+input ChannelSohStatusInput {
+  channelName: String
+  sohStatus: SohStatusInput
+}
+
+input CountBySohInput {
+  CLOCK_LOCKED: Int
+  POSITIVE_LEAP_SECOND_DETECTED: Int
+  QUESTIONABLE_TIME_TAG: Int
+  START_TIME_SERIES_BLOCKETTE: Int
+  EVENT_IN_PROGRESS: Int
+  STATION_EVENT_DETRIGGER: Int
+  DIGITAL_FILTER_MAY_BE_CHARGING: Int
+  SPIKE_DETECTED: Int
+  GLITCHES_DETECTED: Int
+  STATION_EVENT_TRIGGER: Int
+  END_TIME_SERIES_BLOCKETTE: Int
+  SHORT_DATA_RECORD: Int
+  NEGATIVE_LEAP_SECOND_DETECTED: Int
+  LONG_DATA_RECORD: Int
+}
+
+input SummaryBySohInput {
+  CLOCK_LOCKED: SohStatusSummaryInput
+  POSITIVE_LEAP_SECOND_DETECTED: SohStatusSummaryInput
+  QUESTIONABLE_TIME_TAG: SohStatusSummaryInput
+  START_TIME_SERIES_BLOCKETTE: SohStatusSummaryInput
+  EVENT_IN_PROGRESS: SohStatusSummaryInput
+  STATION_EVENT_DETRIGGER: SohStatusSummaryInput
+  DIGITAL_FILTER_MAY_BE_CHARGING: SohStatusSummaryInput
+  SPIKE_DETECTED: SohStatusSummaryInput
+  GLITCHES_DETECTED: SohStatusSummaryInput
+  STATION_EVENT_TRIGGER: SohStatusSummaryInput
+  END_TIME_SERIES_BLOCKETTE: SohStatusSummaryInput
+  SHORT_DATA_RECORD: SohStatusSummaryInput
+  NEGATIVE_LEAP_SECOND_DETECTED: SohStatusSummaryInput
+  LONG_DATA_RECORD: SohStatusSummaryInput
+}
+
+input ChannelMonitorPairsInput {
+    channelName: String!
+    monitorType: SohMonitorType!
+}
+
+input ChannelMonitorInput {
+  stationName: String!
+  channelMonitorPairs: [ChannelMonitorPairsInput]!
+  quietDurationMs: Int
+  comment: String
+}
+
+# ***************************************
+# Queries/Mutations
+# ***************************************
+
+extend type Query {
+  # Returns the station and station Group SOH information by time range
+  stationAndStationGroupSoh: StationAndStationGroupSoh
+
+  # Returns historical soh lag and or missing data for the specified station name and time range
+  historicalSohByStation(queryInput: UiHistoricalSohInput): UiHistoricalSoh
+
+  # Returns historical acei data for the specified station name and time range
+  historicalAceiByStation(queryInput: UiHistoricalAceiInput): [UiHistoricalAcei]
+
+
+  # Returns channel SOH list for the specified station name
+  channelSohForStation(stationName: String): ChannelSohForStation
+}
+
+extend type Mutation {
+  # Acknowledges the SOH status for the provided station names
+  acknowledgeSohStatus(stationNames: [String]!, comment: String): Boolean
+
+  # Quiets channels and monitor pairs for a given station
+  quietChannelMonitorStatuses(channelMonitorsToQuiet: [ChannelMonitorInput]!): StationAndStationGroupSoh
+
+}
+
+extend type Subscription {
+  # SOH Status subscription - returns the latest updated SOH data
+  sohStatus: StationAndStationGroupSoh
+}

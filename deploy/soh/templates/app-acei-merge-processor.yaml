@@ -1,0 +1,108 @@
+{{- $appName := "acei-merge-processor" }}
+{{- $appValues := get .Values $appName }}
+{{/* Remove the Deployment if the app's restartDuringReconfig and the reconfigInProgress value are both true */}}
+{{- if not (and $appValues.restartDuringReconfig .Values.reconfigInProgress) }}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ $appName }}
+spec:
+  replicas: {{ $appValues.replicas }}
+  strategy:
+    type: {{ include "soh.deployment.strategy" (dict "Values" .Values "appValues" $appValues) }}
+  selector:
+    matchLabels:
+      app: {{ $appName }}
+  template:
+    metadata:
+      labels:
+        app: {{ $appName }}
+    spec:
+      serviceAccount: gms-soh-elevated
+      initContainers:
+        - name: check-data-load
+          image: {{ include "soh.deployment.image" (dict "Values" .Values "appValues" (dict "imageName" "gms-common/centos")) }}
+          imagePullPolicy: Always
+          command: ["/bin/bash", "-c"]
+          args: ["http_code=$(curl -s -o /dev/null -I -w \"%{http_code}\" --insecure http://config-loader:8080/initialized); echo \"http_code: $http_code\"; while [[ $http_code != \"200\" ]]; do echo \"http_code: $http_code - data is NOT loaded\"; echo \"Curling config-loader to check initialized status\"; http_code=$(curl -s -o /dev/null -I -w \"%{http_code}\" --insecure http://config-loader:8080/initialized); done; echo \"http_code: $http_code - Data is loaded\""]
+      containers:
+        - name: {{ $appName }}
+          image: {{ include "soh.deployment.image" (dict "Values" .Values "appValues" $appValues) }}
+          imagePullPolicy: {{ .Values.imagePullPolicy }}
+          env:
+            - name: ETCD_GMS_USER
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key:  username
+            - name: ETCD_GMS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: "etcd-gms-user"
+                  key: password
+            - name: GMS_CONFIG_SQL_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: username
+            - name: GMS_CONFIG_SQL_PASSWORD 
+              valueFrom:
+                secretKeyRef:
+                  name: "postgres-soh-application"
+                  key: password
+            {{- include "soh.app.deployment.env" (dict "appName" $appName "appEnv" $appValues.env "globalEnv" .Values.env "context" $) }}
+          ports:
+            - containerPort: 8080
+{{- if or (and $appValues.cpu_requests $appValues.cpu_limit) (and $appValues.memory_requests $appValues.memory_limit)}}
+          resources:
+            requests:
+{{- if ($appValues.cpu_requests)}}
+              cpu: {{ $appValues.cpu_requests }}
+{{- end }}
+{{- if ($appValues.memory_requests)}}
+              memory: {{ $appValues.memory_requests }}
+{{- end }}
+            limits:
+{{- if ($appValues.cpu_limit)}}
+              cpu: {{ $appValues.cpu_limit }}
+{{- end }}
+{{- if ($appValues.memory_limit)}}
+              memory: {{ $appValues.memory_limit }}
+{{- end }}
+{{- end }}
+{{- end }}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ $appName }}
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
+  selector:
+    app: {{ $appName }}
+---
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: {{ $appName }}
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+    - secretName: ingress-default-cert
+      hosts:
+        - "{{ $appName }}-{{ .Release.Name }}.{{ .Values.baseDomain }}"
+  rules:
+  - host: "{{ $appName }}-{{ .Release.Name }}.{{ .Values.baseDomain }}"
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: {{ $appName }}
+          servicePort: 8080

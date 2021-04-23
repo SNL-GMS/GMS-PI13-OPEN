@@ -1,0 +1,20 @@
+ARG MINICONDA_URL=https://repo.anaconda.com
+ARG PYPI_URL=https://files.pythonhosted.org
+
+ENV MINICONDA_VERSION=4.7.12.1 \
+    MINICONDA_INSTALL_DIR=/usr/local/miniconda \
+    PIP_INDEX_URL=$PYPI_URL
+ENV PATH=$MINICONDA_INSTALL_DIR/bin:$PATH
+
+COPY common-src/condarc /root/.condarc
+COPY common-src/pydistutils.cfg /root/.pydistutils.cfg
+COPY --from=builder $MINICONDA_INSTALL_DIR $MINICONDA_INSTALL_DIR
+
+# configure pip url and install miniconda
+RUN set -ex && \
+    sed -i -e "s~#MINICONDA_URL#~$MINICONDA_URL~g" /root/.condarc && \
+    sed -i -e "s~#PYPI_URL#~$PYPI_URL~g" /root/.pydistutils.cfg && \
+    ln -s $MINICONDA_INSTALL_DIR/bin/conda /usr/bin/conda && \
+    ln -s $MINICONDA_INSTALL_DIR/bin/python3 /usr/local/bin/python3 && \
+    ln -s $MINICONDA_INSTALL_DIR/bin/python3 /usr/local/bin/python && \
+    conda init bash

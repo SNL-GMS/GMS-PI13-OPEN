@@ -1,0 +1,21 @@
+apply plugin: 'application'
+mainClassName = 'gms.shared.utilities.standardtestdataset.qcmaskconverter.Application'
+
+run {
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+}
+
+dependencies {
+    //GMS Dependencies
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':stationref-file-reader-utility')
+
+    //Third Party Dependencies
+    implementation 'args4j:args4j'
+    implementation 'com.google.guava:guava'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+}
+

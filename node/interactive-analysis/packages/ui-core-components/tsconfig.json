@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "./lib",
+    "typeRoots": ["@types", "./@types", "./node_modules/@types", "../../node_modules/@types"],
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "paths": {
+      "~css": ["src/css"],
+      "~css/": ["src/css"],
+      "~css/*": ["src/css/*"]
+    }
+  },
+  "include": ["src/ts/**/*"]
+}

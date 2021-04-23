@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sound Sample Component matches snapshot 1`] = `
+<Component
+  soundToPlay="test.mp3"
+>
+  <audio
+    autoPlay={false}
+    src="test.mp3"
+  />
+</Component>
+`;
+
+exports[`Sound Sample Component validates 'None' sound 1`] = `
+<Component
+  soundToPlay="None"
+/>
+`;

@@ -1,0 +1,30 @@
+plugins {
+    id "application"
+    id "com.palantir.docker"
+}
+
+mainClassName = "gms.core.dataacquisition.AceiMergeService"
+
+dependencies {
+    // Third-party dependencies.
+    implementation "com.google.guava:guava"
+    implementation 'org.apache.commons:commons-math3'
+    implementation "net.jodah:failsafe"
+
+    // Google AutoValue
+    implementation "com.google.auto.value:auto-value-annotations"
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    implementation project(":frameworks-osd-api")
+    implementation project(":frameworks-control")
+    implementation project(":frameworks-osd-commonobjects")
+    implementation project(":frameworks-service-interface-base")
+    implementation project(":frameworks-soh-repository")
+    implementation project(":frameworks-client-generator")
+    implementation project(":frameworks-utilities")
+
+    implementation 'org.apache.kafka:kafka-clients'
+
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor.kafka:reactor-kafka'
+}

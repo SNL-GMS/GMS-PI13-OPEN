@@ -1,0 +1,42 @@
+$bp3-intent-primary: $gms-input-highlight;
+$bp3-intent-success: $gms-good;
+$bp3-intent-warning: $gms-warning;
+$bp3-intent-danger: $gms-strong-warning;
+
+$pt-app-background-color: $gms-background;
+$pt-dark-app-background-color: $gms-background;
+$pt-text-color: $gms-main;
+$pt-dark-text-color: $gms-main;
+
+$pt-text-color-muted: $gms-prominent;
+$pt-dark-text-color-muted: $gms-prominent;
+
+$pt-text-color-disabled: $gms-soft;
+$pt-dark-text-color-disabled: $gms-soft;
+
+$pt-heading-color: $gms-main;
+$pt-dark-heading-color: $gms-main;
+
+// $pt-text-selection-color: $gms-main;
+$pt-icon-color: $gms-prominent;
+$pt-dark-icon-color: $gms-prominent;
+
+$pt-icon-color-hover: $gms-main;
+$pt-dark-icon-color-hover: $gms-main;
+
+$pt-icon-color-disabled: $gms-soft;
+$pt-dark-icon-color-disabled: $gms-soft;
+
+$pt-icon-color-selected: $gms-main;
+$pt-dark-icon-color-selected: $gms-main;
+
+$pt-divider-black: $gms-prominent;
+$pt-dark-divider-black: $gms-prominent;
+$pt-dark-divider-white: $gms-prominent;
+
+$pt-code-text-color: $gms-main;
+$pt-dark-code-text-color: $gms-main;
+
+$pt-code-background-color: $gms-prominent-background;
+
+@import '@blueprintjs/core/src/blueprint.scss';

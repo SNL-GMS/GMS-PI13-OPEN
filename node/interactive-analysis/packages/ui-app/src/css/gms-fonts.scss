@@ -1,0 +1,10 @@
+$gms-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$gms-mono: 'Source Code Pro', monospace;
+
+// the :export directive tells webpack to handle these appropriately when imported
+// i.e. `import * as variables from 'variables.scss'`;
+// then you can access `gms-main` by variables['gms-main']
+:export {
+  gmsSans: $gms-sans;
+  gmsMono: $gms-mono;
+}

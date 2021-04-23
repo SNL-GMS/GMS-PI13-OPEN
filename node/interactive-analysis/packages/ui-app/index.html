@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <%= htmlWebpackPlugin.options.cesiumScript %>
+  <script>
+    try {
+      if (window.require) {
+        window.electron = require('electron');
+      } else {
+        window.electron = undefined;
+      }
+    } catch (error) {
+      window.electron = undefined;
+    }
+  </script>
+  <style>
+    html,
+    body {
+      margin: 0px;
+      height: 100%;
+    }
+
+    #app {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body class="bp3-dark">
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="app"></div>
+</body>
+
+</html>

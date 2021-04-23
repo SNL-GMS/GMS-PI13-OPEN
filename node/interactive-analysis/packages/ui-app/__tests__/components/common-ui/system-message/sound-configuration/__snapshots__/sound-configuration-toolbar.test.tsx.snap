@@ -1,0 +1,244 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sound Configuration Toolbar matches snapshot 1`] = `
+<Component
+  onChanged={[MockFunction]}
+  selectedOptions={
+    Object {
+      "selectedCategory": "All categories",
+      "selectedSeverity": "All severities",
+      "selectedSubcategory": "All subcategories",
+    }
+  }
+  systemMessageDefinitions={
+    Array [
+      Object {
+        "systemMessageCategory": "SOH",
+        "systemMessageSeverity": "INFO",
+        "systemMessageSubCategory": "USER",
+        "systemMessageType": "CHANNEL_MONITOR_TYPE_QUIET_PERIOD_CANCELED",
+        "template": "Station %s Channel %s %s quiet period canceled by user %s",
+      },
+      Object {
+        "systemMessageCategory": "SOH",
+        "systemMessageSeverity": "INFO",
+        "systemMessageSubCategory": "USER",
+        "systemMessageType": "CHANNEL_MONITOR_TYPE_STATUS_CHANGE_ACKNOWLEDGED",
+        "template": "Station %s Channel %s %s status change acknowledged by user %s|Station %s Channel %s %s status change acknowledged by user %s with comment '%s'",
+      },
+    ]
+  }
+>
+  <div
+    className="bp3-html-select sound-configuration-toolbar"
+  >
+    <div
+      className="sound-configuration-toolbar__dropdown"
+    >
+      <DropDown
+        dropDownItems={
+          Object {
+            "INFO": "INFO",
+            "default": "All severities",
+          }
+        }
+        onMaybeValue={[Function]}
+        title="Filter by severity"
+        value="All severities"
+      >
+        <HTMLSelect
+          onChange={[Function]}
+          title="Filter by severity"
+          value="All severities"
+        >
+          <div
+            className="bp3-html-select"
+          >
+            <select
+              multiple={false}
+              onChange={[Function]}
+              title="Filter by severity"
+              value="All severities"
+            >
+              <option
+                key="INFO"
+                value="INFO"
+              >
+                INFO
+              </option>
+              <option
+                key="default"
+                value="All severities"
+              >
+                All severities
+              </option>
+            </select>
+            <Blueprint3.Icon
+              icon="double-caret-vertical"
+            >
+              <span
+                className="bp3-icon bp3-icon-double-caret-vertical"
+                icon="double-caret-vertical"
+              >
+                <svg
+                  data-icon="double-caret-vertical"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-caret-vertical
+                  </desc>
+                  <path
+                    d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+          </div>
+        </HTMLSelect>
+      </DropDown>
+    </div>
+    <div
+      className="sound-configuration-toolbar__dropdown"
+    >
+      <DropDown
+        dropDownItems={
+          Object {
+            "SOH": "SOH",
+            "default": "All categories",
+          }
+        }
+        onMaybeValue={[Function]}
+        title="Filter by category"
+        value="All categories"
+      >
+        <HTMLSelect
+          onChange={[Function]}
+          title="Filter by category"
+          value="All categories"
+        >
+          <div
+            className="bp3-html-select"
+          >
+            <select
+              multiple={false}
+              onChange={[Function]}
+              title="Filter by category"
+              value="All categories"
+            >
+              <option
+                key="SOH"
+                value="SOH"
+              >
+                SOH
+              </option>
+              <option
+                key="default"
+                value="All categories"
+              >
+                All categories
+              </option>
+            </select>
+            <Blueprint3.Icon
+              icon="double-caret-vertical"
+            >
+              <span
+                className="bp3-icon bp3-icon-double-caret-vertical"
+                icon="double-caret-vertical"
+              >
+                <svg
+                  data-icon="double-caret-vertical"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-caret-vertical
+                  </desc>
+                  <path
+                    d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+          </div>
+        </HTMLSelect>
+      </DropDown>
+    </div>
+    <div
+      className="sound-configuration-toolbar__dropdown"
+    >
+      <DropDown
+        dropDownItems={
+          Object {
+            "USER": "USER",
+            "default": "All subcategories",
+          }
+        }
+        onMaybeValue={[Function]}
+        title="Filter by subcategory"
+        value="All subcategories"
+      >
+        <HTMLSelect
+          onChange={[Function]}
+          title="Filter by subcategory"
+          value="All subcategories"
+        >
+          <div
+            className="bp3-html-select"
+          >
+            <select
+              multiple={false}
+              onChange={[Function]}
+              title="Filter by subcategory"
+              value="All subcategories"
+            >
+              <option
+                key="USER"
+                value="USER"
+              >
+                USER
+              </option>
+              <option
+                key="default"
+                value="All subcategories"
+              >
+                All subcategories
+              </option>
+            </select>
+            <Blueprint3.Icon
+              icon="double-caret-vertical"
+            >
+              <span
+                className="bp3-icon bp3-icon-double-caret-vertical"
+                icon="double-caret-vertical"
+              >
+                <svg
+                  data-icon="double-caret-vertical"
+                  height={16}
+                  viewBox="0 0 16 16"
+                  width={16}
+                >
+                  <desc>
+                    double-caret-vertical
+                  </desc>
+                  <path
+                    d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                    fillRule="evenodd"
+                    key="0"
+                  />
+                </svg>
+              </span>
+            </Blueprint3.Icon>
+          </div>
+        </HTMLSelect>
+      </DropDown>
+    </div>
+  </div>
+</Component>
+`;

@@ -1,0 +1,12 @@
+I47L1  LWS       2005312     2854  2286324 n       0.0000   -1.0    0.0 Wind_speed                                         20090116 12:00:00
+I47L1  LWD       2005312     2853  2286324 n       0.0000   -1.0    0.0 Wind_Direction                                     20090116 12:00:00
+I47L1  LKO       2005312     2852  2286324 n       0.0000   -1.0    0.0 External_temperature                               20090116 12:00:00
+I47L1  LDA       2005312     2851  2286324 n       0.0000   -1.0    0.0 Absolute_Pressure                                  20090116 12:00:00
+I47L1  BDF       2005312     2843  2286324 n       0.0000   -1.0    0.0 0.01_Hz_to_5_Hz_infrasound_micropressure           20090116 12:00:00
+I47L2  BDF       2005312     2844  2286324 n       0.0000   -1.0    0.0 0.01_Hz_to_5_Hz_infrasound_micropressure           20090116 12:00:00
+I47L3  BDF       2005312     2845  2286324 n       0.0000   -1.0    0.0 0.01_Hz_to_5_Hz_infrasound_micropressure           20090116 12:00:00
+I47L4  BDF       2005312     2846  2286324 n       0.0000   -1.0    0.0 0.01_Hz_to_5_Hz_infrasound_micropressure           20090116 12:00:00
+I47L5  BDF       2005312     2847  2286324 n       0.0000   -1.0    0.0 0.01_Hz_to_5_Hz_infrasound_micropressure           20090116 12:00:00
+I47L6  BDF       2005312     2848  2286324 n       0.0000   -1.0    0.0 0.01_Hz_to_5_Hz_infrasound_micropressure           20090116 12:00:00
+I47L7  BDF       2005312     2849  2286324 n       0.0000   -1.0    0.0 0.01_Hz_to_5_Hz_infrasound_micropressure           20090116 12:00:00
+I47L8  BDF       2005312     2850  2286324 n       0.0000   -1.0    0.0 0.01_Hz_to_5_Hz_infrasound_micropressure           20090116 12:00:00

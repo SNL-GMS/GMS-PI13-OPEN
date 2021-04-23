@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sds by station tests get signal detections for ASAR 1`] = `
+Array [
+  "1c4a8d11-178a-3c5d-a902-ac599a155621",
+]
+`;
+
+exports[`sds by station tests get signal detections for ASAR 2`] = `
+Array [
+  "id",
+  "monitoringOrganization",
+  "stationId",
+  "signalDetectionHypotheses",
+  "creationInfoId",
+]
+`;
+
+exports[`sds by station tests get signal detections for ASAR 3`] = `
+Array [
+  "id",
+  "monitoringOrganization",
+  "stationId",
+  "signalDetectionHypotheses",
+  "creationInfoId",
+]
+`;
+
+exports[`sds by station tests get signal detections for ASAR 4`] = `
+Array [
+  "id",
+  "monitoringOrganization",
+  "stationId",
+  "signalDetectionHypotheses",
+  "creationInfoId",
+]
+`;
+
+exports[`sds by station tests get signal detections for ASAR 5`] = `
+Array [
+  "id",
+  "monitoringOrganization",
+  "stationId",
+  "signalDetectionHypotheses",
+  "creationInfoId",
+]
+`;

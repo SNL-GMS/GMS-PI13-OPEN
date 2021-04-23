@@ -1,0 +1,11 @@
+plugins {
+    id "java-library"
+}
+
+dependencies {
+    api project(":frameworks-shared-objects")
+    implementation 'com.ibm.etcd:etcd-java'
+    implementation 'org.apache.commons:commons-text'
+    implementation 'org.apache.commons:commons-lang3'
+    implementation 'net.jodah:failsafe'
+}

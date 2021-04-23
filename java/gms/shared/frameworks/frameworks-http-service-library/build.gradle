@@ -1,0 +1,18 @@
+apply plugin: "java-library"
+
+dependencies {
+    api project(":frameworks-utilities")
+    api project(":frameworks-osd-commonobjects")
+    implementation project(':frameworks-shared-objects')
+
+    // Apache Commons Library
+    implementation 'org.apache.commons:commons-lang3'
+
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+
+    // reactor and reactor netty dependencies
+    implementation 'io.projectreactor:reactor-core'
+    implementation 'io.projectreactor.netty:reactor-netty'
+}

@@ -1,0 +1,7 @@
+$core-sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$core-mono: 'Source Code Pro', monospace;
+
+:root {
+  --core-sans: #{$core-sans};
+  --core-mono: #{$core-mono};
+}

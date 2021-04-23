@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Core drop down Renders 1`] = `
+<div
+  className="filterable-option-list"
+>
+  <input
+    autoFocus={true}
+    className="filterable-option-list__search"
+    disabled={false}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Search input"
+    style={
+      Object {
+        "marginLeft": "0px",
+        "width": "120px",
+      }
+    }
+    tabIndex={0}
+    type="search"
+    value="o"
+  />
+  <div
+    className="fitlerable-option-list__list"
+    style={
+      Object {
+        "marginLeft": "0px",
+        "width": "120px",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Core drop down accepts enter key 1`] = `
+Object {
+  "currentFilter": "delta",
+  "currentlySelected": "delta",
+}
+`;

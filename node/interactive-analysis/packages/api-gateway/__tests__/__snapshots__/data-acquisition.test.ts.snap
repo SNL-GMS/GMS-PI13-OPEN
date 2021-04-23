@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Transferred Files Content query should match snapshot 1`] = `
+Array [
+  Object {
+    "channelNames": Array [
+      "CMAR.CM01.SHZ",
+    ],
+    "duration": "4",
+    "endTime": "2018-12-19T22:36:15.309924Z",
+    "location": "location",
+    "priority": "testPriority",
+    "startTime": "2018-12-19T22:36:11.309924Z",
+    "stationName": "CMAR",
+  },
+  Object {
+    "channelNames": Array [
+      "I56US.I56H4.BDF",
+    ],
+    "duration": "5",
+    "endTime": "2018-12-19T22:36:11.309924Z",
+    "location": "location",
+    "priority": "testPriority",
+    "startTime": "2018-12-19T22:36:06.309924Z",
+    "stationName": "I56US",
+  },
+  Object {
+    "channelNames": Array [
+      "KVAR.KV01.SHZ",
+    ],
+    "duration": "5",
+    "endTime": "2018-12-19T22:36:11.309924Z",
+    "location": "location",
+    "priority": "testPriority",
+    "startTime": "2018-12-19T22:36:06.309924Z",
+    "stationName": "KVAR",
+  },
+  Object {
+    "channelNames": Array [
+      "MKAR.MK01.SHZ",
+    ],
+    "duration": "5",
+    "endTime": "2018-12-19T22:36:11.309924Z",
+    "location": "location",
+    "priority": "testPriority",
+    "startTime": "2018-12-19T22:36:06.309924Z",
+    "stationName": "MKAR",
+  },
+  Object {
+    "channelNames": Array [
+      "NOA.NO01.SHZ",
+    ],
+    "duration": "4",
+    "endTime": "2018-12-19T22:36:15.309924Z",
+    "location": "location",
+    "priority": "testPriority",
+    "startTime": "2018-12-19T22:36:11.309924Z",
+    "stationName": "NOA",
+  },
+  Object {
+    "channelNames": Array [
+      "NOA.NO01.SHZ",
+    ],
+    "duration": "4",
+    "endTime": "2018-12-19T22:36:15.309924Z",
+    "location": "location",
+    "priority": "testPriority",
+    "startTime": "2018-12-19T22:36:11.309924Z",
+    "stationName": "NOA",
+  },
+  Object {
+    "channelNames": Array [
+      "PDAR.PD04.SHZ",
+    ],
+    "duration": "4.01",
+    "endTime": "2018-12-19T11:36:15.319925Z",
+    "location": "location",
+    "priority": "testPriority",
+    "startTime": "2018-12-19T11:36:11.309924Z",
+    "stationName": "PDAR",
+  },
+  Object {
+    "channelNames": Array [
+      "TORD.TD01.SHZ",
+    ],
+    "duration": "5",
+    "endTime": "2018-12-19T22:36:11.309924Z",
+    "location": "location",
+    "priority": "testPriority",
+    "startTime": "2018-12-19T22:36:06.309924Z",
+    "stationName": "TORD",
+  },
+]
+`;

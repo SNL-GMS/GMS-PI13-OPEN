@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomResizeHandle will match the snapshot 1`] = `
+<ResizeHandle
+  handleMouseMove={[MockFunction]}
+  onResizeEnd={[MockFunction]}
+  orientation="BOTTOM"
+/>
+`;

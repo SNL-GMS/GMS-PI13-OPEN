@@ -1,0 +1,131 @@
+body.bp3-dark {
+  background-color: $gms-background;
+}
+
+.bp3-navbar {
+  padding: 0;
+}
+
+.bp3-control input:focus ~ .bp3-control-indicator {
+  outline: none;
+  outline-offset: 0px;
+}
+.bp3-control {
+  margin-bottom: 0px;
+}
+.bp3-control:not(.checkbox-horizontal) + .bp3-control:not(.checkbox-horizontal) {
+  margin-top: 10px;
+}
+.bp3-control.checkbox-horizontal + .bp3-control.checkbox-horizontal {
+  margin-left: 8px;
+}
+.bp3-dark .bp3-control.bp3-switch .bp3-control-indicator {
+  background: $gms-popover-background;
+  margin-left: 4px;
+}
+.bp3-dark .bp3-control.bp3-switch .bp3-control-indicator::before {
+  background: $gms-main;
+}
+.bp3-dark .bp3-control.bp3-switch:hover .bp3-control-indicator {
+  background: $gms-soft;
+}
+
+.bp3-dark .bp3-button:not([class*='bp3-intent-']) {
+  background: $gms-button;
+}
+.bp3-dark .bp3-button:not([class*='bp3-intent-']):hover {
+  background: $gms-button-hover;
+}
+.bp3-dark .bp3-button.bp3-minimal {
+  background: none;
+  background-color: none;
+}
+
+.bp3-dark .bp3-popover .bp3-popover-content,
+.bp3-popover.bp3-dark .bp3-popover-content {
+  background-color: $gms-popover-background;
+  color: $gms-prominent;
+}
+
+.bp3-dialog {
+  padding-bottom: 0.5rem;
+}
+.bp3-dark .bp3-dialog {
+  background-color: $gms-dialog-background;
+}
+
+.bp3-dialog-header {
+  box-shadow: none;
+}
+
+.bp3-dark .bp3-dialog-header {
+  box-shadow: none;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: $gms-scrollbar-background;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: $gms-scrollbar;
+  border-radius: 2px;
+}
+
+:focus {
+  outline: none;
+  outline-offset: 0px;
+}
+
+// override some focus styles from blueprint that dont look good.
+.bp3-control input:focus ~ .bp3-control-indicator {
+  outline: none;
+  outline-offset: 0px;
+}
+
+.max {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.duo-grid-left {
+  position: absolute;
+  top: 22%;
+  right: 0%;
+  left: 1.5%;
+  width: 48%;
+  height: 18%;
+}
+
+.duo-grid-right {
+  position: absolute;
+  top: 22%;
+  right: 0%;
+  left: 52%;
+  width: 48%;
+  height: 18%;
+}
+
+.bp3-menu {
+  min-width: auto !important;
+}
+
+.gms-disconnected {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  z-index: 100;
+  background-color: rgba($gms-background, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

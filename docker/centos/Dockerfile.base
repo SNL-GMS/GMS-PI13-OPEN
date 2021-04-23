@@ -1,0 +1,9 @@
+# Docker Build Arguments
+ARG FROM_IMAGE
+FROM ${FROM_IMAGE}
+
+# CentOS Base Template Begin
+# CentOS Base Template End
+
+CMD ["/bin/bash"]
+

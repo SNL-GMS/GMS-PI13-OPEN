@@ -1,0 +1,2295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Soh Component should match snapshot with basic props 1`] = `
+<Component
+  acknowledgeSohStatus={[MockFunction]}
+  selectedAceiType="BEGINNING_TIME_OUTAGE"
+  selectedStationIds={Array []}
+  setSelectedAceiType={[MockFunction]}
+  setSelectedStationIds={[MockFunction]}
+  sohStatus={
+    Object {
+      "loading": false,
+      "stationAndStationGroupSoh": Object {
+        "isUpdateResponse": false,
+        "stationGroups": Array [
+          Object {
+            "groupCapabilityStatus": "BAD",
+            "id": "1",
+            "priority": 1,
+            "stationGroupName": "Group 4",
+            "time": 0,
+          },
+        ],
+        "stationSoh": Array [
+          Object {
+            "allStationAggregates": Array [],
+            "channelSohs": Array [],
+            "id": "1",
+            "needsAcknowledgement": true,
+            "needsAttention": true,
+            "sohStatusSummary": "GOOD",
+            "stationGroups": Array [
+              Object {
+                "groupName": "Group 4",
+                "sohStationCapability": "GOOD",
+                "stationName": "H05N",
+              },
+            ],
+            "stationName": "H05N",
+            "statusContributors": Array [
+              Object {
+                "contributing": true,
+                "statusSummary": "GOOD",
+                "type": "LAG",
+                "value": 5,
+                "valuePresent": true,
+              },
+            ],
+            "time": 2,
+            "uuid": "1",
+          },
+          Object {
+            "allStationAggregates": Array [],
+            "channelSohs": Array [],
+            "id": "2",
+            "needsAcknowledgement": true,
+            "needsAttention": true,
+            "sohStatusSummary": "MARGINAL",
+            "stationGroups": Array [
+              Object {
+                "groupName": "Group 4",
+                "sohStationCapability": "GOOD",
+                "stationName": "H06N",
+              },
+            ],
+            "stationName": "H06N",
+            "statusContributors": Array [
+              Object {
+                "contributing": true,
+                "statusSummary": "GOOD",
+                "type": "LAG",
+                "value": 5,
+                "valuePresent": true,
+              },
+            ],
+            "time": 2,
+            "uuid": "2",
+          },
+          Object {
+            "allStationAggregates": Array [],
+            "channelSohs": Array [],
+            "id": "3",
+            "needsAcknowledgement": true,
+            "needsAttention": true,
+            "sohStatusSummary": "BAD",
+            "stationGroups": Array [
+              Object {
+                "groupName": "Group 4",
+                "sohStationCapability": "GOOD",
+                "stationName": "H07N",
+              },
+            ],
+            "stationName": "H07N",
+            "statusContributors": Array [
+              Object {
+                "contributing": true,
+                "statusSummary": "GOOD",
+                "type": "LAG",
+                "value": 5,
+                "valuePresent": true,
+              },
+            ],
+            "time": 2,
+            "uuid": "3",
+          },
+          Object {
+            "allStationAggregates": Array [],
+            "channelSohs": Array [],
+            "id": "4",
+            "needsAcknowledgement": true,
+            "needsAttention": true,
+            "sohStatusSummary": "GOOD",
+            "stationGroups": Array [
+              Object {
+                "groupName": "Group 4",
+                "sohStationCapability": "MARGINAL",
+                "stationName": "H08N",
+              },
+            ],
+            "stationName": "H08N",
+            "statusContributors": Array [
+              Object {
+                "contributing": true,
+                "statusSummary": "GOOD",
+                "type": "LAG",
+                "value": 5,
+                "valuePresent": true,
+              },
+            ],
+            "time": 2,
+            "uuid": "4",
+          },
+        ],
+      },
+    }
+  }
+  uiConfigurationQuery={
+    Object {
+      "loading": false,
+      "uiAnalystConfiguration": Object {
+        "acknowledgementQuietDuration": 10,
+        "reprocessingPeriod": 10,
+      },
+    }
+  }
+>
+  <SohOverviewComponent
+    acknowledgeSohStatus={[MockFunction]}
+    selectedAceiType="BEGINNING_TIME_OUTAGE"
+    selectedStationIds={Array []}
+    setSelectedAceiType={[MockFunction]}
+    setSelectedStationIds={[MockFunction]}
+    sohStatus={
+      Object {
+        "loading": false,
+        "stationAndStationGroupSoh": Object {
+          "isUpdateResponse": false,
+          "stationGroups": Array [
+            Object {
+              "groupCapabilityStatus": "BAD",
+              "id": "1",
+              "priority": 1,
+              "stationGroupName": "Group 4",
+              "time": 0,
+            },
+          ],
+          "stationSoh": Array [
+            Object {
+              "allStationAggregates": Array [],
+              "channelSohs": Array [],
+              "id": "1",
+              "needsAcknowledgement": true,
+              "needsAttention": true,
+              "sohStatusSummary": "GOOD",
+              "stationGroups": Array [
+                Object {
+                  "groupName": "Group 4",
+                  "sohStationCapability": "GOOD",
+                  "stationName": "H05N",
+                },
+              ],
+              "stationName": "H05N",
+              "statusContributors": Array [
+                Object {
+                  "contributing": true,
+                  "statusSummary": "GOOD",
+                  "type": "LAG",
+                  "value": 5,
+                  "valuePresent": true,
+                },
+              ],
+              "time": 2,
+              "uuid": "1",
+            },
+            Object {
+              "allStationAggregates": Array [],
+              "channelSohs": Array [],
+              "id": "2",
+              "needsAcknowledgement": true,
+              "needsAttention": true,
+              "sohStatusSummary": "MARGINAL",
+              "stationGroups": Array [
+                Object {
+                  "groupName": "Group 4",
+                  "sohStationCapability": "GOOD",
+                  "stationName": "H06N",
+                },
+              ],
+              "stationName": "H06N",
+              "statusContributors": Array [
+                Object {
+                  "contributing": true,
+                  "statusSummary": "GOOD",
+                  "type": "LAG",
+                  "value": 5,
+                  "valuePresent": true,
+                },
+              ],
+              "time": 2,
+              "uuid": "2",
+            },
+            Object {
+              "allStationAggregates": Array [],
+              "channelSohs": Array [],
+              "id": "3",
+              "needsAcknowledgement": true,
+              "needsAttention": true,
+              "sohStatusSummary": "BAD",
+              "stationGroups": Array [
+                Object {
+                  "groupName": "Group 4",
+                  "sohStationCapability": "GOOD",
+                  "stationName": "H07N",
+                },
+              ],
+              "stationName": "H07N",
+              "statusContributors": Array [
+                Object {
+                  "contributing": true,
+                  "statusSummary": "GOOD",
+                  "type": "LAG",
+                  "value": 5,
+                  "valuePresent": true,
+                },
+              ],
+              "time": 2,
+              "uuid": "3",
+            },
+            Object {
+              "allStationAggregates": Array [],
+              "channelSohs": Array [],
+              "id": "4",
+              "needsAcknowledgement": true,
+              "needsAttention": true,
+              "sohStatusSummary": "GOOD",
+              "stationGroups": Array [
+                Object {
+                  "groupName": "Group 4",
+                  "sohStationCapability": "MARGINAL",
+                  "stationName": "H08N",
+                },
+              ],
+              "stationName": "H08N",
+              "statusContributors": Array [
+                Object {
+                  "contributing": true,
+                  "statusSummary": "GOOD",
+                  "type": "LAG",
+                  "value": 5,
+                  "valuePresent": true,
+                },
+              ],
+              "time": 2,
+              "uuid": "4",
+            },
+          ],
+        },
+      }
+    }
+    uiConfigurationQuery={
+      Object {
+        "loading": false,
+        "uiAnalystConfiguration": Object {
+          "acknowledgementQuietDuration": 10,
+          "reprocessingPeriod": 10,
+        },
+      }
+    }
+  >
+    <Component
+      className="soh-overview soh-overview-display"
+    >
+      <div
+        className="base-display soh-overview soh-overview-display"
+      >
+        <Component>
+          <div
+            className="soh-overview-toolbar__container"
+            data-cy="soh-overview-toolbar"
+          >
+            <Component
+              displayTimeWarning={false}
+              leftItems={
+                Array [
+                  Object {
+                    "cyData": "filter-by-station-group-soh",
+                    "enumOfKeys": Array [
+                      "Group 4",
+                    ],
+                    "label": "Filter by Station Group",
+                    "menuLabel": "Filter by Station Group",
+                    "onChange": [Function],
+                    "rank": 2,
+                    "tooltip": "Set which station groups appear",
+                    "type": "CheckboxList",
+                    "values": Map {
+                      "Group 4" => true,
+                    },
+                    "widthPx": 200,
+                  },
+                ]
+              }
+              rightItems={Array []}
+              setStatusesToDisplay={[Function]}
+              statusFilterText="Filter by Status"
+              statusFilterTooltip="Set which statuses appear in the lower bin"
+              statusesToDisplay={
+                Map {
+                  "GOOD" => true,
+                  "BAD" => true,
+                  "MARGINAL" => true,
+                  "NONE" => true,
+                }
+              }
+              toggleHighlight={[Function]}
+              updateIntervalSecs={10}
+              updatedAt={2}
+            >
+              <Component
+                items={
+                  Array [
+                    Object {
+                      "hasIssue": false,
+                      "label": "Last Updated",
+                      "rank": 1,
+                      "style": Object {
+                        "marginLeft": "1em",
+                      },
+                      "tooltip": "Most recent SOH data received",
+                      "tooltipForIssue": "SOH data has not updated in over ",
+                      "type": "LabelValue",
+                      "value": "1970/01/01 00:00:02",
+                      "widthPx": 400,
+                    },
+                    Object {
+                      "label": "Update Interval",
+                      "rank": 2,
+                      "tooltip": "Interval at which SOH data is processed",
+                      "type": "LabelValue",
+                      "value": "10 seconds",
+                      "widthPx": 400,
+                    },
+                  ]
+                }
+                itemsLeft={
+                  Array [
+                    Object {
+                      "colors": Map {
+                        "GOOD" => "#fff",
+                        "MARGINAL" => "#fff",
+                        "BAD" => "#fff",
+                        "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                      },
+                      "cyData": "filter-soh",
+                      "enumKeysToDisplayStrings": Map {
+                        "GOOD" => "Good",
+                        "MARGINAL" => "Marginal",
+                        "BAD" => "Bad",
+                        "NONE" => "None",
+                      },
+                      "enumOfKeys": Object {
+                        "BAD": "BAD",
+                        "GOOD": "GOOD",
+                        "MARGINAL": "MARGINAL",
+                        "NONE": "NONE",
+                      },
+                      "label": "Filter by Status",
+                      "menuLabel": "Filter by Status",
+                      "onChange": [Function],
+                      "onPopUp": [Function],
+                      "onPopoverDismissed": [Function],
+                      "rank": 1,
+                      "tooltip": "Set which statuses appear in the lower bin",
+                      "type": "CheckboxList",
+                      "values": Map {
+                        "GOOD" => true,
+                        "BAD" => true,
+                        "MARGINAL" => true,
+                        "NONE" => true,
+                      },
+                      "widthPx": 200,
+                    },
+                    Object {
+                      "cyData": "filter-by-station-group-soh",
+                      "enumOfKeys": Array [
+                        "Group 4",
+                      ],
+                      "label": "Filter by Station Group",
+                      "menuLabel": "Filter by Station Group",
+                      "onChange": [Function],
+                      "rank": 2,
+                      "tooltip": "Set which station groups appear",
+                      "type": "CheckboxList",
+                      "values": Map {
+                        "Group 4" => true,
+                      },
+                      "widthPx": 200,
+                    },
+                  ]
+                }
+                widthPx={0}
+              >
+                <ToolbarComponent
+                  items={
+                    Array [
+                      Object {
+                        "hasIssue": false,
+                        "label": "Last Updated",
+                        "rank": 1,
+                        "style": Object {
+                          "marginLeft": "1em",
+                        },
+                        "tooltip": "Most recent SOH data received",
+                        "tooltipForIssue": "SOH data has not updated in over ",
+                        "type": "LabelValue",
+                        "value": "1970/01/01 00:00:02",
+                        "widthPx": 400,
+                      },
+                      Object {
+                        "label": "Update Interval",
+                        "rank": 2,
+                        "tooltip": "Interval at which SOH data is processed",
+                        "type": "LabelValue",
+                        "value": "10 seconds",
+                        "widthPx": 400,
+                      },
+                    ]
+                  }
+                  itemsLeft={
+                    Array [
+                      Object {
+                        "colors": Map {
+                          "GOOD" => "#fff",
+                          "MARGINAL" => "#fff",
+                          "BAD" => "#fff",
+                          "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                        },
+                        "cyData": "filter-soh",
+                        "enumKeysToDisplayStrings": Map {
+                          "GOOD" => "Good",
+                          "MARGINAL" => "Marginal",
+                          "BAD" => "Bad",
+                          "NONE" => "None",
+                        },
+                        "enumOfKeys": Object {
+                          "BAD": "BAD",
+                          "GOOD": "GOOD",
+                          "MARGINAL": "MARGINAL",
+                          "NONE": "NONE",
+                        },
+                        "label": "Filter by Status",
+                        "menuLabel": "Filter by Status",
+                        "onChange": [Function],
+                        "onPopUp": [Function],
+                        "onPopoverDismissed": [Function],
+                        "rank": 1,
+                        "tooltip": "Set which statuses appear in the lower bin",
+                        "type": "CheckboxList",
+                        "values": Map {
+                          "GOOD" => true,
+                          "BAD" => true,
+                          "MARGINAL" => true,
+                          "NONE" => true,
+                        },
+                        "widthPx": 200,
+                      },
+                      Object {
+                        "cyData": "filter-by-station-group-soh",
+                        "enumOfKeys": Array [
+                          "Group 4",
+                        ],
+                        "label": "Filter by Station Group",
+                        "menuLabel": "Filter by Station Group",
+                        "onChange": [Function],
+                        "rank": 2,
+                        "tooltip": "Set which station groups appear",
+                        "type": "CheckboxList",
+                        "values": Map {
+                          "Group 4" => true,
+                        },
+                        "widthPx": 200,
+                      },
+                    ]
+                  }
+                  minWhiteSpacePx={1}
+                  toolbarWidthPx={0}
+                  widthPx={0}
+                >
+                  <div
+                    className="toolbar"
+                    style={
+                      Object {
+                        "width": "0px",
+                      }
+                    }
+                  >
+                    <div
+                      className="toolbar__left-group"
+                    >
+                      <div
+                        className="toolbar-item toolbar-item__left"
+                        key="1"
+                      >
+                        <Component
+                          addToPopoverMap={[Function]}
+                          hasIssue={false}
+                          item={
+                            Object {
+                              "colors": Map {
+                                "GOOD" => "#fff",
+                                "MARGINAL" => "#fff",
+                                "BAD" => "#fff",
+                                "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                              },
+                              "cyData": "filter-soh",
+                              "enumKeysToDisplayStrings": Map {
+                                "GOOD" => "Good",
+                                "MARGINAL" => "Marginal",
+                                "BAD" => "Bad",
+                                "NONE" => "None",
+                              },
+                              "enumOfKeys": Object {
+                                "BAD": "BAD",
+                                "GOOD": "GOOD",
+                                "MARGINAL": "MARGINAL",
+                                "NONE": "NONE",
+                              },
+                              "label": "Filter by Status",
+                              "menuLabel": "Filter by Status",
+                              "onChange": [Function],
+                              "onPopUp": [Function],
+                              "onPopoverDismissed": [Function],
+                              "rank": 1,
+                              "tooltip": "Set which statuses appear in the lower bin",
+                              "type": "CheckboxList",
+                              "values": Map {
+                                "GOOD" => true,
+                                "BAD" => true,
+                                "MARGINAL" => true,
+                                "NONE" => true,
+                              },
+                              "widthPx": 200,
+                            }
+                          }
+                          key="1"
+                        >
+                          <div
+                            style={Object {}}
+                          >
+                            <PopoverButtonComponent
+                              cyData="filter-soh"
+                              key="1"
+                              label="Filter by Status"
+                              onClick={[Function]}
+                              onPopoverDismissed={[Function]}
+                              popupContent={
+                                <CheckboxList
+                                  checkboxEnum={
+                                    Object {
+                                      "BAD": "BAD",
+                                      "GOOD": "GOOD",
+                                      "MARGINAL": "MARGINAL",
+                                      "NONE": "NONE",
+                                    }
+                                  }
+                                  enumKeysToDisplayStrings={
+                                    Map {
+                                      "GOOD" => "Good",
+                                      "MARGINAL" => "Marginal",
+                                      "BAD" => "Bad",
+                                      "NONE" => "None",
+                                    }
+                                  }
+                                  enumToCheckedMap={
+                                    Map {
+                                      "GOOD" => true,
+                                      "BAD" => true,
+                                      "MARGINAL" => true,
+                                      "NONE" => true,
+                                    }
+                                  }
+                                  enumToColorMap={
+                                    Map {
+                                      "GOOD" => "#fff",
+                                      "MARGINAL" => "#fff",
+                                      "BAD" => "#fff",
+                                      "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                                    }
+                                  }
+                                  onChange={[Function]}
+                                />
+                              }
+                              tooltip="Set which statuses appear in the lower bin"
+                              widthPx={200}
+                            >
+                              <div
+                                data-cy="filter-soh"
+                              >
+                                <Blueprint3.Button
+                                  active={false}
+                                  alignText="left"
+                                  className="toolbar-button"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": "200px",
+                                    }
+                                  }
+                                  title="Set which statuses appear in the lower bin"
+                                >
+                                  <button
+                                    className="bp3-button bp3-align-left toolbar-button"
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    onKeyUp={[Function]}
+                                    style={
+                                      Object {
+                                        "width": "200px",
+                                      }
+                                    }
+                                    title="Set which statuses appear in the lower bin"
+                                    type="button"
+                                  >
+                                    <Blueprint3.Icon
+                                      key="leftIcon"
+                                    />
+                                    <span
+                                      className="bp3-button-text"
+                                      key="text"
+                                    >
+                                      <span>
+                                        Filter by Status
+                                      </span>
+                                      <Blueprint3.Icon
+                                        icon="chevron-down"
+                                        title={false}
+                                      >
+                                        <span
+                                          className="bp3-icon bp3-icon-chevron-down"
+                                          icon="chevron-down"
+                                        >
+                                          <svg
+                                            data-icon="chevron-down"
+                                            height={16}
+                                            viewBox="0 0 16 16"
+                                            width={16}
+                                          >
+                                            <path
+                                              d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                              fillRule="evenodd"
+                                              key="0"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </Blueprint3.Icon>
+                                    </span>
+                                    <Blueprint3.Icon
+                                      key="rightIcon"
+                                    />
+                                  </button>
+                                </Blueprint3.Button>
+                              </div>
+                            </PopoverButtonComponent>
+                          </div>
+                        </Component>
+                      </div>
+                      <div
+                        className="toolbar-item toolbar-item__left"
+                        key="2"
+                      >
+                        <Component
+                          addToPopoverMap={[Function]}
+                          hasIssue={false}
+                          item={
+                            Object {
+                              "cyData": "filter-by-station-group-soh",
+                              "enumOfKeys": Array [
+                                "Group 4",
+                              ],
+                              "label": "Filter by Station Group",
+                              "menuLabel": "Filter by Station Group",
+                              "onChange": [Function],
+                              "rank": 2,
+                              "tooltip": "Set which station groups appear",
+                              "type": "CheckboxList",
+                              "values": Map {
+                                "Group 4" => true,
+                              },
+                              "widthPx": 200,
+                            }
+                          }
+                          key="2"
+                        >
+                          <div
+                            style={Object {}}
+                          >
+                            <PopoverButtonComponent
+                              cyData="filter-by-station-group-soh"
+                              key="2"
+                              label="Filter by Station Group"
+                              onClick={[Function]}
+                              onPopoverDismissed={[Function]}
+                              popupContent={
+                                <CheckboxList
+                                  checkboxEnum={
+                                    Array [
+                                      "Group 4",
+                                    ]
+                                  }
+                                  enumToCheckedMap={
+                                    Map {
+                                      "Group 4" => true,
+                                    }
+                                  }
+                                  onChange={[Function]}
+                                />
+                              }
+                              tooltip="Set which station groups appear"
+                              widthPx={200}
+                            >
+                              <div
+                                data-cy="filter-by-station-group-soh"
+                              >
+                                <Blueprint3.Button
+                                  active={false}
+                                  alignText="left"
+                                  className="toolbar-button"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": "200px",
+                                    }
+                                  }
+                                  title="Set which station groups appear"
+                                >
+                                  <button
+                                    className="bp3-button bp3-align-left toolbar-button"
+                                    onClick={[Function]}
+                                    onKeyDown={[Function]}
+                                    onKeyUp={[Function]}
+                                    style={
+                                      Object {
+                                        "width": "200px",
+                                      }
+                                    }
+                                    title="Set which station groups appear"
+                                    type="button"
+                                  >
+                                    <Blueprint3.Icon
+                                      key="leftIcon"
+                                    />
+                                    <span
+                                      className="bp3-button-text"
+                                      key="text"
+                                    >
+                                      <span>
+                                        Filter by Station Group
+                                      </span>
+                                      <Blueprint3.Icon
+                                        icon="chevron-down"
+                                        title={false}
+                                      >
+                                        <span
+                                          className="bp3-icon bp3-icon-chevron-down"
+                                          icon="chevron-down"
+                                        >
+                                          <svg
+                                            data-icon="chevron-down"
+                                            height={16}
+                                            viewBox="0 0 16 16"
+                                            width={16}
+                                          >
+                                            <path
+                                              d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                              fillRule="evenodd"
+                                              key="0"
+                                            />
+                                          </svg>
+                                        </span>
+                                      </Blueprint3.Icon>
+                                    </span>
+                                    <Blueprint3.Icon
+                                      key="rightIcon"
+                                    />
+                                  </button>
+                                </Blueprint3.Button>
+                              </div>
+                            </PopoverButtonComponent>
+                          </div>
+                        </Component>
+                      </div>
+                    </div>
+                    <div
+                      className="toolbar__center-group"
+                    >
+                      <div
+                        className="toolbar__whitespace"
+                        style={
+                          Object {
+                            "width": "1px",
+                          }
+                        }
+                      />
+                    </div>
+                    <div
+                      className="toolbar__right-group"
+                    >
+                      <div
+                        className="toolbar-item
+                    "
+                        key="1"
+                      >
+                        <Component
+                          addToPopoverMap={[Function]}
+                          hasIssue={false}
+                          item={
+                            Object {
+                              "hasIssue": false,
+                              "label": "Last Updated",
+                              "rank": 1,
+                              "style": Object {
+                                "marginLeft": "1em",
+                              },
+                              "tooltip": "Most recent SOH data received",
+                              "tooltipForIssue": "SOH data has not updated in over ",
+                              "type": "LabelValue",
+                              "value": "1970/01/01 00:00:02",
+                              "widthPx": 400,
+                            }
+                          }
+                          key="1"
+                        >
+                          <div
+                            className="toolbar-label-value"
+                            style={
+                              Object {
+                                "marginLeft": "1em",
+                              }
+                            }
+                          >
+                            <Component
+                              label="Last Updated"
+                              tooltip="Most recent SOH data received"
+                              value="1970/01/01 00:00:02"
+                            >
+                              <div
+                                className="label-value-container"
+                              >
+                                <div
+                                  className="label-value__label"
+                                >
+                                  Last Updated: 
+                                </div>
+                                <div
+                                  className="label-value__value"
+                                  style={
+                                    Object {
+                                      "color": "",
+                                    }
+                                  }
+                                  title="Most recent SOH data received"
+                                >
+                                  1970/01/01 00:00:02
+                                </div>
+                              </div>
+                            </Component>
+                          </div>
+                        </Component>
+                      </div>
+                      <div
+                        className="toolbar-item
+                    "
+                        key="2"
+                      >
+                        <Component
+                          addToPopoverMap={[Function]}
+                          hasIssue={false}
+                          item={
+                            Object {
+                              "label": "Update Interval",
+                              "rank": 2,
+                              "tooltip": "Interval at which SOH data is processed",
+                              "type": "LabelValue",
+                              "value": "10 seconds",
+                              "widthPx": 400,
+                            }
+                          }
+                          key="2"
+                        >
+                          <div
+                            className="toolbar-label-value"
+                            style={Object {}}
+                          >
+                            <Component
+                              label="Update Interval"
+                              tooltip="Interval at which SOH data is processed"
+                              value="10 seconds"
+                            >
+                              <div
+                                className="label-value-container"
+                              >
+                                <div
+                                  className="label-value__label"
+                                >
+                                  Update Interval: 
+                                </div>
+                                <div
+                                  className="label-value__value"
+                                  style={
+                                    Object {
+                                      "color": "",
+                                    }
+                                  }
+                                  title="Interval at which SOH data is processed"
+                                >
+                                  10 seconds
+                                </div>
+                              </div>
+                            </Component>
+                          </div>
+                        </Component>
+                      </div>
+                    </div>
+                  </div>
+                </ToolbarComponent>
+              </Component>
+            </Component>
+          </div>
+          <Component
+            setSelectedStationIds={[Function]}
+          >
+            <div
+              className="deselect-handler "
+              onKeyDown={[Function]}
+            >
+              <Component
+                isHighlighted={false}
+                stationGroupsToDisplay={
+                  Array [
+                    "Group 4",
+                  ]
+                }
+                statusesToDisplay={
+                  Array [
+                    "GOOD",
+                    "BAD",
+                    "MARGINAL",
+                    "NONE",
+                  ]
+                }
+              >
+                <Component
+                  className="
+        quadra-grid-container
+        display__scroll-container--vertical
+        drop-zone__wrapper"
+                  data-cy="soh-overview-good-or-acknowledged"
+                >
+                  <div
+                    className="resize-container 
+        quadra-grid-container
+        display__scroll-container--vertical
+        drop-zone__wrapper"
+                  >
+                    <Component
+                      groupHeight={0}
+                      isHighlighted={false}
+                      key="1"
+                      needsAttentionStatuses={
+                        Array [
+                          Object {
+                            "allStationAggregates": Array [],
+                            "channelSohs": Array [],
+                            "id": "1",
+                            "needsAcknowledgement": true,
+                            "needsAttention": true,
+                            "sohStatusSummary": "GOOD",
+                            "stationGroups": Array [
+                              Object {
+                                "groupName": "Group 4",
+                                "sohStationCapability": "GOOD",
+                                "stationName": "H05N",
+                              },
+                            ],
+                            "stationName": "H05N",
+                            "statusContributors": Array [
+                              Object {
+                                "contributing": true,
+                                "statusSummary": "GOOD",
+                                "type": "LAG",
+                                "value": 5,
+                                "valuePresent": true,
+                              },
+                            ],
+                            "time": 2,
+                            "uuid": "1",
+                          },
+                          Object {
+                            "allStationAggregates": Array [],
+                            "channelSohs": Array [],
+                            "id": "2",
+                            "needsAcknowledgement": true,
+                            "needsAttention": true,
+                            "sohStatusSummary": "MARGINAL",
+                            "stationGroups": Array [
+                              Object {
+                                "groupName": "Group 4",
+                                "sohStationCapability": "GOOD",
+                                "stationName": "H06N",
+                              },
+                            ],
+                            "stationName": "H06N",
+                            "statusContributors": Array [
+                              Object {
+                                "contributing": true,
+                                "statusSummary": "GOOD",
+                                "type": "LAG",
+                                "value": 5,
+                                "valuePresent": true,
+                              },
+                            ],
+                            "time": 2,
+                            "uuid": "2",
+                          },
+                          Object {
+                            "allStationAggregates": Array [],
+                            "channelSohs": Array [],
+                            "id": "3",
+                            "needsAcknowledgement": true,
+                            "needsAttention": true,
+                            "sohStatusSummary": "BAD",
+                            "stationGroups": Array [
+                              Object {
+                                "groupName": "Group 4",
+                                "sohStationCapability": "GOOD",
+                                "stationName": "H07N",
+                              },
+                            ],
+                            "stationName": "H07N",
+                            "statusContributors": Array [
+                              Object {
+                                "contributing": true,
+                                "statusSummary": "GOOD",
+                                "type": "LAG",
+                                "value": 5,
+                                "valuePresent": true,
+                              },
+                            ],
+                            "time": 2,
+                            "uuid": "3",
+                          },
+                          Object {
+                            "allStationAggregates": Array [],
+                            "channelSohs": Array [],
+                            "id": "4",
+                            "needsAcknowledgement": true,
+                            "needsAttention": true,
+                            "sohStatusSummary": "GOOD",
+                            "stationGroups": Array [
+                              Object {
+                                "groupName": "Group 4",
+                                "sohStationCapability": "MARGINAL",
+                                "stationName": "H08N",
+                              },
+                            ],
+                            "stationName": "H08N",
+                            "statusContributors": Array [
+                              Object {
+                                "contributing": true,
+                                "statusSummary": "GOOD",
+                                "type": "LAG",
+                                "value": 5,
+                                "valuePresent": true,
+                              },
+                            ],
+                            "time": 2,
+                            "uuid": "4",
+                          },
+                        ]
+                      }
+                      selectedStationIds={Array []}
+                      setGroupHeight={[Function]}
+                      setSelectedStationIds={[Function]}
+                      setTopContainerHeight={[Function]}
+                      sohStatuses={Array []}
+                      stationGroupName="Group 4"
+                      statusCounts={
+                        Object {
+                          "badCount": 0,
+                          "hasCapabilityRollup": true,
+                          "marginalCount": 1,
+                          "okCount": 3,
+                        }
+                      }
+                      topContainerHeight={0}
+                      totalStationCount={4}
+                    >
+                      <Component
+                        className="quadra-grid-cell soh-overview-table__wrapper"
+                        dataCy="soh-overview-group-Group 4"
+                        forwardRef={
+                          Object {
+                            "current": <div
+                              class="resizer quadra-grid-cell soh-overview-table__wrapper"
+                              data-cy="soh-overview-group-Group 4"
+                              style="height: 360px; max-height: 100vh;"
+                            >
+                              <div
+                                class="divider-container"
+                              >
+                                <div
+                                  class="top-component"
+                                  style="height: 200px;"
+                                >
+                                  <div
+                                    class="soh-overview-table"
+                                  >
+                                    <div
+                                      class="soh-overview-group-header__container"
+                                      data-cy="soh-overview-header"
+                                    >
+                                      <div
+                                        class="soh-overview-group-header__network"
+                                        data-capability-status="bad"
+                                        title="Total station count for this group: 4"
+                                      >
+                                        Group 4
+                                      </div>
+                                      <div
+                                        class="soh-overview-group-header__count--bad soh-overview-group-header__count"
+                                        data-cy="soh-overview-group-header__count--bad"
+                                      >
+                                        0
+                                      </div>
+                                      <div
+                                        class="soh-overview-group-header__count--marginal soh-overview-group-header__count"
+                                        data-cy="soh-overview-group-header__count--marginal"
+                                      >
+                                        1
+                                      </div>
+                                      <div
+                                        class="soh-overview-group-header__count--good soh-overview-group-header__count"
+                                        data-cy="soh-overview-group-header__count--good"
+                                      >
+                                        3
+                                      </div>
+                                    </div>
+                                    <div
+                                      class="soh-overview-table__bin soh-overview-table__bin--top"
+                                    >
+                                      <div
+                                        class="soh-table-label"
+                                      >
+                                        Needs Attention
+                                      </div>
+                                      <div
+                                        class="soh-overview-cell__container"
+                                        data-cy="soh-unacknowledged"
+                                      >
+                                        <div
+                                          draggable="true"
+                                        >
+                                          <div
+                                            class="soh-overview-cell
+          soh-overview-cell--draggable
+          
+        "
+                                            data-cy="soh-overview-cell"
+                                            data-cy-status="GOOD"
+                                            data-soh-status="good"
+                                            data-station-id="H05N"
+                                            tabindex="0"
+                                            title="GOOD"
+                                          >
+                                            H05N
+                                          </div>
+                                        </div>
+                                        <div
+                                          draggable="true"
+                                        >
+                                          <div
+                                            class="soh-overview-cell
+          soh-overview-cell--draggable
+          
+        "
+                                            data-cy="soh-overview-cell"
+                                            data-cy-status="GOOD"
+                                            data-soh-status="good"
+                                            data-station-id="H06N"
+                                            tabindex="0"
+                                            title="GOOD"
+                                          >
+                                            H06N
+                                            <div
+                                              class="soh-cell__right-container"
+                                              data-capability-status="marginal"
+                                              style="width: 30px;"
+                                            >
+                                              <img
+                                                class="badge"
+                                                height="16.88"
+                                                src="test-file-stub"
+                                                title="Worst of monitor type rollup - MARGINAL"
+                                                width="18.996"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          draggable="true"
+                                        >
+                                          <div
+                                            class="soh-overview-cell
+          soh-overview-cell--draggable
+          
+        "
+                                            data-cy="soh-overview-cell"
+                                            data-cy-status="GOOD"
+                                            data-soh-status="good"
+                                            data-station-id="H07N"
+                                            tabindex="0"
+                                            title="GOOD"
+                                          >
+                                            H07N
+                                            <div
+                                              class="soh-cell__right-container"
+                                              data-capability-status="bad"
+                                              style="width: 30px;"
+                                            >
+                                              <img
+                                                class="badge"
+                                                height="23"
+                                                src="test-file-stub"
+                                                title="Worst of monitor type rollup - BAD"
+                                                width="17.583"
+                                              />
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div
+                                          draggable="true"
+                                        >
+                                          <div
+                                            class="soh-overview-cell
+          soh-overview-cell--draggable
+          
+        "
+                                            data-cy="soh-overview-cell"
+                                            data-cy-status="MARGINAL"
+                                            data-soh-status="marginal"
+                                            data-station-id="H08N"
+                                            tabindex="0"
+                                            title="MARGINAL"
+                                          >
+                                            H08N
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div
+                                  class="horizontal-divider "
+                                >
+                                  <div
+                                    class="horizontal-divider__target"
+                                  />
+                                  <div
+                                    class="horizontal-divider__spacer"
+                                  />
+                                  <svg
+                                    class="resize-handle"
+                                    height="7"
+                                    viewBox="0 0 18 7"
+                                    width="18"
+                                  >
+                                    <title>
+                                      Resize
+                                    </title>
+                                    <g
+                                      class="resize-handle-group"
+                                      data-name="resize-handle-group"
+                                    >
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                      />
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                        x="4"
+                                      />
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                        x="8"
+                                      />
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                        x="12"
+                                      />
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                        x="16"
+                                      />
+                                    </g>
+                                  </svg>
+                                  <div
+                                    class="horizontal-divider__spacer"
+                                  />
+                                </div>
+                                <div
+                                  class="bottom-component"
+                                  style="height: 1px;"
+                                >
+                                  <div
+                                    class="soh-overview-table"
+                                  >
+                                    <div
+                                      class="soh-overview-table__bin soh-overview-table__bin--bottom"
+                                      data-cy="soh-acknowledged"
+                                    >
+                                      <div
+                                        class="drop-zone
+          
+          soh-overview-table__drop-zone soh-overview-cell__container
+                  "
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="resizer__handle resizer__handle--height resizer__handle--bottom "
+                              />
+                              <div
+                                class="resizer__sensor resizer__sensor--bottom "
+                              />
+                            </div>,
+                          }
+                        }
+                        key="Group 4"
+                        minHeightPx={320}
+                        onResize={[Function]}
+                        onResizeEnd={[Function]}
+                      >
+                        <div
+                          className="resizer quadra-grid-cell soh-overview-table__wrapper"
+                          data-cy="soh-overview-group-Group 4"
+                          style={
+                            Object {
+                              "height": 360,
+                              "maxHeight": "100vh",
+                            }
+                          }
+                        >
+                          <HorizontalDivider
+                            bottom={
+                              <div
+                                className="soh-overview-table"
+                              >
+                                <div
+                                  className="soh-overview-table__bin soh-overview-table__bin--bottom"
+                                  data-cy="soh-acknowledged"
+                                >
+                                  <DropZone
+                                    className="soh-overview-table__drop-zone soh-overview-cell__container
+                  "
+                                    onDrop={[Function]}
+                                  />
+                                </div>
+                              </div>
+                            }
+                            onResizeEnd={[Function]}
+                            sizeRange={
+                              Object {
+                                "minimumBottomHeightPx": 110,
+                                "minimumTopHeightPx": 145,
+                              }
+                            }
+                            top={
+                              <div
+                                className="soh-overview-table"
+                              >
+                                <UNDEFINED
+                                  capabilityStatus="BAD"
+                                  displayName="Group 4"
+                                  statusCounts={
+                                    Object {
+                                      "badCount": 0,
+                                      "hasCapabilityRollup": true,
+                                      "marginalCount": 1,
+                                      "okCount": 3,
+                                    }
+                                  }
+                                  totalStationCount={4}
+                                />
+                                <div
+                                  className="soh-overview-table__bin soh-overview-table__bin--top"
+                                >
+                                  <div
+                                    className="soh-table-label"
+                                  >
+                                    Needs Attention
+                                  </div>
+                                  <div
+                                    className="soh-overview-cell__container"
+                                    data-cy="soh-unacknowledged"
+                                  >
+                                    <UNDEFINED
+                                      capabilityStatus="GOOD"
+                                      name="H05N"
+                                      needsAttention={true}
+                                      onClick={[Function]}
+                                      onRightClick={[Function]}
+                                      selected={false}
+                                      status="GOOD"
+                                    />
+                                    <UNDEFINED
+                                      capabilityStatus="GOOD"
+                                      name="H06N"
+                                      needsAttention={true}
+                                      onClick={[Function]}
+                                      onRightClick={[Function]}
+                                      selected={false}
+                                      status="MARGINAL"
+                                    />
+                                    <UNDEFINED
+                                      capabilityStatus="GOOD"
+                                      name="H07N"
+                                      needsAttention={true}
+                                      onClick={[Function]}
+                                      onRightClick={[Function]}
+                                      selected={false}
+                                      status="BAD"
+                                    />
+                                    <UNDEFINED
+                                      capabilityStatus="MARGINAL"
+                                      name="H08N"
+                                      needsAttention={true}
+                                      onClick={[Function]}
+                                      onRightClick={[Function]}
+                                      selected={false}
+                                      status="GOOD"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            }
+                          >
+                            <div
+                              className="divider-container"
+                            >
+                              <div
+                                className="top-component"
+                                style={
+                                  Object {
+                                    "height": "200px",
+                                  }
+                                }
+                              >
+                                <div
+                                  className="soh-overview-table"
+                                >
+                                  <Memo(StationGroupHeaderElement)
+                                    capabilityStatus="BAD"
+                                    displayName="Group 4"
+                                    statusCounts={
+                                      Object {
+                                        "badCount": 0,
+                                        "hasCapabilityRollup": true,
+                                        "marginalCount": 1,
+                                        "okCount": 3,
+                                      }
+                                    }
+                                    totalStationCount={4}
+                                  >
+                                    <div
+                                      className="soh-overview-group-header__container"
+                                      data-cy="soh-overview-header"
+                                    >
+                                      <div
+                                        className="soh-overview-group-header__network"
+                                        data-capability-status="bad"
+                                        title="Total station count for this group: 4"
+                                      >
+                                        Group 4
+                                      </div>
+                                      <div
+                                        className="soh-overview-group-header__count--bad soh-overview-group-header__count"
+                                        data-cy="soh-overview-group-header__count--bad"
+                                      >
+                                        0
+                                      </div>
+                                      <div
+                                        className="soh-overview-group-header__count--marginal soh-overview-group-header__count"
+                                        data-cy="soh-overview-group-header__count--marginal"
+                                      >
+                                        1
+                                      </div>
+                                      <div
+                                        className="soh-overview-group-header__count--good soh-overview-group-header__count"
+                                        data-cy="soh-overview-group-header__count--good"
+                                      >
+                                        3
+                                      </div>
+                                    </div>
+                                  </Memo(StationGroupHeaderElement)>
+                                  <div
+                                    className="soh-overview-table__bin soh-overview-table__bin--top"
+                                    key="Group 4"
+                                  >
+                                    <div
+                                      className="soh-table-label"
+                                    >
+                                      Needs Attention
+                                    </div>
+                                    <div
+                                      className="soh-overview-cell__container"
+                                      data-cy="soh-unacknowledged"
+                                    >
+                                      <ForwardRef
+                                        capabilityStatus="GOOD"
+                                        key="Group 4-bottom-H05N"
+                                        name="H05N"
+                                        needsAttention={true}
+                                        onClick={[Function]}
+                                        onRightClick={[Function]}
+                                        selected={false}
+                                        status="GOOD"
+                                      >
+                                        <Component
+                                          stationId="H05N"
+                                        >
+                                          <DragCell
+                                            getSelectedStationIds={[Function]}
+                                            getSingleDragImage={[Function]}
+                                            setSelectedStationIds={[Function]}
+                                            stationId="H05N"
+                                          >
+                                            <DragInitiator
+                                              getDragImage={[Function]}
+                                              getDragPayload={[Function]}
+                                              onDragEnd={[Function]}
+                                              onDragStart={[Function]}
+                                            >
+                                              <div
+                                                draggable={true}
+                                                onDragEnd={[Function]}
+                                                onDragStart={[Function]}
+                                              >
+                                                <ForwardRef
+                                                  capabilityStatus="GOOD"
+                                                  name="H05N"
+                                                  needsAttention={true}
+                                                  onClick={[Function]}
+                                                  onRightClick={[Function]}
+                                                  selected={false}
+                                                  status="GOOD"
+                                                >
+                                                  <div
+                                                    className="soh-overview-cell
+          soh-overview-cell--draggable
+          
+        "
+                                                    data-cy="soh-overview-cell"
+                                                    data-cy-status="GOOD"
+                                                    data-soh-status="good"
+                                                    data-station-id="H05N"
+                                                    key="H05N"
+                                                    onClick={[Function]}
+                                                    onContextMenu={[Function]}
+                                                    tabIndex={0}
+                                                    title="GOOD"
+                                                  >
+                                                    H05N
+                                                    <Component
+                                                      widthPx={30}
+                                                      worstOfSohStatus="GOOD"
+                                                    />
+                                                  </div>
+                                                </ForwardRef>
+                                              </div>
+                                            </DragInitiator>
+                                          </DragCell>
+                                        </Component>
+                                      </ForwardRef>
+                                      <ForwardRef
+                                        capabilityStatus="GOOD"
+                                        key="Group 4-bottom-H06N"
+                                        name="H06N"
+                                        needsAttention={true}
+                                        onClick={[Function]}
+                                        onRightClick={[Function]}
+                                        selected={false}
+                                        status="MARGINAL"
+                                      >
+                                        <Component
+                                          stationId="H06N"
+                                        >
+                                          <DragCell
+                                            getSelectedStationIds={[Function]}
+                                            getSingleDragImage={[Function]}
+                                            setSelectedStationIds={[Function]}
+                                            stationId="H06N"
+                                          >
+                                            <DragInitiator
+                                              getDragImage={[Function]}
+                                              getDragPayload={[Function]}
+                                              onDragEnd={[Function]}
+                                              onDragStart={[Function]}
+                                            >
+                                              <div
+                                                draggable={true}
+                                                onDragEnd={[Function]}
+                                                onDragStart={[Function]}
+                                              >
+                                                <ForwardRef
+                                                  capabilityStatus="GOOD"
+                                                  name="H06N"
+                                                  needsAttention={true}
+                                                  onClick={[Function]}
+                                                  onRightClick={[Function]}
+                                                  selected={false}
+                                                  status="MARGINAL"
+                                                >
+                                                  <div
+                                                    className="soh-overview-cell
+          soh-overview-cell--draggable
+          
+        "
+                                                    data-cy="soh-overview-cell"
+                                                    data-cy-status="GOOD"
+                                                    data-soh-status="good"
+                                                    data-station-id="H06N"
+                                                    key="H06N"
+                                                    onClick={[Function]}
+                                                    onContextMenu={[Function]}
+                                                    tabIndex={0}
+                                                    title="GOOD"
+                                                  >
+                                                    H06N
+                                                    <Component
+                                                      widthPx={30}
+                                                      worstOfSohStatus="MARGINAL"
+                                                    >
+                                                      <div
+                                                        className="soh-cell__right-container"
+                                                        data-capability-status="marginal"
+                                                        style={
+                                                          Object {
+                                                            "width": 30,
+                                                          }
+                                                        }
+                                                      >
+                                                        <Component
+                                                          worstOfSohStatus="MARGINAL"
+                                                        >
+                                                          <img
+                                                            className="badge"
+                                                            height="16.88"
+                                                            src="test-file-stub"
+                                                            title="Worst of monitor type rollup - MARGINAL"
+                                                            width="18.996"
+                                                          />
+                                                        </Component>
+                                                      </div>
+                                                    </Component>
+                                                  </div>
+                                                </ForwardRef>
+                                              </div>
+                                            </DragInitiator>
+                                          </DragCell>
+                                        </Component>
+                                      </ForwardRef>
+                                      <ForwardRef
+                                        capabilityStatus="GOOD"
+                                        key="Group 4-bottom-H07N"
+                                        name="H07N"
+                                        needsAttention={true}
+                                        onClick={[Function]}
+                                        onRightClick={[Function]}
+                                        selected={false}
+                                        status="BAD"
+                                      >
+                                        <Component
+                                          stationId="H07N"
+                                        >
+                                          <DragCell
+                                            getSelectedStationIds={[Function]}
+                                            getSingleDragImage={[Function]}
+                                            setSelectedStationIds={[Function]}
+                                            stationId="H07N"
+                                          >
+                                            <DragInitiator
+                                              getDragImage={[Function]}
+                                              getDragPayload={[Function]}
+                                              onDragEnd={[Function]}
+                                              onDragStart={[Function]}
+                                            >
+                                              <div
+                                                draggable={true}
+                                                onDragEnd={[Function]}
+                                                onDragStart={[Function]}
+                                              >
+                                                <ForwardRef
+                                                  capabilityStatus="GOOD"
+                                                  name="H07N"
+                                                  needsAttention={true}
+                                                  onClick={[Function]}
+                                                  onRightClick={[Function]}
+                                                  selected={false}
+                                                  status="BAD"
+                                                >
+                                                  <div
+                                                    className="soh-overview-cell
+          soh-overview-cell--draggable
+          
+        "
+                                                    data-cy="soh-overview-cell"
+                                                    data-cy-status="GOOD"
+                                                    data-soh-status="good"
+                                                    data-station-id="H07N"
+                                                    key="H07N"
+                                                    onClick={[Function]}
+                                                    onContextMenu={[Function]}
+                                                    tabIndex={0}
+                                                    title="GOOD"
+                                                  >
+                                                    H07N
+                                                    <Component
+                                                      widthPx={30}
+                                                      worstOfSohStatus="BAD"
+                                                    >
+                                                      <div
+                                                        className="soh-cell__right-container"
+                                                        data-capability-status="bad"
+                                                        style={
+                                                          Object {
+                                                            "width": 30,
+                                                          }
+                                                        }
+                                                      >
+                                                        <Component
+                                                          worstOfSohStatus="BAD"
+                                                        >
+                                                          <img
+                                                            className="badge"
+                                                            height="23"
+                                                            src="test-file-stub"
+                                                            title="Worst of monitor type rollup - BAD"
+                                                            width="17.583"
+                                                          />
+                                                        </Component>
+                                                      </div>
+                                                    </Component>
+                                                  </div>
+                                                </ForwardRef>
+                                              </div>
+                                            </DragInitiator>
+                                          </DragCell>
+                                        </Component>
+                                      </ForwardRef>
+                                      <ForwardRef
+                                        capabilityStatus="MARGINAL"
+                                        key="Group 4-bottom-H08N"
+                                        name="H08N"
+                                        needsAttention={true}
+                                        onClick={[Function]}
+                                        onRightClick={[Function]}
+                                        selected={false}
+                                        status="GOOD"
+                                      >
+                                        <Component
+                                          stationId="H08N"
+                                        >
+                                          <DragCell
+                                            getSelectedStationIds={[Function]}
+                                            getSingleDragImage={[Function]}
+                                            setSelectedStationIds={[Function]}
+                                            stationId="H08N"
+                                          >
+                                            <DragInitiator
+                                              getDragImage={[Function]}
+                                              getDragPayload={[Function]}
+                                              onDragEnd={[Function]}
+                                              onDragStart={[Function]}
+                                            >
+                                              <div
+                                                draggable={true}
+                                                onDragEnd={[Function]}
+                                                onDragStart={[Function]}
+                                              >
+                                                <ForwardRef
+                                                  capabilityStatus="MARGINAL"
+                                                  name="H08N"
+                                                  needsAttention={true}
+                                                  onClick={[Function]}
+                                                  onRightClick={[Function]}
+                                                  selected={false}
+                                                  status="GOOD"
+                                                >
+                                                  <div
+                                                    className="soh-overview-cell
+          soh-overview-cell--draggable
+          
+        "
+                                                    data-cy="soh-overview-cell"
+                                                    data-cy-status="MARGINAL"
+                                                    data-soh-status="marginal"
+                                                    data-station-id="H08N"
+                                                    key="H08N"
+                                                    onClick={[Function]}
+                                                    onContextMenu={[Function]}
+                                                    tabIndex={0}
+                                                    title="MARGINAL"
+                                                  >
+                                                    H08N
+                                                    <Component
+                                                      widthPx={30}
+                                                      worstOfSohStatus="GOOD"
+                                                    />
+                                                  </div>
+                                                </ForwardRef>
+                                              </div>
+                                            </DragInitiator>
+                                          </DragCell>
+                                        </Component>
+                                      </ForwardRef>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <Component
+                                handleHeight={7}
+                                onDrag={[Function]}
+                              >
+                                <div
+                                  className="horizontal-divider "
+                                  onMouseDown={[Function]}
+                                  onMouseOut={[Function]}
+                                  onMouseOver={[Function]}
+                                  onMouseUp={[Function]}
+                                >
+                                  <div
+                                    className="horizontal-divider__target"
+                                  />
+                                  <div
+                                    className="horizontal-divider__spacer"
+                                  />
+                                  <svg
+                                    className="resize-handle"
+                                    height="7"
+                                    viewBox="0 0 18 7"
+                                    width="18"
+                                  >
+                                    <title>
+                                      Resize
+                                    </title>
+                                    <g
+                                      className="resize-handle-group"
+                                      data-name="resize-handle-group"
+                                    >
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                      />
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                        x="4"
+                                      />
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                        x="8"
+                                      />
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                        x="12"
+                                      />
+                                      <rect
+                                        height="7"
+                                        rx="1"
+                                        width="2"
+                                        x="16"
+                                      />
+                                    </g>
+                                  </svg>
+                                  <div
+                                    className="horizontal-divider__spacer"
+                                  />
+                                </div>
+                              </Component>
+                              <div
+                                className="bottom-component"
+                                style={
+                                  Object {
+                                    "height": "1px",
+                                  }
+                                }
+                              >
+                                <div
+                                  className="soh-overview-table"
+                                >
+                                  <div
+                                    className="soh-overview-table__bin soh-overview-table__bin--bottom"
+                                    data-cy="soh-acknowledged"
+                                  >
+                                    <DropZone
+                                      className="soh-overview-table__drop-zone soh-overview-cell__container
+                  "
+                                      key="Group 4"
+                                      onDrop={[Function]}
+                                    >
+                                      <div
+                                        className="drop-zone
+          
+          soh-overview-table__drop-zone soh-overview-cell__container
+                  "
+                                        onDragOver={[Function]}
+                                        onDrop={[Function]}
+                                      />
+                                    </DropZone>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </HorizontalDivider>
+                          <Memo()
+                            handleMouseMove={[Function]}
+                            onResizeEnd={[Function]}
+                            onResizeStart={[Function]}
+                          >
+                            <ResizeHandle
+                              handleMouseMove={[Function]}
+                              onResizeEnd={[Function]}
+                              onResizeStart={[Function]}
+                              orientation="BOTTOM"
+                            >
+                              <div
+                                className="resizer__handle resizer__handle--height resizer__handle--bottom "
+                              />
+                              <DragSensor
+                                handleMouseMove={[Function]}
+                                highlightManager={
+                                  Object {
+                                    "getVisualState": [Function],
+                                    "onMouseDown": [Function],
+                                    "onMouseOut": [Function],
+                                    "onMouseOver": [Function],
+                                    "onMouseUp": [Function],
+                                  }
+                                }
+                                onResizeEnd={[Function]}
+                                onResizeStart={[Function]}
+                                orientation="BOTTOM"
+                              >
+                                <div
+                                  className="resizer__sensor resizer__sensor--bottom "
+                                  onMouseDown={[Function]}
+                                  onMouseOut={[Function]}
+                                  onMouseOver={[Function]}
+                                />
+                              </DragSensor>
+                            </ResizeHandle>
+                          </Memo()>
+                        </div>
+                      </Component>
+                    </Component>
+                  </div>
+                </Component>
+              </Component>
+            </div>
+          </Component>
+        </Component>
+      </div>
+    </Component>
+  </SohOverviewComponent>
+</Component>
+`;
+
+exports[`Soh Component should render non ideal states and match snapshot 1`] = `
+<Component
+  acknowledgeSohStatus={[MockFunction]}
+  selectedAceiType="BEGINNING_TIME_OUTAGE"
+  selectedStationIds={Array []}
+  setSelectedAceiType={[MockFunction]}
+  setSelectedStationIds={[MockFunction]}
+  sohStatus={
+    Object {
+      "error": undefined,
+      "lastUpdated": 0,
+      "loading": false,
+      "stationAndStationGroupSoh": Object {
+        "isUpdateResponse": false,
+        "stationGroups": Array [],
+        "stationSoh": Array [],
+      },
+    }
+  }
+>
+  <Blueprint3.NonIdealState
+    description="Configure Station Groups"
+    title="No Data:"
+  >
+    <div
+      className="bp3-non-ideal-state"
+    >
+      <Component>
+        <h4
+          className="bp3-heading"
+        >
+          No Data:
+        </h4>
+      </Component>
+      <div>
+        Configure Station Groups
+      </div>
+    </div>
+  </Blueprint3.NonIdealState>
+</Component>
+`;
+
+exports[`Soh Component should show non-ideal state when the golden layout container is hidden 1`] = `
+<Component
+  acknowledgeSohStatus={[MockFunction]}
+  glContainer={
+    Object {
+      "isHidden": true,
+      "off": [MockFunction],
+      "on": [MockFunction] {
+        "calls": Array [
+          Array [
+            "show",
+            [Function],
+          ],
+          Array [
+            "resize",
+            [Function],
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      },
+    }
+  }
+  selectedAceiType="BEGINNING_TIME_OUTAGE"
+  selectedStationIds={Array []}
+  setSelectedAceiType={[MockFunction]}
+  setSelectedStationIds={[MockFunction]}
+>
+  <Blueprint3.NonIdealState
+    action={
+      <Blueprint3.Spinner
+        intent="primary"
+      />
+    }
+    description="Station SOH"
+    title="No SOH Data"
+  >
+    <div
+      className="bp3-non-ideal-state"
+    >
+      <Component>
+        <h4
+          className="bp3-heading"
+        >
+          No SOH Data
+        </h4>
+      </Component>
+      <div>
+        Station SOH
+      </div>
+      <Blueprint3.Spinner
+        intent="primary"
+      >
+        <div
+          className="bp3-spinner bp3-intent-primary"
+        >
+          <div
+            className="bp3-spinner-animation"
+          >
+            <svg
+              height={50}
+              strokeWidth="8.00"
+              viewBox="1.00 1.00 98.00 98.00"
+              width={50}
+            >
+              <path
+                className="bp3-spinner-track"
+                d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+              />
+              <path
+                className="bp3-spinner-head"
+                d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+                pathLength={280}
+                strokeDasharray="280 280"
+                strokeDashoffset={210}
+              />
+            </svg>
+          </div>
+        </div>
+      </Blueprint3.Spinner>
+    </div>
+  </Blueprint3.NonIdealState>
+</Component>
+`;
+
+exports[`Soh Component should show non-ideal state when there is no query 1`] = `
+<Component
+  acknowledgeSohStatus={[MockFunction]}
+  selectedAceiType="BEGINNING_TIME_OUTAGE"
+  selectedStationIds={Array []}
+  setSelectedAceiType={[MockFunction]}
+  setSelectedStationIds={[MockFunction]}
+>
+  <Blueprint3.NonIdealState
+    action={
+      <Blueprint3.Spinner
+        intent="primary"
+      />
+    }
+    description="Station SOH"
+    title="No SOH Data"
+  >
+    <div
+      className="bp3-non-ideal-state"
+    >
+      <Component>
+        <h4
+          className="bp3-heading"
+        >
+          No SOH Data
+        </h4>
+      </Component>
+      <div>
+        Station SOH
+      </div>
+      <Blueprint3.Spinner
+        intent="primary"
+      >
+        <div
+          className="bp3-spinner bp3-intent-primary"
+        >
+          <div
+            className="bp3-spinner-animation"
+          >
+            <svg
+              height={50}
+              strokeWidth="8.00"
+              viewBox="1.00 1.00 98.00 98.00"
+              width={50}
+            >
+              <path
+                className="bp3-spinner-track"
+                d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+              />
+              <path
+                className="bp3-spinner-head"
+                d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+                pathLength={280}
+                strokeDasharray="280 280"
+                strokeDashoffset={210}
+              />
+            </svg>
+          </div>
+        </div>
+      </Blueprint3.Spinner>
+    </div>
+  </Blueprint3.NonIdealState>
+</Component>
+`;
+
+exports[`Soh Component should show non-ideal state when there is no station group data 1`] = `
+<Component
+  acknowledgeSohStatus={[MockFunction]}
+  selectedAceiType="BEGINNING_TIME_OUTAGE"
+  selectedStationIds={Array []}
+  setSelectedAceiType={[MockFunction]}
+  setSelectedStationIds={[MockFunction]}
+  sohStatus={
+    Object {
+      "loading": false,
+      "stationGroupSohStatus": Array [],
+    }
+  }
+  uiConfigurationQuery={
+    Object {
+      "loading": false,
+      "uiAnalystConfiguration": Object {
+        "acknowledgementQuietDuration": 10,
+        "logLevel": "info",
+        "redisplayPeriod": 10,
+        "reprocessingPeriod": 20,
+      },
+    }
+  }
+>
+  <Blueprint3.NonIdealState
+    action={
+      <Blueprint3.Spinner
+        intent="primary"
+      />
+    }
+    description="For SOH"
+    title="No Station Group Data:"
+  >
+    <div
+      className="bp3-non-ideal-state"
+    >
+      <Component>
+        <h4
+          className="bp3-heading"
+        >
+          No Station Group Data:
+        </h4>
+      </Component>
+      <div>
+        For SOH
+      </div>
+      <Blueprint3.Spinner
+        intent="primary"
+      >
+        <div
+          className="bp3-spinner bp3-intent-primary"
+        >
+          <div
+            className="bp3-spinner-animation"
+          >
+            <svg
+              height={50}
+              strokeWidth="8.00"
+              viewBox="1.00 1.00 98.00 98.00"
+              width={50}
+            >
+              <path
+                className="bp3-spinner-track"
+                d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+              />
+              <path
+                className="bp3-spinner-head"
+                d="M 50,50 m 0,-45 a 45,45 0 1 1 0,90 a 45,45 0 1 1 0,-90"
+                pathLength={280}
+                strokeDasharray="280 280"
+                strokeDashoffset={210}
+              />
+            </svg>
+          </div>
+        </div>
+      </Blueprint3.Spinner>
+    </div>
+  </Blueprint3.NonIdealState>
+</Component>
+`;

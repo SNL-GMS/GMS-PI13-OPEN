@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignalDetectionDetails renders & matches snapshot 1`] = `
+<div>
+  <Form
+    defaultPanel={
+      Object {
+        "formItems": Array [
+          Object {
+            "displayText": "P",
+            "itemKey": "Phase",
+            "itemType": "Display",
+            "labelText": "Phase",
+          },
+          Object {
+            "displayText": "2010/05/20T22:07:17.850000",
+            "displayTextFormat": "Time",
+            "itemKey": "Detection time",
+            "itemType": "Display",
+            "labelText": "Detection time",
+          },
+          Object {
+            "displayText": "0.69 s",
+            "itemKey": "Time uncertainty",
+            "itemType": "Display",
+            "labelText": "Time uncertainty",
+          },
+          Object {
+            "displayText": "No",
+            "itemKey": "Rejected",
+            "itemType": "Display",
+            "labelText": "Rejected",
+          },
+        ],
+        "key": "Current Version",
+      }
+    }
+    disableSubmit={true}
+    extraPanels={
+      Array [
+        Object {
+          "content": <div
+            className="ag-theme-dark signal-detection-details-versions-table"
+          >
+            <div
+              className="max"
+            >
+              <ClientSideTable
+                columnDefs={
+                  Array [
+                    Object {
+                      "cellStyle": Object {
+                        "text-align": "left",
+                      },
+                      "field": "phase",
+                      "headerName": "Phase",
+                      "width": 70,
+                    },
+                    Object {
+                      "cellStyle": Object {
+                        "text-align": "left",
+                      },
+                      "field": "arrivalTimeMeasurementTimestamp",
+                      "headerName": "Detection time",
+                      "valueFormatter": [Function],
+                      "width": 165,
+                    },
+                    Object {
+                      "cellStyle": Object {
+                        "text-align": "left",
+                      },
+                      "field": "arrivalTimeMeasurementUncertaintySec",
+                      "headerName": "Time uncertainty",
+                      "valueFormatter": [Function],
+                      "width": 125,
+                    },
+                    Object {
+                      "cellStyle": Object {
+                        "text-align": "left",
+                      },
+                      "field": "rejected",
+                      "headerName": "Rejected",
+                      "valueFormatter": [Function],
+                      "width": 75,
+                    },
+                  ]
+                }
+                getRowNodeId={[Function]}
+                id="table-signal-detection-details"
+                overlayNoRowsTemplate="No Verions"
+                rowClassRules={
+                  Object {
+                    "versions-table__row--first-in-table": [Function],
+                  }
+                }
+                rowData={
+                  Array [
+                    Object {
+                      "arrivalTimeMeasurementFeatureType": "ARRIVAL_TIME",
+                      "arrivalTimeMeasurementTimestamp": 1274393334.1,
+                      "arrivalTimeMeasurementUncertaintySec": 0.685,
+                      "first-in-table": true,
+                      "id": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+                      "phase": "tx",
+                      "rejected": false,
+                      "versionId": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+                    },
+                    Object {
+                      "arrivalTimeMeasurementFeatureType": "ARRIVAL_TIME",
+                      "arrivalTimeMeasurementTimestamp": 1274393334.1,
+                      "arrivalTimeMeasurementUncertaintySec": 0.685,
+                      "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+                      "phase": "P",
+                      "rejected": false,
+                      "versionId": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+                    },
+                  ]
+                }
+                rowSelection="single"
+              />
+            </div>
+          </div>,
+          "key": "All Versions",
+        },
+      ]
+    }
+    header="Signal Detection"
+    headerDecoration={
+      <div
+        className="signal-detection-swatch"
+        style={
+          Object {
+            "backgroundColor": "red",
+          }
+        }
+      />
+    }
+    onCancel={[Function]}
+  />
+</div>
+`;

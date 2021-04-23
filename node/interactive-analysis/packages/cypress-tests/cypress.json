@@ -1,0 +1,8 @@
+{
+  "projectId": "InteractiveAnalysis",
+  "viewportWidth": 1400,
+  "viewportHeight": 1060,
+  "baseUrl": "http://localhost:8080",
+  "testFiles": ["**/*.{feature,features}", "**/*.spec.ts"],
+  "defaultCommandTimeout": 10000
+}

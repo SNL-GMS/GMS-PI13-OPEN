@@ -1,0 +1,28 @@
+plugins {
+    id 'application'
+    id 'com.palantir.docker'
+}
+
+mainClassName = 'gms.dataacquisition.data.preloader.DataGenerationManager'
+
+dependencies {
+    implementation project(':frameworks-client-generator')
+    implementation project(':frameworks-data-injector')
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':frameworks-soh-daos')
+    implementation project(':frameworks-soh-repository')
+
+    implementation 'io.projectreactor:reactor-core'
+
+    testImplementation project(':frameworks-osd-testfixtures')
+
+    implementation 'commons-cli:commons-cli'
+    implementation 'org.postgresql:postgresql'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.postgresql:postgresql'
+    implementation 'net.jodah:failsafe'
+
+    // Google AutoValue
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor 'com.google.auto.value:auto-value'
+}

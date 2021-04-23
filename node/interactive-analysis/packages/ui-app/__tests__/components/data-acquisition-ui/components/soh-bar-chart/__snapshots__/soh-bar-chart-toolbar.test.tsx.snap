@@ -1,0 +1,785 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toolbar class should match snapshot 1`] = `
+<Component
+  forwardRef={[Function]}
+  isStale={false}
+  monitorType="LAG"
+  setStatusesToDisplay={[MockFunction]}
+  sortDropdown={
+    Object {
+      "dropdownOptions": Object {
+        "CHANNEL_FIRST": "Channel: A - Z",
+        "CHANNEL_LAST": "Channel: Z - A",
+        "LAG_HIGHEST": "Lag: highest to lowest",
+        "LAG_LOWEST": "Lag: lowest to highest",
+      },
+      "label": "Sort Channels",
+      "onChange": [MockFunction],
+      "rank": 1,
+      "tooltip": "Sort",
+      "type": "Dropdown",
+      "value": "Lag: highest to lowest",
+      "widthPx": 220,
+    }
+  }
+  station={
+    Object {
+      "allStationAggregates": Array [],
+      "channelSohs": Array [
+        Object {
+          "allSohMonitorValueAndStatuses": Array [
+            Object {
+              "contributing": false,
+              "hasUnacknowledgedChanges": true,
+              "monitorType": "LAG",
+              "quietUntilMs": 1,
+              "status": "GOOD",
+              "thresholdBad": 3,
+              "thresholdMarginal": 3,
+              "value": 10,
+              "valuePresent": true,
+            },
+            Object {
+              "contributing": false,
+              "hasUnacknowledgedChanges": true,
+              "monitorType": "LAG",
+              "quietUntilMs": 1,
+              "status": "GOOD",
+              "thresholdBad": 3,
+              "thresholdMarginal": 3,
+              "value": 11,
+              "valuePresent": true,
+            },
+          ],
+          "channelName": "adsf",
+          "channelSohStatus": undefined,
+        },
+        Object {
+          "allSohMonitorValueAndStatuses": Array [
+            Object {
+              "contributing": false,
+              "hasUnacknowledgedChanges": true,
+              "monitorType": "LAG",
+              "quietUntilMs": 1,
+              "status": "GOOD",
+              "thresholdBad": 3,
+              "thresholdMarginal": 3,
+              "value": 10,
+              "valuePresent": true,
+            },
+            Object {
+              "contributing": false,
+              "hasUnacknowledgedChanges": true,
+              "monitorType": "LAG",
+              "quietUntilMs": 1,
+              "status": "GOOD",
+              "thresholdBad": 3,
+              "thresholdMarginal": 3,
+              "value": 11,
+              "valuePresent": true,
+            },
+          ],
+          "channelName": "adsf2",
+          "channelSohStatus": undefined,
+        },
+      ],
+      "id": "1",
+      "needsAcknowledgement": true,
+      "needsAttention": true,
+      "sohStatusSummary": undefined,
+      "stationGroups": Array [],
+      "stationName": "1",
+      "statusContributors": Array [],
+      "time": undefined,
+      "uuid": "1",
+    }
+  }
+  statusesToDisplay={
+    Map {
+      "GOOD" => true,
+      "BAD" => true,
+      "MARGINAL" => true,
+      "NONE" => true,
+    }
+  }
+  uiAnalystConfiguration={
+    Object {
+      "acknowledgementQuietDuration": 0,
+      "availableQuietDurations": Array [],
+      "defaultFilters": Array [],
+      "defaultNetwork": undefined,
+      "logLevel": "info",
+      "redisplayPeriod": 5,
+      "reprocessingPeriod": 20,
+      "sohHistoricalDurations": Array [
+        300000,
+        900000,
+      ],
+      "sohStationGroupNames": Array [],
+      "sohStationStaleTimeMS": 30000,
+      "systemMessageLimit": 1000,
+    }
+  }
+>
+  <div
+    className="soh-drill-down__header"
+  >
+    <Component
+      displayTimeWarning={false}
+      leftItems={Array []}
+      rightItems={
+        Array [
+          Object {
+            "dropdownOptions": Object {
+              "CHANNEL_FIRST": "Channel: A - Z",
+              "CHANNEL_LAST": "Channel: Z - A",
+              "LAG_HIGHEST": "Lag: highest to lowest",
+              "LAG_LOWEST": "Lag: lowest to highest",
+            },
+            "label": "Sort Channels",
+            "onChange": [MockFunction],
+            "rank": 1,
+            "tooltip": "Sort",
+            "type": "Dropdown",
+            "value": "Lag: highest to lowest",
+            "widthPx": 220,
+          },
+        ]
+      }
+      setStatusesToDisplay={[Function]}
+      sohStationStaleTimeMS={30000}
+      statusFilterText="Filter by Status"
+      statusesToDisplay={
+        Map {
+          "GOOD" => true,
+          "BAD" => true,
+          "MARGINAL" => true,
+          "NONE" => true,
+        }
+      }
+      toggleHighlight={[Function]}
+      updateIntervalSecs={20}
+      widthPx={150}
+    >
+      <Component
+        items={
+          Array [
+            Object {
+              "dropdownOptions": Object {
+                "CHANNEL_FIRST": "Channel: A - Z",
+                "CHANNEL_LAST": "Channel: Z - A",
+                "LAG_HIGHEST": "Lag: highest to lowest",
+                "LAG_LOWEST": "Lag: lowest to highest",
+              },
+              "label": "Sort Channels",
+              "onChange": [MockFunction],
+              "rank": 1,
+              "tooltip": "Sort",
+              "type": "Dropdown",
+              "value": "Lag: highest to lowest",
+              "widthPx": 220,
+            },
+            Object {
+              "hasIssue": false,
+              "label": "Last Updated",
+              "rank": 2,
+              "style": Object {
+                "marginLeft": "1em",
+              },
+              "tooltip": "Most recent SOH data received",
+              "tooltipForIssue": "SOH data has not updated in over 30 seconds",
+              "type": "LabelValue",
+              "value": "-",
+              "widthPx": 400,
+            },
+            Object {
+              "label": "Update Interval",
+              "rank": 3,
+              "tooltip": "Interval at which SOH data is processed",
+              "type": "LabelValue",
+              "value": "20 seconds",
+              "widthPx": 400,
+            },
+          ]
+        }
+        itemsLeft={
+          Array [
+            Object {
+              "colors": Map {
+                "GOOD" => "#fff",
+                "MARGINAL" => "#fff",
+                "BAD" => "#fff",
+                "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+              },
+              "cyData": "filter-soh",
+              "enumKeysToDisplayStrings": Map {
+                "GOOD" => "Good",
+                "MARGINAL" => "Marginal",
+                "BAD" => "Bad",
+                "NONE" => "None",
+              },
+              "enumOfKeys": Object {
+                "BAD": "BAD",
+                "GOOD": "GOOD",
+                "MARGINAL": "MARGINAL",
+                "NONE": "NONE",
+              },
+              "label": "Filter by Status",
+              "menuLabel": "Filter by Status",
+              "onChange": [Function],
+              "onPopUp": [Function],
+              "onPopoverDismissed": [Function],
+              "rank": 1,
+              "tooltip": "Filter by Status",
+              "type": "CheckboxList",
+              "values": Map {
+                "GOOD" => true,
+                "BAD" => true,
+                "MARGINAL" => true,
+                "NONE" => true,
+              },
+              "widthPx": 200,
+            },
+          ]
+        }
+        widthPx={150}
+      >
+        <ToolbarComponent
+          items={
+            Array [
+              Object {
+                "dropdownOptions": Object {
+                  "CHANNEL_FIRST": "Channel: A - Z",
+                  "CHANNEL_LAST": "Channel: Z - A",
+                  "LAG_HIGHEST": "Lag: highest to lowest",
+                  "LAG_LOWEST": "Lag: lowest to highest",
+                },
+                "label": "Sort Channels",
+                "onChange": [MockFunction],
+                "rank": 1,
+                "tooltip": "Sort",
+                "type": "Dropdown",
+                "value": "Lag: highest to lowest",
+                "widthPx": 220,
+              },
+              Object {
+                "hasIssue": false,
+                "label": "Last Updated",
+                "rank": 2,
+                "style": Object {
+                  "marginLeft": "1em",
+                },
+                "tooltip": "Most recent SOH data received",
+                "tooltipForIssue": "SOH data has not updated in over 30 seconds",
+                "type": "LabelValue",
+                "value": "-",
+                "widthPx": 400,
+              },
+              Object {
+                "label": "Update Interval",
+                "rank": 3,
+                "tooltip": "Interval at which SOH data is processed",
+                "type": "LabelValue",
+                "value": "20 seconds",
+                "widthPx": 400,
+              },
+            ]
+          }
+          itemsLeft={
+            Array [
+              Object {
+                "colors": Map {
+                  "GOOD" => "#fff",
+                  "MARGINAL" => "#fff",
+                  "BAD" => "#fff",
+                  "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                },
+                "cyData": "filter-soh",
+                "enumKeysToDisplayStrings": Map {
+                  "GOOD" => "Good",
+                  "MARGINAL" => "Marginal",
+                  "BAD" => "Bad",
+                  "NONE" => "None",
+                },
+                "enumOfKeys": Object {
+                  "BAD": "BAD",
+                  "GOOD": "GOOD",
+                  "MARGINAL": "MARGINAL",
+                  "NONE": "NONE",
+                },
+                "label": "Filter by Status",
+                "menuLabel": "Filter by Status",
+                "onChange": [Function],
+                "onPopUp": [Function],
+                "onPopoverDismissed": [Function],
+                "rank": 1,
+                "tooltip": "Filter by Status",
+                "type": "CheckboxList",
+                "values": Map {
+                  "GOOD" => true,
+                  "BAD" => true,
+                  "MARGINAL" => true,
+                  "NONE" => true,
+                },
+                "widthPx": 200,
+              },
+            ]
+          }
+          minWhiteSpacePx={1}
+          toolbarWidthPx={110}
+          widthPx={150}
+        >
+          <div
+            className="toolbar"
+            style={
+              Object {
+                "width": "110px",
+              }
+            }
+          >
+            <div
+              className="toolbar__left-group"
+            >
+              <div
+                className="toolbar-item toolbar-item__left"
+                key="1"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={false}
+                  item={
+                    Object {
+                      "colors": Map {
+                        "GOOD" => "#fff",
+                        "MARGINAL" => "#fff",
+                        "BAD" => "#fff",
+                        "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                      },
+                      "cyData": "filter-soh",
+                      "enumKeysToDisplayStrings": Map {
+                        "GOOD" => "Good",
+                        "MARGINAL" => "Marginal",
+                        "BAD" => "Bad",
+                        "NONE" => "None",
+                      },
+                      "enumOfKeys": Object {
+                        "BAD": "BAD",
+                        "GOOD": "GOOD",
+                        "MARGINAL": "MARGINAL",
+                        "NONE": "NONE",
+                      },
+                      "label": "Filter by Status",
+                      "menuLabel": "Filter by Status",
+                      "onChange": [Function],
+                      "onPopUp": [Function],
+                      "onPopoverDismissed": [Function],
+                      "rank": 1,
+                      "tooltip": "Filter by Status",
+                      "type": "CheckboxList",
+                      "values": Map {
+                        "GOOD" => true,
+                        "BAD" => true,
+                        "MARGINAL" => true,
+                        "NONE" => true,
+                      },
+                      "widthPx": 200,
+                    }
+                  }
+                  key="1"
+                >
+                  <div
+                    style={Object {}}
+                  >
+                    <PopoverButtonComponent
+                      cyData="filter-soh"
+                      key="1"
+                      label="Filter by Status"
+                      onClick={[Function]}
+                      onPopoverDismissed={[Function]}
+                      popupContent={
+                        <CheckboxList
+                          checkboxEnum={
+                            Object {
+                              "BAD": "BAD",
+                              "GOOD": "GOOD",
+                              "MARGINAL": "MARGINAL",
+                              "NONE": "NONE",
+                            }
+                          }
+                          enumKeysToDisplayStrings={
+                            Map {
+                              "GOOD" => "Good",
+                              "MARGINAL" => "Marginal",
+                              "BAD" => "Bad",
+                              "NONE" => "None",
+                            }
+                          }
+                          enumToCheckedMap={
+                            Map {
+                              "GOOD" => true,
+                              "BAD" => true,
+                              "MARGINAL" => true,
+                              "NONE" => true,
+                            }
+                          }
+                          enumToColorMap={
+                            Map {
+                              "GOOD" => "#fff",
+                              "MARGINAL" => "#fff",
+                              "BAD" => "#fff",
+                              "NONE" => "NULL_CHECKBOX_COLOR_SWATCH",
+                            }
+                          }
+                          onChange={[Function]}
+                        />
+                      }
+                      tooltip="Filter by Status"
+                      widthPx={200}
+                    >
+                      <div
+                        data-cy="filter-soh"
+                      >
+                        <Blueprint3.Button
+                          active={false}
+                          alignText="left"
+                          className="toolbar-button"
+                          onClick={[Function]}
+                          style={
+                            Object {
+                              "width": "200px",
+                            }
+                          }
+                          title="Filter by Status"
+                        >
+                          <button
+                            className="bp3-button bp3-align-left toolbar-button"
+                            onClick={[Function]}
+                            onKeyDown={[Function]}
+                            onKeyUp={[Function]}
+                            style={
+                              Object {
+                                "width": "200px",
+                              }
+                            }
+                            title="Filter by Status"
+                            type="button"
+                          >
+                            <Blueprint3.Icon
+                              key="leftIcon"
+                            />
+                            <span
+                              className="bp3-button-text"
+                              key="text"
+                            >
+                              <span>
+                                Filter by Status
+                              </span>
+                              <Blueprint3.Icon
+                                icon="chevron-down"
+                                title={false}
+                              >
+                                <span
+                                  className="bp3-icon bp3-icon-chevron-down"
+                                  icon="chevron-down"
+                                >
+                                  <svg
+                                    data-icon="chevron-down"
+                                    height={16}
+                                    viewBox="0 0 16 16"
+                                    width={16}
+                                  >
+                                    <path
+                                      d="M12 5c-.28 0-.53.11-.71.29L8 8.59l-3.29-3.3a1.003 1.003 0 00-1.42 1.42l4 4c.18.18.43.29.71.29s.53-.11.71-.29l4-4A1.003 1.003 0 0012 5z"
+                                      fillRule="evenodd"
+                                      key="0"
+                                    />
+                                  </svg>
+                                </span>
+                              </Blueprint3.Icon>
+                            </span>
+                            <Blueprint3.Icon
+                              key="rightIcon"
+                            />
+                          </button>
+                        </Blueprint3.Button>
+                      </div>
+                    </PopoverButtonComponent>
+                  </div>
+                </Component>
+              </div>
+            </div>
+            <div
+              className="toolbar__center-group"
+            >
+              <div
+                className="toolbar__whitespace"
+                style={
+                  Object {
+                    "width": "94px",
+                  }
+                }
+              />
+            </div>
+            <div
+              className="toolbar__right-group"
+            >
+              <div
+                className="toolbar-item
+                    "
+                key="1"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={false}
+                  item={
+                    Object {
+                      "dropdownOptions": Object {
+                        "CHANNEL_FIRST": "Channel: A - Z",
+                        "CHANNEL_LAST": "Channel: Z - A",
+                        "LAG_HIGHEST": "Lag: highest to lowest",
+                        "LAG_LOWEST": "Lag: lowest to highest",
+                      },
+                      "label": "Sort Channels",
+                      "onChange": [MockFunction],
+                      "rank": 1,
+                      "tooltip": "Sort",
+                      "type": "Dropdown",
+                      "value": "Lag: highest to lowest",
+                      "widthPx": 220,
+                    }
+                  }
+                  key="1"
+                >
+                  <div
+                    style={Object {}}
+                  >
+                    <DropDown
+                      dropDownItems={
+                        Object {
+                          "CHANNEL_FIRST": "Channel: A - Z",
+                          "CHANNEL_LAST": "Channel: Z - A",
+                          "LAG_HIGHEST": "Lag: highest to lowest",
+                          "LAG_LOWEST": "Lag: lowest to highest",
+                        }
+                      }
+                      key="1"
+                      onMaybeValue={[Function]}
+                      title="Sort"
+                      value="Lag: highest to lowest"
+                      widthPx={220}
+                    >
+                      <HTMLSelect
+                        onChange={[Function]}
+                        style={
+                          Object {
+                            "minWidth": "220px",
+                            "width": "220px",
+                          }
+                        }
+                        title="Sort"
+                        value="Lag: highest to lowest"
+                      >
+                        <div
+                          className="bp3-html-select"
+                        >
+                          <select
+                            multiple={false}
+                            onChange={[Function]}
+                            style={
+                              Object {
+                                "minWidth": "220px",
+                                "width": "220px",
+                              }
+                            }
+                            title="Sort"
+                            value="Lag: highest to lowest"
+                          >
+                            <option
+                              key="LAG_HIGHEST"
+                              value="Lag: highest to lowest"
+                            >
+                              Lag: highest to lowest
+                            </option>
+                            <option
+                              key="LAG_LOWEST"
+                              value="Lag: lowest to highest"
+                            >
+                              Lag: lowest to highest
+                            </option>
+                            <option
+                              key="CHANNEL_FIRST"
+                              value="Channel: A - Z"
+                            >
+                              Channel: A - Z
+                            </option>
+                            <option
+                              key="CHANNEL_LAST"
+                              value="Channel: Z - A"
+                            >
+                              Channel: Z - A
+                            </option>
+                          </select>
+                          <Blueprint3.Icon
+                            icon="double-caret-vertical"
+                          >
+                            <span
+                              className="bp3-icon bp3-icon-double-caret-vertical"
+                              icon="double-caret-vertical"
+                            >
+                              <svg
+                                data-icon="double-caret-vertical"
+                                height={16}
+                                viewBox="0 0 16 16"
+                                width={16}
+                              >
+                                <desc>
+                                  double-caret-vertical
+                                </desc>
+                                <path
+                                  d="M5 7h6a1.003 1.003 0 00.71-1.71l-3-3C8.53 2.11 8.28 2 8 2s-.53.11-.71.29l-3 3A1.003 1.003 0 005 7zm6 2H5a1.003 1.003 0 00-.71 1.71l3 3c.18.18.43.29.71.29s.53-.11.71-.29l3-3A1.003 1.003 0 0011 9z"
+                                  fillRule="evenodd"
+                                  key="0"
+                                />
+                              </svg>
+                            </span>
+                          </Blueprint3.Icon>
+                        </div>
+                      </HTMLSelect>
+                    </DropDown>
+                  </div>
+                </Component>
+              </div>
+              <div
+                className="toolbar-item
+                    "
+                key="2"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={false}
+                  item={
+                    Object {
+                      "hasIssue": false,
+                      "label": "Last Updated",
+                      "rank": 2,
+                      "style": Object {
+                        "marginLeft": "1em",
+                      },
+                      "tooltip": "Most recent SOH data received",
+                      "tooltipForIssue": "SOH data has not updated in over 30 seconds",
+                      "type": "LabelValue",
+                      "value": "-",
+                      "widthPx": 400,
+                    }
+                  }
+                  key="2"
+                >
+                  <div
+                    className="toolbar-label-value"
+                    style={
+                      Object {
+                        "marginLeft": "1em",
+                      }
+                    }
+                  >
+                    <Component
+                      label="Last Updated"
+                      tooltip="Most recent SOH data received"
+                      value="-"
+                    >
+                      <div
+                        className="label-value-container"
+                      >
+                        <div
+                          className="label-value__label"
+                        >
+                          Last Updated: 
+                        </div>
+                        <div
+                          className="label-value__value"
+                          style={
+                            Object {
+                              "color": "",
+                            }
+                          }
+                          title="Most recent SOH data received"
+                        >
+                          -
+                        </div>
+                      </div>
+                    </Component>
+                  </div>
+                </Component>
+              </div>
+              <div
+                className="toolbar-item
+                    "
+                key="3"
+              >
+                <Component
+                  addToPopoverMap={[Function]}
+                  hasIssue={false}
+                  item={
+                    Object {
+                      "label": "Update Interval",
+                      "rank": 3,
+                      "tooltip": "Interval at which SOH data is processed",
+                      "type": "LabelValue",
+                      "value": "20 seconds",
+                      "widthPx": 400,
+                    }
+                  }
+                  key="3"
+                >
+                  <div
+                    className="toolbar-label-value"
+                    style={Object {}}
+                  >
+                    <Component
+                      label="Update Interval"
+                      tooltip="Interval at which SOH data is processed"
+                      value="20 seconds"
+                    >
+                      <div
+                        className="label-value-container"
+                      >
+                        <div
+                          className="label-value__label"
+                        >
+                          Update Interval: 
+                        </div>
+                        <div
+                          className="label-value__value"
+                          style={
+                            Object {
+                              "color": "",
+                            }
+                          }
+                          title="Interval at which SOH data is processed"
+                        >
+                          20 seconds
+                        </div>
+                      </div>
+                    </Component>
+                  </div>
+                </Component>
+              </div>
+            </div>
+          </div>
+        </ToolbarComponent>
+      </Component>
+    </Component>
+    <div
+      className="soh-drill-down-station-label display-title"
+    >
+      1
+      <div
+        className="display-title__subtitle"
+      >
+        Current lag per channel
+      </div>
+    </div>
+  </div>
+</Component>
+`;

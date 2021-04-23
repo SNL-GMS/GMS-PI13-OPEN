@@ -1,0 +1,11 @@
+{{ include "soh.validateValues" . }}
+Type:               {{ .Chart.Name }}
+Instance name:      {{ .Release.Name }}
+Namespace:          {{ .Release.Namespace }}
+Base domain:        {{ .Values.baseDomain }}
+User:               {{ .Values.user }}
+Image registry:     {{ .Values.imageRegistry }}
+Image tag:          {{ .Values.imageTag }}
+ReconfigInProgress: {{ .Values.reconfigInProgress }}
+Run Injector:       {{ .Values.injector }}
+Live Data:          {{ .Values.liveData }}

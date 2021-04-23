@@ -1,0 +1,70 @@
+.label {
+  background-color: $gms-prominent-background;
+}
+.x-axis {
+  background-color: $gms-prominent-background;
+  border-top: 1px solid $gms-soft;
+
+  .x-axis-axis {
+    path,
+    line {
+      fill: none;
+      stroke: $gms-main;
+      shape-rendering: crispEdges;
+    }
+    text {
+      font-family: $gms-sans;
+      font-size: 11px;
+      fill: $gms-main;
+    }
+  }
+}
+
+.y-axis {
+  .y-axis-axis {
+    path,
+    line {
+      stroke: $gms-soft;
+    }
+    text {
+      fill: $gms-prominent;
+    }
+  }
+}
+
+.contentrenderer {
+  border: none;
+}
+.channel {
+  border-bottom: 1px solid $gms-weavess-borders;
+}
+
+.weavess {
+  outline: none;
+  .weavess-wp-container {
+    outline: 1px solid $gms-weavess-borders;
+    border-top: 1px solid $gms-soft;
+  }
+  .weavess-wp-time-range {
+    color: $gms-soft;
+  }
+}
+
+.weavess-wp ::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+  background-color: $gms-prominent-background;
+}
+.weavess-wp ::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background-color: $gms-scrollbar;
+}
+.weavess-wp ::-webkit-scrollbar-corner,
+::-webkit-scrollbar-corner {
+  background-color: $gms-prominent-background;
+}
+
+.weavess .weavess-measure-window {
+  width: 100%;
+  flex: 0 0 auto;
+  border-bottom: 0.25rem solid $gms-recessed;
+}

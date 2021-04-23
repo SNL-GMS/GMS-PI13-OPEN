@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`stations by ids tests stations by ids 1`] = `
+Array [
+  Object {
+    "actualChangeTime": "2005-06-14T00:00:00Z",
+    "aliases": Array [],
+    "comment": "Loaded from site file.",
+    "description": "Alice_Springs_Array,_Australia",
+    "elevation": 0.627,
+    "entityId": "d1a4092a-62ab-3ed3-a46e-06ae16dc6f7e",
+    "latitude": -23.66513,
+    "longitude": 133.90526,
+    "name": "ASAR",
+    "source": Object {
+      "informationTime": "2019-02-28T00:00:00Z",
+      "originatingOrganization": "External",
+      "reference": "OffDate: 2286-11-20T00:00:00Z, Loaded from CSS file",
+    },
+    "stationType": "SeismicArray",
+    "systemChangeTime": "2005-06-14T00:00:00Z",
+    "versionId": "1c4a8d11-178a-3c5d-a902-ac599a155621",
+  },
+]
+`;

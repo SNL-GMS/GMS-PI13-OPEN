@@ -1,0 +1,12 @@
+apply plugin: "java-library"
+apply plugin: "io.swagger.core.v3.swagger-gradle-plugin"
+
+dependencies {
+    implementation project(":soh-control")
+    implementation project(":frameworks-service-interface-base")
+    implementation project(":frameworks-system-config")
+
+    // Google AutoValue
+    implementation "com.google.auto.value:auto-value-annotations"
+    annotationProcessor "com.google.auto.value:auto-value"
+}

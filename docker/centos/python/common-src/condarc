@@ -1,0 +1,9 @@
+channels:
+  - #MINICONDA_URL#/pkgs/main
+  - #MINICONDA_URL#/pkgs/r
+default_channels:
+  - #MINICONDA_URL#/pkgs/main
+  - #MINICONDA_URL#/pkgs/r
+defaults:
+  - #MINICONDA_URL#/pkgs/main
+  - #MINICONDA_URL#/pkgs/r

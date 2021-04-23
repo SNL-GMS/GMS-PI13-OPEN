@@ -1,0 +1,621 @@
+#!/usr/bin/env python3
+
+# --------------------------------------------------------------------
+#  gms-artifactory - Ground Monitoring System Artifactory Utility
+#
+#  This gms-artifactory script interfaces with the Artifactory REST
+#  API to perform maintenance tasks.
+# --------------------------------------------------------------------
+
+import os
+import re
+import sys
+import traceback
+import json
+from argparse import ArgumentParser
+from argparse import RawDescriptionHelpFormatter
+from datetime import datetime
+from signal import signal, SIGINT
+from pathlib import Path
+
+import requests
+import yaml
+
+# List of possible config filenames
+config_filenames = [
+    os.getcwd() + "/gms-artifactory-config.yml",
+    os.environ['HOME'] + "/.gms-artifactory-config.yml",
+    os.environ['HOME'] + "/gms-artifactory-config.yml",
+    "/etc/gms/gms-artifactory-config.yml"]
+
+
+# termcolors
+class tc:
+    BOLD = '\033[1m'
+    RED = '\033[31m'
+    GREEN = '\033[32m'
+    YELLOW = '\033[33m'
+    MAGENTA = '\033[35m'
+    CYAN = '\033[36m'
+    ENDC = '\033[0m'
+
+
+def main():
+    (args, parser) = get_args()
+
+    try:
+        # Read the first config file we can find from the list of supported config file locations.
+        config = None
+        for f in config_filenames:
+            if os.path.exists(f):
+                if args.verbose:
+                    print_debug(f"--- reading configuration from {f}")
+                with open(f) as ymlfile:
+                    config = yaml.safe_load(ymlfile)
+                    break
+
+        if not config:
+            print_error("ERROR! Configuration file not found.")
+            print("Run 'gms-artifactory --help' and read the section on configuration for more information.")
+            sys.exit(1)
+
+        # Check for cmd line overrides for url and apiKey
+        if args.url:
+            config['artifactory']['url'] = args.url
+        if args.apikey:
+            config['artifactory']['apiKey'] = args.apikey
+
+        if args.verbose:
+            print_debug(f"--- artifactory url: {config['artifactory']['url']}")
+
+        # Create a artifactory instance
+        artifactory = Artifactory(config['artifactory']['url'], config['artifactory']['apiKey'])
+
+        if args.ACTION == 'list':
+            list_command(artifactory, config, args, parser)
+
+        elif args.ACTION == 'clean':
+            clean_command(artifactory, config, args, parser)
+
+        else:
+            print_error("ERROR! Missing required ACTION")
+            print("Run 'gms-artifactory --help' for usage.")
+
+    except FileNotFoundError as e:
+        print_error(e)
+        traceback.print_exc(file=sys.stdout)
+        sys.exit(1)
+    except requests.exceptions.HTTPError as e:
+        print_error(e)
+        traceback.print_exc(file=sys.stdout)
+        sys.exit(1)
+    except Exception as e:
+        print_error("Exception: %s %s" % (str(e), type(e)))
+        traceback.print_exc(file=sys.stdout)
+        sys.exit(1)
+
+    sys.exit(0)
+
+
+def get_args():
+    "Get command-line arguments"
+
+    description = """
+description:
+  The gms-artifactory command-line program is used to perform
+  artifactory adminstrative tasks.
+
+  The primary use of this program is for cleaning up old docker image
+  tags from non-release builds, but additional capabilities may be
+  added over time.
+
+     list   List docker or generic artifacts
+     clean  Clean up old docker images
+
+  Run 'gms-artifactory <command> --help' for more help with a specific
+  command.
+    
+configuration:
+  A configuration file is required to specify access parameters for
+  artifactory. Artifactory repositories and retention parameters for
+  different types of artifacts may also be specified in the
+  configuration.
+
+  The configuration file contains an 'artifactory' section and must
+  contain at least the following two keys:
+
+    artifactory:
+      url: https://artifactory.example.com/artifactory
+      apiKey: { API key for an administrative user }
+
+  The url and apiKey can be specified as commandline arguments (--url and --apikey),
+  and if specified will override any value from the config file.  This allows
+  for bogus values to be left in the config file to prevent sensitive keys
+  from being left in plain text.
+  
+  An optional 'docker' section may be specified to indicate which
+  docker image tags should be permanently kept and how old an image
+  must be before it can be considered for deletiton. The list of
+  specific artificatory docker repos to consider may also be
+  specified.
+    
+      docker:
+        # keep any tag matching this pattern indefinitely
+        keep_pattern: '(release-)?[0-9]+[-.][0-9]+[-.][0-9]+(-(rc-)?SNAPSHOT)?'
+        days_to_keep: 30
+        repos:
+          - sandbox_docker_local
+
+  The configuration file will be searched for in the following
+  locations. The first one found will be the configuration used.
+
+    $CWD/gms-artifactory-conf.yml
+    $HOME/.gms-artifactory-conf.yml
+    $HOME/gms-artifactory-conf.yml
+    /etc/gms/gms-artifactory-conf.yml
+
+examples:
+  Clean up defunct docker images:
+    $ gms-artifactory clean 
+
+  Show which defunct docker images would be cleaned up, but do not delete them:
+    $ gms-artifactory clean --dry-run
+    
+  List all docker image tags:
+    $ gms-artifactory list
+
+  List generic artifacts:
+    $ gms-artifactory list --types generic
+    
+  Clean and override apikey:
+    $ gms-artifactory clean --apikey 12ABCD3456
+
+  Show what would be deleted without actually deleting (both docker and generic artifacts):
+    $ python gms-artifactory clean --types {generic,docker} --dry-run
+
+  Clean docker files
+    $ python gms-artifactory clean --types docker
+
+  Clean generic files
+    $ python gms-artifactory clean --types generic
+    
+"""
+    parser = ArgumentParser(description=description,
+                            formatter_class=RawDescriptionHelpFormatter)
+
+    parser.add_argument('--verbose', '-v', default=False, action='store_true', help='verbose output')
+
+    parser.add_argument('--url', default=None, help='artifactory url, overrides config file value')
+    parser.add_argument('--apikey', default=None, help='artifactory api key, overrides config file value')
+
+    subparsers = parser.add_subparsers(dest='ACTION', help='Available sub-commands:')
+
+    parser_list = subparsers.add_parser('list', help='list artifacts')
+    parser_list.add_argument('-t', '--types', nargs='+',
+                             default=['docker'],
+                             choices=['docker', 'generic'], help='artifact types to list')
+
+    parser_clean = subparsers.add_parser('clean', help='clean up old docker artifacts')
+    parser_clean.add_argument('-t', '--types', nargs='+',
+                              default=['docker'],
+                              choices=['docker', 'generic'], help='artifact types to clean/delete')
+    parser_clean.add_argument('-d', '--dry-run', default=False, action='store_true',
+                              help="show what would be removed, but don't remove")
+
+    args = parser.parse_args()
+
+    return (args, parser)
+
+
+def print_error(message):
+    print(f"{tc.RED}{message}{tc.ENDC}")
+
+
+def print_warning(message):
+    print(f"{tc.YELLOW}{message}{tc.ENDC}")
+
+
+def print_debug(message):
+    print(f"{tc.GREEN}{message}{tc.ENDC}")
+
+
+def list_command(artifactory, config, args, parser=None):
+    "List artifactory contents"
+
+    if 'docker' in args.types:
+        try:
+            repo_keys = config['artifactory']['docker']['repos']
+        except KeyError:
+            repo_keys = artifactory.get_repo_keys()
+
+        for repo_key in repo_keys:
+            
+            # Check if repo_key is valid repo type
+            if not isvalid_repo_package_type(artifactory, repo_key, 'docker', 'local'):
+                print_error(f'Repository:  {repo_key} is NOT a LOCAL repo of type DOCKER ... Cannot list this repository')
+                continue
+
+            for repo in artifactory.get_docker_repositories(repo_key):
+                for tag in artifactory.get_docker_tags(repo_key, repo):
+                    print(f'{repo_key}: {repo} -- {tag}')
+
+    if 'generic' in args.types:
+        try:
+            repo_keys = config['artifactory']['generic']['repos']
+        except KeyError:
+            repo_keys = artifactory.get_repo_keys()
+    
+        for repo_key in repo_keys:
+            # Check if repo_key is valid repo type
+            if not isvalid_repo_package_type(artifactory, repo_key, 'generic', 'local'):
+                print_error(f'Repository:  {repo_key} is NOT a LOCAL repo of type GENERIC ... Cannot list this repository')
+                continue
+
+            repo_artifacts, repo_artifact_folders = artifactory.get_generic_artifacts(repo_key, "", True)    
+            for artifact in repo_artifacts:
+                index_basename = artifact.find(repo_key)
+                artifact_basename = artifact[index_basename:len(artifact)]
+                print(f'{repo_key}: {artifact_basename}')
+
+        
+def clean_command(artifactory, config, args, parser=None):
+    if 'docker' in args.types:
+        try:
+            repo_keys = config['artifactory']['docker']['repos']
+        except KeyError:
+            repo_keys = artifactory.get_repo_keys('docker')
+    
+        clean_docker(artifactory, repo_keys, config, args)
+
+    if 'generic' in args.types:
+        try:
+            repo_keys = config['artifactory']['generic']['repos']
+        except KeyError:
+            repo_keys = artifactory.get_repo_keys('generic')
+    
+        clean_generic(artifactory, repo_keys, config, args)
+        
+    
+
+def clean_docker(artifactory, repo_keys, config, args):
+    """
+    Clean up old artifacts from artifactory.
+    """
+    try:    
+        keep_pattern = re.compile(f"^{config['artifactory']['docker']['keep_pattern']}$")
+    except KeyError:
+        keep_pattern = None
+    
+    try:
+        days_to_keep = config['artifactory']['docker']['days_to_keep']
+        if args.verbose:
+            print_debug(f"--- days to keep set for {days_to_keep} days")
+    except KeyError:
+        days_to_keep = None
+    
+    
+    for repo_key in repo_keys:
+        if args.verbose:
+            print_debug(f"--- processing artifactory repo {repo_key}")
+
+        # Check if repo_key is valid repo type
+        if not isvalid_repo_package_type(artifactory, repo_key, 'docker', 'local'):
+            print_error(f'Repository:  {repo_key} is NOT a LOCAL repo of type DOCKER ... Cannot clean this repository')
+            continue
+    
+        for repo in artifactory.get_docker_repositories(repo_key):
+            for tag in artifactory.get_docker_tags(repo_key, repo):
+                if tag == 'latest' or (keep_pattern and keep_pattern.match(tag)):
+                    continue
+    
+                manifest = artifactory.get_docker_manifest(repo_key, repo, tag)
+                age = datetime.utcnow() - datetime.strptime(manifest['lastModified'], '%Y-%m-%dT%H:%M:%S.%fZ')
+                if days_to_keep is not None and age.days > days_to_keep:
+                    print(f'{repo_key}: {repo} -- {tag} [{age.days} days old]', end='')
+                    if not args.dry_run:
+                        artifactory.delete_docker_tag(repo_key, repo, tag)
+                        print(' ... DELETED')
+                    else:
+                        print(' ... NOT DELETED')
+    
+
+def clean_generic(artifactory, repo_keys, config, args):
+    """
+    Clean up old artifacts from artifactory.
+    """
+
+    try:    
+        keep_pattern = re.compile(f"^{config['artifactory']['generic']['keep_pattern']}$")
+    except KeyError:
+        keep_pattern = None
+
+    try:
+        days_to_keep = config['artifactory']['generic']['days_to_keep']
+        if args.verbose:
+            print_debug(f"--- days to keep set for {days_to_keep} days")
+    except KeyError:
+        days_to_keep = None
+
+    files_deleted = False
+
+    for repo_key in repo_keys:
+        if args.verbose:
+            print_debug(f"--- processing artifactory repo {repo_key}")
+
+        # Check if repo_key is valid repo type
+        if not isvalid_repo_package_type(artifactory, repo_key, 'generic', 'local'):
+            print_error(f'Repository:  {repo_key} is NOT a LOCAL repo of type GENERIC ... Cannot clean this repository')
+            continue
+
+        # Call a function to get all of the artifacts contained in the repo_key. Also get the folder
+        # structures that the artifacts are contained in (so the folder structure can be delted later)
+        if args.verbose:
+            print_debug(f'Building artifact list for repo:  {repo_key}')
+
+        repo_artifacts, repo_artifact_folders = artifactory.get_generic_artifacts(repo_key, "", True) 
+
+        for artifact in repo_artifacts:
+            # Get the file portion of the artifact full URL path (file plus extension)
+            (artifact_base_name, extension) = os.path.splitext(os.path.basename(artifact))
+
+            # If the artifact file matches the keep_pattern, do NOT continue processing this artifact
+            if keep_pattern and keep_pattern.match(artifact_base_name):
+                continue
+
+            # Get the metadata associated with the artifact
+            artifact_metadata = artifactory.get_generic_artifact_info(artifact)
+            
+            age = datetime.utcnow() - datetime.strptime(artifact_metadata['lastModified'], '%Y-%m-%dT%H:%M:%S.%fZ')
+
+            if days_to_keep is not None and age.days > days_to_keep:
+                # Extract the repo plus artifact name from the full artifact URL (for printing purposes)
+                index_basename = artifact.find(repo_key)
+                artifact_name = artifact[index_basename:len(artifact)]
+
+                print(f'{repo_key}: {artifact_name} -- [{age.days} days old]', end='')
+                if not args.dry_run:
+                    artifactory.delete_generic_artifact(artifact.replace("/api/storage", ""))
+                    print(' ... DELETED')
+                    files_deleted = True
+                else:
+                    print(' ... NOT DELETED')
+
+        # If any files were deleted, then loop through the artifact folders and delete any folder structure
+        # that is empty
+        if files_deleted:
+            for folder in repo_artifact_folders:
+                response = artifactory.send_request(folder, {"X-JFrog-Art-API": artifactory.api_key}, 'get', None)
+                response_json = response.json()
+
+                # Cleanup the folder name to only include the folder portion (for printing puposes)
+                #folder_name = folder.replace("/api/storage", "")
+                index_basename = folder.find(repo_key)
+                folder_name = folder[index_basename:len(folder)]
+
+                print(f'{folder_name} [Artifact Folder]', end='')
+
+                if (len(response_json['children']) == 0):
+                    if not args.dry_run:
+                        artifactory.delete_generic_artifact(folder.replace("/api/storage", ""))
+                        print(' ... DELETED')
+                    else: 
+                        print(' ... NOT DELETED')
+                else:
+                    print(' ... NOT DELETED (not empty)')
+
+def isvalid_repo_package_type(artifactory, repo, package_type, repo_type):
+    # repo_keys can be full paths - repo/path (sandbox_files_local/developer-vm) and we need to confirm
+    # if the base repo is of type 'generic' and of class 'local' so extract the base repo from the 
+    # repo_key
+    base_repo = Path(repo).parts[0]
+
+    # Check to make sure the api/storageinfo/repositoriesSummaryList/repoType is one of:  LOCAL
+    # Check to make sure the api/storageinfo/repositoriesSummaryList/packageType is:  package_type
+    repo_package_type, repo_rclass = artifactory.get_repo_package_type_class(base_repo)
+
+    if repo_package_type != package_type or repo_rclass != repo_type:
+        return False
+    else:
+        return True
+
+
+class Artifactory:
+    "Artifactory API interface class"
+
+    def __init__(self, artifactory_url, api_key):
+        self.artifactory_url = artifactory_url
+        self.api_key = api_key
+        self.docker_url = artifactory_url + "/api/docker"
+        self.generic_url = artifactory_url + "/api/storage"
+        self.generic_repo_contents = []
+        self.generic_repo_folders = []
+
+    def send_request(self, request_string, request_headers, type, payload):
+        try:
+            if type == 'get':
+                if payload is None:
+                    response = requests.get(request_string, headers=request_headers)
+                else:
+                    response = requests.post(request_string, headers=request_headers, data=payload)
+            elif type == 'delete':
+                response = requests.delete(request_string, headers=request_headers)
+
+            response.raise_for_status()
+            return response
+        except requests.exceptions.HTTPError as ex:
+            print_warning(ex)
+            return None
+
+    def get_repo_keys(self, type):
+        try:
+            # there is a way to limit this to package type (e.g. '?packageType=generic'), 
+            # but that doesn't seem to work in old artifactory (but does in new artifactory)
+            response = self.send_request(f'{self.artifactory_url}/api/repositories/?type=local&packageType={type}', 
+                                         {"X-JFrog-Art-API": self.api_key}, 'get', None)
+
+            if response is not None:
+                return [k['key'] for k in response.json()]
+            else:
+                return None
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+    def get_artifact_list(self, repo_key):
+        # This method was used to return files inside a maven repository.  The code
+        # for maven was removed but leaving this method.  Note that it only works for
+        # a top level repository (i.e. sandbox_files_local) so it could not be used
+        # for the use case where we want to drill down a path and delete all the children
+        # such as:  sandbox_files_local/developer-vm (wrote recursive method:
+        # get_generic_artifacts for this purpose)
+        try:
+            payload = 'items.find( { "repo":{"$eq":"%s"} })' % repo_key
+            response = self.send_request(f'{self.artifactory_url}/api/search/aql', 
+                                         {"X-JFrog-Art-API": self.api_key}, 'get', payload)
+
+            if response is not None: 
+                response_json = response.json()
+                if 'results' in response_json:
+                    return sorted(response_json["results"], key=lambda k: k['path'])
+                else:
+                    return None
+            else:
+                return None
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+    def get_docker_repositories(self, repo_key):
+        try:
+            response = self.send_request(f'{self.docker_url}/{repo_key}/v2/_catalog', 
+                                        {"X-JFrog-Art-API": self.api_key}, 'get', None) 
+            if response is not None:
+                return response.json()['repositories']
+            else:
+                return None
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+    def get_generic_artifacts(self, repo_key, child_uri, init_call):
+        try:
+            # This method is recursive since it is traversing the "children" in the
+            # "repo_key".  If the "folder" property of the "child" is "true", there
+            # are more children to traverse and the method is recursively called.
+
+            # If being called the firstime, blank out the generic_repo_contents list
+            if init_call:
+                self.generic_repo_contents = []
+                self.generic_repo_folders = []
+            
+            response = self.send_request(f'{self.generic_url}/{repo_key}/{child_uri}', 
+                                         {"X-JFrog-Art-API": self.api_key}, 'get', None)
+            
+            if response is None:
+                return None
+            else:
+                response_json = response.json()
+
+                for index in range(len(response_json['children'])):
+                    c_uri = response_json['children'][index]['uri']
+                    c_folder = response_json['children'][index]['folder']
+
+                    if c_folder == True:
+                        self.get_generic_artifacts(repo_key, child_uri + c_uri, False)
+                    else:
+                        self.generic_repo_contents.append(self.generic_url + '/' + repo_key + child_uri + c_uri)
+                        parent_folder = self.generic_url + '/' + repo_key + child_uri
+                        if parent_folder not in self.generic_repo_folders:
+                            self.generic_repo_folders.append(parent_folder)
+            
+            
+                return (self.generic_repo_contents, self.generic_repo_folders)
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+    def get_docker_tags(self, repo_key, repo):
+        try:
+            response = self.send_request(f'{self.docker_url}/{repo_key}/v2/{repo}/tags/list', 
+                                         {"X-JFrog-Art-API": self.api_key}, 'get', None)
+            
+            if response is not None:
+                return response.json()['tags']
+            else:
+                return None
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+    def get_docker_manifest(self, repo_key, repo, tag):
+        try:
+            response = self.send_request(f'{self.artifactory_url}/api/storage/{repo_key}/{repo}/{tag}/manifest.json',
+                                         {"X-JFrog-Art-API": self.api_key}, 'get', None)
+            
+            if response is not None:
+                return response.json()
+            else:
+                return None
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+    def get_generic_artifact_info(self, repo_artifact):
+        try:
+            response = self.send_request(repo_artifact, {"X-JFrog-Art-API": self.api_key}, 'get', None)
+            
+            if response is not None:
+                return response.json()
+            else:
+                return None
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+    def get_repo_package_type_class(self, repo_key):
+        try:
+            response = self.send_request(f'{self.artifactory_url}/api/repositories/{repo_key}',
+                                         {"X-JFrog-Art-API": self.api_key}, 'get', None)
+            
+            if response is not None:
+                response_json = response.json()
+                package_type = response.json()["packageType"]
+                rclass = response.json()["rclass"]
+                return (package_type, rclass)
+            else:
+                return (None, None)
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+
+
+    def delete_docker_tag(self, repo_key, repo, tag):
+        try:
+            response = self.send_request(f'{self.artifactory_url}/{repo_key}/{repo}/{tag}',
+                                         {"X-JFrog-Art-API": self.api_key}, 'delete', None)
+            
+            return response
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+    def delete_generic_artifact(self, repo_artifact):
+        try:
+            response = self.send_request(repo_artifact, 
+                                         {"X-JFrog-Art-API": self.api_key}, 'delete', None)
+            return response
+        except Exception as ex:
+            print_warning(ex)
+            return None
+
+def handler(signal_received, frame):
+    # Handle any cleanup here
+    exit(0)
+
+
+if __name__ == "__main__":
+    # register SIGINT handler for ctl-c
+    signal(SIGINT, handler)
+
+    main()

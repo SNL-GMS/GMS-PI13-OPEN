@@ -1,0 +1,35 @@
+plugins {
+    id "application"
+    id "com.palantir.docker"
+}
+
+mainClassName = 'gms.dataacquisition.css.stationrefconverter.Application'
+
+run {
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+}
+
+dependencies {
+    // GMS project dependencies.
+    implementation project(':css-reader')
+    implementation project(':frameworks-osd-commonobjects')
+
+    // Third-party dependencies.
+    implementation 'args4j:args4j'
+    // Google AutoValue
+    implementation 'com.google.guava:guava'
+    implementation 'com.google.auto.value:auto-value-annotations'
+    annotationProcessor "com.google.auto.value:auto-value"
+}
+
+task copyCss(type: Copy) {
+    group 'Docker'
+    shouldRunAfter(dockerPrepare)
+
+    from "../../../../../../config/station-reference/data"
+    into "$buildDir/docker/Metadata"
+}
+
+docker.dependsOn(copyCss)

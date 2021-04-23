@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Protected route Authenticated should match snapshot 1`] = `
+<ProtectedRouteComponent
+  authenticated={true}
+  componentProps={Object {}}
+  path="somePath"
+  render={
+    [MockFunction] {
+      "calls": Array [
+        Array [
+          Object {},
+        ],
+      ],
+      "results": Array [
+        Object {
+          "type": "return",
+          "value": <div />,
+        },
+      ],
+    }
+  }
+>
+  <div />
+</ProtectedRouteComponent>
+`;
+
+exports[`Protected route Not authenticated should match snapshot 1`] = `
+<Redirect
+  to={
+    Object {
+      "pathname": "/login",
+      "state": Object {
+        "from": "somePath",
+      },
+    }
+  }
+/>
+`;

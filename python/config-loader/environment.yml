@@ -1,0 +1,13 @@
+name: config-loader
+
+dependencies:
+- python=3.7.4
+- flask
+- gunicorn
+- pyyaml
+- simplejson
+- pip
+- pip:
+  - flask-sqlalchemy==2.4.0
+  - flask-sqlalchemy-session==1.1
+  - flask-executor==0.9.3

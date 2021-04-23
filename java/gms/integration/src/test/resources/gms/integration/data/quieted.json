@@ -1,0 +1,27 @@
+
+  [
+    {
+      "quietUntil": "2020-04-09T16:17:47.599447Z",
+      "quietDuration":"PT5M",
+      "sohMonitorType": "LAG",
+      "channelName": "AAK.AAK.BHN",
+      "comment":"Here is a comment. Wow, what a cool comment.",
+      "stationName":"AAK"
+    },
+    {
+      "quietUntil": "2020-04-09T16:17:47.599447Z",
+      "quietDuration":"PT5M",
+      "sohMonitorType": "ENV_AUTHENTICATION_SEAL_BROKEN",
+      "channelName": "AAK.AAK.BHN",
+      "comment":"Here is a second comment.",
+      "stationName":"AAK"
+    },
+    {
+      "quietUntil": "2020-04-09T16:17:47.599447Z",
+      "quietDuration":"PT5M",
+      "sohMonitorType": "ENV_BACKUP_POWER_UNSTABLE",
+      "channelName": "AAK.AAK.BHN",
+      "comment":"Here is a third comment.",
+      "stationName":"AAK"
+    }
+  ]

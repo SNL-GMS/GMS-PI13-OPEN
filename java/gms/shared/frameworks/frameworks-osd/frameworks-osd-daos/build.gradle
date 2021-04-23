@@ -1,0 +1,32 @@
+apply plugin: 'java-library'
+
+dependencies {
+    // Project dependencies.
+    api project(':frameworks-osd-api')
+    api project(':frameworks-system-config')
+
+    // Third-party dependencies.
+    implementation 'javax.xml.bind:jaxb-api'
+
+    // Utility (api dependency since Apache commons classes are publicly exposed).
+    api 'org.apache.commons:commons-lang3'
+
+    // Persistence (api dependencies since persistence.xml requires Hibernate).
+    api 'javax.persistence:javax.persistence-api'
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.postgresql:postgresql'
+
+    implementation 'com.datastax.cassandra:cassandra-driver-core'
+    implementation 'com.datastax.cassandra:cassandra-driver-extras'
+
+    implementation 'com.vladmihalcea:hibernate-types-52'
+
+    // Testing.
+    testImplementation project(':frameworks-osd-testfixtures')
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+}

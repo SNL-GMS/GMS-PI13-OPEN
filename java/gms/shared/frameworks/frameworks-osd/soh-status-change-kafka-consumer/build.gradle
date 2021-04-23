@@ -1,0 +1,12 @@
+apply plugin: 'application'
+apply plugin: 'com.palantir.docker'
+
+mainClassName = 'gms.shared.frameworks.osd.soh.statuschange.consumer.UnacknowledgedSohStatusChangeStorageConsumer'
+
+dependencies {
+    // Gradle sub-project dependencies.
+    implementation project(':kafka-consumer-frameworks')
+    implementation project(':frameworks-service-generator')
+    implementation project(':frameworks-osd-commonobjects')
+    implementation project(':frameworks-soh-repository')
+}

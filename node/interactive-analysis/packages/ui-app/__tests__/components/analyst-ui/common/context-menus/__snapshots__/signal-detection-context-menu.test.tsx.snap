@@ -1,0 +1,398 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`signal-detection-context-menu should have a consistent snapshot on mount 1`] = `
+<ul
+  class="bp3-menu"
+>
+  <li
+    class="bp3-submenu"
+  >
+    <span
+      class="bp3-popover-wrapper"
+    >
+      <span
+        class="bp3-popover-target"
+      >
+        <a
+          class="bp3-menu-item"
+          data-cy="set-phase"
+          label="Ctrl+s"
+          tabindex="0"
+        >
+          <div
+            class="bp3-text-overflow-ellipsis bp3-fill"
+          >
+            Set Phase...
+          </div>
+          <span
+            class="bp3-menu-item-label"
+          >
+            Ctrl+s
+          </span>
+          <span
+            class="bp3-icon bp3-icon-caret-right"
+            icon="caret-right"
+          >
+            <svg
+              data-icon="caret-right"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <desc>
+                caret-right
+              </desc>
+              <path
+                d="M11 8c0-.15-.07-.28-.17-.37l-4-3.5A.495.495 0 006 4.5v7a.495.495 0 00.83.37l4-3.5c.1-.09.17-.22.17-.37z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </a>
+      </span>
+    </span>
+  </li>
+  <li
+    class="bp3-submenu"
+  >
+    <span
+      class="bp3-popover-wrapper"
+    >
+      <span
+        class="bp3-popover-target"
+      >
+        <a
+          class="bp3-menu-item"
+          data-cy="association-menu"
+          tabindex="0"
+        >
+          <div
+            class="bp3-text-overflow-ellipsis bp3-fill"
+          >
+            Event Association
+          </div>
+          <span
+            class="bp3-icon bp3-icon-caret-right"
+            icon="caret-right"
+          >
+            <svg
+              data-icon="caret-right"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <desc>
+                caret-right
+              </desc>
+              <path
+                d="M11 8c0-.15-.07-.28-.17-.37l-4-3.5A.495.495 0 006 4.5v7a.495.495 0 00.83.37l4-3.5c.1-.09.17-.22.17-.37z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </a>
+      </span>
+    </span>
+  </li>
+  <li
+    class=""
+  >
+    <a
+      class="bp3-menu-item bp3-popover-dismiss"
+      data-cy="show-fk"
+    >
+      <div
+        class="bp3-text-overflow-ellipsis bp3-fill"
+      >
+        Show FK
+      </div>
+    </a>
+  </li>
+  <li
+    class=""
+  >
+    <a
+      class="bp3-menu-item bp3-popover-dismiss"
+      data-cy="reject-sd"
+    >
+      <div
+        class="bp3-text-overflow-ellipsis bp3-fill"
+      >
+        Reject
+      </div>
+    </a>
+  </li>
+  <li
+    class="bp3-submenu"
+  >
+    <span
+      class="bp3-popover-wrapper"
+    >
+      <span
+        class="bp3-popover-target"
+      >
+        <a
+          class="bp3-menu-item"
+          data-cy="measure"
+          tabindex="0"
+        >
+          <div
+            class="bp3-text-overflow-ellipsis bp3-fill"
+          >
+            Measure
+          </div>
+          <span
+            class="bp3-icon bp3-icon-caret-right"
+            icon="caret-right"
+          >
+            <svg
+              data-icon="caret-right"
+              height="16"
+              viewBox="0 0 16 16"
+              width="16"
+            >
+              <desc>
+                caret-right
+              </desc>
+              <path
+                d="M11 8c0-.15-.07-.28-.17-.37l-4-3.5A.495.495 0 006 4.5v7a.495.495 0 00.83.37l4-3.5c.1-.09.17-.22.17-.37z"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </span>
+        </a>
+      </span>
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`signal-detection-context-menu should have a function for checking if we can generate fk 1`] = `true`;
+
+exports[`signal-detection-context-menu should have basic props built on render 1`] = `
+Object {
+  "associateToNewEvent": [MockFunction],
+  "changeAssociation": [MockFunction],
+  "currentOpenEvent": null,
+  "measurementMode": Object {
+    "entries": Immutable.Map {
+      "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05": true,
+    },
+    "mode": "Default",
+  },
+  "rejectDetections": [MockFunction],
+  "sdIdsToShowFk": Array [],
+  "selectedSds": Array [
+    Object {
+      "conflictingHypotheses": Array [],
+      "currentHypothesis": Object {
+        "featureMeasurements": Array [
+          Object {
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "id": "dbdd8420-a448-44a0-9fea-d39fe55b0136",
+            "measurementValue": Object {
+              "standardDeviation": 0.685,
+              "value": 1274393237.85,
+            },
+          },
+          Object {
+            "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+            "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+            "measurementValue": Object {
+              "measurementValue": 0,
+              "referenceTime": 0,
+            },
+          },
+          Object {
+            "featureMeasurementType": "SLOWNESS",
+            "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+            "measurementValue": Object {
+              "measurementValue": 0,
+              "referenceTime": 0,
+            },
+          },
+          Object {
+            "featureMeasurementType": "PHASE",
+            "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+            "measurementValue": Object {
+              "confidence": 0,
+              "phase": "P",
+            },
+          },
+        ],
+        "id": "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+        "rejected": false,
+      },
+      "hasConflict": false,
+      "id": "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+      "modified": false,
+      "monitoringOrganization": "TEST",
+      "requiresReview": Object {
+        "amplitudeMeasurement": false,
+      },
+      "reviewed": Object {
+        "amplitudeMeasurement": false,
+      },
+      "signalDetectionHypothesisHistory": Array [
+        Object {
+          "arrivalTimeSecs": 1274393334.1,
+          "arrivalTimeUncertainty": 0.685,
+          "id": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+          "phase": "tx",
+          "rejected": false,
+        },
+        Object {
+          "arrivalTimeSecs": 1274393334.1,
+          "arrivalTimeUncertainty": 0.685,
+          "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+          "phase": "P",
+          "rejected": false,
+        },
+      ],
+      "stationName": "USRK",
+    },
+  ],
+  "setMeasurementModeEntries": [MockFunction],
+  "setSdIdsToShowFk": [MockFunction],
+  "setSelectedSdIds": [MockFunction],
+  "signalDetections": Array [
+    Object {
+      "conflictingHypotheses": Array [],
+      "currentHypothesis": Object {
+        "featureMeasurements": Array [
+          Object {
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "id": "dbdd8420-a448-44a0-9fea-d39fe55b0136",
+            "measurementValue": Object {
+              "standardDeviation": 0.685,
+              "value": 1274393237.85,
+            },
+          },
+          Object {
+            "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+            "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+            "measurementValue": Object {
+              "measurementValue": 0,
+              "referenceTime": 0,
+            },
+          },
+          Object {
+            "featureMeasurementType": "SLOWNESS",
+            "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+            "measurementValue": Object {
+              "measurementValue": 0,
+              "referenceTime": 0,
+            },
+          },
+          Object {
+            "featureMeasurementType": "PHASE",
+            "id": "3f9b417b-bc12-44ad-855d-132355708ec5",
+            "measurementValue": Object {
+              "confidence": 0,
+              "phase": "P",
+            },
+          },
+        ],
+        "id": "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+        "rejected": false,
+      },
+      "hasConflict": false,
+      "id": "acbd4ff2-f6e1-4a50-bc43-8ccc4f274b05",
+      "modified": false,
+      "monitoringOrganization": "TEST",
+      "requiresReview": Object {
+        "amplitudeMeasurement": false,
+      },
+      "reviewed": Object {
+        "amplitudeMeasurement": false,
+      },
+      "signalDetectionHypothesisHistory": Array [
+        Object {
+          "arrivalTimeSecs": 1274393334.1,
+          "arrivalTimeUncertainty": 0.685,
+          "id": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+          "phase": "tx",
+          "rejected": false,
+        },
+        Object {
+          "arrivalTimeSecs": 1274393334.1,
+          "arrivalTimeUncertainty": 0.685,
+          "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+          "phase": "P",
+          "rejected": false,
+        },
+      ],
+      "stationName": "USRK",
+    },
+    Object {
+      "conflictingHypotheses": Array [],
+      "currentHypothesis": Object {
+        "featureMeasurements": Array [
+          Object {
+            "featureMeasurementType": "ARRIVAL_TIME",
+            "id": "e8d95a93-382d-4d84-85ce-983e87bdcb0c",
+            "measurementValue": Object {
+              "standardDeviation": 0.685,
+              "value": 1274393334.1,
+            },
+          },
+          Object {
+            "featureMeasurementType": "RECEIVER_TO_SOURCE_AZIMUTH",
+            "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+            "measurementValue": Object {
+              "measurementValue": 0,
+              "referenceTime": 0,
+            },
+          },
+          Object {
+            "featureMeasurementType": "SLOWNESS",
+            "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+            "measurementValue": Object {
+              "measurementValue": 0,
+              "referenceTime": 0,
+            },
+          },
+          Object {
+            "featureMeasurementType": "PHASE",
+            "id": "8cdefd4e-803f-48f1-9e51-4229066f9991",
+            "measurementValue": Object {
+              "confidence": 0,
+              "phase": "P",
+            },
+          },
+        ],
+        "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+        "rejected": false,
+      },
+      "hasConflict": false,
+      "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+      "modified": false,
+      "monitoringOrganization": "TEST",
+      "requiresReview": Object {
+        "amplitudeMeasurement": false,
+      },
+      "reviewed": Object {
+        "amplitudeMeasurement": false,
+      },
+      "signalDetectionHypothesisHistory": Array [
+        Object {
+          "arrivalTimeSecs": 1274393334.1,
+          "arrivalTimeUncertainty": 0.685,
+          "id": "b90ee9c8-3fc9-4ccd-95ea-5d1d206c35a7",
+          "phase": "tx",
+          "rejected": false,
+        },
+        Object {
+          "arrivalTimeSecs": 1274393334.1,
+          "arrivalTimeUncertainty": 0.685,
+          "id": "e4ae55cc-a395-471c-8a98-bb2cf08411cd",
+          "phase": "P",
+          "rejected": false,
+        },
+      ],
+      "stationName": "SONM",
+    },
+  ],
+  "updateDetections": [MockFunction],
+}
+`;

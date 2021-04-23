@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`masks by channel get masks for KDAK channels 1`] = `
+Array [
+  "id",
+  "channelId",
+  "qcMaskVersions",
+  "currentVersionAsReference",
+]
+`;

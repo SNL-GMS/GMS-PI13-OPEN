@@ -1,0 +1,17 @@
+apply plugin: 'java-library'
+
+dependencies {
+    api project(':frameworks-osd-api')
+    api project(':frameworks-system-config')
+
+    api 'org.apache.commons:commons-lang3'
+    implementation 'org.hibernate:hibernate-core'
+    implementation 'org.hibernate:hibernate-c3p0'
+    implementation 'org.hibernate:hibernate-entitymanager'
+    implementation 'org.postgresql:postgresql'
+    implementation 'com.vladmihalcea:hibernate-types-52'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}

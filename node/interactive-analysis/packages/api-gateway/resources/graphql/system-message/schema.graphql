@@ -1,0 +1,92 @@
+# ***************************************
+# Model
+# ***************************************
+
+# Defines the type of the message.
+enum SystemMessageType {
+  STATION_NEEDS_ATTENTION,
+  STATION_SOH_STATUS_CHANGED,
+  STATION_CAPABILITY_STATUS_CHANGED,
+  STATION_GROUP_CAPABILITY_STATUS_CHANGED,
+  CHANNEL_MONITOR_TYPE_STATUS_CHANGED,
+  CHANNEL_MONITOR_TYPE_STATUS_CHANGE_ACKNOWLEDGED,
+  CHANNEL_MONITOR_TYPE_QUIETED,
+  CHANNEL_MONITOR_TYPE_QUIET_PERIOD_CANCELED,
+  CHANNEL_MONITOR_TYPE_QUIET_PERIOD_EXPIRED
+}
+
+# Defines the severity of the message.
+enum SystemMessageSeverity {
+  INFO,
+  WARNING,
+  CRITICAL
+}
+
+# Defines the category of the message.
+enum SystemMessageCategory {
+  SOH
+}
+
+# Defines the subcategory of the message.
+enum SystemMessageSubCategory {
+  CAPABILITY,
+  STATUS,
+  STATION,
+  USER
+}
+
+# Represents a GMS system message.
+type SystemMessage {  
+  # Id of this object.
+  id: String!
+  
+  # Time this system message was generated (EPOCH milliseconds).
+  time: Float!
+  
+  # The content of this system message.
+  message: String!
+  
+  # The type of this system message.
+  type: SystemMessageType!
+  
+  # The severity of this system message.
+  severity: SystemMessageSeverity!
+  
+  # The category of this system message.
+  category: SystemMessageCategory!
+  
+  # The subcategory of this system message.
+  subCategory: SystemMessageSubCategory!
+}
+
+# System message definition
+type SystemMessageDefinition {
+  # Type of the system message
+  systemMessageType: String!
+
+  # Describes the system message category
+  systemMessageCategory: String!
+
+  # Describes system message sub category
+  systemMessageSubCategory: String!
+
+  # Describes system message severity
+  systemMessageSeverity: String!
+  
+  # Template string that has variable inserts available to provide a description
+  template: String!
+}
+
+# ***************************************
+# Queries/Mutations/Subscriptions
+# ***************************************
+
+# Query type for System Message Definitions
+extend type Query {
+  systemMessageDefinitions: [SystemMessageDefinition]
+}
+
+extend type Subscription {
+  # system message subscription - returns the latest system messages in real time
+  systemMessages: [SystemMessage]!
+}

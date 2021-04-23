@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`events by id get event for specific event ID 1`] = `undefined`;

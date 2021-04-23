@@ -1,0 +1,213 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Location History Table Renders a single location entry 1`] = `
+<div
+  className="ag-theme-dark table-container"
+>
+  <div
+    className="list-wrapper"
+  >
+    <div
+      className="max"
+    >
+      <ClientSideTable
+        autoGroupColumnDef={
+          Object {
+            "cellRendererFramework": [Function],
+            "comparator": [Function],
+            "field": "save",
+            "headerName": "Save",
+            "headerTooltip": "Save this location set when the event is saved",
+            "width": 65,
+          }
+        }
+        columnDefs={
+          Array [
+            Object {
+              "cellRendererFramework": [Function],
+              "field": "locationSetId",
+              "headerName": "ASBDUSA",
+              "hide": true,
+              "sortable": true,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "left",
+              },
+              "field": "locType",
+              "headerName": "Type",
+              "headerTooltip": "Event Location Type (Standard or Master)",
+              "resizable": true,
+              "width": 90,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "lat",
+              "headerName": "Lat (°)",
+              "headerTooltip": "Latitude of event location",
+              "resizable": true,
+              "valueFormatter": [Function],
+              "width": 70,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "lon",
+              "headerName": "Lon (°)",
+              "headerTooltip": "Longitude of event location",
+              "resizable": true,
+              "valueFormatter": [Function],
+              "width": 70,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "depth",
+              "headerName": "Depth (km)",
+              "headerTooltip": "Depth of event location",
+              "resizable": true,
+              "valueFormatter": [Function],
+              "width": 90,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "time",
+              "headerName": "Time",
+              "headerTooltip": "Time of event",
+              "resizable": true,
+              "width": 210,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "left",
+              },
+              "field": "restraint",
+              "headerName": "Restraint",
+              "headerTooltip": "Depth restraint of location calculation",
+              "resizable": true,
+              "width": 140,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "smajax",
+              "headerName": "Semi Major (km)",
+              "headerTooltip": "Semi-major axis length of error ellipse",
+              "resizable": true,
+              "valueFormatter": [Function],
+              "width": 122,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "sminax",
+              "headerName": "Semi Minor (km)",
+              "headerTooltip": "Semi-minor axis length of error ellipse",
+              "resizable": true,
+              "valueFormatter": [Function],
+              "width": 122,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "strike",
+              "headerName": "Strike (°)",
+              "headerTooltip": "Strike of major axis of error ellipse",
+              "resizable": true,
+              "valueFormatter": [Function],
+              "width": 70,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "stdev",
+              "headerName": "Std Dev",
+              "headerTooltip": "Standard deviation of the observed",
+              "resizable": true,
+              "valueFormatter": [Function],
+              "width": 70,
+            },
+            Object {
+              "cellStyle": Object {
+                "text-align": "right",
+              },
+              "field": "count",
+              "headerName": "Count",
+              "hide": true,
+              "resizable": true,
+              "sortable": true,
+              "width": 95,
+            },
+            Object {
+              "cellRendererFramework": [Function],
+              "cellStyle": Object {
+                "display": "flex",
+                "justify-content": "center",
+              },
+              "field": "preferred",
+              "headerName": "Preferred",
+              "headerTooltip": "Mark an event location as preferred",
+              "width": 80,
+            },
+          ]
+        }
+        context={Object {}}
+        getRowNodeId={[Function]}
+        getRowStyle={[Function]}
+        gridOptions={
+          Object {
+            "rowClass": "location-history-row",
+          }
+        }
+        groupMultiAutoColumn={true}
+        id="table-location-history"
+        key="table-location-history"
+        onCellClicked={[Function]}
+        onGridReady={[Function]}
+        onRowClicked={[Function]}
+        rowData={
+          Array [
+            Object {
+              "count": 0,
+              "depth": 0,
+              "depthRestraintType": "UNRESTRAINED",
+              "id": "1",
+              "isFirstInLSSet": true,
+              "isLastInLSSet": true,
+              "isLocationSolutionSetPreferred": false,
+              "lat": 44.94862,
+              "latestLSSId": "5fa862f1-2e2d-4d87-bc66-00177de18c5e",
+              "locType": "Standard",
+              "locationSetId": "5fa862f1-2e2d-4d87-bc66-00177de18c5e",
+              "locationSolutionId": "3a06fac7-46ad-337e-a8da-090a1cc801a1",
+              "lon": -106.38442,
+              "preferred": false,
+              "restraint": "Unrestrained",
+              "selectedLocationSolutionSetId": undefined,
+              "setSelectedPreferredLocationSolution": [Function],
+              "setToSave": [Function],
+              "smajax": 59.7138,
+              "sminax": 32.3731,
+              "stdev": 0,
+              "strike": 137.57,
+              "time": "2010/05/20T22:01:30.238000",
+            },
+          ]
+        }
+        rowSelection="none"
+        suppressContextMenu={true}
+      />
+    </div>
+  </div>
+</div>
+`;
